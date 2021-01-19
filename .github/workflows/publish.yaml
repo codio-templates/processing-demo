@@ -12,9 +12,9 @@ jobs:
         id: codio-login
         uses: codio/codio-auth-action@master
         with:
-          client-id: ${{ secrets.CODIO_TEST1_CLIENT_ID }}
-          secret-id: ${{ secrets.CODIO_TEST1_SECRET_ID }}
-          domain: test1-codio.com
+          client-id: ${{ secrets.JAVA_OBJECTS_CLIENT_ID }}
+          secret-id: ${{ secrets.JAVA_OBJECTS_SECRET_ID }}
+          domain: codio.com
 
       - name: Checkout
         uses: actions/checkout@v1
@@ -32,15 +32,9 @@ jobs:
         uses: codio/codio-book-publish-action@master
         with:
           token: ${{ steps.codio-login.outputs.token }}
-          book-id: 5777e7e3b2ce90d2325e923d981a0a06
-          domain: test1-codio.com
+          book-id: 61a5efce71eb25b4e2fa2f982c2c33bc
+          domain: codio.com
           zip: ../data.zip
           changelog: ${{ github.event.head_commit.message }}
 
-      - name: Update Codio Course
-        uses: codio/codio-course-book-update-action@master
-        with:
-          token: ${{ steps.codio-login.outputs.token }}
-          course-id: 5d2627e6b643887c072eea40
-          book-id: 5777e7e3b2ce90d2325e923d981a0a06
-          domain: test1-codio.com
+      
