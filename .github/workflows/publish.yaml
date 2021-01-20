@@ -36,5 +36,3 @@ jobs:
           domain: codio.com
           zip: ../data.zip
           changelog: ${{ github.event.head_commit.message }}
-
-      

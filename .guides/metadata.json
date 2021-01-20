@@ -1,24 +1,420 @@
 {
  "sections": [
   {
-   "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
-   "title": "Page 1",
-   "files": [],
+   "id": "d6fcd98f-119e-c839-d72f-b4779da0949d",
+   "title": "Learning Objectives - Classes and Objects",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Page-1-c320.md",
+   "content-file": ".guides/content/Learning-Objectives---Classes-and-Objects-d6fc.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
    "learningObjectives": ""
   },
   {
-   "id": "d6fcd98f-119e-c839-d72f-b4779da0949d",
-   "title": "Page 2",
-   "files": [],
+   "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
+   "title": "Built-In Objects",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/BuiltIn.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Page-2-d6fc.md",
+   "content-file": ".guides/content/Built-In-Objects-c320.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c0bba709-0965-b81a-a81e-617be3908bab",
+   "title": "User-Defined Objects",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/UserDefined.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/User-Defined-Objects-c0bb.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "cfea311f-8f3d-1648-1cd8-d82d66482d58",
+   "title": "The Constructor",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/Constructor.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/The-Constructor-cfea.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "4fc9d4a6-87ab-a134-1681-cee7eb351af4",
+   "title": "The Constructor and Parameters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/ConstructorParameters.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/The-Constructor-and-Parameters-4fc9.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f138d049-a02a-92c3-ace9-b10988db90e4",
+   "title": "Class Attributes",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/ClassAttributes.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Class-Attributes-f138.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "827fa6b6-5794-d882-5f93-32b2a2aaaec9",
+   "title": "Shallow and Deep Copies",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/Copies.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Shallow-and-Deep-Copies-827f.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b2f7f1cc-bdb3-9b17-156b-2468483dcdd6",
+   "title": "Introduction to Objects Formative Assessment 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Formative-Assessment-1-b2f7.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "85b0970a-e31b-a8a3-3d1d-92671525b55f",
+   "title": "Introduction to Objects Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Formative-Assessment-2-85b0.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "5d70b356-b7a5-5cbf-6568-7911b73968bc",
+   "title": "Introduction to Objects Lab 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Lab-1-5d70.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "6257cfeb-ea77-7ed9-60eb-4c071fcfa2f8",
+   "title": "Introduction to Objects Lab 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Lab-2-6257.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "aa79a82e-f760-e4ea-8297-9d20634c8a6c",
+   "title": "Introduction to Objects Lab 3",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Lab-3-aa79.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2983198c-1e4d-d021-a162-f9c1ca11d660",
+   "title": "Introduction to Objects Lab 4",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Lab-4-2983.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "34453bee-b502-af9e-97dd-9967be9df598",
+   "title": "Introduction to Objects Lab 5",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Lab-5-3445.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9d2f8e4e-fe78-a61a-3ea1-34467546501f",
+   "title": "Introduction to Objects Lab Challenge",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/LabChallenge.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Lab-Challenge-9d2f.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f70260db-a445-0751-c5bd-26b21dde58d7",
+   "title": "Introduction to Objects Exercise 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/Exercise1.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Exercise-1-f702.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f2334484-3615-c982-b0f3-ec3ffbe454dd",
+   "title": "Introduction to Objects Exercise 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/Exercise2.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Exercise-2-f233.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "23f0bb01-c216-5b1c-25f9-dca033d9aeb6",
+   "title": "Introduction to Objects Exercise 3",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/Exercise3.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Exercise-3-23f0.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "1e72f080-b9bf-e654-039b-95501029a558",
+   "title": "Introduction to Objects Exercise 4",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/Exercise4.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Exercise-4-1e72.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bf93ff90-0ff1-12b1-ef50-eb3d147da361",
+   "title": "Introduction to Objects Exercise 5",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/introObjects/Exercise5.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Introduction-to-Objects-Exercise-5-bf93.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
@@ -28,6 +424,13 @@
  "theme": "light",
  "scripts": [],
  "lexikonTopic": "",
+ "suppressPageNumbering": false,
  "useSubmitButtons": true,
- "useMarkAsComplete": true
+ "useMarkAsComplete": true,
+ "hideMenu": false,
+ "allowGuideClose": false,
+ "collapsedOnStart": false,
+ "hideSectionsToggle": false,
+ "hideBackToDashboard": false,
+ "protectLayout": false
 }
