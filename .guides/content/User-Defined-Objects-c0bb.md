@@ -41,7 +41,7 @@ The point of having a class is to collect information and define actions that ca
 ```java
 //add class definitions below this line
     
-class Actor {
+public class Actor {
   String firstName;
   String lastName;
 }  
@@ -83,7 +83,7 @@ System.out.println(helen.firstName.toUpperCase() + " " + helen.lastName.toLowerC
 
   //add class definitions below this line
 
-  class Actor {
+  public class Actor {
     String firstName;
     String lastName;
     int totalFilms;
