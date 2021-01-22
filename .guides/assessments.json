@@ -67,5 +67,76 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2424555517",
+  "source": {
+   "name": "reading question user-define objects",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Pitcher {\n    double era;\n}\n```\n\nSelect the code snippet below that instantiates an object of type `Pitcher` and sets the `era` attribute to 2.93.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "6f82b656-dd40-4f8e-0ed3-54e569ec19dc",
+     "correct": true,
+     "answer": "Pitcher pedro = new Pitcher();\npedro.era = 2.93;"
+    },
+    {
+     "_id": "ae1d8ae0-4f72-a2ed-bc01-072df372c465",
+     "correct": false,
+     "answer": "Pitcher pedro = Pitcher();\npedro.era = 2.93;"
+    },
+    {
+     "_id": "d2cb4503-1c6c-a242-858c-21cf602a2902",
+     "correct": false,
+     "answer": "Pitcher pedro = new Pitcher();\nera = 2.93;"
+    },
+    {
+     "_id": "7c6342b5-1b89-ddc0-89a0-a1fe468b5c3f",
+     "correct": false,
+     "answer": "pedro = new Pitcher();\npedro.era = 2.93;"
+    }
+   ],
+   "guidance": "When instantiating an object, you start by giving the object a type. In this case, the type is `Pitcher`. Give the object a name followed by the assignment operator. Use the `new` keyword and the class name to create a new object of type `Pitcher`.\n\n```java\nPitcher pedro = new Pitcher();\n```\n\nTo access a class attribute, use dot notation. That means using the object's name (`pedro`) followed by a `.`, and the use the name of the attribute. Assign the value `2.93` to the attribute like you would a variable.\n\n```java\npedro.era = 2.93;\n```",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "User-Defined Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/UserDefined.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/UserDefined.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify how to instantiate an object and modify an attribute"
+  }
  }
 ]

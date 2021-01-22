@@ -37,8 +37,7 @@ So you now have `helen`, which is an instance of the `Actor` class.
 
 ## Adding Attributes
 
-The point of having a class is to collect information and define actions that can modify the data. The `Actor` class should contain things like the name of the actor, notable films, awards they have won, etc. These pieces of information related to a class are called attributes. You access the attributes by using dot notation, which is ` type objectName.attribute;`. Attributes are declared when creating the class. The example below adds the `firstName` and `lastName` attributes which are both strings. Adding an attribute is done with the assignment operator, `objectName.attribute = attributeValue`. Object attributes can be treated like any other variable. 
-
+The point of having a class is to collect information and define actions that can modify the data. The `Actor` class should contain things like the name of the actor, notable films, awards they have won, etc. These pieces of information related to a class are called class attributes. Attributes are declared in the class itself. The example below adds the `firstName` and `lastName` attributes which are both strings. 
 ```java
 //add class definitions below this line
     
@@ -50,7 +49,7 @@ class Actor {
 //add class definitions above this line
 ```
 
-Adding an attribute is done with the assignment operator, `objectName.attribute = attributeValue`. Object attributes can be treated like any other variable. Add the following code to the `main` method.
+You can change the value of an attribute with the assignment operator, `objectName.attribute = attributeValue`. Notice that you always use `objectName.attribute` to reference an attribute. This is called dot notation. Once an attribute has a value, you can treat it like any other variable. Add the following code to the `main` method. You are assigning values to the attributes `fistName` and `lastName`, and then printing these values.
 
 ```java
     //add code below this line
@@ -67,17 +66,53 @@ Adding an attribute is done with the assignment operator, `objectName.attribute 
 
 |||challenge
 ## Try these variations:
-* Add the print statement `print(helen.first_name.upper(), helen.last_name.lower())`
-* Add the attribute `total_films` with the value of `80`
-* Add the attribute `notable_films` with the value of `["The Queen", "The Madness of King George", "Gosford Park"]`
-* Add the print statement `print(helen)`
+* Change the print statement to:
+```java
+System.out.println(helen.firstName.toUpperCase() + " " + helen.lastName.toLowerCase());
+```
+* Add the attribute `totalFilms` and assign it the value `80`
+* Add the print statement `System.out.println(helen);`
+
+<details>
+  <summary><strong>Code</strong></summary>
+  
+  You may have noticed that printing the object `helen` returns `Actor@` followed a series of numbers and letters. Java is telling you that `helen` is an object of class `Actor` and the numbers and letters represent the object's location in memory.
+  
+  ```java
+  import java.lang.Class;
+
+  //add class definitions below this line
+
+  class Actor {
+    String firstName;
+    String lastName;
+    int totalFilms;
+  }  
+
+  //add class definitions above this line
+
+  public class UserDefined {  
+    public static void main(String[] args) {
+
+      //add code below this line
+
+      Actor helen = new Actor();
+      helen.firstName = "Helen";
+      helen.lastName = "Mirren";
+      helen.totalFilms = 80;
+      System.out.println(helen.firstName.toUpperCase() + " " + helen.lastName.toLowerCase());
+      System.out.println(helen.totalFilms);
+      System.out.println(helen);
+
+      //add code above this line
+    }
+  }
+  ```
+  
+</details>
 
 |||
 
 {Try it}(sh .guides/bg.sh javac code/introObjects/UserDefined.java java -cp code/introObjects/ UserDefined 4)
 
-<details>
-  
-  <summary><strong>What is all that gibberish after <code>at</code>?</strong></summary>All of that gibberish is the location in your computer's memory where the object is being stored.
-  
-</details>
+{Check It!|assessment}(multiple-choice-2424555517)
