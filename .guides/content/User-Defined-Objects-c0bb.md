@@ -37,7 +37,7 @@ So you now have `helen`, which is an instance of the `Actor` class.
 
 ## Adding Attributes
 
-The point of having a class is to collect information and define actions that can modify the data. The `Actor` class should contain things like the name of the actor, notable films, awards they have won, etc. These pieces of information related to a class are called class attributes. Attributes are declared in the class itself. The example below adds the `firstName` and `lastName` attributes which are both strings. 
+The point of having a class is to collect information and define actions that can modify the data. The `Actor` class should contain things like the name of the actor, notable films, awards they have won, etc. These pieces of information related to a class are called attributes. Attributes are declared in the class itself. The example below adds the `firstName` and `lastName` attributes which are both strings. 
 ```java
 //add class definitions below this line
     
