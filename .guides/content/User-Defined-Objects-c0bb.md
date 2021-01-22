@@ -2,12 +2,12 @@
 
 ## Defining an Object
 
-Assume you want to collect information about actors. Creating a class is a good way to keep this data organized. The `class` keyword is used to define a class. For now, use `pass` as the body of the class. Declaring a class does not doing anything on its own, so print `Actor`.
+Assume you want to collect information about actors. Creating a class is a good way to keep this data organized. The `public` and `class` keywords are used to define a class. For now, do not add anything as the body of the class.
 
 ```java
 //add class definitions below this line
     
-class Actor {
+public class Actor {
   
 }  
   
