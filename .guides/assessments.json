@@ -209,5 +209,71 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify the constructor"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3801306128",
+  "source": {
+   "name": "constructor and parameters reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following object instantiation:\n\n```java\nPerson p = new Person(18, \"Dallas\");\n```\n\nWhich code snippet below represents the constructor needed for this instantiation?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "f998fa0b-63a0-3e7d-57f2-f2af4d56b15e",
+     "correct": true,
+     "answer": "`public Person(int age, String homeTown)`"
+    },
+    {
+     "_id": "33db92a7-565b-07a6-0280-95e5e5a133e8",
+     "correct": false,
+     "answer": "`public Person(age, homeTown)`"
+    },
+    {
+     "_id": "54ea49a0-8f92-da37-e4d5-ebcdfd4f7c04",
+     "correct": false,
+     "answer": "`public Person(String homeTown, int age)`"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\npublic Person(int age, String homeTown)\n```\n\nEach parameter for the constructor requires a type. In addition, the order of the parameters is important. Since the object instantiation had `18` before `\"Dallas\"`, the constructor must do the same.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Constructor and Parameters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/ConstructorParameters.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/ConstructorParameters.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify the constructor based on object instatiation"
+  }
  }
 ]
