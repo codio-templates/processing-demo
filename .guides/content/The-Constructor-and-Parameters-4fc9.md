@@ -110,4 +110,52 @@ When you instantiate the two `Actor` objects, you can pass the constructor the r
 
 {Try it}(sh .guides/bg.sh javac code/introObjects/ConstructorParameters.java java -cp code/introObjects/ ConstructorParameters 3)
 
+## Default Values
+
+We can assume that the average actor probably has not been nominated or won an Oscar. So instead of making these attributes parameters for the constructor, we can give them the default value of 0. These attributes can always be updated later on.
+
+```java
+//add class definitions below this line
+    
+class Actor {
+  String firstName;
+  String lastName;
+  String birthday;
+  int totalFilms;
+  int oscarNominations;
+  int oscarWins;
+  
+  public Actor(String fn, String ln, String bd, int tf) {
+    firstName = fn;
+    lastName = ln;
+    birthday = bd;
+    totalFilms = tf;
+    oscarNominations = 0;
+    oscarWins = 0;
+  }
+}
+  
+//add class definitions above this line
+```
+
+You can update the attributes once the object has been instantiated if need be.
+
+```java
+    //add code below this line
+
+    Actor helen = new Actor("Helen", "Mirren", "July 26", 80);
+    System.out.println(helen.oscarNominations);
+    System.out.println(helen.oscarWins);
+
+    helen.oscarNominations = 4;
+    helen.oscarWins = 1;
+
+    System.out.println(helen.oscarNominations);
+    System.out.println(helen.oscarWins);
+
+    //add code above this line
+```
+
+{Try it}(sh .guides/bg.sh javac code/introObjects/ConstructorParameters.java java -cp code/introObjects/ ConstructorParameters 4)
+
 {Check It!|assessment}(multiple-choice-3801306128)
