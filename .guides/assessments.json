@@ -601,5 +601,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create a class with a constructor"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-743280736",
+  "source": {
+   "name": "introduction to objects coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your work when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":false,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": false,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Superhero {\n  String name;\n  String secretIdentity;\n  String[] powers;\n  \n  public Superhero(String n, String s, String[] p) {\n    name = n;\n    secretIdentity = s;\n    powers = p;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n\n\n    //add code above this line\n  }\n}\n```\n\nStart by declaring the `Superhero` class. The constructor should include parameters that represent `name`, `secretIdentity`, and`powers`. Be sure to keep the parameters in this order; otherwise your code will not pass the automated tests. Set the value of each attribute to its matching parameter. ",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Constructors with parameters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with a constructor and parameters"
+  }
  }
 ]
