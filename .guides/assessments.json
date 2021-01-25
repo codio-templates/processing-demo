@@ -275,5 +275,131 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT identify the constructor based on object instatiation"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-359646314",
+  "source": {
+   "name": "reading question class attributes",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "A <<<class>>> attribute is an attribute whose value is shared by all instances of a class.\nAn <<<object>>> attribute is an attribute whose value is independent of other instances of a class.",
+   "distractors": "variable\nconstant",
+   "guidance": "A class attribute is an attribute whose value is shared by all instances of a class.\nAn object attribute is an attribute whose value is independent of other instances of a class.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Class Attributes"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/ClassAttributes.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/ClassAttributes.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between a class attribute and an object attribute",
+   "tokens": {
+    "blank": [
+     "class",
+     "object"
+    ],
+    "text": [
+     "A ",
+     0,
+     " attribute is an attribute whose value is shared by all instances of a class.\nAn ",
+     0,
+     " attribute is an attribute whose value is independent of other instances of a class."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2232783722",
+  "source": {
+   "name": "reading question shallow vs deep copy",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "A <<<deep>>> copy is when Java makes a copy of the object and its attributes.\nA <<<shallow>>> copy is when Java makes a copy of the object, but the attributes are shared.",
+   "distractors": "small\nmedium\nfake",
+   "guidance": "A deep copy is when Java makes a copy of the object and its attributes.\nA shallow copy is when Java makes a copy of the object, but the attributes are shared.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Shallow and Deep Copying"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Copies.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Copies.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between shallow and deep copies",
+   "tokens": {
+    "blank": [
+     "deep",
+     "shallow"
+    ],
+    "text": [
+     "A ",
+     0,
+     " copy is when Java makes a copy of the object and its attributes.\nA ",
+     0,
+     " copy is when Java makes a copy of the object, but the attributes are shared."
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
