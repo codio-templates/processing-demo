@@ -1,3 +1,19 @@
+//add class definitions below this line
+    
+class Cat {
+  String breed;
+  String color;
+  String name;
+  
+  public Cat() {
+    breed = "american shorthair";
+    color = "black";
+    name = "kiwi";
+  }
+}
+  
+//add class definitions above this line
+
 public class Exercise2 {
   public static void main(String[] args) {
     
@@ -7,11 +23,4 @@ public class Exercise2 {
 
     //add code above this line
   }
-  
-  //add method definitions below this line
-    
-  
-  
-  //add method definitions above this line
-
 }

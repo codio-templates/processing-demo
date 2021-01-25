@@ -504,5 +504,102 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT differentiate between shallow and deep copies"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3286085930",
+  "source": {
+   "name": "introduction to objects coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code when ready.",
+   "command": "python .guides/secure/introObjects/exercise1_test.py",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 40,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass PracticeClass {\n  String date;\n}\n  \n//add class definitions above this line\n\npublic class Exercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the class `PracticeClass`. Then create the object attribute `date` of type `String`. ",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Creating Classes"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class without a constructor"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1000868489",
+  "source": {
+   "name": "introduction to objects exercise 2",
+   "showName": false,
+   "instructions": "Submit your code when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Cat {\n  String breed;\n  String color;\n  String name;\n  \n  public Cat() {\n    breed = \"american shorthair\";\n    color = \"black\";\n    name = \"kiwi\";\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the class `Cat`, then instantiate the string variables, `breed`, `color`, and `name`. Then create the constructor, but do not pass any parameters to it. Finally, set the values of the object attributes to be `\"american shorthair\"`, `\"black\"`, and `\"kiwi\"` respectively.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Constructors"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with a constructor"
+  }
  }
 ]
