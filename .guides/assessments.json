@@ -401,5 +401,108 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-2431160952",
+  "source": {
+   "name": "introduction to objects formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nDog fido = new Dog();\nfido.breed = \"poodle\";\n```\n\nRearrange the code blocks below to declare the `Dog` class that corresponds to the code above. **Note**, not all of the code blocks will be used.",
+   "initial": "class Dog {\n  String breed;\n}\nString breed = &quot;poodle&quot;; #distractor\npublic Dog(String breed) { #distractor\nclass dog #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\nclass Dog {\n  String breed;\n}\n```\n\n* In the given code, no arguments were passed to `Dog` when `fido` was instantiated. There should be no constructor.\n* The given code set the value for `breed`, so `breed` should not be given a default value when initialized.\n* In the given code, the `Dog` class uses a capital `D`, so should the class definition.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Declare a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT declare a class"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1338030279",
+  "source": {
+   "name": "introduction to objects formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nSelect **all** of the statements that are true about shallow and deep copies.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "7776806d-f482-fb51-e22a-5f17da2b1168",
+     "correct": true,
+     "answer": "You need to use the copy constructor to make a deep copy"
+    },
+    {
+     "_id": "b0b7e9f9-e246-5fdf-3639-a111c948c8d3",
+     "correct": true,
+     "answer": "Shallow copies only copy the object but not the object attributes"
+    },
+    {
+     "_id": "4c57c90c-c40c-e28a-bfa8-0a483a5f4ef6",
+     "correct": true,
+     "answer": "Deep copies make a copy of the object and the object attributes"
+    },
+    {
+     "_id": "6fbcbda6-0a7f-f1ea-0be5-84c43dce2904",
+     "correct": true,
+     "answer": "Changing an attribute of one shallow copy will affect the attribute of the other shallow copy"
+    }
+   ],
+   "guidance": "All of the statements are true. \n* The copy constructor is used to make a deep copy. \n* Shallow copies only make a copy of the object, but not of the attributes.\n* Deep copes make a copy of the object and the attributes.\n* Changing an attribute of one shallow copy will affect the attribute of the other shallow copy.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Shallow and Deep Copying"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT differentiate between shallow and deep copies"
+  }
  }
 ]
