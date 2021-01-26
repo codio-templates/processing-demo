@@ -650,5 +650,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create a class with a constructor and parameters"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2663969036",
+  "source": {
+   "name": "introduction to objects coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your work when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Observation {\n  String date;\n  double temperature;\n  double elevation;\n  int penguins;\n  double precipitation;\n  \n  public Observation(String d, double t, double e, int p) {\n    date = d;\n    temperature = t;\n    elevation = e;\n    penguins = p;\n    precipitation = 0;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nDeclare the object attributes as instructed by the prompt. Create a constructor with parameters in the order of `date`, `temperature`, `elevation`, and `penguins`. The `precipitation` attribute has a default value, so it does not need to be a parameter of the constructor. Set the value of each attribute to the corresponding parameter. Finally, set the value of `precipitation` to `0`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with a construction, parameters, and a default value"
+  }
  }
 ]
