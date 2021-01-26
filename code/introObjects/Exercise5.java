@@ -1,3 +1,9 @@
+//add class definitions below this line
+    
+
+  
+//add class definitions above this line
+
 public class Exercise5 {
   public static void main(String[] args) {
     
@@ -7,11 +13,4 @@ public class Exercise5 {
 
     //add code above this line
   }
-  
-  //add method definitions below this line
-    
-  
-  
-  //add method definitions above this line
-
 }

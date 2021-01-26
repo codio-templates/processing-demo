@@ -699,5 +699,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create a class with a construction, parameters, and a default value"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3142794422",
+  "source": {
+   "name": "introduction to objects coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your work when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass BigCat {\n  String species;\n  String commonName;\n  String[] habitat;\n  static String genus = \"panthera\";\n  \n  public BigCat(String s, String c, String[] h) {\n    species = s;\n    commonName = c;\n    habitat = h;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the `species`, `commonName` and `habitat` object attributes as instructed by the prompt. The `genus` attribute needs to be a class attribute. That is why the `static` keyword is used. Notice, `genus` is **not** all caps, so do not use the `final` keyword with this attribute. Finally, set the values of the object attributes with the constructor.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Class Attribute"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise5.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise5.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT declare a class attribute with the static keyword"
+  }
  }
 ]
