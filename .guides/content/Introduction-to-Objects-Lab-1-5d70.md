@@ -96,6 +96,7 @@ Print each attribute of `post1` to see that everything is working as expected.
   
   ```java
   import javax.swing.*;
+  import java.awt.*;
   import java.util.*; 
 
   //add class definitions below this line

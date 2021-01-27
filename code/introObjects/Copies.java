@@ -25,13 +25,7 @@ public class Copies {
     
     //add code below this line
 
-    ComicBookCharacter a = new ComicBookCharacter("Calvin", 6, "human");
-    
-    ComicBookCharacter b = new ComicBookCharacter(a);
-    a.name = "Hobbes";
-    
-    System.out.println("Object a name: " + a.name);
-    System.out.println("Object b name: " + b.name);
+
     
     //add code above this line
   }
