@@ -199,6 +199,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/introObjects/LabIntro.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -217,9 +222,19 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
+    },
+    {
+     "path": "code/introObjects/Photogram.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Introduction-to-Objects-Lab-2-6257.md",

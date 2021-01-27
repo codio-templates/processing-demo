@@ -748,5 +748,76 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT declare a class attribute with the static keyword"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3387365333",
+  "source": {
+   "name": "introduction to objects lab 1",
+   "showName": false,
+   "instructions": "## Lab Question\n\nLook at the `Car` class definition below. How many parameters are used when creating an instance of the `Car` class?\n\n```java\nclass Car {\n  String make;\n  String model;\n  int year;\n  String color;\n\n  public Car(String ma, String mo, int y) {\n    make = ma;\n    model = mo;\n    year = y;\n    color = \"black\";\n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "b053e919-b6f0-341c-c44a-569bfa6a2215",
+     "correct": true,
+     "answer": "3"
+    },
+    {
+     "_id": "d04a4598-5772-9dc1-b5ad-f854ae16161a",
+     "correct": false,
+     "answer": "2"
+    },
+    {
+     "_id": "0f7dad32-284f-c972-58ed-3b236633450f",
+     "correct": false,
+     "answer": "4"
+    },
+    {
+     "_id": "d4147a78-2f3b-4f8d-aabc-3e937d989a50",
+     "correct": false,
+     "answer": "5"
+    }
+   ],
+   "guidance": "While there are four object attributes, only three values (`ma`, `mo`, and `y`) are passed as parameters to the constructor. The `color` attribute gets a default value of `\"black\"`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/LabIntro.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/LabIntro.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify parameters passed to the constructor"
+  }
  }
 ]
