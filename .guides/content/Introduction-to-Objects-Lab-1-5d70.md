@@ -129,7 +129,7 @@ Print each attribute of `post1` to see that everything is working as expected.
 
   //add class definitions above this line
 
-  public class LabIntro {
+  public class Photogram {
     public static void main(String[] args) {
 
       //add code below this line
@@ -169,6 +169,6 @@ Print each attribute of `post1` to see that everything is working as expected.
   ```
 </details><br>
 
-{Try it}(sh .guides/bg.sh javac code/introObjects/LabIntro.java java -cp code/introObjects/ LabIntro 1)
+{Try it}(sh .guides/bg.sh javac code/introObjects/Photogram.java java -cp code/introObjects/ Photogram 1)
   
 {Check It!|assessment}(multiple-choice-3387365333)

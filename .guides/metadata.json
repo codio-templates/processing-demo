@@ -201,7 +201,7 @@
      "action": "close"
     },
     {
-     "path": "code/introObjects/LabIntro.java",
+     "path": "code/introObjects/Photogram.java",
      "panel": 0,
      "action": "open"
     }
@@ -229,7 +229,7 @@
      "action": "open"
     },
     {
-     "path": "code/introObjects/Photogram.java",
+     "path": "code/introObjects/IntroSwing.java",
      "panel": 0,
      "action": "open"
     }
