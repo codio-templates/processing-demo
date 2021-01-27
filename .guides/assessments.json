@@ -819,5 +819,81 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT identify parameters passed to the constructor"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-568683216",
+  "source": {
+   "name": "intro objects lab 2 question ",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhat does \"instantiate an object\" mean?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "bd848a24-269a-3ed8-f921-748a8fb19613",
+     "correct": true,
+     "answer": "Instantiating an object means to create an object based on a class."
+    },
+    {
+     "_id": "0a65779c-a6de-6a26-f65b-226cb61f1eb4",
+     "correct": false,
+     "answer": "Instantiating an object means to create a class."
+    },
+    {
+     "_id": "b4cd6157-2325-878e-09df-3f886a8d5df8",
+     "correct": false,
+     "answer": "Instantiating an object means to declare a variable."
+    },
+    {
+     "_id": "4fd07915-4642-b61f-7247-f20edac42adb",
+     "correct": false,
+     "answer": "Instantiating an object means to make a copy of another object."
+    }
+   ],
+   "guidance": "Instantiating an object means to create an object based on a class. The class is the blueprint from which objects are made. The act of creating an object based on the class blueprint is called instantiation.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Class instantiation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "C++, Python, Java, JavaScript"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/IntroSwing.java"
+    ],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/IntroSwing.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define object instantiation"
+  }
  }
 ]

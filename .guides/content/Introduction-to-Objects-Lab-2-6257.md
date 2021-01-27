@@ -11,13 +11,14 @@ Now that you have all of the information needed to make a post, you can turn tha
 
 ### Main Window
 
-`Swing`'s output is a window. There are three steps needed to get a window up and running. First, create a `JFrame` object and pass it a string that represents the text to appear in the title bar of the window. Second, set the size (in pixels) of the window. Finally, set the window visibility to `true`.
+`Swing`'s output is a window. There are four steps needed to get a window up and running. First, create a `JFrame` object and pass it a string that represents the text to appear in the title bar of the window. Second, set the size (in pixels) of the window. Three, tell Java to stop the program when you close the window. Finally, set the window visibility to `true`.
 
 ```java
     //add code below this line
 
     JFrame window = new JFrame("Hello");
     window.setSize(300, 300);
+    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     window.setVisible(true);
 
     //add code above this line
@@ -40,57 +41,113 @@ Create a text label for your window. Be sure to add the label to the `window` ob
 
     JFrame window = new JFrame("Hello");
     window.setSize(300, 300);
-    window.setVisible(true);
     
     JLabel text = new JLabel("I am a label");
     window.add(text);
+
+    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    window.setVisible(true);
 
     //add code above this line
 ```
 
 Other options for text `Labels`:
-* Font - You can set the font family and size by creating a `Font` object. Use the `setFont` method to change the font for the label. The available fonts are DejaVuSerif, DejaVuSansMono, DejaVuSans. You can also set the font to `bold` as well. An example of the `font` option is: `font="DejaVuSeif 18 bold"`.
+* Font - You can set the font family and size by creating a `Font` object. The available fonts are `Monospaced`, `Serif`, `SansSerif`, `Dialog`, `DialogInput`. You can also set the font to `BOLD`, `ITALIC`, or `P:AIN` as well. Use the `setFont` method to change the font for the label.
 ```java
-
+    JLabel text = new JLabel("I am a label");
+    Font font = new Font("Serif", Font.BOLD, 24);
+    text.setFont(font);
+    window.add(text);
 ```
-* Justify - The `justify` option allows you to align text inside of a `Label`. The options are `"left"`, `"right"`, and `"center"`. An example of the `justify` option is: `justify="left"`.
-* Background Color - Use the `bg` option to set the background color. Colors can be done with either CSS or hex colors. An example of the `bg` option is: `bg="blue"`.
-* Text Color - Use the `fg` option (foreground) to set the color of the text. An example of the `fg` option is: `fg="red"`.
-* Wrap Length - Widgets set their size based on its contents. While this can be helpful, this can also make getting the perfect layout difficult at times. The `wraplength` option tells `Tkinter` when to continue the text on the next line. This keeps the label widget from becoming too wide for your desired layout.
+* Justify - You can justify text in a label when creating a `JLabel` object. The three options are `LEFT`, `CENTER`, and `RIGHT`.
+```java
+    JLabel text = new JLabel("I am a label", JLabel.CENTER);
+```
+* Background Color - Before you can set the background color of a label, you must first make the background opaque. Then you can select a color. Here is a [list of colors](https://docs.oracle.com/javase/7/docs/api/java/awt/Color.html) you can use.
+```java
+    text.setOpaque(true);
+    text.setBackground(Color.blue);
+```
+* Text Color - The `setForeground` method is used to set the color of a label's text. Use the same colors in the link above.
+```java
+    text.setForeground(Color.red);
+```
+
+{Try it}(bash .guides/swing.sh javac code/introObjects/IntroSwing.java java -cp code/introObjects/ IntroSwing 2)
 
 ### Grid System
 
-Adding widgets to the window is a two-step process. First define the widget, then place it in the window using the grid system. The grid system works by positioning widgets with a row and column number. Rows and columns start counting with 0. The sizes of rows and columns is dependent upon the size of the widget. Here is how to place the `my_label` widget in the top-left corner.
+Adding elements to the window is a two-step process. First define the element, then place it in the window using the grid system. Use the `setLayout` method to make a grid. The `Grid` object takes two arguments, the number of rows and the number of columns. The order in which you add the labels to `window` determines the position. Java places the elements from left to right and top to bottom.
 
-```python
-my_label.grid(row=0, column=0)
+```java
+    //add code below this line
+
+    JFrame window = new JFrame("Hello");
+    window.setSize(300, 300);
+    window.setLayout(new GridLayout(2, 2));
+    
+    JLabel text1 = new JLabel("One", JLabel.CENTER);
+    JLabel text2 = new JLabel("Two", JLabel.CENTER);
+    JLabel text3 = new JLabel("Three", JLabel.CENTER);
+    JLabel text4 = new JLabel("Four", JLabel.CENTER);
+    
+    window.add(text1);
+    window.add(text2);
+    window.add(text3);
+    window.add(text4);
+
+    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    window.setVisible(true);
+
+    //add code above this line
 ```
 
-{try it}(bash .guides/bg.sh python3 code/intro_objects/lab2.py 3)
+{Try it}(bash .guides/swing.sh javac code/introObjects/IntroSwing.java java -cp code/introObjects/ IntroSwing 3)
 
-The grid system can be a bit difficult to use. For instance, if you want to put a single label in location `row=1, column=1`, the label will appear in the top-left corner. Positioning is relative to other widgets.
+|||challenge
+## Try this variation:
+Change the order in which the text labels are added to the window.
+```java
+    window.add(text4);
+    window.add(text2);
+    window.add(text1);
+    window.add(text3);
+```
+
+|||
+
+{Try it}(bash .guides/swing.sh javac code/introObjects/IntroSwing.java java -cp code/introObjects/ IntroSwing 4)
 
 ### Image Label
 
 Using an image in a label is also a two-step process. First create an image object for `Tkinter`, then attach the image to the label by replacing the `text` option with `image`. You still need to use `grid` to place the image in the window.
 
-```python
-feather_image = tkinter.PhotoImage(file="student_folder/img/feather.png")
-image_label = tkinter.Label(window, image=feather_image)
-image_label.grid(row=1, column=1)
+```java
+    //add code below this line
+
+    JFrame window = new JFrame("Hello");
+    window.setSize(300, 300);
+    
+    ImageIcon feather = new ImageIcon("studentFolder/feather.png");
+    JLabel image = new JLabel(feather);
+    window.add(image);
+
+    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    window.setVisible(true);
+
+    //add code above this line
 ```
 
-{try it}(bash .guides/bg.sh python3 code/intro_objects/lab2.py 4)
+{Try it}(bash .guides/swing.sh javac code/introObjects/IntroSwing.java java -cp code/introObjects/ IntroSwing 5)
 
 |||challenge
-## Explore `Tkinter`
+## Explore `Swing`
 * Try out various fonts and font sizes
+* Experiment with different colors
 * Position labels around the window with the grid system
-* Create other image objects (`tkinter.PhotoImage`) and add more images to the window
 
 |||
 
-{try it}(bash .guides/bg.sh python3 code/intro_objects/lab2.py 5)
+{Try it}(bash .guides/swing.sh javac code/introObjects/IntroSwing.java java -cp code/introObjects/ IntroSwing 6)
 
-
-{Try it}(bash .guides/swing.sh javac code/introObjects/IntroSwing.java java -cp code/introObjects/ IntroSwing 1)
+{Check It!|assessment}(multiple-choice-568683216)
