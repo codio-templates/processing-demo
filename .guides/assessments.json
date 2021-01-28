@@ -907,7 +907,7 @@
    "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
-   "guidance": "Here is one possible answer:\n\n```java\n\n```",
+   "guidance": "Here is one possible answer:\n\n```java\n//add class definitions below this line\n    \nclass Dog {\n  String name;\n  String breed;\n  \n  public Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n  \n  Dog(Dog d) {\n    name = d.name;\n    breed = d.breed;\n  }\n}\n  \n//add class definitions above this line\n\npublic class LabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n\n\n    //add code above this line\n  }\n}\n```\n\nTo create a deep copy, you need to use a copy constructor. Create a constructor like before, but pass another `Dog` object as the only parameter. Set the object attributes to that of the parameter using dot notation.",
    "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,

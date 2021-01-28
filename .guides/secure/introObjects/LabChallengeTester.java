@@ -1,11 +1,18 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
+import org.junit.Before;
 
 public class LabChallengeTester {
-  Dog dog1 = new Dog("Marceline", "German Shepherd");
-  Dog dog2 = new Dog(dog1);
-//   dog2.name = "Cajun";
-//   dog2.breed = "Belgian Malinois";
+  Dog dog1;
+  Dog dog2;
+  
+  @Before
+  public void setup() {
+    dog1 = new Dog("Marceline", "German Shepherd");
+    dog2 = new Dog(dog1);
+    dog2.name = "Cajun";
+    dog2.breed = "Belgian Malinois";
+  }
   
   @Test
   public void checkName() {
