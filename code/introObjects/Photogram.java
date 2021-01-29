@@ -57,12 +57,101 @@ public class Photogram {
                           commentButton, likes, caption,
                           comments, likeButton);
 
+    // create components
+    GridBagConstraints gbc = new GridBagConstraints();
+    gbc.weightx = 1;
+    gbc.weighty = 1;
+    gbc.fill = GridBagConstraints.BOTH;
+    
+    GridBagLayout gbl = new GridBagLayout();
+    
     JFrame window = new JFrame("Photogram");
     window.setSize(800, 500);
+    window.setLayout(gbl);
+    
+    gbc.gridx = 0;
+    gbc.gridy = 0;
+    gbc.gridwidth = 5;
+    gbc.gridheight = 1;
+    JLabel image = makeImage(post1);
+    gbl.setConstraints(image, gbc);
+    window.add(image);
+    
+    gbc.gridx = 1;
+    gbc.gridy = 0;
+    gbc.gridwidth = 1;
+    gbc.gridheight = 1;
+    JLabel avatarIcon = makeAvatar(post1);
+    gbl.setConstraints(avatarIcon, gbc);
+    window.add(avatarIcon);
+    
+    gbc.gridx = 2;
+    gbc.gridy = 0;
+    gbc.gridwidth = 2;
+    gbc.gridheight = 1;
+    JLabel usernameLabel = makeUserName(post1);
+    gbl.setConstraints(usernameLabel, gbc);
+    window.add(usernameLabel);
+    
+    gbc.gridx = 1;
+    gbc.gridy = 1;
+    gbc.gridwidth = 3;
+    gbc.gridheight = 1;
+    JLabel captionLabel = makeCaption(post1);
+    gbl.setConstraints(captionLabel, gbc);
+    window.add(captionLabel);
+    
+    gbc.gridx = 1;
+    gbc.gridy = 2;
+    gbc.gridwidth = 3;
+    gbc.gridheight = 1;
+    JLabel commentButtonLabel = makeCommentButton(post1);
+    gbl.setConstraints(commentButtonLabel, gbc);
+    window.add(commentButtonLabel);
     
     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    window.setVisible(true); //this should be your last line of code
+    window.setVisible(true);
 
     //add code above this line
   }
+  
+  //add method definitions below this line
+  
+  public static JLabel makeImage(Post post) {
+    ImageIcon image = new ImageIcon(post.media);
+    JLabel imageLabel = new JLabel(image);
+    
+    return imageLabel;
+  }
+  
+  public static JLabel makeAvatar(Post post) {
+    ImageIcon avatarIcon = new ImageIcon(post.avatar);
+    JLabel avatarLabel = new JLabel(avatarIcon);
+        
+    return avatarLabel;
+  }
+  
+  public static JLabel makeUserName(Post post) {
+    JLabel usernameLabel = new JLabel(post.username);
+    Font font = new Font("SanSerif", Font.BOLD, 24);
+    usernameLabel.setFont(font);
+    
+    return usernameLabel;
+  }
+  
+  public static JLabel makeCaption(Post post) {
+    JLabel captionLabel = new JLabel(post.caption);
+    
+    return captionLabel;
+  }
+  
+  public static JLabel makeCommentButton(Post post) {
+    ImageIcon commentIcon = new ImageIcon(post.commentButton);
+    JLabel commentIconLabel = new JLabel(commentIcon);
+    
+    return commentIconLabel;
+  }
+  
+  
+  //add method definitions above this line
 }

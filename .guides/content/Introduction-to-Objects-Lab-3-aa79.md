@@ -69,4 +69,4 @@ image.grid(
 
 There are a couple of things that were not covered in Lab 2. First, `rowspan=10` means that the main photo is going to span across ten rows. If you did not do this, row 1 would start below the main photo. In the layout image above, there is nothing below the main photo. `stick="W"` makes the main photo "sticky" to the "west" (left). If the `Tkinter` window were to be resized, the main photo would always remain to the far left.
 
-{try it}(bash .guides/bg.sh python3 code/intro_objects/lab.py 2)
+{Try it}(bash .guides/swing.sh javac code/introObjects/Photogram.java java -cp code/introObjects/ Photogram 2)
