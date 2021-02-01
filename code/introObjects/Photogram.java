@@ -59,9 +59,9 @@ public class Photogram {
 
     // create components
     GridBagConstraints gbc = new GridBagConstraints();
-    gbc.weightx = 1;
-    gbc.weighty = 1;
-    gbc.fill = GridBagConstraints.BOTH;
+//     gbc.weightx = 1;
+//     gbc.weighty = 1;
+//     gbc.fill = GridBagConstraints.BOTH;
     
     GridBagLayout gbl = new GridBagLayout();
     
@@ -71,43 +71,89 @@ public class Photogram {
     
     gbc.gridx = 0;
     gbc.gridy = 0;
-    gbc.gridwidth = 5;
-    gbc.gridheight = 1;
+//     gbc.gridwidth = 5;
+//     gbc.gridheight = 8;
+    gbc.anchor = GridBagConstraints.NORTHWEST;
     JLabel image = makeImage(post1);
+    image.setOpaque(true);
+    image.setBackground(Color.blue);
     gbl.setConstraints(image, gbc);
     window.add(image);
     
     gbc.gridx = 1;
     gbc.gridy = 0;
-    gbc.gridwidth = 1;
-    gbc.gridheight = 1;
+//     gbc.gridwidth = 1;
+//     gbc.gridheight = 1;
+    gbc.anchor = GridBagConstraints.NORTH;
     JLabel avatarIcon = makeAvatar(post1);
+    avatarIcon.setOpaque(true);
+    avatarIcon.setBackground(Color.red);
     gbl.setConstraints(avatarIcon, gbc);
     window.add(avatarIcon);
     
     gbc.gridx = 2;
     gbc.gridy = 0;
-    gbc.gridwidth = 2;
-    gbc.gridheight = 1;
+//     gbc.gridwidth = 2;
+//     gbc.gridheight = 1;
     JLabel usernameLabel = makeUserName(post1);
+    usernameLabel.setOpaque(true);
+    usernameLabel.setBackground(Color.orange);
     gbl.setConstraints(usernameLabel, gbc);
     window.add(usernameLabel);
     
     gbc.gridx = 1;
     gbc.gridy = 1;
-    gbc.gridwidth = 3;
-    gbc.gridheight = 1;
+//     gbc.gridwidth = 3;
+//     gbc.gridheight = 1;
     JLabel captionLabel = makeCaption(post1);
+    captionLabel.setOpaque(true);
+    captionLabel.setBackground(Color.green);
     gbl.setConstraints(captionLabel, gbc);
     window.add(captionLabel);
     
     gbc.gridx = 1;
     gbc.gridy = 2;
-    gbc.gridwidth = 3;
-    gbc.gridheight = 1;
+//     gbc.gridwidth = 3;
+//     gbc.gridheight = 1;
     JLabel commentButtonLabel = makeCommentButton(post1);
+    commentButtonLabel.setOpaque(true);
+    commentButtonLabel.setBackground(Color.yellow);
     gbl.setConstraints(commentButtonLabel, gbc);
     window.add(commentButtonLabel);
+    
+    JPanel commentPanel = new JPanel(new GridLayout(6, 1));
+    for (String comment : post1.comments) {
+      JLabel c = new JLabel(comment);
+      commentPanel.add(c);
+    }
+    gbc.gridx = 1;
+    gbc.gridy = 3;
+//     gbc.gridwidth = 3;
+//     gbc.gridheight = 4;
+    gbl.setConstraints(commentPanel, gbc);
+    commentPanel.setOpaque(true);
+    commentPanel.setBackground(Color.pink);
+    window.add(commentPanel);
+    
+    gbc.gridx = 1;
+    gbc.gridy = 4;
+    gbc.gridwidth = 1;
+    gbc.gridheight = 1;
+    JLabel likesIconLabel = makeLikesIcon(post1);
+    likesIconLabel.setOpaque(true);
+    likesIconLabel.setBackground(Color.cyan);
+    gbl.setConstraints(likesIconLabel, gbc);
+    window.add(likesIconLabel);
+    
+    gbc.gridx = 2;
+    gbc.gridy = 4;
+//     gbc.gridwidth = 2;
+//     gbc.gridheight = 1;
+    JLabel likesCountLabel = makeLikesCount(post1);
+    likesCountLabel.setOpaque(true);
+    likesCountLabel.setBackground(Color.white);
+    gbl.setConstraints(likesCountLabel, gbc);
+    window.add(likesCountLabel);
     
     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     window.setVisible(true);
@@ -116,6 +162,19 @@ public class Photogram {
   }
   
   //add method definitions below this line
+  
+  public static JLabel makeLikesCount(Post post) {
+    JLabel count = new JLabel(String.valueOf(post.likes));
+    
+    return count;
+  }
+  
+  public static JLabel makeLikesIcon(Post post) {
+    ImageIcon image = new ImageIcon(post.likeButton);
+    JLabel imageLabel = new JLabel(image);
+    
+    return imageLabel;
+  }
   
   public static JLabel makeImage(Post post) {
     ImageIcon image = new ImageIcon(post.media);
