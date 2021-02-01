@@ -59,102 +59,55 @@ public class Photogram {
 
     // create components
     GridBagConstraints gbc = new GridBagConstraints();
-//     gbc.weightx = 1;
-//     gbc.weighty = 1;
-//     gbc.fill = GridBagConstraints.BOTH;
+    gbc.fill = GridBagConstraints.NONE;
+    gbc.weightx = 1;
+    gbc.weighty = 1;
+    gbc.gridx = 0;
+    gbc.gridy = 0;
     
     GridBagLayout gbl = new GridBagLayout();
     
     JFrame window = new JFrame("Photogram");
-    window.setSize(800, 500);
-    window.setLayout(gbl);
+    JPanel info = new JPanel(gbl);
+    info.setPreferredSize(new Dimension(800, 500));
     
-    gbc.gridx = 0;
-    gbc.gridy = 0;
-//     gbc.gridwidth = 5;
-//     gbc.gridheight = 8;
-    gbc.anchor = GridBagConstraints.NORTHWEST;
-    JLabel image = makeImage(post1);
-    image.setOpaque(true);
-    image.setBackground(Color.blue);
-    gbl.setConstraints(image, gbc);
-    window.add(image);
+//     gbc = updateConstraints(gbc, 0, 0, 10, 10);
+    JLabel image = makeImage(post1.media);
+    info.add(image, gbc);
     
-    gbc.gridx = 1;
-    gbc.gridy = 0;
-//     gbc.gridwidth = 1;
-//     gbc.gridheight = 1;
-    gbc.anchor = GridBagConstraints.NORTH;
-    JLabel avatarIcon = makeAvatar(post1);
-    avatarIcon.setOpaque(true);
-    avatarIcon.setBackground(Color.red);
-    gbl.setConstraints(avatarIcon, gbc);
-    window.add(avatarIcon);
+//     gbc = updateConstraints(gbc, 1, 0, 1, 1);
+    JLabel avatarIcon = makeImage(post1.avatar);
+    info.add(avatarIcon, gbc);
     
-    gbc.gridx = 2;
-    gbc.gridy = 0;
-//     gbc.gridwidth = 2;
-//     gbc.gridheight = 1;
-    JLabel usernameLabel = makeUserName(post1);
-    usernameLabel.setOpaque(true);
-    usernameLabel.setBackground(Color.orange);
-    gbl.setConstraints(usernameLabel, gbc);
-    window.add(usernameLabel);
+//     gbc = updateConstraints(gbc, 2, 0, 5, 1);
+    JLabel usernameLabel = makeText(post1.username);
+    info.add(usernameLabel, gbc);
     
-    gbc.gridx = 1;
-    gbc.gridy = 1;
-//     gbc.gridwidth = 3;
-//     gbc.gridheight = 1;
-    JLabel captionLabel = makeCaption(post1);
-    captionLabel.setOpaque(true);
-    captionLabel.setBackground(Color.green);
-    gbl.setConstraints(captionLabel, gbc);
-    window.add(captionLabel);
+//     gbc = updateConstraints(gbc, 1, 1, 6, 1);
+    JLabel captionLabel = makeText(post1.caption);
+    info.add(captionLabel, gbc);
     
-    gbc.gridx = 1;
-    gbc.gridy = 2;
-//     gbc.gridwidth = 3;
-//     gbc.gridheight = 1;
-    JLabel commentButtonLabel = makeCommentButton(post1);
-    commentButtonLabel.setOpaque(true);
-    commentButtonLabel.setBackground(Color.yellow);
-    gbl.setConstraints(commentButtonLabel, gbc);
-    window.add(commentButtonLabel);
+//     gbc = updateConstraints(gbc, 1, 2, 6, 1);
+    JLabel commentButtonLabel = makeImage(post1.commentButton);
+    info.add(commentButtonLabel, gbc);
     
     JPanel commentPanel = new JPanel(new GridLayout(6, 1));
     for (String comment : post1.comments) {
-      JLabel c = new JLabel(comment);
-      commentPanel.add(c);
+      commentPanel.add(makeText(comment));
     }
-    gbc.gridx = 1;
-    gbc.gridy = 3;
-//     gbc.gridwidth = 3;
-//     gbc.gridheight = 4;
-    gbl.setConstraints(commentPanel, gbc);
-    commentPanel.setOpaque(true);
-    commentPanel.setBackground(Color.pink);
-    window.add(commentPanel);
+//     gbc = updateConstraints(gbc, 1, 3, 6, 6);
+    info.add(commentPanel, gbc);
     
-    gbc.gridx = 1;
-    gbc.gridy = 4;
-    gbc.gridwidth = 1;
-    gbc.gridheight = 1;
-    JLabel likesIconLabel = makeLikesIcon(post1);
-    likesIconLabel.setOpaque(true);
-    likesIconLabel.setBackground(Color.cyan);
-    gbl.setConstraints(likesIconLabel, gbc);
-    window.add(likesIconLabel);
+//     gbc = updateConstraints(gbc, 1, 4, 1, 1);
+    JLabel likesIconLabel = makeImage(post1.likeButton);
+    info.add(likesIconLabel, gbc);
     
-    gbc.gridx = 2;
-    gbc.gridy = 4;
-//     gbc.gridwidth = 2;
-//     gbc.gridheight = 1;
-    JLabel likesCountLabel = makeLikesCount(post1);
-    likesCountLabel.setOpaque(true);
-    likesCountLabel.setBackground(Color.white);
-    gbl.setConstraints(likesCountLabel, gbc);
-    window.add(likesCountLabel);
+//     gbc = updateConstraints(gbc, 2, 4, 5, 1);
+    JLabel likesCountLabel = makeLikes(post1.likes);
+    info.add(likesCountLabel, gbc);
     
+    window.add(info);
+    window.pack();
     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     window.setVisible(true);
 
@@ -163,54 +116,33 @@ public class Photogram {
   
   //add method definitions below this line
   
-  public static JLabel makeLikesCount(Post post) {
-    JLabel count = new JLabel(String.valueOf(post.likes));
+  public static GridBagConstraints updateConstraints(GridBagConstraints gbc, int x, int y, int width, int height) {
+    gbc.gridx = x;
+    gbc.gridy = y;
+    gbc.gridwidth = width;
+    gbc.gridheight = height;
     
-    return count;
+    return gbc;
   }
   
-  public static JLabel makeLikesIcon(Post post) {
-    ImageIcon image = new ImageIcon(post.likeButton);
+  public static JLabel makeText(String txt) {
+    JLabel text = new JLabel(txt);
+    
+    return text;
+  }
+  
+  public static JLabel makeLikes(int likeCounts) {
+    JLabel likes = new JLabel(String.valueOf(likeCounts));
+    
+    return likes;
+  }
+  
+  public static JLabel makeImage(String img) {
+    ImageIcon image = new ImageIcon(img);
     JLabel imageLabel = new JLabel(image);
     
     return imageLabel;
   }
-  
-  public static JLabel makeImage(Post post) {
-    ImageIcon image = new ImageIcon(post.media);
-    JLabel imageLabel = new JLabel(image);
-    
-    return imageLabel;
-  }
-  
-  public static JLabel makeAvatar(Post post) {
-    ImageIcon avatarIcon = new ImageIcon(post.avatar);
-    JLabel avatarLabel = new JLabel(avatarIcon);
-        
-    return avatarLabel;
-  }
-  
-  public static JLabel makeUserName(Post post) {
-    JLabel usernameLabel = new JLabel(post.username);
-    Font font = new Font("SanSerif", Font.BOLD, 24);
-    usernameLabel.setFont(font);
-    
-    return usernameLabel;
-  }
-  
-  public static JLabel makeCaption(Post post) {
-    JLabel captionLabel = new JLabel(post.caption);
-    
-    return captionLabel;
-  }
-  
-  public static JLabel makeCommentButton(Post post) {
-    ImageIcon commentIcon = new ImageIcon(post.commentButton);
-    JLabel commentIconLabel = new JLabel(commentIcon);
-    
-    return commentIconLabel;
-  }
-  
   
   //add method definitions above this line
 }
