@@ -57,92 +57,71 @@ public class Photogram {
                           commentButton, likes, caption,
                           comments, likeButton);
 
-    // create components
-    GridBagConstraints gbc = new GridBagConstraints();
-    gbc.fill = GridBagConstraints.NONE;
-    gbc.weightx = 1;
-    gbc.weighty = 1;
-    gbc.gridx = 0;
-    gbc.gridy = 0;
-    
-    GridBagLayout gbl = new GridBagLayout();
-    
+    // create window
     JFrame window = new JFrame("Photogram");
-    JPanel info = new JPanel(gbl);
-    info.setPreferredSize(new Dimension(800, 500));
+    window.setSize(1000, 500);
+    window.setLayout(new GridLayout(1, 2, 0, 10));
     
-//     gbc = updateConstraints(gbc, 0, 0, 10, 10);
-    JLabel image = makeImage(post1.media);
-    info.add(image, gbc);
+    // create panels
+    JPanel imagePanel = new JPanel();
+    JPanel infoPanel = new JPanel(new GridLayout(5, 1));
+    JPanel userPanel = new JPanel(new FlowLayout(3, 0, 5));
+    JPanel likesPanel = new JPanel(new FlowLayout(3, 0, 5));
+    JPanel commentPanel = new JPanel(new GridLayout(0, 1));
     
-//     gbc = updateConstraints(gbc, 1, 0, 1, 1);
-    JLabel avatarIcon = makeImage(post1.avatar);
-    info.add(avatarIcon, gbc);
+    // create waterfall image
+    ImageIcon image = new ImageIcon(post1.media);
+    JLabel imageLabel = new JLabel(image);
+    imagePanel.add(imageLabel);
     
-//     gbc = updateConstraints(gbc, 2, 0, 5, 1);
-    JLabel usernameLabel = makeText(post1.username);
-    info.add(usernameLabel, gbc);
+    // create avatar image
+    ImageIcon avatarImage = new ImageIcon(post1.avatar);
+    JLabel avatarIcon = new JLabel(avatarImage, JLabel.LEFT);
+//     avatarIcon.setPreferredSize(new Dimension(50, 50));
+    userPanel.add(avatarIcon);
     
-//     gbc = updateConstraints(gbc, 1, 1, 6, 1);
-    JLabel captionLabel = makeText(post1.caption);
-    info.add(captionLabel, gbc);
+    // create username text
+    JLabel usernameLabel = new JLabel(post1.username, JLabel.LEFT);
+//     usernameLabel.setPreferredSize(new Dimension(250, 50));
+    userPanel.add(usernameLabel);
+    infoPanel.add(userPanel);
     
-//     gbc = updateConstraints(gbc, 1, 2, 6, 1);
-    JLabel commentButtonLabel = makeImage(post1.commentButton);
-    info.add(commentButtonLabel, gbc);
+    // create caption text
+    JLabel captionLabel = new JLabel(post1.caption, JLabel.LEFT);
+//     captionLabel.setPreferredSize(new Dimension(300, 50));
+    infoPanel.add(captionLabel);
     
-    JPanel commentPanel = new JPanel(new GridLayout(6, 1));
+    // create "+" image
+    ImageIcon commentButtonImage = new ImageIcon(post1.commentButton);
+    JLabel commentButtonLabel = new JLabel(commentButtonImage);
+//     commentButtonLabel.setPreferredSize(new Dimension(300, 50));
+    infoPanel.add(commentButtonLabel);
+    
+    // create user comments
     for (String comment : post1.comments) {
-      commentPanel.add(makeText(comment));
+      commentPanel.add(new JLabel(comment, JLabel.LEFT));
     }
-//     gbc = updateConstraints(gbc, 1, 3, 6, 6);
-    info.add(commentPanel, gbc);
+//     commentPanel.setPreferredSize(new Dimension(300, 200));
+    infoPanel.add(commentPanel);
     
-//     gbc = updateConstraints(gbc, 1, 4, 1, 1);
-    JLabel likesIconLabel = makeImage(post1.likeButton);
-    info.add(likesIconLabel, gbc);
+    // create heart image
+    ImageIcon likesImage = new ImageIcon(post1.likeButton);
+    JLabel likesIconLabel = new JLabel(likesImage, JLabel.LEFT);
+//     likesIconLabel.setPreferredSize(new Dimension(50, 50));
+    likesPanel.add(likesIconLabel);
     
-//     gbc = updateConstraints(gbc, 2, 4, 5, 1);
-    JLabel likesCountLabel = makeLikes(post1.likes);
-    info.add(likesCountLabel, gbc);
+    // create number of likes
+    JLabel likesCountLabel = new JLabel(String.valueOf(post1.likes), JLabel.LEFT);
+//     likesCountLabel.setPreferredSize(new Dimension(250, 50));
+    likesPanel.add(likesCountLabel);
+    infoPanel.add(likesPanel);
     
-    window.add(info);
-    window.pack();
+    window.add(imagePanel);
+    window.add(infoPanel);
+//     window.pack();
     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     window.setVisible(true);
 
     //add code above this line
   }
-  
-  //add method definitions below this line
-  
-  public static GridBagConstraints updateConstraints(GridBagConstraints gbc, int x, int y, int width, int height) {
-    gbc.gridx = x;
-    gbc.gridy = y;
-    gbc.gridwidth = width;
-    gbc.gridheight = height;
-    
-    return gbc;
-  }
-  
-  public static JLabel makeText(String txt) {
-    JLabel text = new JLabel(txt);
-    
-    return text;
-  }
-  
-  public static JLabel makeLikes(int likeCounts) {
-    JLabel likes = new JLabel(String.valueOf(likeCounts));
-    
-    return likes;
-  }
-  
-  public static JLabel makeImage(String img) {
-    ImageIcon image = new ImageIcon(img);
-    JLabel imageLabel = new JLabel(image);
-    
-    return imageLabel;
-  }
-  
-  //add method definitions above this line
 }
