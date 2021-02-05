@@ -41,6 +41,6 @@ jobs:
         uses: codio/codio-course-book-update-action@master
         with:
           token: ${{ steps.codio-login.outputs.token }}
-          course-id: 5d2627e6b643887c072eea40
+          course-id: c8d39daf0c3847ef39ff5b7f55286cb9
           book-id: 61a5efce71eb25b4e2fa2f982c2c33bc
           domain: codio.com
