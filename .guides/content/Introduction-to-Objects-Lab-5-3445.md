@@ -46,7 +46,7 @@ The comments are stored in an ArrayList in the `comments` attribute of `post1`. 
 
 ### Add the Like Icon
 
-Like the avatar and the username, the like icon and the number of likes will be side-by-side. To do this, these components will first go into the `likesPanel`, which will then be added to the `infoPanel`. **Note**, you will not see the heart icon because the `li`
+Like the avatar and the username, the like icon and the number of likes will be side-by-side. To do this, these components will first go into the `likesPanel`, which will then be added to the `infoPanel`. **Note**, you will not see the heart icon because the `likesPanel` has not yet been added to the `infoPanel`.
 
 ```java
     // create user comments
@@ -66,7 +66,7 @@ Like the avatar and the username, the like icon and the number of likes will be 
 
 ### Add the Likes
 
-The attribute `likes` is an integer. In order to add this value to a `JLabel`, you need to convert it to a string with the `String.valueOf` method. Set the font to plain. Then add the label to `likesPanel` and the `likesPanel` to the `infoPanel`.. 
+The attribute `likes` is an integer. In order to add this value to a `JLabel`, you need to convert it to a string with the `String.valueOf` method. Set the font to plain. Then add the label to `likesPanel` and the `likesPanel` to the `infoPanel`.
 
 ```java
     // create heart image
@@ -232,7 +232,6 @@ Finally, we want the information in the `infoPanel` to be "pushed up" so it alig
     }
   }
   ```
-</detail
+</details>
   
 {Check It!|assessment}(multiple-choice-761353538)
-s>
