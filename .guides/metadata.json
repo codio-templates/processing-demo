@@ -278,9 +278,19 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/introObjects/Photogram.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Introduction-to-Objects-Lab-4-2983.md",
@@ -296,9 +306,19 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/introObjects/Photogram.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Introduction-to-Objects-Lab-5-3445.md",

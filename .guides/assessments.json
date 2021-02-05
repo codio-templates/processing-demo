@@ -944,5 +944,213 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT make a deep copy of an object"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-808538143",
+  "source": {
+   "name": "objects lab 3 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nThe following lines of code were used in this lab. Which line of code instantiated a `JFrame` object?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "d038e4b8-f284-2afe-436d-7d225c4ec6ae",
+     "correct": true,
+     "answer": "`JFrame window = new JFrame(\"Photogram\");`"
+    },
+    {
+     "_id": "fc173290-c6f5-1218-ba2b-46d9a0a349e8",
+     "correct": false,
+     "answer": "`window.setSize(800, 500);`"
+    },
+    {
+     "_id": "83729b25-8673-3f96-8263-65e94e3deb31",
+     "correct": false,
+     "answer": "`window.setLayout(new FlowLayout(3));`"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\nJFrame window = new JFrame(\"Photogram\");\n```\n\nJava uses the `new` keyword when instantiating objects.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Object Instantiation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     }
+    ],
+    "files": [
+     "code/introObjects/Photogram.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Photogram.java"
+     },
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify object instantiation"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-144652727",
+  "source": {
+   "name": "intro objects lab question 4",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blank below with the correct word.",
+   "showValues": true,
+   "text": "The <<<static>>> keyword is used to denote a class attribute.",
+   "distractors": "public\nnew\nprivate",
+   "guidance": "The `static` keyword is used to indicate a class attribute.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Class variables"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Photogram.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Photogram.java"
+     },
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify the keyword used to create class variables",
+   "tokens": {
+    "blank": [
+     "static"
+    ],
+    "text": [
+     "The ",
+     0,
+     " keyword is used to denote a class attribute."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-761353538",
+  "source": {
+   "name": "intro objects lab 5 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhat are instance variables?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "06c6f1fd-fadd-085a-75c8-7e452ec2dfb7",
+     "correct": true,
+     "answer": "Instance variables are variables created by the constructor. You can think of instance variables as the attributes of an object."
+    },
+    {
+     "_id": "7a4808e7-819b-efb8-9cc2-93916cd0895f",
+     "correct": false,
+     "answer": "There is no such thing as an instance variables in Java."
+    },
+    {
+     "_id": "bec2c405-c522-7b73-d914-1422918e05af",
+     "correct": false,
+     "answer": "Instance variable is another name for a global variable."
+    },
+    {
+     "_id": "1d89a56d-074c-de6f-23f5-88d5c4cc1797",
+     "correct": false,
+     "answer": "Instance variables are variables created inside methods."
+    }
+   ],
+   "guidance": "Instance variables are variables created by the constructor. You can think of instance variables as the attributes of an object. Instance variables often store the values passed to the constructor as parameters.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Variables"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Photogram.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Photogram.java"
+     },
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define instance variable"
+  }
  }
 ]
