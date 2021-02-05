@@ -1,0 +1,1156 @@
+[
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3985050060",
+  "source": {
+   "name": "reading question built-in objects",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "A <<<class>>> is the blueprint used to create object.\nAn <<<object>>> a version of a class used by programmers.\nAn object is said to be an <<<instance>>> of a class.\n<<<Instantiation>>> is when an object is created from a class.",
+   "distractors": "",
+   "guidance": "A class is the blueprint used to create object.\nAn object a version of a class used by programmers.\nAn object is said to be an instance of a class.\nInstantiation is when an object is created from a class.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Vocabulary"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes"
+     }
+    ],
+    "files": [
+     "code/introObjects/BuiltIn.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/BuiltIn.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT define class, object, instance, and instantiation",
+   "tokens": {
+    "blank": [
+     "class",
+     "object",
+     "instance",
+     "Instantiation"
+    ],
+    "text": [
+     "A ",
+     0,
+     " is the blueprint used to create object.\nAn ",
+     0,
+     " a version of a class used by programmers.\nAn object is said to be an ",
+     0,
+     " of a class.\n",
+     0,
+     " is when an object is created from a class."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2424555517",
+  "source": {
+   "name": "reading question user-define objects",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\npublic class Pitcher {\n    double era;\n}\n```\n\nSelect the code snippet below that instantiates an object of type `Pitcher` and sets the `era` attribute to 2.93.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "6f82b656-dd40-4f8e-0ed3-54e569ec19dc",
+     "correct": true,
+     "answer": "Pitcher pedro = new Pitcher();\npedro.era = 2.93;"
+    },
+    {
+     "_id": "ae1d8ae0-4f72-a2ed-bc01-072df372c465",
+     "correct": false,
+     "answer": "Pitcher pedro = Pitcher();\npedro.era = 2.93;"
+    },
+    {
+     "_id": "d2cb4503-1c6c-a242-858c-21cf602a2902",
+     "correct": false,
+     "answer": "Pitcher pedro = new Pitcher();\nera = 2.93;"
+    },
+    {
+     "_id": "7c6342b5-1b89-ddc0-89a0-a1fe468b5c3f",
+     "correct": false,
+     "answer": "pedro = new Pitcher();\npedro.era = 2.93;"
+    }
+   ],
+   "guidance": "When instantiating an object, you start by giving the object a type. In this case, the type is `Pitcher`. Give the object a name followed by the assignment operator. Use the `new` keyword and the class name to create a new object of type `Pitcher`.\n\n```java\nPitcher pedro = new Pitcher();\n```\n\nTo access a class attribute, use dot notation. That means using the object's name (`pedro`) followed by a `.`, and the use the name of the attribute. Assign the value `2.93` to the attribute like you would a variable.\n\n```java\npedro.era = 2.93;\n```",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "User-Defined Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/UserDefined.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/UserDefined.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify how to instantiate an object and modify an attribute"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2364413442",
+  "source": {
+   "name": "the constructor reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhich code snippet below would be the constructor for the `Dog` class?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "8f697b72-01f0-9016-b2ea-b9641ec53d5d",
+     "correct": true,
+     "answer": "`public Dog()`"
+    },
+    {
+     "_id": "561aa89c-be55-eb26-a2c5-10596bc16443",
+     "correct": false,
+     "answer": "`public class Dog`"
+    },
+    {
+     "_id": "e1b0f7f3-a211-6d68-4169-38d14fa72c84",
+     "correct": false,
+     "answer": "`public dog()`"
+    },
+    {
+     "_id": "60928bc6-45f7-e2cb-968b-20d8340f9274",
+     "correct": false,
+     "answer": "`constructor`"
+    }
+   ],
+   "guidance": "In Java, the constructor uses the `public` keyword followed by the name of the class and a set of parentheses. Since the class is `Dog`, the constructor would be:\n\n```java\npublic Dog()\n```\n\nThe constructor does not use the keyword `class`. In addition, the spelling of the constructor must match that of the class. Since the class starts with a `D`, so must the constructor.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Object Constructors"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Constructor.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Constructor.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify the constructor"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3801306128",
+  "source": {
+   "name": "constructor and parameters reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following object instantiation:\n\n```java\nPerson p = new Person(18, \"Dallas\");\n```\n\nWhich code snippet below represents the constructor needed for this instantiation?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "f998fa0b-63a0-3e7d-57f2-f2af4d56b15e",
+     "correct": true,
+     "answer": "`public Person(int age, String homeTown)`"
+    },
+    {
+     "_id": "33db92a7-565b-07a6-0280-95e5e5a133e8",
+     "correct": false,
+     "answer": "`public Person(age, homeTown)`"
+    },
+    {
+     "_id": "54ea49a0-8f92-da37-e4d5-ebcdfd4f7c04",
+     "correct": false,
+     "answer": "`public Person(String homeTown, int age)`"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\npublic Person(int age, String homeTown)\n```\n\nEach parameter for the constructor requires a type. In addition, the order of the parameters is important. Since the object instantiation had `18` before `\"Dallas\"`, the constructor must do the same.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Constructor and Parameters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/ConstructorParameters.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/ConstructorParameters.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify the constructor based on object instatiation"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-359646314",
+  "source": {
+   "name": "reading question class attributes",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "A <<<class>>> attribute is an attribute whose value is shared by all instances of a class.\nAn <<<object>>> attribute is an attribute whose value is independent of other instances of a class.",
+   "distractors": "variable\nconstant",
+   "guidance": "A class attribute is an attribute whose value is shared by all instances of a class.\nAn object attribute is an attribute whose value is independent of other instances of a class.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Class Attributes"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/ClassAttributes.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/ClassAttributes.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between a class attribute and an object attribute",
+   "tokens": {
+    "blank": [
+     "class",
+     "object"
+    ],
+    "text": [
+     "A ",
+     0,
+     " attribute is an attribute whose value is shared by all instances of a class.\nAn ",
+     0,
+     " attribute is an attribute whose value is independent of other instances of a class."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2232783722",
+  "source": {
+   "name": "reading question shallow vs deep copy",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "A <<<deep>>> copy is when Java makes a copy of the object and its attributes.\nA <<<shallow>>> copy is when Java makes a copy of the object, but the attributes are shared.",
+   "distractors": "small\nmedium\nfake",
+   "guidance": "A deep copy is when Java makes a copy of the object and its attributes.\nA shallow copy is when Java makes a copy of the object, but the attributes are shared.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Shallow and Deep Copying"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Copies.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Copies.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between shallow and deep copies",
+   "tokens": {
+    "blank": [
+     "deep",
+     "shallow"
+    ],
+    "text": [
+     "A ",
+     0,
+     " copy is when Java makes a copy of the object and its attributes.\nA ",
+     0,
+     " copy is when Java makes a copy of the object, but the attributes are shared."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-2431160952",
+  "source": {
+   "name": "introduction to objects formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nDog fido = new Dog();\nfido.breed = \"poodle\";\n```\n\nRearrange the code blocks below to declare the `Dog` class that corresponds to the code above. **Note**, not all of the code blocks will be used.",
+   "initial": "class Dog {\n  String breed;\n}\nString breed = &quot;poodle&quot;; #distractor\npublic Dog(String breed) { #distractor\nclass dog #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\nclass Dog {\n  String breed;\n}\n```\n\n* In the given code, no arguments were passed to `Dog` when `fido` was instantiated. There should be no constructor.\n* The given code set the value for `breed`, so `breed` should not be given a default value when initialized.\n* In the given code, the `Dog` class uses a capital `D`, so should the class definition.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Declare a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT declare a class"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1338030279",
+  "source": {
+   "name": "introduction to objects formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nSelect **all** of the statements that are true about shallow and deep copies.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "7776806d-f482-fb51-e22a-5f17da2b1168",
+     "correct": true,
+     "answer": "You need to use the copy constructor to make a deep copy"
+    },
+    {
+     "_id": "b0b7e9f9-e246-5fdf-3639-a111c948c8d3",
+     "correct": true,
+     "answer": "Shallow copies only copy the object but not the object attributes"
+    },
+    {
+     "_id": "4c57c90c-c40c-e28a-bfa8-0a483a5f4ef6",
+     "correct": true,
+     "answer": "Deep copies make a copy of the object and the object attributes"
+    },
+    {
+     "_id": "6fbcbda6-0a7f-f1ea-0be5-84c43dce2904",
+     "correct": true,
+     "answer": "Changing an attribute of one shallow copy will affect the attribute of the other shallow copy"
+    }
+   ],
+   "guidance": "All of the statements are true. \n* The copy constructor is used to make a deep copy. \n* Shallow copies only make a copy of the object, but not of the attributes.\n* Deep copes make a copy of the object and the attributes.\n* Changing an attribute of one shallow copy will affect the attribute of the other shallow copy.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Shallow and Deep Copying"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT differentiate between shallow and deep copies"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3286085930",
+  "source": {
+   "name": "introduction to objects coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code when ready.",
+   "command": "python .guides/secure/introObjects/exercise1_test.py",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 40,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass PracticeClass {\n  String date;\n}\n  \n//add class definitions above this line\n\npublic class Exercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the class `PracticeClass`. Then create the object attribute `date` of type `String`. ",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Creating Classes"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class without a constructor"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1000868489",
+  "source": {
+   "name": "introduction to objects exercise 2",
+   "showName": false,
+   "instructions": "Submit your code when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Cat {\n  String breed;\n  String color;\n  String name;\n  \n  public Cat() {\n    breed = \"american shorthair\";\n    color = \"black\";\n    name = \"kiwi\";\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the class `Cat`, then instantiate the string variables, `breed`, `color`, and `name`. Then create the constructor, but do not pass any parameters to it. Finally, set the values of the object attributes to be `\"american shorthair\"`, `\"black\"`, and `\"kiwi\"` respectively.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Constructors"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with a constructor"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-743280736",
+  "source": {
+   "name": "introduction to objects coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your work when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":false,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": false,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Superhero {\n  String name;\n  String secretIdentity;\n  String[] powers;\n  \n  public Superhero(String n, String s, String[] p) {\n    name = n;\n    secretIdentity = s;\n    powers = p;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n\n\n    //add code above this line\n  }\n}\n```\n\nStart by declaring the `Superhero` class. The constructor should include parameters that represent `name`, `secretIdentity`, and`powers`. Be sure to keep the parameters in this order; otherwise your code will not pass the automated tests. Set the value of each attribute to its matching parameter. ",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Constructors with parameters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with a constructor and parameters"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2663969036",
+  "source": {
+   "name": "introduction to objects coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your work when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Observation {\n  String date;\n  double temperature;\n  double elevation;\n  int penguins;\n  double precipitation;\n  \n  public Observation(String d, double t, double e, int p) {\n    date = d;\n    temperature = t;\n    elevation = e;\n    penguins = p;\n    precipitation = 0;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nDeclare the object attributes as instructed by the prompt. Create a constructor with parameters in the order of `date`, `temperature`, `elevation`, and `penguins`. The `precipitation` attribute has a default value, so it does not need to be a parameter of the constructor. Set the value of each attribute to the corresponding parameter. Finally, set the value of `precipitation` to `0`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with a construction, parameters, and a default value"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3142794422",
+  "source": {
+   "name": "introduction to objects coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your work when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass BigCat {\n  String species;\n  String commonName;\n  String[] habitat;\n  static String genus = \"panthera\";\n  \n  public BigCat(String s, String c, String[] h) {\n    species = s;\n    commonName = c;\n    habitat = h;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the `species`, `commonName` and `habitat` object attributes as instructed by the prompt. The `genus` attribute needs to be a class attribute. That is why the `static` keyword is used. Notice, `genus` is **not** all caps, so do not use the `final` keyword with this attribute. Finally, set the values of the object attributes with the constructor.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Class Attribute"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Exercise5.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Exercise5.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT declare a class attribute with the static keyword"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3387365333",
+  "source": {
+   "name": "introduction to objects lab 1",
+   "showName": false,
+   "instructions": "## Lab Question\n\nLook at the `Car` class definition below. How many parameters are used when creating an instance of the `Car` class?\n\n```java\nclass Car {\n  String make;\n  String model;\n  int year;\n  String color;\n\n  public Car(String ma, String mo, int y) {\n    make = ma;\n    model = mo;\n    year = y;\n    color = \"black\";\n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "b053e919-b6f0-341c-c44a-569bfa6a2215",
+     "correct": true,
+     "answer": "3"
+    },
+    {
+     "_id": "d04a4598-5772-9dc1-b5ad-f854ae16161a",
+     "correct": false,
+     "answer": "2"
+    },
+    {
+     "_id": "0f7dad32-284f-c972-58ed-3b236633450f",
+     "correct": false,
+     "answer": "4"
+    },
+    {
+     "_id": "d4147a78-2f3b-4f8d-aabc-3e937d989a50",
+     "correct": false,
+     "answer": "5"
+    }
+   ],
+   "guidance": "While there are four object attributes, only three values (`ma`, `mo`, and `y`) are passed as parameters to the constructor. The `color` attribute gets a default value of `\"black\"`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/LabIntro.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/LabIntro.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify parameters passed to the constructor"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-568683216",
+  "source": {
+   "name": "intro objects lab 2 question ",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhat does \"instantiate an object\" mean?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "bd848a24-269a-3ed8-f921-748a8fb19613",
+     "correct": true,
+     "answer": "Instantiating an object means to create an object based on a class."
+    },
+    {
+     "_id": "0a65779c-a6de-6a26-f65b-226cb61f1eb4",
+     "correct": false,
+     "answer": "Instantiating an object means to create a class."
+    },
+    {
+     "_id": "b4cd6157-2325-878e-09df-3f886a8d5df8",
+     "correct": false,
+     "answer": "Instantiating an object means to declare a variable."
+    },
+    {
+     "_id": "4fd07915-4642-b61f-7247-f20edac42adb",
+     "correct": false,
+     "answer": "Instantiating an object means to make a copy of another object."
+    }
+   ],
+   "guidance": "Instantiating an object means to create an object based on a class. The class is the blueprint from which objects are made. The act of creating an object based on the class blueprint is called instantiation.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Class instantiation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "C++, Python, Java, JavaScript"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/IntroSwing.java"
+    ],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/IntroSwing.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define object instantiation"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3706534948",
+  "source": {
+   "name": "introduction to objects lab challenge",
+   "showName": false,
+   "instructions": "Submit your code when ready.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/introObjects/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/introObjects\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible answer:\n\n```java\n//add class definitions below this line\n    \nclass Dog {\n  String name;\n  String breed;\n  \n  public Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n  \n  Dog(Dog d) {\n    name = d.name;\n    breed = d.breed;\n  }\n}\n  \n//add class definitions above this line\n\npublic class LabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n\n\n    //add code above this line\n  }\n}\n```\n\nTo create a deep copy, you need to use a copy constructor. Create a constructor like before, but pass another `Dog` object as the only parameter. Set the object attributes to that of the parameter using dot notation.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Shallow and Deep Copying"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT make a deep copy of an object"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-808538143",
+  "source": {
+   "name": "objects lab 3 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nThe following lines of code were used in this lab. Which line of code instantiated a `JFrame` object?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "d038e4b8-f284-2afe-436d-7d225c4ec6ae",
+     "correct": true,
+     "answer": "`JFrame window = new JFrame(\"Photogram\");`"
+    },
+    {
+     "_id": "fc173290-c6f5-1218-ba2b-46d9a0a349e8",
+     "correct": false,
+     "answer": "`window.setSize(800, 500);`"
+    },
+    {
+     "_id": "83729b25-8673-3f96-8263-65e94e3deb31",
+     "correct": false,
+     "answer": "`window.setLayout(new FlowLayout(3));`"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\nJFrame window = new JFrame(\"Photogram\");\n```\n\nJava uses the `new` keyword when instantiating objects.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Object Instantiation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     }
+    ],
+    "files": [
+     "code/introObjects/Photogram.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Photogram.java"
+     },
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify object instantiation"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-144652727",
+  "source": {
+   "name": "intro objects lab question 4",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blank below with the correct word.",
+   "showValues": true,
+   "text": "The <<<static>>> keyword is used to denote a class attribute.",
+   "distractors": "public\nnew\nprivate",
+   "guidance": "The `static` keyword is used to indicate a class attribute.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Class variables"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Photogram.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Photogram.java"
+     },
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify the keyword used to create class variables",
+   "tokens": {
+    "blank": [
+     "static"
+    ],
+    "text": [
+     "The ",
+     0,
+     " keyword is used to denote a class attribute."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-761353538",
+  "source": {
+   "name": "intro objects lab 5 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhat are instance variables?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "06c6f1fd-fadd-085a-75c8-7e452ec2dfb7",
+     "correct": true,
+     "answer": "Instance variables are variables created by the constructor. You can think of instance variables as the attributes of an object."
+    },
+    {
+     "_id": "7a4808e7-819b-efb8-9cc2-93916cd0895f",
+     "correct": false,
+     "answer": "There is no such thing as an instance variables in Java."
+    },
+    {
+     "_id": "bec2c405-c522-7b73-d914-1422918e05af",
+     "correct": false,
+     "answer": "Instance variable is another name for a global variable."
+    },
+    {
+     "_id": "1d89a56d-074c-de6f-23f5-88d5c4cc1797",
+     "correct": false,
+     "answer": "Instance variables are variables created inside methods."
+    }
+   ],
+   "guidance": "Instance variables are variables created by the constructor. You can think of instance variables as the attributes of an object. Instance variables often store the values passed to the constructor as parameters.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Variables"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/introObjects/Photogram.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/introObjects/Photogram.java"
+     },
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define instance variable"
+  }
+ }
+]
