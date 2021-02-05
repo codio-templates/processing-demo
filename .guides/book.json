@@ -2,16 +2,159 @@
  "name": "CS: Objects in Java",
  "children": [
   {
-   "title": "Page 1",
-   "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
-   "pageId": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
-   "type": "page"
-  },
-  {
-   "title": "Page 2",
-   "id": "d6fcd98f-119e-c839-d72f-b4779da0949d",
-   "pageId": "d6fcd98f-119e-c839-d72f-b4779da0949d",
-   "type": "page"
+   "title": "Introduction to Objects",
+   "id": "a531c20b-99b2-def5-15a0-ef8b7c59b1b5",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Classes and Objects",
+     "id": "c09c2d7d-c23f-5e78-2bb0-04536477caf4",
+     "type": "section",
+     "children": [
+      {
+       "title": "Learning Objectives - Classes and Objects",
+       "id": "d6fcd98f-119e-c839-d72f-b4779da0949d",
+       "type": "page",
+       "pageId": "d6fcd98f-119e-c839-d72f-b4779da0949d"
+      },
+      {
+       "title": "Built-In Objects",
+       "id": "c3205a89-1a02-3419-dd10-5e1ac8d895f9",
+       "type": "page",
+       "pageId": "c3205a89-1a02-3419-dd10-5e1ac8d895f9"
+      },
+      {
+       "id": "17da65e2-6274-e443-335e-464088df0a09",
+       "title": "User-Defined Objects",
+       "pageId": "c0bba709-0965-b81a-a81e-617be3908bab",
+       "type": "page"
+      },
+      {
+       "id": "2c3226e9-c171-de12-b859-4524686af8e7",
+       "title": "The Constructor",
+       "pageId": "cfea311f-8f3d-1648-1cd8-d82d66482d58",
+       "type": "page"
+      },
+      {
+       "id": "3a7c7a44-6d28-5071-8b5d-518eb13ce3ca",
+       "title": "The Constructor and Parameters",
+       "pageId": "4fc9d4a6-87ab-a134-1681-cee7eb351af4",
+       "type": "page"
+      },
+      {
+       "id": "4a61f06f-d11b-c916-d3e1-b140f06eeca8",
+       "title": "Class Attributes",
+       "pageId": "f138d049-a02a-92c3-ace9-b10988db90e4",
+       "type": "page"
+      },
+      {
+       "id": "f1f05f49-788e-f867-3502-817e3dbee266",
+       "title": "Shallow and Deep Copies",
+       "pageId": "827fa6b6-5794-d882-5f93-32b2a2aaaec9",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Formative Assessment - Introduction to Objects",
+     "id": "da237d12-93dd-2a26-333c-79be75de4592",
+     "type": "section",
+     "children": [
+      {
+       "id": "39687656-dae2-b51d-53cd-a4d223288d68",
+       "title": "Introduction to Objects Formative Assessment 1",
+       "pageId": "b2f7f1cc-bdb3-9b17-156b-2468483dcdd6",
+       "type": "page"
+      },
+      {
+       "id": "245c9fcd-a3b8-aba1-7a8e-a62f5e98b482",
+       "title": "Introduction to Objects Formative Assessment 2",
+       "pageId": "85b0970a-e31b-a8a3-3d1d-92671525b55f",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Lab - Introduction to Objects",
+     "id": "1313818b-6de6-59f1-c06f-6a7c0655cf1e",
+     "type": "section",
+     "children": [
+      {
+       "id": "49911e1e-2b8a-d7e0-8975-3fb50431f7ff",
+       "title": "Introduction to Objects Lab 1",
+       "pageId": "5d70b356-b7a5-5cbf-6568-7911b73968bc",
+       "type": "page"
+      },
+      {
+       "id": "7e962c07-d9f4-0fb1-5e4c-79de08e0aabd",
+       "title": "Introduction to Objects Lab 2",
+       "pageId": "6257cfeb-ea77-7ed9-60eb-4c071fcfa2f8",
+       "type": "page"
+      },
+      {
+       "id": "feb2a151-2d89-6cfd-4597-37cb9852afbc",
+       "title": "Introduction to Objects Lab 3",
+       "pageId": "aa79a82e-f760-e4ea-8297-9d20634c8a6c",
+       "type": "page"
+      },
+      {
+       "id": "af24e7bb-67eb-2f65-4d3d-5292f847064c",
+       "title": "Introduction to Objects Lab 4",
+       "pageId": "2983198c-1e4d-d021-a162-f9c1ca11d660",
+       "type": "page"
+      },
+      {
+       "id": "a6ddc1dc-63e6-3cc5-a277-8064a2ef871f",
+       "title": "Introduction to Objects Lab 5",
+       "pageId": "34453bee-b502-af9e-97dd-9967be9df598",
+       "type": "page"
+      },
+      {
+       "id": "a2a31cdf-a775-952c-37bf-69af63873fc0",
+       "title": "Introduction to Objects Lab Challenge",
+       "pageId": "9d2f8e4e-fe78-a61a-3ea1-34467546501f",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Coding Exercises - Introduction to Objects",
+     "id": "6983f0ad-c1a9-2ee0-60c3-b6693a2e8c8b",
+     "type": "section",
+     "children": [
+      {
+       "id": "a9becdbf-4b8e-5f8d-9faf-53068884b245",
+       "title": "Introduction to Objects Exercise 1",
+       "pageId": "f70260db-a445-0751-c5bd-26b21dde58d7",
+       "type": "page"
+      },
+      {
+       "id": "19882c60-c7e2-3712-43e0-19536b91bd6c",
+       "title": "Introduction to Objects Exercise 2",
+       "pageId": "f2334484-3615-c982-b0f3-ec3ffbe454dd",
+       "type": "page"
+      },
+      {
+       "id": "68c554ef-0b96-a19a-4994-6a2c29ada0e8",
+       "title": "Introduction to Objects Exercise 3",
+       "pageId": "23f0bb01-c216-5b1c-25f9-dca033d9aeb6",
+       "type": "page"
+      },
+      {
+       "id": "f24e1a25-2745-2784-010c-dc8ebcbec5fb",
+       "title": "Introduction to Objects Exercise 4",
+       "pageId": "1e72f080-b9bf-e654-039b-95501029a558",
+       "type": "page"
+      },
+      {
+       "id": "00347e5f-2eec-cc19-bd3e-9cfa41824ebd",
+       "title": "Introduction to Objects Exercise 5",
+       "pageId": "bf93ff90-0ff1-12b1-ef50-eb3d147da361",
+       "type": "page"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
