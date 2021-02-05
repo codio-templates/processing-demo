@@ -1152,5 +1152,76 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT define instance variable"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-4222575896",
+  "source": {
+   "name": "mutability external methods reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nObjects are mutable. What does this mean?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "5de52342-d55b-32c0-7930-8c7175002354",
+     "correct": true,
+     "answer": "Mutability means that value of object attributes can be changed."
+    },
+    {
+     "_id": "de0a1273-e849-208a-10fa-235fee14a41c",
+     "correct": false,
+     "answer": "Mutability means that the you can change the attribute name for the object."
+    },
+    {
+     "_id": "ca6f90d3-24a2-94d3-7609-436623babdcc",
+     "correct": false,
+     "answer": "Mutability means that objects must remain the same at all times."
+    },
+    {
+     "_id": "24222f67-82a4-45a7-ee00-db3fb4a00fab",
+     "correct": false,
+     "answer": "Mutability means that an object change one time only."
+    }
+   ],
+   "guidance": "Object mutability is the concept that values of object attributes can be changed.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Mutability"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/ExternalMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/ExternalMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT define mutability"
+  }
  }
 ]
