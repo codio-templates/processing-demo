@@ -2,12 +2,12 @@
 
 ## Defining an Object
 
-Assume you want to collect information about actors. Creating a class is a good way to keep this data organized. The `public` and `class` keywords are used to define a class. For now, do not add anything as the body of the class.
+Assume you want to collect information about actors. Creating a class is a good way to keep this data organized. The `class` keyword are used to define a class. For now, do not add anything as the body of the class.
 
 ```java
 //add class definitions below this line
     
-public class Actor {
+class Actor {
   
 }  
   
@@ -41,7 +41,7 @@ The point of having a class is to collect information and define actions that ca
 ```java
 //add class definitions below this line
     
-public class Actor {
+class Actor {
   String firstName;
   String lastName;
 }  
@@ -83,7 +83,7 @@ System.out.println(helen.firstName.toUpperCase() + " " + helen.lastName.toLowerC
 
   //add class definitions below this line
 
-  public class Actor {
+  class Actor {
     String firstName;
     String lastName;
     int totalFilms;

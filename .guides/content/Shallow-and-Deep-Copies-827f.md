@@ -56,7 +56,7 @@ class ComicBookCharacter {
   int age;
   String type;
   
-  public ComicBookCharacter(String n, int a, String t) {
+  ComicBookCharacter(String n, int a, String t) {
     name = n;
     age = a;
     type = t;

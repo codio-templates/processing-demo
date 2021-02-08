@@ -15,7 +15,7 @@ class Actor {
   int oscarNominations;
   int oscarWins;
   
-  public Actor() {
+  Actor() {
     firstName = "Helen";
     lastName = "Mirren";
     birthday = "July 26";
@@ -56,7 +56,7 @@ class Actor {
   int oscarNominations;
   int oscarWins;
   
-  public Actor(String fn, String ln, String bd, int tf, int on, int ow) {
+  Actor(String fn, String ln, String bd, int tf, int on, int ow) {
     firstName = fn;
     lastName = ln;
     birthday = bd;
@@ -125,7 +125,7 @@ class Actor {
   int oscarNominations;
   int oscarWins;
   
-  public Actor(String fn, String ln, String bd, int tf) {
+  Actor(String fn, String ln, String bd, int tf) {
     firstName = fn;
     lastName = ln;
     birthday = bd;

@@ -103,10 +103,10 @@ Running the program should produce no visible changes. However, you want to make
     ArrayList<String> comments;
     String likeButton;
 
-    public Post (String un, int ui, String m,
-                 String a, String cb, int l,
-                 String ca, ArrayList<String> co,
-                 String lb) {
+    Post (String un, int ui, String m,
+          String a, String cb, int l,
+          String ca, ArrayList<String> co,
+          String lb) {
       username = un;
       userId = ui;
       media = m;

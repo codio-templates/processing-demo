@@ -16,7 +16,7 @@ class Actor {
   int oscarWins;
   static String union = "Screen Actors Guild";
   
-  public Actor(String fn, String ln, String bd, int tf) {
+  Actor(String fn, String ln, String bd, int tf) {
     firstName = fn;
     lastName = ln;
     birthday = bd;
@@ -73,7 +73,7 @@ class Actor {
   int oscarWins;
   static final String UNION = "Screen Actors Guild";
   
-  public Actor(String fn, String ln, String bd, int tf) {
+  Actor(String fn, String ln, String bd, int tf) {
     firstName = fn;
     lastName = ln;
     birthday = bd;

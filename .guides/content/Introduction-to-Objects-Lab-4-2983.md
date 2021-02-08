@@ -101,10 +101,10 @@ The caption will be a bit different than the username. The caption is a long sen
     ArrayList<String> comments;
     String likeButton;
 
-    public Post (String un, int ui, String m,
-                 String a, String cb, int l,
-                 String ca, ArrayList<String> co,
-                 String lb) {
+    Post (String un, int ui, String m,
+          String a, String cb, int l,
+          String ca, ArrayList<String> co,
+          String lb) {
       username = un;
       userId = ui;
       media = m;

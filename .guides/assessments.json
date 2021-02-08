@@ -74,7 +74,7 @@
   "source": {
    "name": "reading question user-define objects",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\npublic class Pitcher {\n    double era;\n}\n```\n\nSelect the code snippet below that instantiates an object of type `Pitcher` and sets the `era` attribute to 2.93.",
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Pitcher {\n    double era;\n}\n```\n\nSelect the code snippet below that instantiates an object of type `Pitcher` and sets the `era` attribute to 2.93.",
    "multipleResponse": false,
    "isRandomized": true,
    "answers": [
@@ -152,17 +152,17 @@
     {
      "_id": "8f697b72-01f0-9016-b2ea-b9641ec53d5d",
      "correct": true,
-     "answer": "`public Dog()`"
+     "answer": "`Dog()`"
     },
     {
      "_id": "561aa89c-be55-eb26-a2c5-10596bc16443",
      "correct": false,
-     "answer": "`public class Dog`"
+     "answer": "`class Dog`"
     },
     {
      "_id": "e1b0f7f3-a211-6d68-4169-38d14fa72c84",
      "correct": false,
-     "answer": "`public dog()`"
+     "answer": "`dog()`"
     },
     {
      "_id": "60928bc6-45f7-e2cb-968b-20d8340f9274",
@@ -170,7 +170,7 @@
      "answer": "`constructor`"
     }
    ],
-   "guidance": "In Java, the constructor uses the `public` keyword followed by the name of the class and a set of parentheses. Since the class is `Dog`, the constructor would be:\n\n```java\npublic Dog()\n```\n\nThe constructor does not use the keyword `class`. In addition, the spelling of the constructor must match that of the class. Since the class starts with a `D`, so must the constructor.",
+   "guidance": "In Java, the constructor uses the name of the class (capitalization must match) and a set of parentheses. Since the class is `Dog`, the constructor would be:\n\n```java\nDog()\n```\n\nThe constructor does not use the keyword `class`. In addition, the spelling of the constructor must match that of the class. Since the class starts with a `D`, so must the constructor.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -223,20 +223,20 @@
     {
      "_id": "f998fa0b-63a0-3e7d-57f2-f2af4d56b15e",
      "correct": true,
-     "answer": "`public Person(int age, String homeTown)`"
+     "answer": "`Person(int age, String homeTown)`"
     },
     {
      "_id": "33db92a7-565b-07a6-0280-95e5e5a133e8",
      "correct": false,
-     "answer": "`public Person(age, homeTown)`"
+     "answer": "`Person(age, homeTown)`"
     },
     {
      "_id": "54ea49a0-8f92-da37-e4d5-ebcdfd4f7c04",
      "correct": false,
-     "answer": "`public Person(String homeTown, int age)`"
+     "answer": "`Person(String homeTown, int age)`"
     }
    ],
-   "guidance": "The correct answer is:\n\n```java\npublic Person(int age, String homeTown)\n```\n\nEach parameter for the constructor requires a type. In addition, the order of the parameters is important. Since the object instantiation had `18` before `\"Dallas\"`, the constructor must do the same.",
+   "guidance": "The correct answer is:\n\n```java\nPerson(int age, String homeTown)\n```\n\nEach parameter for the constructor requires a type. In addition, the order of the parameters is important. Since the object instantiation had `18` before `\"Dallas\"`, the constructor must do the same.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -755,7 +755,7 @@
   "source": {
    "name": "introduction to objects lab 1",
    "showName": false,
-   "instructions": "## Lab Question\n\nLook at the `Car` class definition below. How many parameters are used when creating an instance of the `Car` class?\n\n```java\nclass Car {\n  String make;\n  String model;\n  int year;\n  String color;\n\n  public Car(String ma, String mo, int y) {\n    make = ma;\n    model = mo;\n    year = y;\n    color = \"black\";\n  }\n}\n```",
+   "instructions": "## Lab Question\n\nLook at the `Car` class definition below. How many parameters are used when creating an instance of the `Car` class?\n\n```java\nclass Car {\n  String make;\n  String model;\n  int year;\n  String color;\n\n  Car(String ma, String mo, int y) {\n    make = ma;\n    model = mo;\n    year = y;\n    color = \"black\";\n  }\n}\n```",
    "multipleResponse": false,
    "isRandomized": true,
    "answers": [
@@ -806,13 +806,14 @@
      }
     ],
     "files": [
+     "code/introObjects/Photogram.java",
      "code/introObjects/LabIntro.java"
     ],
     "opened": [
      {
       "type": "file",
       "panelNumber": 0,
-      "content": "code/introObjects/LabIntro.java"
+      "content": "code/introObjects/Photogram.java"
      }
     ]
    },

@@ -39,10 +39,10 @@ class Post {
   ArrayList<String> comments;
   String likeButton;
   
-  public Post (String un, int ui, String m,
-               String a, String cb, int l,
-               String ca, ArrayList<String> co,
-               String lb) {
+  Post (String un, int ui, String m,
+        String a, String cb, int l,
+        String ca, ArrayList<String> co,
+        String lb) {
     username = un;
     userId = ui;
     media = m;
@@ -112,10 +112,10 @@ Print each attribute of `post1` to see that everything is working as expected.
     ArrayList<String> comments;
     String likeButton;
 
-    public Post (String un, int ui, String m,
-                 String a, String cb, int l,
-                 String ca, ArrayList<String> co,
-                 String lb) {
+    Post (String un, int ui, String m,
+          String a, String cb, int l,
+          String ca, ArrayList<String> co,
+          String lb) {
       username = un;
       userId = ui;
       media = m;

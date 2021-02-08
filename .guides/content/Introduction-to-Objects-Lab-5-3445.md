@@ -119,10 +119,10 @@ Finally, we want the information in the `infoPanel` to be "pushed up" so it alig
     ArrayList<String> comments;
     String likeButton;
 
-    public Post (String un, int ui, String m,
-                 String a, String cb, int l,
-                 String ca, ArrayList<String> co,
-                 String lb) {
+    Post (String un, int ui, String m,
+          String a, String cb, int l,
+          String ca, ArrayList<String> co,
+          String lb) {
       username = un;
       userId = ui;
       media = m;

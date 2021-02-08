@@ -42,7 +42,7 @@ The class `Actor` creates a class and its attributes. It does not assign value t
 
 ## The Constructor
 
-The constructor is a special method for a class. Its job is to assign value for attributes associated with the object. These attributes can also be called instance variables. In Java, the constructor is the keyword `public`, the class name, followed by parentheses and curly brackets. Inside of the constructor, give attributes their values.
+The constructor is a special method for a class. Its job is to assign value for attributes associated with the object. These attributes can also be called instance variables. In Java, the constructor is the class name, parentheses, and curly brackets. Inside of the constructor, give attributes their values.
 
 ```java
 //add class definitions below this line
@@ -55,7 +55,7 @@ class Actor {
   int oscarNominations;
   int oscarWins;
   
-  public Actor() {
+  Actor() {
     firstName = "Helen";
     lastName = "Mirren";
     birthday = "July 26";
