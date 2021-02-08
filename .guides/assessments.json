@@ -1322,5 +1322,71 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-680032819",
+  "source": {
+   "name": "external methods vs class methods reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks with either **external method**, **class method**, or **external methods and class methods** so that the sentence is correct.",
+   "showValues": true,
+   "text": "A <<<class method>>> is declared inside of a class.\nAn <<<external method>>> is declared outside of a class.\n<<<External methods and class methods>>> can modify an object.",
+   "distractors": "",
+   "guidance": "The correct answers are:\n\nA class method is declared inside of a class.\nAn external method is declared outside of a class.\nExternal methods and class methods can modify an object.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Class Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/mutability/Mutability.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/Mutability.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between external and class methods",
+   "tokens": {
+    "blank": [
+     "class method",
+     "external method",
+     "External methods and class methods"
+    ],
+    "text": [
+     "A ",
+     0,
+     " is declared inside of a class.\nAn ",
+     0,
+     " is declared outside of a class.\n",
+     0,
+     " can modify an object."
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
