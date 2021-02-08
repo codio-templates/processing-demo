@@ -543,6 +543,83 @@
    "learningObjectives": ""
   },
   {
+   "id": "3a1b986b-dfe5-df70-1164-6634c85583d6",
+   "title": "Learning Objectives - Class Methods",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Class-Methods-3a1b.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b34538b4-ee6a-7ebd-55d6-9c004876e2d7",
+   "title": "External Methods vs Class Methods",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/Mutability.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/External-Methods-vs-Class-Methods-b345.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "056b51b2-9e28-6cea-2a45-953ef1b7ab0d",
+   "title": "More Class Methods",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/More-Class-Methods-056b.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "57d6a813-cb0e-cd20-85cd-95689f260f3f",
+   "title": "Printing the Meal 1",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Printing-the-Meal-1-57d6.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "88ec2efa-3fc3-5a76-f48b-90794bedd110",
+   "title": "Printing the Meal 2",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Printing-the-Meal-2-88ec.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "949369da-8c31-d279-7e45-62964daab2db",
    "title": "Changing Objects with Class Methods Formative Assessment 1",
    "files": [],

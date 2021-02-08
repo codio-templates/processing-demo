@@ -203,7 +203,38 @@
      "title": "Changing Objects with Class Methods",
      "id": "b11916fd-b85a-9eed-89dc-e69d37c3ed47",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "6a65837e-3a34-6c5b-9284-6b2cf153a915",
+       "title": "Learning Objectives - Class Methods",
+       "pageId": "3a1b986b-dfe5-df70-1164-6634c85583d6",
+       "type": "page"
+      },
+      {
+       "id": "c6cffe42-9e05-09f4-8a86-066ac964a8de",
+       "title": "External Methods vs Class Methods",
+       "pageId": "b34538b4-ee6a-7ebd-55d6-9c004876e2d7",
+       "type": "page"
+      },
+      {
+       "id": "9650aa66-288c-55e6-4177-4242e115bd58",
+       "title": "More Class Methods",
+       "pageId": "056b51b2-9e28-6cea-2a45-953ef1b7ab0d",
+       "type": "page"
+      },
+      {
+       "id": "55421c9b-f8eb-225a-c4e8-838d455b0cf9",
+       "title": "Printing the Meal 1",
+       "pageId": "57d6a813-cb0e-cd20-85cd-95689f260f3f",
+       "type": "page"
+      },
+      {
+       "id": "3cbe5df9-5d70-4369-cb9d-6c2e571ac5e7",
+       "title": "Printing the Meal 2",
+       "pageId": "88ec2efa-3fc3-5a76-f48b-90794bedd110",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Changing Objects with Class Methods Formative Assessment",
