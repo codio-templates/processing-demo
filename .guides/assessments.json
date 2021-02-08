@@ -1153,5 +1153,174 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT define instance variable"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-4222575896",
+  "source": {
+   "name": "mutability external methods reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nObjects are mutable. What does this mean?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "5de52342-d55b-32c0-7930-8c7175002354",
+     "correct": true,
+     "answer": "Mutability means that value of object attributes can be changed."
+    },
+    {
+     "_id": "de0a1273-e849-208a-10fa-235fee14a41c",
+     "correct": false,
+     "answer": "Mutability means that the you can change the attribute name for the object."
+    },
+    {
+     "_id": "ca6f90d3-24a2-94d3-7609-436623babdcc",
+     "correct": false,
+     "answer": "Mutability means that objects must remain the same at all times."
+    },
+    {
+     "_id": "24222f67-82a4-45a7-ee00-db3fb4a00fab",
+     "correct": false,
+     "answer": "Mutability means that an object change one time only."
+    }
+   ],
+   "guidance": "Object mutability is the concept that values of object attributes can be changed.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Mutability"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/ExternalMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/ExternalMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT define mutability"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1812218729",
+  "source": {
+   "name": "mutability external methods formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  String name;\n  String breed;\n\n  public Dog() {\n    name = \"fido\";\n    breed = \"golden retriever\";\n  }\n}\n```\nUse the code blocks below to create the function `changeBreed` that updates the breed attribute of the `Dog` object. **Note**, not all of the blocks will be used.",
+   "initial": "public static void changeBreed(Dog dog, String newBreed) {\n  dog.breed = newBreed;\n}\nd.breed = newBreed; #distractor\npublic static void changeBreed() { #distractor\nbreed = newBreed; #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic static void changeBreed(Dog dog, String newBreed) {\n  dog.breed = newBreed;\n}\n```\n\nThe `changeBreed` method needs to parameters, the `Dog` object being modified and the new breed. That is why the code block `public static void changeBreed() {` is incorrect. The parameter `dog` represents the `Dog` object being modified. To access the `breed` attribute, you first need to reference `dog`. That is why the code blocks `d.breed = newBreed;` and `breed = newBreed;` are incorrect.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Changing Objects with External Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT construct an external method that modifies an object"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3808903184",
+  "source": {
+   "name": "mutability external methods formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nImagine there exists a `Player` class that represents a video game character. Fill in the blanks below to complete the method `levelUp`. The method should do the following things:\n* Increase the player's level by 1\n* Increase the player's health by 10\n* Increase the player's score by 100",
+   "showValues": false,
+   "text": "```java\npublic static void levelUp(Player p) {\n  p.<<<level>>> += 1;\n  <<<p>>>.health += 10;\n  <<<p.score>>> += 100;\n}\n```",
+   "distractors": "",
+   "guidance": "The correct answer is:\n\n```java\npublic static void levelUp(Player p) {\n  p.level += 1;\n  p.health += 10;\n  p.score += 100;\n}\n```\n\nUsing the first line of code, you see that `Player p` is the parameter passed to `levelUp`. Since the level increases by 1, the second blank is `level`. The third blank is `p` since the `health` attribute cannot be accessed without a reference to the `Player` object. The last blank is `p.score` since this is the attribute that increases by 100.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     },
+     {
+      "name": "Content",
+      "value": "Changing Objects with External Methods"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT use context clues to create an external method that modifies an object",
+   "tokens": {
+    "blank": [
+     "level",
+     "p",
+     "p.score"
+    ],
+    "text": [
+     "```java\npublic static void levelUp(Player p) {\n  p.",
+     0,
+     " += 1;\n  ",
+     0,
+     ".health += 10;\n  ",
+     0,
+     " += 100;\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]

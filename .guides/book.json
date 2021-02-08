@@ -155,6 +155,193 @@
      ]
     }
    ]
+  },
+  {
+   "title": "Mutability",
+   "id": "564fd2a4-b98f-c4e7-1f1a-694aa717b0bb",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Changing Objects with External Methods",
+     "id": "2bf5b36e-7c39-8666-e75e-e1385025c0a4",
+     "type": "section",
+     "children": [
+      {
+       "id": "1e88c01f-076d-61a7-ddab-4db42a1bd126",
+       "title": "Learning Objectives - Mutability",
+       "pageId": "776d7cc8-1f69-c982-605d-6cad3a284510",
+       "type": "page"
+      },
+      {
+       "id": "e399c840-d386-25eb-b0f9-14aa0146a3a1",
+       "title": "Mutability and External Methods",
+       "pageId": "edddb79d-4ed9-38be-a7c8-16c99cc81e36",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Changing Objects with External Methods Formative Assessment",
+     "id": "ba32898a-ec3a-d970-67c3-85957283ec9c",
+     "type": "section",
+     "children": [
+      {
+       "id": "740c192d-6e65-3dd1-9855-bfc20705e1c3",
+       "title": "Changing Objects with External Methods Formative Assessment 1",
+       "pageId": "2acc0e34-f170-6238-ca36-5a72e2c1df38",
+       "type": "page"
+      },
+      {
+       "id": "7365ef81-315f-f27a-e9b1-fa49d4977235",
+       "title": "Changing Objects with External Methods Formative Assessment 2",
+       "pageId": "ff350b33-6100-f042-fe05-f8c40ce1af5b",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Changing Objects with Class Methods",
+     "id": "b11916fd-b85a-9eed-89dc-e69d37c3ed47",
+     "type": "section",
+     "children": [
+      {
+       "id": "6a65837e-3a34-6c5b-9284-6b2cf153a915",
+       "title": "Learning Objectives - Class Methods",
+       "pageId": "3a1b986b-dfe5-df70-1164-6634c85583d6",
+       "type": "page"
+      },
+      {
+       "id": "c6cffe42-9e05-09f4-8a86-066ac964a8de",
+       "title": "External Methods vs Class Methods",
+       "pageId": "b34538b4-ee6a-7ebd-55d6-9c004876e2d7",
+       "type": "page"
+      },
+      {
+       "id": "9650aa66-288c-55e6-4177-4242e115bd58",
+       "title": "More Class Methods",
+       "pageId": "056b51b2-9e28-6cea-2a45-953ef1b7ab0d",
+       "type": "page"
+      },
+      {
+       "id": "55421c9b-f8eb-225a-c4e8-838d455b0cf9",
+       "title": "Printing the Meal 1",
+       "pageId": "57d6a813-cb0e-cd20-85cd-95689f260f3f",
+       "type": "page"
+      },
+      {
+       "id": "3cbe5df9-5d70-4369-cb9d-6c2e571ac5e7",
+       "title": "Printing the Meal 2",
+       "pageId": "88ec2efa-3fc3-5a76-f48b-90794bedd110",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Changing Objects with Class Methods Formative Assessment",
+     "id": "b6905cba-eb84-3289-8b01-8b89694801d3",
+     "type": "section",
+     "children": [
+      {
+       "id": "cc22164e-0bf2-5f66-8170-3b25bee71050",
+       "title": "Changing Objects with Class Methods Formative Assessment 1",
+       "pageId": "949369da-8c31-d279-7e45-62964daab2db",
+       "type": "page"
+      },
+      {
+       "id": "db166b49-5426-83ab-b90c-7b3d42ab3407",
+       "title": "Changing Objects with Class Methods Formative Assessment 2",
+       "pageId": "8aa0377e-e29d-92e9-1ea9-7bfd23f5bbee",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Static Methods",
+     "id": "75c42096-74d1-0c8e-9866-4ae5b05b59ff",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Static Methods Formative Assessment",
+     "id": "3921760e-9176-639a-b132-a27300e4cae3",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Lab - Mutability",
+     "id": "b512e518-ad88-69ea-b1e5-0201bae0df98",
+     "type": "section",
+     "children": [
+      {
+       "id": "bd850fa7-7220-3484-32e8-fa562d0c0d62",
+       "title": "Mutability Lab 1",
+       "pageId": "c7f99bf4-a633-7ad7-b1d7-ed46122b36cf",
+       "type": "page"
+      },
+      {
+       "id": "d867569b-46e3-d773-4e42-7138a0ebec97",
+       "title": "Mutability Lab 2",
+       "pageId": "c1cb1653-806e-5521-0a11-c59e95fe0a11",
+       "type": "page"
+      },
+      {
+       "id": "63d0b394-ed9f-e03a-d6e2-4632823d0929",
+       "title": "Mutability Lab 3",
+       "pageId": "a721313f-c2aa-a945-ca5f-4a881b9389d1",
+       "type": "page"
+      },
+      {
+       "id": "219dd158-4ae3-dbfa-a0dc-620bab4166f3",
+       "title": "Mutability Lab 4",
+       "pageId": "1023a2fe-dbf3-26b4-7320-ffe80bb968b6",
+       "type": "page"
+      },
+      {
+       "id": "41967dbe-62ad-f91f-8abb-b3e6ff1094f3",
+       "title": "Mutability Lab Challenge",
+       "pageId": "97926e94-9608-124b-08be-17ce484ce796",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Coding Exercises - Mutability",
+     "id": "4416c18f-727d-8d55-a867-3a9613474c94",
+     "type": "section",
+     "children": [
+      {
+       "id": "f8daff10-219a-b943-a0a3-8aa016885a44",
+       "title": "Mutability Exercise 1",
+       "pageId": "3231aaf6-f989-5e97-3924-64be63ca50be",
+       "type": "page"
+      },
+      {
+       "id": "138e5798-e5f1-e3d5-9b63-42ed7463fb55",
+       "title": "Mutability Exercise 2",
+       "pageId": "29ae2506-9adb-d266-14fe-498d08f61fdf",
+       "type": "page"
+      },
+      {
+       "id": "b5a07207-bf0b-399a-c473-13a6addf9ce8",
+       "title": "Mutability Exercise 3",
+       "pageId": "4a17c5f2-0283-fd92-ba6d-d126bd2e2483",
+       "type": "page"
+      },
+      {
+       "id": "71a258ba-cc8d-0d43-a852-7a44634399de",
+       "title": "Mutability Exercise 4",
+       "pageId": "0cc321d7-5e7a-6111-af1d-cb00ab825b6c",
+       "type": "page"
+      },
+      {
+       "id": "7745dc08-8f74-c347-485f-20b71888322b",
+       "title": "Mutability Exercise 5",
+       "pageId": "9a522932-01e6-5c15-aa0e-a169705f358c",
+       "type": "page"
+      }
+     ]
+    }
+   ]
   }
  ]
 }
