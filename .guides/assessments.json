@@ -1388,5 +1388,53 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-2540601199",
+  "source": {
+   "name": "more class methods reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume you have the `Person` class as defined below:\n\n```java\nclass Person {\n  String name;\n  int age;\n\n  Person(String n, int a) {\n    name = n;\n    age = a;\n  }\n}\n```\n\nIn addition, `alice` is an instance of the `Person` class:\n\n```java\nPerson alice = Person(\"Alice\", 32);\n```\n\nUsing the code blocks below to create a class method called `birthday` that adds a year to Alice's age. **Note**, not all of the code blocks will be used.",
+   "initial": "void birthday() {\n  age += 1;\n}\nint birthday() { #distractor\nvoid birthday(int newAge) { #distractor\nage = newAge; #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\nvoid birthday() {\n  age += 1;\n}\n```\n\n* The class method `birthday` should not be of type `int` as this method does not return an integer.\n* The class method `birthday` does not need a parameter, as this method always increases the `age` attribute by 1.\n* The `age` attribute should be increased by 1, not by another integer passed to the `birthday` method.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Class Method"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Classes and Objects"
+     }
+    ],
+    "files": [
+     "code/mutability/MoreMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/MoreMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a class method"
+  }
  }
 ]

@@ -586,7 +586,18 @@
   {
    "id": "056b51b2-9e28-6cea-2a45-953ef1b7ab0d",
    "title": "More Class Methods",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/MoreMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/More-Class-Methods-056b.md",
