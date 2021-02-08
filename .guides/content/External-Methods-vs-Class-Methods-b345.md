@@ -8,25 +8,27 @@ Instead of external methods, class methods should be used to modify an object. T
 
 ![Functions vs Methods](.guides/img/mutability/functions-vs-methods.png)
 
-When mutability was first introduced, you made a `Player` class with a few functions. You are now going to transform these functions into methods. The `Player` class will be defined just as before. This time, however, `print_player` will be a part of class (indented to match the constructor), `self` replaces `p` to represent the `Player` object being modified, and the method is called using dot-notation.
+When mutability was first introduced, you made a `Player` class with a few functions. You are now going to transform these functions into methods. The `Player` class will be defined just as before. This time, however, `printPlayer` will be a part of class (indented to match the constructor), `self` replaces `p` to represent the `Player` object being modified, and the method is called using dot-notation.
 
-```python
-class Player:
-  """Simple player class"""
-  def __init__(self, health=100, score=0, level=1):
-    self.health = health
-    self.score = score
-    self.level = level
+```java
+//add class definitions below this line
 
-  def print_player(self):
-    """Print the status of a player"""
-    if self.health <= 0:
-      print(f"This player is dead. They died on level {self.level} with a score of {self.score}.")
-    else:
-      print(f"This player has {self.health} health, a score of {self.score}, and is on level {self.level}.")
+class Player {
+  int health;
+  int score;
+  int level;
+  
+  Player() {
+    health = 100;
+    score = 0;
+    level = 1;
+  }
+}    
+ 
+//add class definitions above this line
       
-mario = Player()
-mario.print_player()
+mario = new Player();
+mario.printPlayer();
 ```
 
 {Try it}(sh .guides/bg.sh javac code/mutability/Mutability.java java -cp code/mutability/ Mutability 1)

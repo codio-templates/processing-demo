@@ -1231,8 +1231,8 @@
   "source": {
    "name": "mutability external methods formative assessment 1",
    "showName": false,
-   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  String name;\n  String breed;\n\n  public Dog() {\n    name = \"fido\";\n    breed = \"golden retriever\";\n  }\n}\n```\nUse the code blocks below to create the function `changeBreed` that updates the breed attribute of the `Dog` object. **Note**, not all of the blocks will be used.",
-   "initial": "public static void changeBreed(Dog dog, String newBreed) {\n  dog.breed = newBreed;\n}\nd.breed = newBreed; #distractor\npublic static void changeBreed() { #distractor\nbreed = newBreed; #distractor",
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  String name;\n  String breed;\n\n  Dog() {\n    name = \"fido\";\n    breed = \"golden retriever\";\n  }\n}\n```\nUse the code blocks below to create the function `changeBreed` that updates the breed attribute of the `Dog` object. **Note**, not all of the blocks will be used.",
+   "initial": "public static void changeBreed(Dog dog, String newBreed) {\n  dog.breed = newBreed;\n}\nd.breed = newBreed;  #distractor\npublic static void changeBreed() {  #distractor\nbreed = newBreed;  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\npublic static void changeBreed(Dog dog, String newBreed) {\n  dog.breed = newBreed;\n}\n```\n\nThe `changeBreed` method needs to parameters, the `Dog` object being modified and the new breed. That is why the code block `public static void changeBreed() {` is incorrect. The parameter `dog` represents the `Dog` object being modified. To access the `breed` attribute, you first need to reference `dog`. That is why the code blocks `d.breed = newBreed;` and `breed = newBreed;` are incorrect.",

@@ -63,8 +63,8 @@ One of the benefits of methods is code reusability. The example above has a repe
 ```java
   //add method definitions below this line
   
-  public static String printPlayer(Player p) {
-    return "This player has " + p.health + " health, a score of " + p.score + " and is on level " + p.level + ".";
+  public static void printPlayer(Player p) {
+    System.out.println("This player has " + p.health + " health, a score of " + p.score + " and is on level " + p.level + ".");
   }
   
   //add method definitions above this line
@@ -80,7 +80,7 @@ In the `main` method, replace the strings inside the print statements with a cal
     player1.health -= 10;
     player1.score += 25;
     player1.level += 1;
-    System.out.println(printPlayer(player1));
+    printPlayer(player1);
 
     //add code above this line
 ```
@@ -92,11 +92,11 @@ Using a method to print the status of `player1` may not seem like it was worth t
 ```java
   //add method definitions below this line
   
-  public static String printPlayer(Player p) {
+  public static void printPlayer(Player p) {
     if (p.health <= 0) {
-      return "This player is dead. They died on level " + p.level + " with a score of " + p.score + ".");
+      System.out.println("This player is dead. They died on level " + p.level + " with a score of " + p.score + ".");
     } else {
-      return "This player has " + p.health + " health, a score of " + p.score + " and is on level " + p.level + ".";
+      System.out.println("This player has " + p.health + " health, a score of " + p.score + " and is on level " + p.level + ".");
     }
   }
   
@@ -109,11 +109,11 @@ Now that the `printPlayer` method will return two different strings, call the me
     //add code below this line
 
     Player player1 = new Player();
-    System.out.println(printPlayer(player1));
+    printPlayer(player1);
     player1.health = 0;
     player1.score += 25;
     player1.level += 1;
-    System.out.println(printPlayer(player1));
+    printPlayer(player1);
 
     //add code above this line
 ```
