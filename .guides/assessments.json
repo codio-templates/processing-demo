@@ -1679,5 +1679,76 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT create a class method"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-571453302",
+  "source": {
+   "name": "static methods reading questoin",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhat special keyword is required when creating a static method?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "cd46376b-2c9b-03d6-6713-55c0ff46100d",
+     "correct": true,
+     "answer": "`static`"
+    },
+    {
+     "_id": "ff259ad8-5b8c-cff0-01a3-6479f5a44395",
+     "correct": false,
+     "answer": "`public`"
+    },
+    {
+     "_id": "22b096ca-aca9-4f42-4540-668207cb1bfb",
+     "correct": false,
+     "answer": "`private`"
+    },
+    {
+     "_id": "af80e280-0685-a79f-c9c8-4c0a00173e3b",
+     "correct": false,
+     "answer": "`void`"
+    }
+   ],
+   "guidance": "The `static` keyword is used when creating static methods.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Static Keyword"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Static Methods"
+     }
+    ],
+    "files": [
+     "code/mutability/StaticMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/StaticMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT recognize keyword needed to create static methods"
+  }
  }
 ]

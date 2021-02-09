@@ -39,7 +39,7 @@ Create two instances of the `Rectangle` class, and then calculate the combined a
 
 {Try it}(sh .guides/bg.sh javac code/mutability/StaticMethods.java java -cp code/mutability/ StaticMethods 1)
 
-This works, but the combined area has to be calculated by the user. Since the combined area is related to the `Rectangle` class, a better solution would be to add this functionality to the class. Another type of method in Java is a static method. Static methods are most often used to add functionality (like calculating the combined area) to a class. Static methods use the `static` keyword in the method definition.
+This works, but the combined area has to be calculated by the user. Since the combined area is related to the `Rectangle` class, a better solution would be to add this functionality to the class. Another type of method in Java is a static method. Static methods are most often used to add functionality to the whole class and not just an instance of the class. Static methods use the `static` keyword in the method definition.
 
 ```java
 //add class definitions below this line
@@ -81,16 +81,25 @@ Static methods are called in a unique way. The still use dot notation, but inste
 
 |||challenge
 ## Try this variation:
-Call the `combinedArea` method from the instance `rect1` with `rect1` and `rect2` as arguments.
+Create the object `rect3` and use the `combinedArea` method with different combinations of the `Rectangle` objects.
+
 ```java
-    System.out.println(rect.combinedArea(rect1, rect2));
+    //add code below this line
+
+    Rectangle rect1 = new Rectangle(12, 27);
+    Rectangle rect2 = new Rectangle(9, 3);
+    Rectangle rect3 = new Rectangle(10, 5);
+    System.out.println(Rectangle.combinedArea(rect1, rect2));
+    System.out.println(Rectangle.combinedArea(rect1, rect3));
+    System.out.println(Rectangle.combinedArea(rect2, rect3));
+
+    //add code above this line
 ```
-<details>
-  <summary><strong>Why does this work?</strong></summary>
-  Like class methods, static methods can be called from the class itself or from an instance of a class.
-</details>
+
+Notice how the `combinedArea` static method can be used with any two arguments as long as they are of type `Rectangle`. Unlike class methods, static methods are not confined to working with any particular instance of a class.
 
 |||
 
 {Try it}(sh .guides/bg.sh javac code/mutability/StaticMethods.java java -cp code/mutability/ StaticMethods 3)
 
+{Check It!|assessment}(multiple-choice-571453302)

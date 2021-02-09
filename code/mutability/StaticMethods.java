@@ -3,10 +3,12 @@
 class Rectangle {
   int width;
   int length;
+  static String description = "I am the Rectangle class.";
   
   Rectangle(int w, int l) {
     width = w;
     length = l;
+    instances++;
   }
   
   int area() {
@@ -25,9 +27,7 @@ public class StaticMethods {
     
     //add code below this line
 
-    Rectangle rect1 = new Rectangle(12, 27);
-    Rectangle rect2 = new Rectangle(9, 3);
-    System.out.println(rect.combinedArea(rect1, rect2));
+    System.out.println("Start with: " + Rectangle.instances);
 
     //add code above this line
   }
