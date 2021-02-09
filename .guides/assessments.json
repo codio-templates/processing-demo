@@ -1502,5 +1502,71 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT differentiate a class method from other methods"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2239985009",
+  "source": {
+   "name": "printing the meal 2 reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the class `Author` is defined as follows:\n\n```java\nclass Author {\n  String name;\n  String book;\n  \n  Actor(String authorName, String famousBook) {\n    name = authorName;\n    book = famousBook;\n  }\n}\n```\n\nFill in the blanks below so that the class method `printAuthor` is correct.",
+   "showValues": true,
+   "text": "```java\n<<<void>>> printAuthor() {\n  System.out.println(<<<name>>> + \" is known for their book \" + <<<book>>>);\n}\n```",
+   "distractors": "String\nauthorName\nfamousBook",
+   "guidance": "The correct answer is:\n\n```java\nvoid printAuthor() {\n  System.out.println(name + \" is known for their book \" + book);\n}\n```\n\n* `String` is not correct because the `printAuthor` does not have a return statement, so the return type must be `void`.\n* `authorName` and `famousBook` are not correct because those are the parameter names for the constructor, not the attribute names.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Class methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/MoreMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/MoreMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create a class method",
+   "tokens": {
+    "blank": [
+     "void",
+     "name",
+     "book"
+    ],
+    "text": [
+     "```java\n",
+     0,
+     " printAuthor() {\n  System.out.println(",
+     0,
+     " + \" is known for their book \" + ",
+     0,
+     ");\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]

@@ -77,12 +77,12 @@ public class MoreMethods {
     //add code below this line
 
     Meal dinner = new Meal();
-    dinner.addDrink("water");
-    dinner.addDrink("coffee");
-    dinner.addCourse("roast chicken");
-    dinner.addCourse("mashed potatoes");
-    dinner.addCourse("salad");
-    dinner.addDessert("chocolate cake");
+    dinner.addDrink("white wine");
+    dinner.addAppetizer("tapenade");
+    dinner.addAppetizer("antipasto");
+    dinner.addCourse("cauliflower bolognese");
+    dinner.addCourse("butternut squash soup");
+    dinner.addCourse("kale salad");
     dinner.printMeal();
     
     //add code above this line

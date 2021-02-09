@@ -83,7 +83,7 @@ Create the string variables `item1` and `item2`. Set them to the two elements in
 
 ## More than Two Items Were Served
 
-If more than two items are served, then you need a comma-separated list. The first item should be capitalized followed by a comma and a space. The next items are followed by commas and spaces. The final item in the list is prefaced with `and`. No comma is used after the last item. The sentence ends with `" were served with the meal."`. Remember, the final print statement needs to add a new line character. Be sure that it does not have `end=""` in it.
+If more than two items are served, then you need a comma-separated list. The first item should be capitalized followed by a comma and a space. The next items are followed by commas and spaces. The final item in the list is prefaced with `and`. No comma is used after the last item. The sentence ends with `" were served with the meal."`. Start by using an `else` statement to capture all instances where the size of `course` is greater than 2.
 
 ```java
   void printCourse(ArrayList<String> course, String name) {
@@ -114,13 +114,17 @@ If more than two items are served, then you need a comma-separated list. The fir
   }
 ```
 
+Create the string variable `item` and set it to the first element in `course`. Capitalize this string just as before. Use `print` instead of `println` to print this capitalized string followed by a comma and a space.
+
 ```java
     } else { // more than two items
-      String item1 = course.get(0);
-      item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
-      System.out.print(item1 + ", ");
+      String item = course.get(0);
+      item = item.substring(0, 1).toUpperCase() + item.substring(1);
+      System.out.print(item + ", ");
     }
 ```
+
+Create a for loop to iterate over the `course` ArrayList. We have already printed the first element from the ArrayList. So initialize the loop variable with 1 instead of 0. The last element in `course` needs to have the word `and` appear before element. The last element occurs when `i` is equal to the size of `course` minus 1. Check for this condition, and use a `print` statement when printing `and` and the element. If it is not the element, use a `print` statement to print the element followed by a comma. After the loop, use a `println` statement to print the rest of the sentence.
 
 ```java
     } else { // more than two items
@@ -128,7 +132,7 @@ If more than two items are served, then you need a comma-separated list. The fir
       item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
       System.out.print(item1 + ", ");
       for (int i = 1; i < course.size(); i++) {
-        if (i == course.size() - 1) {
+        if (i == course.size() - 1) { // check for last element
           System.out.print("and " + course.get(i) + " ");
         } else {
           System.out.print(course.get(i) + ", ");
@@ -147,15 +151,20 @@ If more than two items are served, then you need a comma-separated list. The fir
 Create different meals and make sure your program works as expected. For example:
 
 ```java
-Meal dinner = new Meal();
-dinner.addDrink("white wine");
-dinner.addappetizer("tapenade");
-dinner.addAppetizer("antipasto");
-dinner.addCourse("cauliflower bolognese");
-dinner.addCourse("butternut squash soup");
-dinner.addCourse("kale salad");
-dinner.printMeal();
+    //add code below this line
+
+    Meal dinner = new Meal();
+    dinner.addDrink("white wine");
+    dinner.addAppetizer("tapenade");
+    dinner.addAppetizer("antipasto");
+    dinner.addCourse("cauliflower bolognese");
+    dinner.addCourse("butternut squash soup");
+    dinner.addCourse("kale salad");
+    dinner.printMeal();
+    
+    //add code above this line
 ```
+
 <details>
   <summary><strong>Code</strong></summary>
   
@@ -239,12 +248,12 @@ dinner.printMeal();
       //add code below this line
 
       Meal dinner = new Meal();
-      dinner.addDrink("water");
-      dinner.addDrink("coffee");
-      dinner.addCourse("roast chicken");
-      dinner.addCourse("mashed potatoes");
-      dinner.addCourse("salad");
-      dinner.addDessert("chocolate cake");
+      dinner.addDrink("white wine");
+      dinner.addAppetizer("tapenade");
+      dinner.addAppetizer("antipasto");
+      dinner.addCourse("cauliflower bolognese");
+      dinner.addCourse("butternut squash soup");
+      dinner.addCourse("kale salad");
       dinner.printMeal();
 
       //add code above this line
@@ -258,3 +267,4 @@ dinner.printMeal();
 
 {Try it}(sh .guides/bg.sh javac code/mutability/MoreMethods.java java -cp code/mutability/ MoreMethods 9)
 
+{Check It!|assessment}(fill-in-the-blanks-2239985009)
