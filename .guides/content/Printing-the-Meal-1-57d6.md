@@ -1,3 +1,5 @@
+----------
+
 ## Planning the Method
 
 Before writing the method to print the meal, think about what you want the output should like. Imagine that a meal consists of the following courses:

@@ -32,20 +32,24 @@ class Meal {
   }
   
   void printCourse(ArrayList<String> course, String name) {
-    String verb = "";
-    
-    if (name.equals("drinks")) {
-      verb = "drinks were";
-    } else if (name.equals("appetizers")) {
-      verb = "appetizers were";
-    } else if (name.equals("main course")) {
-      verb = "main course was";
-    } else if (name.equals("dessert")) {
-      verb = "dessert was";
-    }
-    
     if (course.size() == 0) {
+      String verb = "";
+    
+      if (name.equals("drinks")) {
+        verb = "drinks were";
+      } else if (name.equals("appetizers")) {
+        verb = "appetizers were";
+      } else if (name.equals("main course")) {
+        verb = "main course was";
+      } else if (name.equals("dessert")) {
+        verb = "dessert was";
+      }
+      
       System.out.println("No " + verb + " served with the meal.");
+    } else if (course.size() == 1) {
+      String item = course.get(0);
+      item = item.substring(0, 1).toUpperCase() + item.substring(1);
+      System.out.println(item + " was served with the meal.");
     }
   }
 }
