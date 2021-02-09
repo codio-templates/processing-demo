@@ -2,161 +2,259 @@
 
 ## One Item Was Served
 
-This is a simple case. If only one item is served, that item should be capitalized followed by `" was served with the meal."`. Use the `substring` string method to capitalize the first letter.
+This is a relatively simple case. The trickiest part will be capitalizing the word at the beginning of the sentence. Start by asking if the size of `course` is 1. If only one item is served, that item should be capitalized followed by `" was served with the meal."`.
 
-```python
-def print_meal(self):
-    """Prints the meal"""
-    courses = [self.drinks, self.appetizers, self.main_course, self.desserts]
-    for position in range(4):
-      course = courses[position]
-      if len(course) == 0: #check for an empty list
-        print(f"No {self.course_name(position)} served with the meal.")
-      elif len(course) == 1: #check for only one item
-        print(f"{course[0].capitalize()} was served with the meal.")
+```java
+  void printCourse(ArrayList<String> course, String name) {
+    if (course.size() == 0) { // check for empty ArrayList
+      String verb = "";
+      if (name.equals("drinks")) {
+        verb = "drinks were";
+      } else if (name.equals("appetizers")) {
+        verb = "appetizers were";
+      } else if (name.equals("main course")) {
+        verb = "main course was";
+      } else if (name.equals("dessert")) {
+        verb = "dessert was";
+      }
+      System.out.println("No " + verb + " served with the meal.");
+    } else if (course.size() == 1) { // check for one item
+      
+    }
+  }
 ```
 
-**Note**, remove the comment symbol `#` for `dinner.add_dessert("chocolate cake")`.
+Create the string variable `item` and set it to the first element in `course`. This string needs to be capitalized. Use `substring(0,1)` to represent the first character in the string. Then call the `toUpperCase()` method to capitalize this character. Finally, concatenate this character with the rest of the string, which is represented by `substring(1)`. Print out a sentence using the `item` string.
+
+```java
+    } else if (course.size() == 1) { // check for one item
+      String item = course.get(0);
+      item = item.substring(0, 1).toUpperCase() + item.substring(1);
+      System.out.println(item + " was served with the meal.");
+    }
+```
+
+**Note**, remove the comment symbol `//` for `dinner.addDessert("chocolate cake");`.
 
 {Try it}(sh .guides/bg.sh javac code/mutability/MoreMethods.java java -cp code/mutability/ MoreMethods 6)
 
 ## Two Items Were Served
 
-If there are two items being served, the first item should be capitalized followed by `and` and the second item. The sentence will end with `" were served with the meal."`.
+If there are two items being served, the first item should be capitalized followed by `and` and the second item. The sentence will end with `" were served with the meal."`. Start by asking if the size of `course` is 2.
 
-```python
-def print_meal(self):
-    """Prints the meal"""
-    courses = [self.drinks, self.appetizers, self.main_course, self.desserts]
-    for position in range(4):
-      course = courses[position]
-      if len(course) == 0: #check for an empty list
-        print(f"No {self.course_name(position)} served with the meal.")
-      elif len(course) == 1: #check for only one item
-        print(f"{course[0].capitalize()} was served with the meal.")
-      elif len(course) == 2: #check for only two items
-        print(f"{course[0].capitalize()} and {course[1]} were served with the meal.")
+```java
+  void printCourse(ArrayList<String> course, String name) {
+    if (course.size() == 0) {
+      String verb = "";
+      if (name.equals("drinks")) {
+        verb = "drinks were";
+      } else if (name.equals("appetizers")) {
+        verb = "appetizers were";
+      } else if (name.equals("main course")) {
+        verb = "main course was";
+      } else if (name.equals("dessert")) {
+        verb = "dessert was";
+      }
+      System.out.println("No " + verb + " served with the meal.");
+    } else if (course.size() == 1) { // check for one item
+      String item = course.get(0);
+      item = item.substring(0, 1).toUpperCase() + item.substring(1);
+      System.out.println(item + " was served with the meal.");
+    } else if (course.size() == 2) { // check for two items
+      
+    }
+  }
 ```
 
-**Note**, remove the comment symbol `#` for `dinner.add_drink("water")` and `dinner.add_drink("coffee")`.
+Create the string variables `item1` and `item2`. Set them to the two elements in `course`. Capitalize `item1` just as before. Print out a sentence that incorporates `item1` and `item2`.
 
-{try it}(python3 code/mutability/methods2.py 8)
+```java
+    } else if (course.size() == 2) { // check for two items
+      String item1 = course.get(0);
+      String item2 = course.get(1);
+      item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+      System.out.println(item1 + " and " + item2 + " were served with the meal.");
+    }
+```
+
+**Note**, remove the comment symbol `//` for `dinner.addDrink("water");` and `dinner.addDrink("coffee");`.
+
+{Try it}(sh .guides/bg.sh javac code/mutability/MoreMethods.java java -cp code/mutability/ MoreMethods 7)
 
 ## More than Two Items Were Served
 
 If more than two items are served, then you need a comma-separated list. The first item should be capitalized followed by a comma and a space. The next items are followed by commas and spaces. The final item in the list is prefaced with `and`. No comma is used after the last item. The sentence ends with `" were served with the meal."`. Remember, the final print statement needs to add a new line character. Be sure that it does not have `end=""` in it.
 
-```python
-def print_meal(self):
-    """Prints the meal"""
-    courses = [self.drinks, self.appetizers, self.main_course, self.desserts]
-    for position in range(4):
-      course = courses[position]
-      if len(course) == 0: #check for an empty list
-        print(f"No {self.course_name(position)} served with the meal.")
-      elif len(course) == 1: #check for only one item
-        print(f"{course[0].capitalize()} was served with the meal.")
-      elif len(course) == 2: #check for only two items
-        print(f"{course[0].capitalize()} and {course[1]} were served with the meal.")
-      else: #many items were served
-        for item in course:
-          if course.index(item) == 0: #check to see if first element
-            print(f"{item.capitalize()}, ", end="")
-          elif item == course[-1]: #check to see if last element
-            print(f"and {item} ", end="")
-          else:
-            print(f"{item}, ", end="")
-        print("were served with the meal.")
+```java
+  void printCourse(ArrayList<String> course, String name) {
+    if (course.size() == 0) {
+      String verb = "";
+      if (name.equals("drinks")) {
+        verb = "drinks were";
+      } else if (name.equals("appetizers")) {
+        verb = "appetizers were";
+      } else if (name.equals("main course")) {
+        verb = "main course was";
+      } else if (name.equals("dessert")) {
+        verb = "dessert was";
+      }
+      System.out.println("No " + verb + " served with the meal.");
+    } else if (course.size() == 1) { // check for one item
+      String item = course.get(0);
+      item = item.substring(0, 1).toUpperCase() + item.substring(1);
+      System.out.println(item + " was served with the meal.");
+    } else if (course.size() == 2) { // check for two items
+      String item1 = course.get(0);
+      String item2 = course.get(1);
+      item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+      System.out.println(item1 + " and " + item2 + " were served with the meal.");
+    } else { // more than two items
+      
+    }
+  }
 ```
 
-{try it}(python3 code/mutability/methods2.py 9)
+```java
+    } else { // more than two items
+      String item1 = course.get(0);
+      item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+      System.out.print(item1 + ", ");
+    }
+```
+
+```java
+    } else { // more than two items
+      String item1 = course.get(0);
+      item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+      System.out.print(item1 + ", ");
+      for (int i = 1; i < course.size(); i++) {
+        if (i == course.size() - 1) {
+          System.out.print("and " + course.get(i) + " ");
+        } else {
+          System.out.print(course.get(i) + ", ");
+        }
+      }
+      System.out.println("were served with the meal.");
+    }
+```
+
+**Note**, remove the comment symbol `//` for remaining lines of code.
+
+{Try it}(sh .guides/bg.sh javac code/mutability/MoreMethods.java java -cp code/mutability/ MoreMethods 8)
 
 |||challenge
 ## Check your work:
 Create different meals and make sure your program works as expected. For example:
 
-```python
-dinner = Meal()
-dinner.add_drink("white wine")
-dinner.add_appetizer("tapenade")
-dinner.add_appetizer("antipasto")
-dinner.add_course("cauliflower bolognese")
-dinner.add_course("butternut squash soup")
-dinner.add_course("kale salad")
-dinner.print_meal()
+```java
+Meal dinner = new Meal();
+dinner.addDrink("white wine");
+dinner.addappetizer("tapenade");
+dinner.addAppetizer("antipasto");
+dinner.addCourse("cauliflower bolognese");
+dinner.addCourse("butternut squash soup");
+dinner.addCourse("kale salad");
+dinner.printMeal();
 ```
 <details>
-  <summary><strong>Meal Code</strong></summary>
+  <summary><strong>Code</strong></summary>
   
-  ```python
-  class Meal:
-    """Class to represent a meal"""
-    def __init__(self):
-    self.drinks = []
-    self.appetizers = []
-    self.main_course = []
-    self.desserts = []
-  
-    def add_drink(self, d):
-      """Add a drink (d) to the meal (self)"""
-      self.drinks.append(d)
-  
-    def add_appetizer(self, a):
-      """Add an appetizer (a) to the meal (self)"""
-      self.appetizers.append(a)
-  
-    def add_course(self, c):
-      self.main_course.append(c)
-  
-    def add_dessert(self, d):
-      self.desserts.append(d)
-  
-    def course_name(self, position):
-      if position == 0:
-        return "drinks were"
-      elif position == 1:
-        return "appetizers were"
-      elif position == 2:
-        return "main course was"
-      elif position == 3:
-        return "dessert was"
-  
-    def print_meal(self):
-      """Prints the meal"""
-      courses = [self.drinks, self.appetizers, self.main_course, self.desserts]
-      for position in range(4):
-        course = courses[position]
-        if len(course) == 0: #check for an empty list
-          print(f"No {self.course_name(position)} served with the meal.")
-        elif len(course) == 1: #check for only one item
-          print(f"{course[0].capitalize()} was served with the meal.")
-        elif len(course) == 2: #check for only two items
-          print(f"{course[0].capitalize()} and {course[1]} were served with the meal.")
-        else: #many items were served
-          for item in course:
-            if course.index(item) == 0: #check to see if first element
-              print(f"{item.capitalize()}, ", end="")
-            elif item == course[-1]: #check to see if last element
-              print(f"and {item} ", end="")
-            else:
-              print(f"{item}, ", end="")
-          print("were served with the meal.")
-  
-  dinner = Meal()
-  dinner.add_drink("water")
-  dinner.add_drink("coffee")
-  dinner.add_course("roast chicken")
-  dinner.add_course("mashed potatoes")
-  dinner.add_course("salad")
-  dinner.add_dessert("chocolate cake")
-  dinner.print_meal()
+  ```java
+  import java.util.ArrayList;
+
+  //add class definitions below this line
+
+  class Meal {
+    ArrayList<String> drinks = new ArrayList<String>();
+    ArrayList<String> appetizers = new ArrayList<String>();
+    ArrayList<String> mainCourse = new ArrayList<String>();
+    ArrayList<String> dessert = new ArrayList<String>();
+
+    void addDrink(String d) {
+      drinks.add(d);
+    }
+
+    void addAppetizer(String a) {
+      appetizers.add(a);
+    }
+
+    void addCourse(String c) {
+      mainCourse.add(c);
+    }
+
+    void addDessert(String d) {
+      dessert.add(d);
+    }
+
+    void printMeal() {
+      printCourse(drinks, "drinks");
+      printCourse(appetizers, "appetizers");
+      printCourse(mainCourse, "main course");
+      printCourse(dessert, "dessert");
+    }
+
+    void printCourse(ArrayList<String> course, String name) {
+      if (course.size() == 0) {
+        String verb = "";
+        if (name.equals("drinks")) {
+          verb = "drinks were";
+        } else if (name.equals("appetizers")) {
+          verb = "appetizers were";
+        } else if (name.equals("main course")) {
+          verb = "main course was";
+        } else if (name.equals("dessert")) {
+          verb = "dessert was";
+        }
+        System.out.println("No " + verb + " served with the meal.");
+      } else if (course.size() == 1) { // check for one item
+        String item = course.get(0);
+        item = item.substring(0, 1).toUpperCase() + item.substring(1);
+        System.out.println(item + " was served with the meal.");
+      } else if (course.size() == 2) { // check for two items
+        String item1 = course.get(0);
+        String item2 = course.get(1);
+        item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+        System.out.println(item1 + " and " + item2 + " were served with the meal.");
+      } else { // more than two items
+        String item1 = course.get(0);
+        item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+        System.out.print(item1 + ", ");
+        for (int i = 1; i < course.size(); i++) {
+          if (i == course.size() - 1) {
+            System.out.print("and " + course.get(i) + " ");
+          } else {
+            System.out.print(course.get(i) + ", ");
+          }
+        }
+        System.out.println("were served with the meal.");
+      }
+    }
+  }
+
+  //add class definitions above this line
+
+  public class MoreMethods {  
+    public static void main(String[] args) {
+
+      //add code below this line
+
+      Meal dinner = new Meal();
+      dinner.addDrink("water");
+      dinner.addDrink("coffee");
+      dinner.addCourse("roast chicken");
+      dinner.addCourse("mashed potatoes");
+      dinner.addCourse("salad");
+      dinner.addDessert("chocolate cake");
+      dinner.printMeal();
+
+      //add code above this line
+    }
+  }
   ```
   
 </details>
 
 |||
 
-{try it}(python3 code/mutability/methods2.py 10)
-
-{Check It!|assessment}(fill-in-the-blanks-4152483883)
+{Try it}(sh .guides/bg.sh javac code/mutability/MoreMethods.java java -cp code/mutability/ MoreMethods 9)
 

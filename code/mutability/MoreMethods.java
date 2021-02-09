@@ -34,7 +34,6 @@ class Meal {
   void printCourse(ArrayList<String> course, String name) {
     if (course.size() == 0) {
       String verb = "";
-    
       if (name.equals("drinks")) {
         verb = "drinks were";
       } else if (name.equals("appetizers")) {
@@ -44,12 +43,28 @@ class Meal {
       } else if (name.equals("dessert")) {
         verb = "dessert was";
       }
-      
       System.out.println("No " + verb + " served with the meal.");
-    } else if (course.size() == 1) {
+    } else if (course.size() == 1) { // check for one item
       String item = course.get(0);
       item = item.substring(0, 1).toUpperCase() + item.substring(1);
       System.out.println(item + " was served with the meal.");
+    } else if (course.size() == 2) { // check for two items
+      String item1 = course.get(0);
+      String item2 = course.get(1);
+      item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+      System.out.println(item1 + " and " + item2 + " were served with the meal.");
+    } else { // more than two items
+      String item1 = course.get(0);
+      item1 = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+      System.out.print(item1 + ", ");
+      for (int i = 1; i < course.size(); i++) {
+        if (i == course.size() - 1) {
+          System.out.print("and " + course.get(i) + " ");
+        } else {
+          System.out.print(course.get(i) + ", ");
+        }
+      }
+      System.out.println("were served with the meal.");
     }
   }
 }

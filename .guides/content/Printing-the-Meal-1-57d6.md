@@ -53,7 +53,7 @@ Printing a message for an empty ArrayList becomes tricky because the sentence ch
 * No **main course was** served with the meal.
 * No **dessert was** served with the meal.
 
-Create a string variable `verb` that will represent the text in bold above. Then ask if the `name` parameter matches each of the four courses: `"drinks"`, `"appetizers"`, `"main course"`, or `"dessert"`. When you have a match, set `verb` to the appropriate string (the bold text above).
+Start by checking to see if `course` is an empty ArrayList using the `size` method.
 
 ```java
   void printMeal() {
@@ -64,39 +64,29 @@ Create a string variable `verb` that will represent the text in bold above. Then
   }
 
   void printCourse(ArrayList<String> course, String name) {
-    String verb = "";
-    
-    if (name.equals("drinks")) {
-      verb = "drinks were";
-    } else if (name.equals("appetizers")) {
-      verb = "appetizers were";
-    } else if (name.equals("main course")) {
-      verb = "main course was";
-    } else if (name.equals("dessert")) {
-      verb = "dessert was";
-    }
+    if (course.size() == 0) { // check for empty ArrayList
+      
+    } 
   }
 ```
 
-Next determine if no items were served by asking if the size of `course` is 0. If so, print a sentence that tells the user that no items were served for that course. Be sure to incorporate the variable `verb` to provide the proper context.
+Next, create a string variable `verb` that will represent the text in bold above. Then ask if the `name` parameter matches each of the four courses: `"drinks"`, `"appetizers"`, `"main course"`, or `"dessert"`. When you have a match, set `verb` to the appropriate string (the bold text above). Print a sentence that tells the user that no items were served for that course. Be sure to incorporate the variable `verb` to provide the proper context.
 
 ```java
   void printCourse(ArrayList<String> course, String name) {
-    String verb = "";
-    
-    if (name.equals("drinks")) {
-      verb = "drinks were";
-    } else if (name.equals("appetizers")) {
-      verb = "appetizers were";
-    } else if (name.equals("main course")) {
-      verb = "main course was";
-    } else if (name.equals("dessert")) {
-      verb = "dessert was";
-    }
-    
-    if (course.size() == 0) {
+    if (course.size() == 0) { // check for empty ArrayList
+      String verb = "";
+      if (name.equals("drinks")) {
+        verb = "drinks were";
+      } else if (name.equals("appetizers")) {
+        verb = "appetizers were";
+      } else if (name.equals("main course")) {
+        verb = "main course was";
+      } else if (name.equals("dessert")) {
+        verb = "dessert was";
+      }
       System.out.println("No " + verb + " served with the meal.");
-    }
+    } 
   }
 ```
 
