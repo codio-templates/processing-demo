@@ -1568,5 +1568,116 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1983956315",
+  "source": {
+   "name": "methods formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog: {\n  String name;\n  String breed;\n\n  Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n\n  void bark() {\n    System.out.println(\"Woof, woof!\");\n  }\n}\n\nDog myDog = new Dog(\"Brutus\", \"Pomeranian\");\n```\n\nWhat code would you add to print `Woof, woof!`?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "2e983084-185f-003e-299c-21aa1ffd93e7",
+     "correct": true,
+     "answer": "myDog.bark();"
+    },
+    {
+     "_id": "fc15c228-9790-eb70-99ce-4d2b695b6484",
+     "correct": false,
+     "answer": "bark();"
+    },
+    {
+     "_id": "63786543-a328-cb32-f540-353386a9088f",
+     "correct": false,
+     "answer": "myDog.bark(\"Brutus\", \"Pomeranian\");"
+    },
+    {
+     "_id": "ba424d9d-fc68-9da7-3aab-26b4f6ab6bc7",
+     "correct": false,
+     "answer": "System.out.println(myDog.bark());"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\nmyDog.bark();\n```\n\n* `bark();` is not correct because methods are called with dot notation. Dot notation requires the object name followed by the method name. This code snippet is missing the object name.\n* `myDog.bark(\"Brutus\", \"Pomeranian\");` is not correct because the `bark` method does not take any arguments.\n* `System.out.println(myDog.bark());` is not correct because the `bark` method does not return a value that can be printed.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Calling a class method"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/MoreMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/MoreMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT demonstrate how to call a class method"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-3809215804",
+  "source": {
+   "name": "methods formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nDrag the code blocks into the box below so that the class method `hello` will print a greeting using the `name` instance variable. **Note**, not all of the code blocks will be used.",
+   "initial": "void hello() {\n  System.out.println(&quot;Hello, &quot; + name);\n}\nString hello() { #distractor\nvoid hello(String name) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\nvoid hello() {\n  System.out.println(\"Hello, \" + name);\n}\n```\n\n* The `hello` method does not have a `return` statement, so the type is `void` not `String`.\n* `name` is an instance variable, so `hello` does not need a parameter; it can already access the instance variable.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Class methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create a class method"
+  }
  }
 ]
