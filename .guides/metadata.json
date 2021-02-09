@@ -677,6 +677,53 @@
    "learningObjectives": ""
   },
   {
+   "id": "076d0858-4303-ffeb-3c8c-37981d306768",
+   "title": "Static Methods",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/StaticMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Static-Methods-076d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "230892bc-0af8-2ec8-abfe-4dcf8c4f7a0f",
+   "title": "Independence From Instances",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Independence-From-Instances-2308.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "8eebf637-a945-fd08-5f3e-4f9f4aca662d",
+   "title": "Method Scope",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Method-Scope-8eeb.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "c7f99bf4-a633-7ad7-b1d7-ed46122b36cf",
    "title": "Mutability Lab 1",
    "files": [],
