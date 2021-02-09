@@ -609,7 +609,18 @@
   {
    "id": "57d6a813-cb0e-cd20-85cd-95689f260f3f",
    "title": "Printing the Meal 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/MoreMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Printing-the-Meal-1-57d6.md",
@@ -621,7 +632,18 @@
   {
    "id": "88ec2efa-3fc3-5a76-f48b-90794bedd110",
    "title": "Printing the Meal 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/MoreMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Printing-the-Meal-2-88ec.md",

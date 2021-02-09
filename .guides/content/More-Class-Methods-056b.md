@@ -11,7 +11,7 @@ class Meal {
   ArrayList<String> drinks = new ArrayList<String>();
   ArrayList<String> appetizers = new ArrayList<String>();
   ArrayList<String> mainCourse = new ArrayList<String>();
-  ArrayList<String> desserts = new ArrayList<String>();
+  ArrayList<String> dessert = new ArrayList<String>();
 }
  
 //add class definitions above this line
@@ -26,7 +26,7 @@ class Meal {
   ArrayList<String> drinks = new ArrayList<String>();
   ArrayList<String> appetizers = new ArrayList<String>();
   ArrayList<String> mainCourse = new ArrayList<String>();
-  ArrayList<String> desserts = new ArrayList<String>();
+  ArrayList<String> dessert = new ArrayList<String>();
 
   void addDrink(String d) {
     drinks.add(d);
@@ -96,7 +96,7 @@ Test your code using `"roast chicken"` as a main course and `"chocolate cake"` a
     ArrayList<String> drinks = new ArrayList<String>();
     ArrayList<String> appetizers = new ArrayList<String>();
     ArrayList<String> mainCourse = new ArrayList<String>();
-    ArrayList<String> desserts = new ArrayList<String>();
+    ArrayList<String> dessert = new ArrayList<String>();
 
     void addDrink(String d) {
       drinks.add(d);
@@ -111,7 +111,7 @@ Test your code using `"roast chicken"` as a main course and `"chocolate cake"` a
     }
   
     void addDessert(String d) {
-      desserts.add(d);
+      dessert.add(d);
     }
   }
 

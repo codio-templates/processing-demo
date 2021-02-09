@@ -1436,5 +1436,71 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a class method"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1589623942",
+  "source": {
+   "name": "printing the meal 1 reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhat is the name of a method that is defined within a class?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "340c3867-b606-65cf-c728-b9cd4a9db25a",
+     "correct": true,
+     "answer": "Class method"
+    },
+    {
+     "_id": "ff7ce12d-773c-5388-b8b3-3a9daf81550f",
+     "correct": false,
+     "answer": "Method"
+    },
+    {
+     "_id": "80681c11-773d-dcf1-1e67-a98b2c2f737c",
+     "correct": false,
+     "answer": "User-defined method"
+    }
+   ],
+   "guidance": "A class method is a method that is defined within a class. The name `method` is not correct because it does not distinguish if the method was declared inside or outside of a class. While class methods can be a user-defined method, not all user-defined methods are class methods. ",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Class methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/MoreMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/MoreMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT differentiate a class method from other methods"
+  }
  }
 ]
