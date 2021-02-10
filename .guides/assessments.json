@@ -1329,11 +1329,11 @@
   "source": {
    "name": "external methods vs class methods reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nFill in the blanks with either **external method**, **class method**, or **external methods and class methods** so that the sentence is correct.",
+   "instructions": "## Reading Question\n\nFill in the blanks with either **external method**, **instance method**, or **external methods and instance methods** so that the sentence is correct.",
    "showValues": true,
-   "text": "A <<<class method>>> is declared inside of a class.\nAn <<<external method>>> is declared outside of a class.\n<<<External methods and class methods>>> can modify an object.",
+   "text": "An <<<instance method>>> is declared inside of a class.\nAn <<<external method>>> is declared outside of a class.\n<<<External methods and instance methods>>> can modify an object.",
    "distractors": "",
-   "guidance": "The correct answers are:\n\nA class method is declared inside of a class.\nAn external method is declared outside of a class.\nExternal methods and class methods can modify an object.",
+   "guidance": "The correct answers are:\n\nAn instance method is declared inside of a class.\nAn external method is declared outside of a class.\nExternal methods and instance methods can modify an object.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -1346,7 +1346,7 @@
      },
      {
       "name": "Content",
-      "value": "Class Methods"
+      "value": "Instance Methods"
      },
      {
       "name": "Programming Language",
@@ -1369,15 +1369,15 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT differentiate between external and class methods",
+   "learningObjectives": "SWBAT differentiate between external and instance methods",
    "tokens": {
     "blank": [
-     "class method",
+     "instance method",
      "external method",
-     "External methods and class methods"
+     "External methods and instance methods"
     ],
     "text": [
-     "A ",
+     "An ",
      0,
      " is declared inside of a class.\nAn ",
      0,
@@ -1395,11 +1395,11 @@
   "source": {
    "name": "more class methods reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume you have the `Person` class as defined below:\n\n```java\nclass Person {\n  String name;\n  int age;\n\n  Person(String n, int a) {\n    name = n;\n    age = a;\n  }\n}\n```\n\nIn addition, `alice` is an instance of the `Person` class:\n\n```java\nPerson alice = Person(\"Alice\", 32);\n```\n\nUsing the code blocks below to create a class method called `birthday` that adds a year to Alice's age. **Note**, not all of the code blocks will be used.",
-   "initial": "void birthday() {\n  age += 1;\n}\nint birthday() { #distractor\nvoid birthday(int newAge) { #distractor\nage = newAge; #distractor",
+   "instructions": "## Reading Question\n\nAssume you have the `Person` class as defined below:\n\n```java\nclass Person {\n  String name;\n  int age;\n\n  Person(String n, int a) {\n    name = n;\n    age = a;\n  }\n}\n```\n\nIn addition, `alice` is an instance of the `Person` class:\n\n```java\nPerson alice = Person(\"Alice\", 32);\n```\n\nUsing the code blocks below to create an instance method called `birthday` that adds a year to Alice's age. **Note**, not all of the code blocks will be used.",
+   "initial": "void birthday() {\n  age += 1;\n}\nint birthday() {  #distractor\nvoid birthday(int newAge) {  #distractor\nage = newAge;  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
-   "guidance": "The correct answer is:\n\n```java\nvoid birthday() {\n  age += 1;\n}\n```\n\n* The class method `birthday` should not be of type `int` as this method does not return an integer.\n* The class method `birthday` does not need a parameter, as this method always increases the `age` attribute by 1.\n* The `age` attribute should be increased by 1, not by another integer passed to the `birthday` method.",
+   "guidance": "The correct answer is:\n\n```java\nvoid birthday() {\n  age += 1;\n}\n```\n\n* The instance method `birthday` should not be of type `int` as this method does not return an integer.\n* The instance method `birthday` does not need a parameter, as this method always increases the `age` attribute by 1.\n* The `age` attribute should be increased by 1, not by another integer passed to the `birthday` method.",
    "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
@@ -1411,7 +1411,7 @@
      },
      {
       "name": "Content",
-      "value": "Class Method"
+      "value": "Instance Method"
      },
      {
       "name": "Programming Language",
@@ -1434,7 +1434,7 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create a class method"
+   "learningObjectives": "SWBAT create an instance method"
   }
  },
  {
@@ -1450,7 +1450,7 @@
     {
      "_id": "340c3867-b606-65cf-c728-b9cd4a9db25a",
      "correct": true,
-     "answer": "Class method"
+     "answer": "Instance method"
     },
     {
      "_id": "ff7ce12d-773c-5388-b8b3-3a9daf81550f",
@@ -1463,7 +1463,7 @@
      "answer": "User-defined method"
     }
    ],
-   "guidance": "A class method is a method that is defined within a class. The name `method` is not correct because it does not distinguish if the method was declared inside or outside of a class. While class methods can be a user-defined method, not all user-defined methods are class methods. ",
+   "guidance": "An instance method is a method that is defined within a class. The name `method` is not correct because it does not distinguish if the method was declared inside or outside of a class. While instance methods can be a user-defined method, not all user-defined methods are instance methods. ",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -1477,7 +1477,7 @@
      },
      {
       "name": "Content",
-      "value": "Class methods"
+      "value": "Instance methods"
      },
      {
       "name": "Programming Language",
@@ -1500,7 +1500,7 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT differentiate a class method from other methods"
+   "learningObjectives": "SWBAT differentiate a instance method from other methods"
   }
  },
  {
@@ -1509,7 +1509,7 @@
   "source": {
    "name": "printing the meal 2 reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume the class `Author` is defined as follows:\n\n```java\nclass Author {\n  String name;\n  String book;\n  \n  Actor(String authorName, String famousBook) {\n    name = authorName;\n    book = famousBook;\n  }\n}\n```\n\nFill in the blanks below so that the class method `printAuthor` is correct.",
+   "instructions": "## Reading Question\n\nAssume the class `Author` is defined as follows:\n\n```java\nclass Author {\n  String name;\n  String book;\n  \n  Actor(String authorName, String famousBook) {\n    name = authorName;\n    book = famousBook;\n  }\n}\n```\n\nFill in the blanks below so that the instance method `printAuthor` is correct.",
    "showValues": true,
    "text": "```java\n<<<void>>> printAuthor() {\n  System.out.println(<<<name>>> + \" is known for their book \" + <<<book>>>);\n}\n```",
    "distractors": "String\nauthorName\nfamousBook",
@@ -1526,7 +1526,7 @@
      },
      {
       "name": "Content",
-      "value": "Class methods"
+      "value": "Instance methods"
      },
      {
       "name": "Programming Language",
@@ -1549,7 +1549,7 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT create a class method",
+   "learningObjectives": "SWBAT create an instance method",
    "tokens": {
     "blank": [
      "void",
@@ -1614,7 +1614,7 @@
      },
      {
       "name": "Content",
-      "value": "Calling a class method"
+      "value": "Instance Methods"
      },
      {
       "name": "Programming Language",
@@ -1628,16 +1628,10 @@
     "files": [
      "code/mutability/MoreMethods.java"
     ],
-    "opened": [
-     {
-      "type": "file",
-      "panelNumber": 0,
-      "content": "code/mutability/MoreMethods.java"
-     }
-    ]
+    "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT demonstrate how to call a class method"
+   "learningObjectives": "SWBAT demonstrate how to call an instance method"
   }
  },
  {
@@ -1646,11 +1640,11 @@
   "source": {
    "name": "methods formative assessment 1",
    "showName": false,
-   "instructions": "## Formative Assessment\n\nDrag the code blocks into the box below so that the class method `hello` will print a greeting using the `name` instance variable. **Note**, not all of the code blocks will be used.",
-   "initial": "void hello() {\n  System.out.println(&quot;Hello, &quot; + name);\n}\nString hello() { #distractor\nvoid hello(String name) { #distractor",
+   "instructions": "## Formative Assessment\n\nDrag the code blocks into the box below so that the instance method `hello` will print a greeting using the `name` attribute. **Note**, not all of the code blocks will be used.",
+   "initial": "void hello() {\n  System.out.println(&quot;Hello, &quot; + name);\n}\nString hello() {  #distractor\nvoid hello(String name) {  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
-   "guidance": "The correct answer is:\n\n```java\nvoid hello() {\n  System.out.println(\"Hello, \" + name);\n}\n```\n\n* The `hello` method does not have a `return` statement, so the type is `void` not `String`.\n* `name` is an instance variable, so `hello` does not need a parameter; it can already access the instance variable.",
+   "guidance": "The correct answer is:\n\n```java\nvoid hello() {\n  System.out.println(\"Hello, \" + name);\n}\n```\n\n* The `hello` method does not have a `return` statement, so the type is `void` not `String`.\n* `name` is an attribute, so `hello` does not need a parameter; it can already access the attribute.",
    "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
@@ -1662,7 +1656,7 @@
      },
      {
       "name": "Content",
-      "value": "Class methods"
+      "value": "Instance methods"
      },
      {
       "name": "Programming Language",
@@ -1677,7 +1671,7 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT create a class method"
+   "learningObjectives": "SWBAT create an Instance method"
   }
  },
  {

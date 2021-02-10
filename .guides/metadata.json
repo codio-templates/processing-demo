@@ -544,7 +544,7 @@
   },
   {
    "id": "3a1b986b-dfe5-df70-1164-6634c85583d6",
-   "title": "Learning Objectives - Class Methods",
+   "title": "Learning Objectives - Instance Methods",
    "files": [
     {
      "path": "#tabs",
@@ -554,7 +554,7 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Learning-Objectives---Class-Methods-3a1b.md",
+   "content-file": ".guides/content/Learning-Objectives---Instance-Methods-3a1b.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

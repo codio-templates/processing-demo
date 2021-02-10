@@ -2,7 +2,7 @@
 
 ## More on Class Methods and Objects
 
-Changes to objects should happen exclusively through class methods. This makes your code easier to organize and easier for others to understand. Imagine you are going to create a class that keeps track of a meal. In this case, a meal can be thought of as all of the drinks, appetizers, courses, and desserts served. Each one of these categories will become an instance variable. Assign each attribute an ArrayList of strings.
+Changes to objects should happen exclusively through instance methods. This makes your code easier to organize and easier for others to understand. Imagine you are going to create a class that keeps track of a meal. In this case, a meal can be thought of as all of the drinks, appetizers, courses, and desserts served. Each one of these categories will become an instance variable (attribute). Assign each attribute an ArrayList of strings.
 
 ```java
 //add class definitions below this line
@@ -17,7 +17,7 @@ class Meal {
 //add class definitions above this line
 ```
 
-Next, add a class method to add a drink to the `Meal` object. Use the `.add` method to add an element to the list. So `drinks.add(d)` adds the drink `d` to the ArrayList `drinks`.
+Next, add an instance method to add a drink to the `Meal` object. Use the `.add` method to add an element to the list. So `drinks.add(d)` adds the drink `d` to the ArrayList `drinks`.
 
 ```java
 //add class definitions below this line
@@ -36,7 +36,7 @@ class Meal {
 //add class definitions above this line
 ```
 
-Create a `Meal` object and test your code to make sure it is working as expected. Remember to indent `add_drink` so that it is a part of the `Meal` class.
+Create a `Meal` object and test your code to make sure it is working as expected.
 
 ```java
     //add code below this line
@@ -50,7 +50,7 @@ Create a `Meal` object and test your code to make sure it is working as expected
 
 {Try it}(sh .guides/bg.sh javac code/mutability/MoreMethods.java java -cp code/mutability/ MoreMethods 1)
 
-Now create the `addAppetizer` method to the class. Like the method above, `addAppetizer` accepts a string as a parameter and adds it to the `appetizers` attribute. 
+Now create the `addAppetizer` instance method for the class. Like the method above, `addAppetizer` accepts a string as a parameter and adds it to the `appetizers` attribute. 
 
 ```java
   void addDrink(String d) {
@@ -79,7 +79,7 @@ Add `"bruschetta"` to the `dinner` object and print it.
 {Try it}(sh .guides/bg.sh javac code/mutability/MoreMethods.java java -cp code/mutability/ MoreMethods 2)
 
 |||challenge
-## Create the following methods:
+## Create the following instance methods:
 * `addCourse` - accepts a string which represents a course and adds it to the meal.
 * `addDessert` - accepts a string which represents a dessert and adds it to the meal.
 

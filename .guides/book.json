@@ -200,12 +200,12 @@
      ]
     },
     {
-     "title": "Changing Objects with Class Methods",
+     "title": "Changing Objects with Instance Methods",
      "id": "b11916fd-b85a-9eed-89dc-e69d37c3ed47",
      "type": "section",
      "children": [
       {
-       "title": "Learning Objectives - Class Methods",
+       "title": "Learning Objectives - Instance Methods",
        "id": "6a65837e-3a34-6c5b-9284-6b2cf153a915",
        "type": "page",
        "pageId": "3a1b986b-dfe5-df70-1164-6634c85583d6"

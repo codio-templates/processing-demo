@@ -1,7 +1,7 @@
 ----------
 
-* ### Define the term class method
-* ### Convert an external method that modifies an object into a class method
+* ### Define the term Instance method
+* ### Convert an external method that modifies an object into an instance method
 * ### Demonstrate the syntax for calling a method
 
 |||guidance

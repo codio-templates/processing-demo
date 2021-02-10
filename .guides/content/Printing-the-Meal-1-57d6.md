@@ -9,7 +9,7 @@ Before writing the method to print the meal, think about what you want the outpu
 * Main course - roast chicken, mashed potatoes, and salad.
 * Dessert - chocolate cake
 
-Change your code to reflect this meal. Also, add the `print_meal` method even though it has not yet been declared.
+Change your code to reflect this meal. Also, add the `printMeal` instance method even though it has not yet been declared.
 
 ```java
     //add code below this line
@@ -26,7 +26,7 @@ Change your code to reflect this meal. Also, add the `print_meal` method even th
     //add code above this line
 ```
 
-The `printMeal` class method is going to invoke the helper method `printCourse`. Call `printCourse` four times, passing it the ArrayList that represents the course as well as the name of the course.
+The `printMeal` instance method is going to invoke the helper method `printCourse`. Call `printCourse` four times, passing it the ArrayList that represents the course as well as the name of the course.
 
 ```java
   void addDessert(String d) {
