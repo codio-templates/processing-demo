@@ -689,6 +689,18 @@
    "learningObjectives": ""
   },
   {
+   "id": "a325cd4f-1d4e-b254-751c-bab67f6c409a",
+   "title": "Learning Objectives - Static Methods",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Static-Methods-a325.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "076d0858-4303-ffeb-3c8c-37981d306768",
    "title": "Static Methods",
    "files": [
@@ -737,7 +749,18 @@
   {
    "id": "8eebf637-a945-fd08-5f3e-4f9f4aca662d",
    "title": "Method Scope",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/MethodScope.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Method-Scope-8eeb.md",

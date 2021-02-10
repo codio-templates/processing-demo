@@ -261,6 +261,12 @@
      "type": "section",
      "children": [
       {
+       "title": "Learning Objectives - Static Methods",
+       "id": "fa1989da-f215-a63d-6b98-054254ea2237",
+       "type": "page",
+       "pageId": "a325cd4f-1d4e-b254-751c-bab67f6c409a"
+      },
+      {
        "title": "Static Methods",
        "id": "398a2131-13c6-400e-b808-73a7696236ba",
        "type": "page",
