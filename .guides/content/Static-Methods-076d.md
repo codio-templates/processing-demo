@@ -81,22 +81,18 @@ Static methods are called in a unique way. The still use dot notation, but inste
 
 |||challenge
 ## Try this variation:
-Create the object `rect3` and use the `combinedArea` method with different combinations of the `Rectangle` objects.
+Create the static method `describe` for the `Rectangle` class that prints a description of the rectangle.
 
 ```java
-    //add code below this line
-
-    Rectangle rect1 = new Rectangle(12, 27);
-    Rectangle rect2 = new Rectangle(9, 3);
-    Rectangle rect3 = new Rectangle(10, 5);
-    System.out.println(Rectangle.combinedArea(rect1, rect2));
-    System.out.println(Rectangle.combinedArea(rect1, rect3));
-    System.out.println(Rectangle.combinedArea(rect2, rect3));
-
-    //add code above this line
+  static void describe() {
+    System.out.println("The rectangle has width of " + width + " and a length of" + length + ".");
+  }
 ```
 
-Notice how the `combinedArea` static method can be used with any two arguments as long as they are of type `Rectangle`. Unlike class methods, static methods are not confined to working with any particular instance of a class.
+<details>
+  <summary><strong>Why is there an error?</strong></summary>
+  Static methods can directly access class attributes (attributes with the <code>static</code> keyword), but they <strong>cannot</strong> directly access instance attributes. Static methods can only access instance variables if objects are passed to the static method (see the <code>combinedArea</code> parameters).
+</details>
 
 |||
 

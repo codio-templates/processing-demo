@@ -713,11 +713,22 @@
   },
   {
    "id": "230892bc-0af8-2ec8-abfe-4dcf8c4f7a0f",
-   "title": "Independence From Instances",
-   "files": [],
+   "title": "Independence From Objects",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/Independent.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Independence-From-Instances-2308.md",
+   "content-file": ".guides/content/Independence-From-Objects-2308.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

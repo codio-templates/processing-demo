@@ -1750,5 +1750,68 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT recognize keyword needed to create static methods"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3303739284",
+  "source": {
+   "name": "independence from objects reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "A <<<static>>> method can be called without instantiating an object.\nAn <<<instance>>> method must instantiate an object before being called.",
+   "distractors": "public\nprivate",
+   "guidance": "The correct answers are:\n\nA **static** method can be called without instantiating an object.\nAn **instance** method must instantiate an object before being called.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Static Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/Independent.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/Independent.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between static and instance methods",
+   "tokens": {
+    "blank": [
+     "static",
+     "instance"
+    ],
+    "text": [
+     "A ",
+     0,
+     " method can be called without instantiating an object.\nAn ",
+     0,
+     " method must instantiate an object before being called."
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
