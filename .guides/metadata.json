@@ -836,6 +836,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise1.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -854,6 +859,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise2.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",

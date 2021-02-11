@@ -1807,5 +1807,103 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-643654737",
+  "source": {
+   "name": "mutability coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CelestialBody {\n  String name;\n  double diameter;\n  long distance;\n  int moons;\n  \n  CelestialBody(String n, double diam, long dist, int m) {\n    name = n;\n    diameter = diam;\n    distance = dist;\n    moons = m;\n  }\n  \n  double comparedToEarth() {\n    double earth = 12765.3;\n    double relativeSize = diameter / earth;\n    return relativeSize;\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n\n    CelestialBody planet = new CelestialBody(\"Jupiter\", 142984, 778360000L, 79);\n    System.out.println(planet.comparedToEarth());\n\n    //add code above this line\n  }\n}\n```\n\n* Move the `comparedToEarth` method inside of the `CelestialBody` class.\n* Remove the `public` and `static` keywords from the method.\n* `comparedToEarth`does not need any parameters since it can directly access the `diameter` attribute.\n* Remove `planet` from `comparedToEarth`. The method no longer has the parameter `planet`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT transform an external method to an instance method"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3842605",
+  "source": {
+   "name": "mutability coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CelestialBody {\n  String name;\n  double diameter;\n  long distance;\n  int moons;\n  \n  CelestialBody(String n, double diam, long dist, int m) {\n    name = n;\n    diameter = diam;\n    distance = dist;\n    moons = m;\n  }\n  \n  static String closerToSun(CelestialBody b1, CelestialBody b2) {\n    if (b1.distance < b2.distance) {\n      return b1.name;\n    } else {\n      return b2.name;\n    }\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    CelestialBody mercury = new CelestialBody(\"Mercury\", 4879.4, 57909000, 0);\n    CelestialBody venus = new CelestialBody(\"Venus\", 12103.6, 108160000, 0);\n    String closest = CelestialBody.closerToSun(mercury, venus);\n    System.out.println(closest);\n    \n    //add code above this line\n  }\n}\n```\n\n* Static methods require the use of the `static` method.\n* The `closerToSun` method takes two `CelestialBody` objects as parameters.\n* Find the smaller of the two `distance` attributes of the `CelestialBody` objects.\n* Return the `name` attribute of the object that is closest to the sun.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Static Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a static method"
+  }
  }
 ]
