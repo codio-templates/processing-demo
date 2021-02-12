@@ -1905,5 +1905,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create a static method"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3144038960",
+  "source": {
+   "name": "mutability coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your work for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\n\n//add class definitions below this line\n\nclass Library {\n  ArrayList<String> available;\n  ArrayList<String> onLoan;\n  \n  Library() {\n    available = new ArrayList<String>();\n    onLoan = new ArrayList<String>();\n  }\n  \n  void addBooks(String[] books) {\n    for (String book : books) {\n      available.add(book);\n    }\n  }\n  \n  void borrowBook(String book) {\n    onLoan.add(book);\n    available.remove(book);\n  }\n  \n  void returnBook(String book) {\n    onLoan.remove(book);\n    available.add(book);\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise4 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    Library myLibrary = new Library();\n    String[] books = {\"Four Seasons\", \"Say Nothing\", \"Milkman\", \"Harry Potter and the Order of the Phoenix\"};\n    myLibrary.addBooks(books);\n    myLibrary.borrowBook(\"Harry Potter and the Order of the Phoenix\");\n    myLibrary.borrowBook(\"Say Nothing\");\n    myLibrary.returnBook(\"Say Nothing\");\n    System.out.println(myLibrary.available);\n    System.out.println(myLibrary.onLoan);  \n\n    //add code above this line\n  }\n}\n```\n\n* The `addBooks` method should iterate over the list of books passed to the method. Each element of the list should be added to the ArrayList attribute `available`. \n* The `borrowBook` method removes the book from the `available` attribute and adds it to the `onLoan` attribute.\n* The `returnBook` method removes the book from the `onLoan` attribute and adds it to the `available` attribute.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/Exercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/Exercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT to create instance methods"
+  }
  }
 ]
