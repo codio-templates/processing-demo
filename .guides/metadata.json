@@ -772,7 +772,23 @@
   {
    "id": "c7f99bf4-a633-7ad7-b1d7-ed46122b36cf",
    "title": "Mutability Lab 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/Drawing.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-1-c7f9.md",
@@ -784,7 +800,23 @@
   {
    "id": "c1cb1653-806e-5521-0a11-c59e95fe0a11",
    "title": "Mutability Lab 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/Animation.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-2-c1cb.md",
@@ -796,7 +828,23 @@
   {
    "id": "a721313f-c2aa-a945-ca5f-4a881b9389d1",
    "title": "Mutability Lab 3",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/Animation.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-3-a721.md",
@@ -808,7 +856,23 @@
   {
    "id": "1023a2fe-dbf3-26b4-7320-ffe80bb968b6",
    "title": "Mutability Lab 4",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/Animation.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-4-1023.md",
@@ -820,7 +884,18 @@
   {
    "id": "97926e94-9608-124b-08be-17ce484ce796",
    "title": "Mutability Lab Challenge",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/LabChallenge.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-Challenge-9792.md",
@@ -943,7 +1018,7 @@
  "theme": "light",
  "scripts": [],
  "lexikonTopic": "",
- "suppressPageNumbering": false,
+ "suppressPageNumbering": true,
  "useSubmitButtons": true,
  "useMarkAsComplete": true,
  "hideMenu": false,

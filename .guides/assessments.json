@@ -1966,7 +1966,7 @@
    "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
-   "guidance": "Here is one possible solution:\n\n```java\n\n```",
+   "guidance": "```java\n  void board(int p) {\n    passengers += p;\n    calculateFares(p);\n  }\n```\nThe `board` method takes an integer of the people boarding the train. This number is added to the `passengers` attribute. Because people pay for the subway when boarding, be sure to call the `calculateFares` method when people are boarding the subway. This will keep track of the total fares.\n\n```java\n  void calculateFares(int p) {\n    totalFares += p * fare;\n  }\n```\nThe `calculateFares` method takes an integer representing the people boarding the subway. Multiply this number by the `fare` attribute and add this to the `totalFares` attribute.\n\n```java\n  void disembark(int p) {\n    if (passengers - p < 0) {\n      passengers = 0;\n    } else {\n      passengers -= p;\n    }\n  }\n```\nThe `disembark` method takes an integer representing the number of people exiting the subway. Remember, there cannot be a negative number of people on board a subway. Check to make sure that the `passengers` attribute minus the number of people disembarking is less than 0. If so, set `passengers` to 0. If not, subtract the people leaving the subway from `passengers`.\n\n```java\n  static void changeFare(double newFare) {\n    fare = newFare;\n  }\n```\nThe `changeFare` method is a `static` method because this method only changes the value of the `static` attribute `fare`. This method takes a double that represents the new fare. This value is assigned to the `fare` attribute.\n\n```java\n  int getIndex(String element) {\n    for (int i = 0; i < stops.length; i++) {\n      if (element.equals(stops[i])) {\n        return i;\n      }\n    }\n    return -1;\n  }\n```\nThis coding exercise does not ask you to make the `getIndex` method. However, this helper method allows us to reuse code instead of writing it multiple times. This method is used for the `distance` and `advance` methods.\n\n```java\n  int distance(String destination) {\n    int currentIndex = getIndex(currentStop);\n    int destinationIndex = getIndex(destination);\n    return Math.abs(destinationIndex - currentIndex);\n  }\n```\nThe `distance` method takes a string that represents the subway stop to which you are going to calculate the distance. We will calculate the distance (number of stops away) by using the index (the attribute `stops` is an array) for the destination and the index of the subway's current stop. Use the helper method `getIndex` to get the index of `currentStop` and the index of `destination`. The difference between these two numbers is the distance. However, we do not want a negative number to represent the difference, so we use the absolute value method (`Math.abs`) to keep the distance positive.\n\n```java\n  void advance() {\n    if (direction.equals(\"south\")) {\n      if (currentStop.equals(\"Kendall\")) {\n        currentStop = \"Central\";\n        direction = \"north\";\n      } else {\n        int currentIndex = getIndex(currentStop);\n        currentStop = stops[currentIndex + 1];\n      }\n    } else if (direction.equals(\"north\")) {\n      if (currentStop.equals(\"Alewife\")) {\n        currentStop = \"Davis\";\n        direction = \"south\";\n      } else {\n        int currentIndex = getIndex(currentStop);\n        currentStop = stops[currentIndex - 1];\n      }\n    }\n  }\n```\nThe `advance` method is the most complex. There are four different scenarios to take into account:\n1) The subway is travelling South and is at the terminus (`\"Kendall\"`). For this scenario, the `currentStop` attribute becomes the previous stop (`\"Central\"`) and the `direction` attribute becomes `\"north\"`. \n1) The subway is traveling South but is not at the terminus. For this scenario, use the `getIndex` helper method to get the index of the subway's current stop. Then update `currentStop` to the next element in the `stops` attribute.\n1) The subway is travelling North and is at the terminus (`\"Alewife\"`). For this scenario, the `currentStop` attribute becomes the next stop (`\"Davis\"`) and the `direction` attribute becomes `\"south\"`.\n1) The subway is travelling North but is not at the terminus. For this scenario, use the `getIndex` helper method to get the index of the subway's current stop. Then update `currentStop` to the previous element in the `stops` attribute.",
    "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
@@ -2002,6 +2002,129 @@
    },
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create several instance methods for a given class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-83966248",
+  "source": {
+   "name": "mutability lab challenge",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n  int totalAnimals() {\n    return bigCats + primates + reptiles + birds;\n  }\n```\nThe `totalAnimals` does not have any parameters, and it returns the sum of the `bigCats`, `primates`, `reptiles`, and `birds` attributes.\n\n```java\n  int totalMammals() {\n    return bigCats + primates;\n  }\n```\nThe `totalMammals` method does not have any parameters. Return only the sum of `bigCats` and `primates` attributes. The other animals are not mammals.\n\n```java\n  String mostAnimals() {\n    if (bigCats > primates && bigCats > reptiles && bigCats > birds) {\n      return \"big cats\";\n    } else if (primates > bigCats && primates > reptiles && primates > birds) {\n      return \"primates\";\n    } else if (reptiles > bigCats && reptiles > primates && reptiles > birds) {\n      return \"reptiles\";\n    } else if (birds > bigCats && birds > primates && birds > reptiles) {\n      return \"birds\";\n    } else {\n      return \"There are an equal amount of animals\";\n    }\n  }\n```\nThe `mostAnimals` method does not have any parameters. Use a series of compound conditionals to ask if each attribute is greater than the rest of the attributes. Return a string for the name of the attribute with the most animals.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create several instance methods for a class"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2028536607",
+  "source": {
+   "name": "mutability lab 1 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass Coffee {\n  String country;\n  String region;\n\n  Country(String c, String r) {\n    country = c;\n    region = r;\n  }\n}\n```\n\nFill in the blanks below to complete the instance method `printCoffee`.",
+   "showValues": false,
+   "text": "```java\n<<<void>>> printCoffee() <<<{>>>\n  System.out.println(\"This coffee comes from \" + <<<country>>> + \".\");\n  System.out.println(\"It was harvested in the \" + <<<region>>> + \" region.\");\n}\n```",
+   "distractors": "",
+   "guidance": "The correct answer is:\n\n```java\nvoid printCoffee() {\n  System.out.println(\"This coffee comes from \" + country + \".\");\n  System.out.println(\"It was harvested in the \" + region + \" region.\");\n}\n```\n\nThis method does not have a `return` statement, so it needs to be of type `void`. Curly brackets are used to mark the beginning and end of the code in a method. The second print statement is `region` since the word \"region\" appears in the text. That means the first print statement uses `country`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/Drawing.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/Drawing.java"
+     },
+     {
+      "type": "preview",
+      "panelNumber": 1,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT construct an instance method",
+   "tokens": {
+    "blank": [
+     "void",
+     "{",
+     "country",
+     "region"
+    ],
+    "text": [
+     "```java\n",
+     0,
+     " printCoffee() ",
+     0,
+     "\n  System.out.println(\"This coffee comes from \" + ",
+     0,
+     " + \".\");\n  System.out.println(\"It was harvested in the \" + ",
+     0,
+     " + \" region.\");\n}\n```"
+    ],
+    "regexPositions": []
+   }
   }
  }
 ]

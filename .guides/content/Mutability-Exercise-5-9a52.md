@@ -5,14 +5,25 @@
 Use the `Subway` class below to help solve these problems.
 
 ```java
-class Subway:
-  fare = 2.4
-  def __init__(self):
-    self.stops = ["Alewife", "Davis", "Porter", "Harvard", "Central", "Kendall"]
-    self.current_stop= "Alewife"
-    self.direction = "south"
-    self.passengers = 0
-    self.total_fares = 0
+//add class definitions below this line
+
+class Subway {
+  static double fare = 2.4;
+  String[] stops;
+  String currentStop;
+  String direction;
+  int passengers;
+  double totalFares;
+  
+  Subway() {
+    stops = new String[]{"Alewife", "Davis", "Porter", "Harvard", "Central", "Kendall"};
+    currentStop = "Alewife";
+    direction = "south";
+    passengers = 0;
+    totalFares = 0;
+  }
+}
+//add class definitions above this line
 ```
 
 Create the following methods for the `Subway` class:
