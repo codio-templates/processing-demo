@@ -806,17 +806,12 @@
      "action": "close"
     },
     {
-     "path": "code/mutability/Animation.java",
-     "panel": 0,
-     "action": "open"
-    },
-    {
      "path": "#preview: https://{{domain3000}}/",
-     "panel": 1,
+     "panel": 0,
      "action": "open"
     }
    ],
-   "layout": "3-cell",
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-2-c1cb.md",

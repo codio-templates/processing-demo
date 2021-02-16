@@ -2,7 +2,7 @@
 
 ## Lab 2 - Ball Class
 
-The purpose of this lab is to build a bouncing ball animation with objects and Pygame. Before the animation can take place, the `Ball` class needs to be defined. Since the animation is built on top of Pygame, look at how to draw a circle in Pygame. That will inform you on how to structure the class.
+The purpose of this lab is to build a bouncing ball animation with objects and Java Swing. Before the animation can take place, the `Ball` class needs to be defined. Since the animation is built on top of Pygame, look at how to draw a circle in Pygame. That will inform you on how to structure the class.
 
 `pygame.draw.circle(surface, color, center, radius)`
 
@@ -51,7 +51,7 @@ while run:
 pygame.quit()
 ```
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 1)
+{Try it}(bash .guides/swing.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 1)
 
 Now that Pygame is up and running, we can turn our attention to the `Ball` class. First, instantiate a `Ball` object called `ball`. The ball should start in the middle of the window, have the color red, and have a radius of 20. The `Ball` object should be created after `window` has been declared, but before the main loop.
 

@@ -41,7 +41,7 @@ Create two instances of the `Rectangle` class, and then calculate the combined a
 
 This works, but the combined area has to be calculated by the user. Since the combined area is related to the `Rectangle` class, a better solution would be to add this functionality to the class. Another type of method in Java is a static method. Static methods use the `static` keyword in the method definition.
 
-Static methods are most often used to add functionality to the whole class and not just an instance of the class. A good rule of thumb is to use a static method when none of the attributes of an instance are changed. In the example below, the attributes for the `r1` and `r2` object do not change. So a static method is a better choice than an instance method
+Static methods are most often used to add functionality to the whole class and not just an instance of the class. A good rule of thumb is to use a static method when none of the attributes of an instance are changed. In the example below, the attributes for the `r1` and `r2` object do not change. So a static method is a better choice than an instance method.
 
 ```java
 //add class definitions below this line
