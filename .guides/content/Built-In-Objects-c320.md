@@ -15,6 +15,17 @@ You have already been using built-in Java objects. Strings are an example of a J
 
 {Try it}(sh .guides/bg.sh javac code/introObjects/BuiltIn.java java -cp code/introObjects/ BuiltIn 1)
 
+|||challenge
+## Try these variations:
+Explore some of the methods associated with the string class.
+* Add the line of code `System.out.println(s.isEmpty());`
+* Add the line of code `System.out.println(s.getBytes());`
+* Add the line of code `System.out.println(s.endsWith("g"));`
+
+|||
+
+{Try it}(sh .guides/bg.sh javac code/introObjects/BuiltIn.java java -cp code/introObjects/ BuiltIn 3)
+
 Java says that the class of `s` is `java.lang.String` (which is a string). Add the following code and run the program again.
 
 ```java
@@ -34,16 +45,6 @@ Java says that the class of `s` is `java.lang.String` (which is a string). Add t
 {Try it}(sh .guides/bg.sh javac code/introObjects/BuiltIn.java java -cp code/introObjects/ BuiltIn 2)
 
 The variable `methods` is an array of all methods associated with the `String` class. If you look carefully at the output, you may be confused by the information on the screen. However, a few things, like `toUpperCase` and `toLowerCase`, may seem familiar. Methods will be covered in a later lesson, but it is important to understand that a string is not a simple collection of characters. Because a string is a class, it is a powerful way of collecting and modifying data.
-
-|||challenge
-## Try these variations:
-* Add the line of code `System.out.println(s.isEmpty());`
-* Add the line of code `System.out.println(s.getBytes());`
-* Add the line of code `System.out.println(s.endsWith("g"));`
-
-|||
-
-{Try it}(sh .guides/bg.sh javac code/introObjects/BuiltIn.java java -cp code/introObjects/ BuiltIn 3)
 
 ## Vocabulary
 
