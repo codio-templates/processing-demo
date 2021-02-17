@@ -952,6 +952,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise3.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",

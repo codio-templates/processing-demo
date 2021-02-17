@@ -2126,5 +2126,54 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2519445590",
+  "source": {
+   "name": "mutability coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Mass {\n  double milligrams;\n  double grams;\n  double kilograms;\n  \n  Mass(int mg, int g, int kg) {\n    milligrams = mg;\n    grams = g;\n    kilograms = kg;\n  }\n  \n  double totalWeight() {\n    double tw = kilograms * 1000 + grams + milligrams / 1000;\n    return tw;\n  }\n  \n  static double combinedWeight(Mass m1, Mass m2) {\n    return m1.totalWeight() + m2.totalWeight();\n  }\n  \n  static String heavier(Mass m1, Mass m2) {\n    double mass1 = m1.totalWeight();\n    double mass2 = m2.totalWeight();\n    if (mass1 > mass2) {\n      return \"The first object is heavier\";\n    } else if (mass2 > mass1) {\n      return \"The second object is heavier\";\n    } else {\n      return \"The two objects weigh the same\";\n    }\n  }\n  \n  static double averageWeight(Mass m1, Mass m2) {\n    return combinedWeight(m1, m2) / 2;\n  }\n}\n \n//add class definitions above this line\n```\n\nThe `totalWeight` method is a helper method and needs direct access to the instance attributes of a `Mass` object. Static methods cannot directly access instance attributes, so `totalWeight` cannot be a static method. For all of the other methods, add the `static` keyword. Each method takes two `Mass` objects as parameters. Be sure that each static methods references both of these arguments (`m1` and `m2` in the example above) when calling the `totalWeight` method or calling the `combinedWeight` method.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Static Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [
+     "code/mutability/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/mutability/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT to transform an instance method into a static method."
+  }
  }
 ]
