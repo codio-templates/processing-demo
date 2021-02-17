@@ -44,9 +44,7 @@ public class Exercise3 {
     
     //add code below this line
     
-    Mass m1 = new Mass(55, 300, 5);
-    Mass m2 = new Mass(45, 200, 2);
-    System.out.println(Mass.averageWeight(m1, m2));
+
 
     //add code above this line
   }
