@@ -65,10 +65,54 @@ The `Math` class is full of static methods. Using the Java [documentation](https
       System.out.println(Math.cos(34.1));
       System.out.println(Math.random());
   ```
+</details>
 
 |||
 
 {Try it}(sh .guides/bg.sh javac code/mutability/Independent.java java -cp code/mutability/ Independent 2)
+  
+## Limits of Static Methods
+  
+Because static methods are independent from objects, that means that static methods cannot directly access instance attributes of an object. Add the following static method to the `Car` class.
+
+```java
+  static void describe() {
+    System.out.println(color + " " + make + " " + model);
+  }
+```
+
+Now call this method from the `Car` class as before. **Important**, running this code will cause an error. Java says that a non-static variable (instance attribute) cannot be referenced from a static context. That is, the static method `describe` cannot directly access the `color`, `make`, or `model` instance attributes of the `Car` class.
+
+```java
+    //add code below this line
+
+    Car.describe();
+
+    //add code above this line
+```
+
+{Try it}(sh .guides/bg.sh javac code/mutability/Independent.java java -cp code/mutability/ Independent 3)
+
+The way to avoid these types of errors is to pass a `Car` object to the `describe` method. Static methods can indirectly access instance attributes through an instance of the class. Change the `describe` method so that it has a `Car` object as a parameter. `describe` can now access the instance attributes by referencing the object name and the attribute using dot notation.
+
+```java
+  static void describe(Car c) {
+    System.out.println(c.color + " " + c.make + " " + c.model);
+  }
+```
+
+Instantiate an instance of the `Car` class, and then pass this instance to the `describe` method. Java should run the code without an error.
+
+```java
+    //add code below this line
+
+    Car myCar = new Car("Honda", "Accord", "red");
+    Car.describe(myCar);
+
+    //add code above this line
+```
+
+{Try it}(sh .guides/bg.sh javac code/mutability/Independent.java java -cp code/mutability/ Independent 4)
 
 {Check It!|assessment}(fill-in-the-blanks-3303739284)
 
