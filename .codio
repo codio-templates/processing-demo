@@ -1,7 +1,4 @@
 {
-    "commands": {
-      "Processing": "bash .guides/processing.sh"
-    },
     "preview": {
         "Virtual Desktop": "https://{{domain3000}}/"
     }

@@ -2,6 +2,8 @@
 
 ## Lab 2 - Ball Class
 
+{Launch Processing}(bash .guides/processing.sh)
+
 The purpose of this lab is to build a bouncing ball animation with objects and Java Swing. Before the animation can take place, the `Ball` class needs to be defined. Since the animation is built on top of Pygame, look at how to draw a circle in Pygame. That will inform you on how to structure the class.
 
 `pygame.draw.circle(surface, color, center, radius)`

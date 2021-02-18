@@ -1,6 +1,6 @@
 ----------
 
-## Lab 1 - Drawing Shapes with Java Swing
+## Lab 1 - Drawing Shapes with Processing
 
 We previously saw how Java Swing can be used to create a graphical user interface with the `Photogram` program. Swing can also be used to draw shapes and lines. Just as before, create a `JFrame` object that contains our drawing. Give the frame a title to appear in the window. Set the frame's size to 400 pixels by 400 pixels, and make sure that the frame is visible. Finally, tell Java to end the program when the window is closed. You should see a blank window appear when you run the code.
 
