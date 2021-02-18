@@ -8,7 +8,7 @@ Define the class `Superhero`. The class should have a constructor that accepts t
 * `secretIdentity` - String with the true name of the hero, e.g. `"Peter Parker"`
 * `powers` - An array of strings with each element representing a power, e.g.
 ```java
-["superhuman strength", "superhuman speed", "superhuman reflexes", "superhuman durability", "healing factor", "spider-sense alert", "heightened senses", "wallcrawling"]
+{"superhuman strength", "superhuman speed", "superhuman reflexes", "superhuman durability", "healing factor", "spider-sense alert", "heightened senses", "wallcrawling"}
 ```
 
 Test your code with print statements and the `TRY IT` button below before submitting your work.
