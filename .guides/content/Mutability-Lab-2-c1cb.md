@@ -2,104 +2,78 @@
 
 ## Lab 2 - Ball Class
 
+|||info
+## Animation File
+For the next three pages, you are going to use the `animation.pde` file. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `animation`. Finally, open the `animation.pde` file.
+
+|||
+
 {Launch Processing}(bash .guides/processing.sh)
 
-The purpose of this lab is to build a bouncing ball animation with objects and Java Swing. Before the animation can take place, the `Ball` class needs to be defined. Since the animation is built on top of Pygame, look at how to draw a circle in Pygame. That will inform you on how to structure the class.
+The purpose of this lab is to build a bouncing ball animation with objects and Processing. Before the animation can take place, the `Ball` class and its constructor need to be defined. We'll also set up the window in the `setup` method.
 
-`pygame.draw.circle(surface, color, center, radius)`
+```java
+//add class definitions below this line
 
-The parameters of the circle in Pygame will be the instance variables for the class. The color will be kept as a tuple (three numbers surrounded by parentheses), but the coordinates will be separate instance variables. These variables will change independently of one another, so it is easier to not use a tuple. Start the project by importing Pygame, and then begin building the `Ball` class.
+class Ball {
+  float xPosition;
+  float yPosition;
+  color ballColor;
+  int radius;
 
-```python
-import pygame
+  Ball(float x, float y) {
+    xPosition = x;
+    yPosition = y;
+    ballColor = color(255, 255, 255);
+    radius = 20;
+  }
+}
 
-class Ball:
-  def __init__(self, surface, color, x, y, r):
-    self.surface = surface
-    self.color = color
-    self.x = x
-    self.y = y
-    self.r = r
+//add class definitions above this line
+
+void setup() {
+  size(400, 400);
+}
 ```
 
-Next comes all of the setup for getting Pygame to work — initialize Pygame, create a surface, set the caption, create a main loop, etc. Run the program when done. The window should be gray.
+The next step is to create the method `drawBall` which will draw the `Ball` object to the screen. This method does not have any parameters. Use the `ballColor` attribute with the `fill` command to color the ball. Then use the `circle` command to draw a circle. **Note** the `circle` method takes the x-position, y-position, and the diameter as arguments. Since the `Ball` class has the attribute `radius`, this attribute needs to be multiplied by 2.
 
-```python
-import pygame
-
-class Ball:
-  def __init__(self, surface, color, x, y, r):
-    self.surface = surface
-    self.color = color
-    self.x = x
-    self.y = y
-    self.r = r
-    
-pygame.init()
-window = pygame.display.set_mode((400, 400))
-pygame.display.set_caption("Bouncing Ball")
-clock = pygame.time.Clock()
-
-run = True
-while run:
-  window.fill((120, 120, 120))
+```java
+  Ball(float x, float y) {
+    xPosition = x;
+    yPosition = y;
+    ballColor = color(255, 255, 255);
+    radius = 20;
+  }
   
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      run = False
-
-  pygame.display.update()
-  clock.tick(30)
-pygame.quit()
+  void drawBall() {
+    fill(ballColor);
+    circle(xPosition, yPosition, radius * 2);
+  }
 ```
 
-{Try it}(bash .guides/swing.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 1)
+Now that the `Ball` class has a method to draw a shape to the window, we are going to instantiate a `Ball` object. In Processing, global variables are declared before the `setup` method. Values are then given to these variables inside the `setup` method. Finally, call the `drawBall` method in `draw`. You should see a white circle appear in the window.
 
-Now that Pygame is up and running, we can turn our attention to the `Ball` class. First, instantiate a `Ball` object called `ball`. The ball should start in the middle of the window, have the color red, and have a radius of 20. The `Ball` object should be created after `window` has been declared, but before the main loop.
+```java
+Ball ball;
 
-```python
-pygame.init()
-window = pygame.display.set_mode((400, 400))
-pygame.display.set_caption("Bouncing Ball")
-clock = pygame.time.Clock()
-ball = Ball(window, (255, 0, 0), 200, 200, 20)
+void setup() {
+  ball = new Ball(50, 50);
+}
 
-run = True
+void draw() {
+  ball.drawBall();
+}
 ```
 
-The `ball` object does not do anything right now. Add the instance method `draw` which will draw the ball on the window. This method will use the instance variables to draw a circle using the Pygame syntax.
+Processing is drawing a black stroke around the circle. To remove this, use the command `noStroke();` in the `drawBall` method. Now you have a solid white circle (and the diameter is still 40 pixels); The `noStroke` command must come before `circle`. It does not matter if `noStroke` comes before or after `fill`.
 
-```python
-class Ball:
-  def __init__(self, surface, color, x, y, r):
-    self.surface = surface
-    self.color = color
-    self.x = x
-    self.y = y
-    self.r = r
-    
-  def draw(self):
-    pygame.draw.circle(self.surface, self.color, (self.x, self.y), self.r)
+```java
+  void drawBall() {
+    noStroke();
+    fill(ballColor);
+    circle(xPosition, yPosition, radius * 2);
+  }
 ```
 
-Call this method to draw the ball to the screen. Since the ball will eventually be animated, the `draw` method should be called from within the main loop and after the window has been filled.
-
-```python
-run = True
-while run:
-  window.fill((120, 120, 120))
-  ball.draw()
-  
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      run = False
-
-  pygame.display.update()
-  clock.tick(30)
-pygame.quit()
-```
-
-{Try it}(sh .guides/bg.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 2)
-
-
-
+{Check It!|assessment}(parsons-puzzle-425645972)

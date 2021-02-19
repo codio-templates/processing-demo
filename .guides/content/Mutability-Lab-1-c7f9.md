@@ -1,36 +1,40 @@
 ----------
 
-## Lab 1 - Drawing Shapes with Processing
+## Lab 1 - Drawing with Processing
 
-We previously saw how Java Swing can be used to create a graphical user interface with the `Photogram` program. Swing can also be used to draw shapes and lines. Just as before, create a `JFrame` object that contains our drawing. Give the frame a title to appear in the window. Set the frame's size to 400 pixels by 400 pixels, and make sure that the frame is visible. Finally, tell Java to end the program when the window is closed. You should see a blank window appear when you run the code.
+The [Processing](https://processing.org/) language provides a low barrier to writing code with visual output. Processing is Java under the hood, so you will see the same syntax as the previous lessons. However, the structure of the code is slightly different. We are going to use Processing to make a bouncing ball animation. Click the button below to launch Processing.
+
+{Launch Processing}(bash .guides/processing.sh)
+
+|||info
+## Open the File
+You have to tell Processing the file you want to open. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `drawing`. Finally, open the `drawing.pde` file. This file will be used for the animation.
+
+|||
+
+A Processing program is built around two methods: `setup` and `draw`. The `setup` method runs one time, and is used to set the size of the window or give global variables their value. The `draw` method is an infinite loop, which makes animations easier to create. Start by setting the size of the window to 400 pixels by 400 pixels. Unfortunately, you cannot copy/paste code into Processing.
 
 ```java
-import javax.swing.*;
-import java.awt.*;
-
 //add class definitions below this line
 
 
 
 //add class definitions above this line
 
-public class Drawing {  
-  public static void main(String[] args) {
-    
-    //add code below this line
-    
-    JFrame frame = new JFrame("Drawing");
-    frame.setSize(400, 400);
-    
-    frame.setVisible(true);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+void setup() {
+  size(400, 400);
+}
 
-    //add code above this line
-  }
+void draw() {
+  
 }
 ```
 
-{Try it}(bash .guides/swing.sh javac code/mutability/Drawing.java java -cp code/mutability/ Drawing 1)
+|||info
+## Try It
+Click the triangle button to run you program. You should see a 400 x 400 window appear. Close the window or click the square button to stop the program. **Note**, you need to manually save your work in Processing. Click `File` and then `Save`, or press `Ctrl + S` on the keyboard to save your work.
+
+|||
 
 ### The Window
 
@@ -38,133 +42,93 @@ Before drawing anything in the window, it is important to understand how the win
 
 ![The Window](.guides/img/mutability/Canvas.png)
 
-### Extending the JPanel Class
-
-The easiest way to start drawing on a `JFrame` object is to **extend** the `JPanel` class and to **override** the `paintComponent` method. Extending and overriding are a part of inheritance. There will be a future lesson on this topic that goes into more detail. For now, think of inheritance as "borrowing" some Java code and then customizing it for our needs. Create the `Shapes` class that `extends` the `JPanel` class. Next, override the `paintComponent` method. Invoke the `paintComponent` from the parent class and convert the `Graphics` object `g` into a 2D object `g2`.
-
-```java
-//add class definitions below this line
-
-class Shapes extends JPanel {
-  @Override
-  public void paintComponent(Graphics g) {
-    super.paintComponent(g);
-    Graphics2D g2 = (Graphics2D) g;
-    
-
-  }
-}
-
-//add class definitions above this line
-```
-
 ### Shapes and Lines
 
-Drawing shapes and lines requires you to call specific methods on a `Graphics` object. The parameters to these methods tell Java where and how big to make the shapes and lines. The `x` and `y` parameters represent the top-left corner for each shape.
+Instead of printing text like in Java, we are going to draw shapes and lines to the window. Here are how create some basic shapes and a line.
 
 |Shape|Method|Parameters|
 |-----|-------|----------|
-|Rectangle (outline)|drawRect|(x, y, width, height)|
-|Rectangle (fill)|fillRect|(x, y, width, height)|
-|Oval (outline)|drawOval|(x, y, width, height)|
-|Oval (fill)|fillOval|(x, y, width, height)|
-|Line|drawLine|(startX, startY, endX, endY)|
+|Rectangle|rect|(x, y, width, height)|
+|Square|square|(x, y, length)|
+|Ellipse|ellipse|(x, y, width, height)|
+|Circle|circle|(x, y, diameter)|
+|Line|line|(startX, startY, endX, endY)|
 
-Add the shapes and lines to the `paintComponent` method.
+Anything drawn to the window should be done inside the `draw` method.
 
 ```java
-//add class definitions below this line
-
-class Shapes extends JPanel {
-  @Override
-  public void paintComponent(Graphics g) {
-    super.paintComponent(g);
-    Graphics2D g2 = (Graphics2D) g;
-    
-    // draw diagonal lines
-    g2.drawLine(0, 0, 400, 400);
-    g2.drawLine(400, 0, 0, 400);
-    
-    // draw a rectangle outline
-    g2.drawRect(50, 175, 100, 50);
-    
-    // draw a rectangle fill
-    g2.fillRect(250, 175, 100, 50);
-    
-    // draw an oval outline
-    g2.drawOval(150, 50, 100, 100);
-    
-    // draw an oval fill
-    g2.fillOval(150, 250, 100, 100);
-  }
+void draw() {
+  line(200, 0, 200, 400);
+  line(0, 200, 400, 200);
+  ellipse(100, 100, 50, 80);
+  circle(300, 100, 80);
+  rect(75, 260, 50, 80);
+  square(260, 260, 80); 
 }
-
-//add class definitions above this line
 ```
 
-When you instantiate a `Shapes` object and add it to `frame`, these shapes and lines will automatically be drawn to the Java Swing window.
+In Processing, the way circles and ellipses are drawn is different from rectangles and squares. Change the `draw` method to the code below. Both the circle and the square are drawn to the same location with the same size. However, circles and ellipse are drawn from the center of the shape, while square and rectangles are drawn from the top-left corner.
 
 ```java
-    //add code below this line
-    
-    JFrame frame = new JFrame("Drawing");
-    frame.setSize(400, 400);
-    
-    Shapes shapes = new Shapes();
-    frame.add(shapes);
-    
-    frame.setVisible(true);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-    //add code above this line
+void draw() {
+  circle(200, 200, 100);
+  square(200, 200, 100);
+}
 ```
 
-{Try it}(bash .guides/swing.sh javac code/mutability/Drawing.java java -cp code/mutability/ Drawing 2)
-
-See the Graphics class [documentation](https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html) for more information about other shapes and lines you can draw. Look at the methods that start with `draw` and `fill`.
+You can find more shapes (listed under 2D Primitives) in the Processing [documentation](https://processing.org/reference/).
 
 ### Color
 
-Colors in Swing are created using the `Color` class. You can choose between already [existing colors](https://docs.oracle.com/javase/7/docs/api/java/awt/Color.html), or you can also create a custom color using the **RGB** system. That means various amounts or **R**ed, **G**reen, and **B**lue are mixed together to form a color. The amount of red, green, and blue are represented by a number from 0 to 255. There are many [websites](https://htmlcolorcodes.com/color-picker/) that can help you find the RGB values for any color.
+By default, Processing gives each shape an exterior color (called the stroke) of black and an interior color (called fill) of white. You can change both of these colors, but first you need to understand that Processing used the **RGB** color scheme. Amounts of **R**ed, **G**reen, and **B**lue are mixed together to form a color. The amount is a number from 0 to 255. You can use [websites](https://htmlcolorcodes.com/color-picker/) to help you determine the RGB value for any color.
 
-Use the `setColor` method to change the color of a shape or line. **Important**, the `setColor` method should be used before the shape or line is drawn.
+Use the `fill` command with an RGB value to color the interior of a shape. The `stroke` command is used to color the outline of a shape and to color lines.
 
 ```java
-    // draw diagonal lines
-    g2.setColor(Color.RED);
-    g2.drawLine(0, 0, 400, 400);
-    g2.setColor(Color.BLUE);
-    g2.drawLine(400, 0, 0, 400);
-    
-    // draw a rectangle outline
-    g2.setColor(new Color(150, 50, 200));
-    g2.drawRect(50, 175, 100, 50);
-    
-    // draw a rectangle fill
-    g2.setColor(new Color(250, 150, 20));
-    g2.fillRect(250, 175, 100, 50);
-    
-    // draw an oval outline
-    g2.setColor(new Color(50, 250, 50));
-    g2.drawOval(150, 50, 100, 100);
-    
-    // draw an oval fill
-    g2.setColor(new Color(50, 0, 250));
-    g2.fillOval(150, 250, 100, 100);
+void draw() {
+  stroke(255, 195, 0 );
+  line(200, 0, 200, 400);
+  line(0, 200, 400, 200);
+  
+  stroke(199, 0, 57);
+  fill(255, 87, 51);
+  ellipse(100, 100, 50, 80);
+  
+  stroke(255, 87, 51);
+  fill(199, 0, 57);
+  circle(300, 100, 80);
+  
+  stroke(144, 12, 63);
+  fill(88, 24, 69);
+  rect(75, 260, 50, 80);
+  
+  stroke(88, 24, 69);
+  fill(144, 12, 63);
+  square(260, 260, 80); 
+}
 ```
-
-{Try it}(bash .guides/swing.sh javac code/mutability/Drawing.java java -cp code/mutability/ Drawing 3)
-
 
 |||challenge
 ## Try these variations:
+* Change the `strokeWeight` in the `setup` method.
+```java
+void setup() {
+  size(400, 400);
+  strokeWeight(5);
+}
+```
+<details>
+  <summary><strong>What happened?</strong></summary>
+  It was hard to see the lines and stroke of each shape. `strokeWeight` determines how thick lines are drawn. Since we want all shapes and lines to have the same stroke weight, we only need to call this line of code one time, which is why it is in the `setup` method.
+</details><br>
+
 * Draw a rectangle at position 100, 100 with a width of 50 and a heght of 75. Choose any color you want.
 
 <details>
   <summary><strong>Solution</strong></summary>
   
   ```java
-  g2.fillRect(100, 100, 50, 75);
+  rect(100, 100, 50, 75);
   ```
   
 </details><br>
@@ -175,53 +139,53 @@ Use the `setColor` method to change the color of a shape or line. **Important**,
   <summary><strong>Solution</strong></summary>
   
   ```java
-  g2.fillOval(100, 100, 40, 40);
+  circle(100, 100, 40);
   ```
   
 </details><br>
 
-* Draw an oval at position 200, 350 with a width of 200 and a heght of 50. Choose any color you want.
+* Draw an ellipse at position 200, 350 with a width of 200 and a height of 50. Choose any color you want.
 
 <details>
   <summary><strong>Solution</strong></summary>
   
   ```java
-  g2.fillOval(200, 350, 200, 50);
+  ellipse(200, 350, 200, 50);
   ```
   
 </details><br>
 
-* Draw a square at position 300, 200 with a side of 75.
+* Draw a diagonal line from the top-left to the bottom-right.
 
 <details>
   <summary><strong>Solution</strong></summary>
   
   ```java
-  g2.fillRect(300, 200, 75, 75);
+  line(0, 0, 400, 400);
   ```
   
 </details>
 
 |||
 
-{Try it}(bash .guides/swing.sh javac code/mutability/Drawing.java java -cp code/mutability/ Drawing 4)
-
 <details>
   <summary><strong>The Position of the Code for Shapes and Lines is Important</strong></summary>
-  If shapes or lines are overlapping with other shapes or lines, the ones drawn last are "on top". Similarly, the <code>setColor</code> method only applies to the shape or line that comes after it. The code samples below are "incorrect" because you cannot see the smaller rectangle because it come before the larger rectangle. In addition, only one of the circles is pink because the <code>setColor</code> methods come after the shape.
+  If shapes or lines are overlapping with other shapes or lines, the ones drawn last are "on top". Similarly, the <code>fill</code> method only applies to the shape or line that comes after it. The code samples below are "incorrect" because you cannot see the smaller square because it comes before the larger square. In addition, only one of the circles is pink because the <code>fill</code> methods come after the shape. Switch places for the squares and make sure all of the <code>fill</code> commands come before a shape.
   
   ```java
-      // hidden rectangle
-      g2.setColor(new Color(245, 145, 45));
-      g2.fillRect(125, 125, 150, 150);
-      g2.setColor(new Color(45, 145, 245));
-      g2.fillRect(50, 50, 300, 300);
+  void draw() {
+    // hidden square
+    fill(245, 145, 45);
+    square(125, 125, 150);
+    fill(45, 145, 245);
+    square(50, 50, 300);
 
-      // incorrect color placement
-      g2.fillOval(5, 180, 40, 40);
-      g2.setColor(Color.PINK);
-      g2.fillOval(355, 180, 40, 40);
-      g2.setColor(Color.PINK);
+    // incorrect color placement
+    circle(25, 200, 40);
+    fill(244, 88, 178);
+    circle(375, 200, 40);
+    fill(244, 88, 97);
+  }
   ```
   
 </details>

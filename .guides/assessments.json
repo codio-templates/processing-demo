@@ -2175,5 +2175,51 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT to transform an instance method into a static method."
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-425645972",
+  "source": {
+   "name": "mutability lab 2 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume that the `TravelLog` class exists with the following constructor:\n\n```java\nclass TravelLog {\n  ArrayList<String> cities;\n\n  TravelLog() {\n    cities = new ArrayList<String>();\n  }\n}\n```\n\nCreate the instance method `addCity` by dragging the code blocks into the box below. The method should add the name of a city to the list of cities visited. **Note**, not all of the code blocks will be used.",
+   "initial": "void addCity(String city) {\n  cities.add(city);\n}\nstatic void addCity(String city) { #distractor\ncity.add(cities); #distractor\nvoid addCity(int city) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer:\n\n```java\nvoid addCity(String city) {\n  cities.add(city);\n}\n```\n\n* You are asked to make an instance method, not a static method. That is why `static void addCity(String city) {` is not correct.\n* `cities` is the ArrayList attribute, not `city`. That is why `city.add(cities);` is not correct.\n* The `addCity` method takes the name of a city as a parameter, which is a string. That is why `void addCity(int city) {` is not correct.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create an instance method"
+  }
  }
 ]
