@@ -5,15 +5,19 @@ class Ball {
   float yPosition;
   color ballColor;
   int radius;
+  float xVelocity;
+  float yVelocity;
 
   Ball(float x, float y) {
     xPosition = x;
     yPosition = y;
     ballColor = color(255, 255, 255);
     radius = 20;
+    xVelocity = 1;
+    yVelocity = 2;
   }
   
-  void drawBall() {
+  void updateBall() {
     noStroke();
     fill(ballColor);
     circle(xPosition, yPosition, radius * 2);
@@ -31,4 +35,5 @@ void setup() {
 
 void draw() {
   ball.drawBall();
+  ball.updateBall();
 }

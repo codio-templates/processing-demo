@@ -2,26 +2,50 @@
 
 ## Lab 3 - Animating the Ball
 
-Now that the ball appears on the screen, it is time to make the ball move. The movement should be two dimensional. That means `self.x` and `self.y` should both change over time. If the same change is applied to `self.x` and `self.y` equally, the ball will only move at a 45-degree angle. A more realistic animation will allow for a greater variation in movement. So two more instance variables need to be added to the `Ball` class. One will control the velocity in the x-direction, and the other will control the velocity in the y-direction.
+|||info
+## Animation File
+For the next three pages, you are going to use the `animation.pde` file. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `animation`. Finally, open the `animation.pde` file.
 
-```python
-class Ball:
-  def __init__(self, surface, color, x, y, r):
-    self.surface = surface
-    self.color = color
-    self.x = x
-    self.y = y
-    self.r = r
-    self.vel_x = 1
-    self.vel_y = 2
+|||
+
+{Launch Processing}(bash .guides/processing.sh)
+
+Now that the ball appears on the screen, it is time to make the ball move. The movement should be two dimensional. That means `xPosition` and `yPosition` should both change over time. If the same change is applied to `xPosition` and `yPosition` equally, the ball will only move at a 45-degree angle. A more realistic animation will allow for a greater variation in movement. So two more instance attributes need to be added to the `Ball` class. One will control the velocity in the x-direction, and the other will control the velocity in the y-direction. Both of these attributes will be of type `float`.
+
+```java
+//add class definitions below this line
+
+class Ball {
+  float xPosition;
+  float yPosition;
+  color ballColor;
+  int radius;
+  float xVelocity;
+  float yVelocity;
+
+  Ball(float x, float y) {
+    xPosition = x;
+    yPosition = y;
+    ballColor = color(255, 255, 255);
+    radius = 20;
+    xVelocity = 1;
+    yVelocity = 2;
+  }
 ```
 
-Next, there needs to be a new instance method that updates the position of the ball based on the newly created instance variables. Create the method `update`. It will add the x-velocity to the x-position, as well as add the y-velocity to the y-position. Note, Pygame requires that positions on the screen be expressed as integer values.
+Next, there needs to be a new instance method that updates the position of the ball based on the newly created instance attributes. Create the method `updateBall`. It will add the x-velocity to the x-position, as well as add the y-velocity to the y-position.
 
 ```
-  def update(self):
-    self.x += self.vel_x
-    self.y += self.vel_y
+  void drawBall() {
+    noStroke();
+    fill(ballColor);
+    circle(xPosition, yPosition, radius * 2);
+  }
+  
+  void updateBall() {
+    xPosition += xVelocity;
+    yPosition += yVelocity;
+  }
 ```
 
 Call this method after `ball` is drawn to the screen.
