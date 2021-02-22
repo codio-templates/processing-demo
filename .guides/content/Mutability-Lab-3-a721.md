@@ -4,7 +4,7 @@
 
 |||info
 ## Animation File
-For the next three pages, you are going to use the `animation.pde` file. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `animation`. Finally, open the `animation.pde` file.
+For the next two pages, you are going to use the `animation.pde` file. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `animation`. Finally, open the `animation.pde` file.
 
 |||
 
@@ -57,7 +57,7 @@ void draw() {
 }
 ```
 
-The ball moves, but it leaves a "trail" of where it has been. This happens because Processing is drawing each updated ball on the same background. Instead, we want to draw the ball, update its position, and then erase the background. These three steps should happen each time the `draw` method runs. Add the `background` method **before** you draw the ball. Pass `background` an RGB value for the color of the window.
+The ball moves, but it leaves a "trail" of where it has been. This happens because Processing is drawing each updated ball on the same background. Instead, we want to color the background (erase the trail), draw the ball, and then update its position. These three steps should happen each time the `draw` method runs. Add the `background` method **before** you draw the ball. Pass `background` an RGB value for the color of the window.
 
 ```java
 void draw() {
@@ -77,7 +77,7 @@ The animation should work, but the ball disappears off the screen. It is time to
 1) Use `xPosition` and `yPosition` and ask if the ball is at the edge of the window
 1) If yes, then change direction of the velocity
 
-Create the method `bounce` with two conditionals. The first checks if the ball is touching left or right sides of the screen, while the second conditional checks if the ball is touching the top or bottom. The edges of the screens are represented by a number between 0 and 400 (the width and height of the window). If the ball is touching the edge of the screen, its position is either less than 0 or greater than 400. When this happens, multiply the appropriate velocity attribute by -1. This will turn a positive number negative and a negative number positive.
+Create the method `bounceBall` with two conditionals. The first checks if the ball is touching left or right sides of the screen, while the second conditional checks if the ball is touching the top or bottom. The edges of the screens are represented by a number between 0 and 400 (the width and height of the window). If the ball is touching the edge of the screen, its position is either less than 0 or greater than 400. When this happens, multiply the appropriate velocity attribute by -1. This will turn a positive number negative and a negative number positive.
 
 ```java
   void bounceBall() {
@@ -192,4 +192,5 @@ You now have a complete bouncing ball animation.
   
 </details>
 
+{Check It!|assessment}(multiple-choice-2980161329)
 

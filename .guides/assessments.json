@@ -2229,7 +2229,7 @@
    "name": "static methods formative assessment 1",
    "showName": false,
    "instructions": "## Formative Assessment\n\nAssume the following code and determine which method is a static method and which one is an instance method.\n\n```java\nDog myDog = new Dog(\"spike\", \"pomeranian\");\nmyDog.sit();\nDog.bark();\n```\n\nFill in the blanks below.",
-   "showValues": false,
+   "showValues": true,
    "text": "<<<`sit()`>>> is an instance method.\n<<<`bark()`>>> is a static method.",
    "distractors": "",
    "guidance": "The correct answer is:\n\n`sit()` is an instance method.\n`bark()` is a static method.\n\nOnly static method can be called from the class (`Dog.bark()`). Therefore, `sit()` must be an instance method",
@@ -2337,6 +2337,75 @@
    },
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT recognize that static methods cannot directly access instance attributes"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2980161329",
+  "source": {
+   "name": "mutability lab 3 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhat keyword is used when creating an instance method?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "ea35d9d9-0ea9-737b-87b3-aead748e81b7",
+     "correct": true,
+     "answer": "There is no keyword used when creating an instance method"
+    },
+    {
+     "_id": "3f18c6d3-5c39-6b7e-6b0d-4ea70fa0fe4c",
+     "correct": false,
+     "answer": "Use the `static` keyword"
+    },
+    {
+     "_id": "b24b30d5-661e-d92d-843d-eb3925c04ac0",
+     "correct": false,
+     "answer": "Use the `instance` keyword"
+    },
+    {
+     "_id": "8d63a844-1c3b-c9e2-7f29-2227b67e3080",
+     "correct": false,
+     "answer": "Use the `method` keyword"
+    }
+   ],
+   "guidance": "There is no keyword used when creating an instance method. A static method uses the `static` keyword, but there is no keyword to designate an instance method.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Instance Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify the lack of keyword used to declare an instance method."
   }
  }
 ]

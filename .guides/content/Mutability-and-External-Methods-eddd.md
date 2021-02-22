@@ -76,7 +76,7 @@ In the `main` method, replace the strings inside the print statements with a cal
     //add code below this line
 
     Player player1 = new Player();
-    System.out.println(printPlayer(player1));
+    printPlayer(player1);
     player1.health -= 10;
     player1.score += 25;
     player1.level += 1;

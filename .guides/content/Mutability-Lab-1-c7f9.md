@@ -15,12 +15,6 @@ You have to tell Processing the file you want to open. In the Processing window,
 A Processing program is built around two methods: `setup` and `draw`. The `setup` method runs one time, and is used to set the size of the window or give global variables their value. The `draw` method is an infinite loop, which makes animations easier to create. Start by setting the size of the window to 400 pixels by 400 pixels. Unfortunately, you cannot copy/paste code into Processing.
 
 ```java
-//add class definitions below this line
-
-
-
-//add class definitions above this line
-
 void setup() {
   size(400, 400);
 }

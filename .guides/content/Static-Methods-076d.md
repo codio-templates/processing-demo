@@ -85,15 +85,14 @@ Static methods are called in a unique way. The still use dot notation, but inste
 ## Try this variation:
 Create the static method `describe` for the `Rectangle` class that prints a description of the rectangle.
 
-```java
-  static void describe() {
-    System.out.println("The rectangle has width of " + width + " and a length of" + length + ".");
-  }
-```
-
 <details>
-  <summary><strong>Why is there an error?</strong></summary>
-  Static methods can directly access class attributes (attributes with the <code>static</code> keyword), but they <strong>cannot</strong> directly access instance attributes. Static methods can only access instance variables if objects are passed to the static method (see the <code>combinedArea</code> parameters).
+  <summary><strong>Code</strong></summary>
+  
+  ```java
+  static void describe(Rectangle r) {
+    System.out.println("The rectangle has width of " + r.width + " and a length of" + r.length + ".");
+  }
+  ```
 </details>
 
 |||

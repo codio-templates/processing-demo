@@ -4,7 +4,7 @@
 
 |||info
 ## Animation File
-For the next three pages, you are going to use the `animation.pde` file. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `animation`. Finally, open the `animation.pde` file.
+Finally, you are going to use the `animation.pde` file. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `animation`. Finally, open the `animation.pde` file.
 
 |||
 
@@ -14,7 +14,7 @@ For the next three pages, you are going to use the `animation.pde` file. In the 
 
 One way to make the animation more interesting would be to have the ball change color each time it bounces. Since color is represented by three numbers, you could add to or subtract from these numbers. Doing so would only make minor changes to the color. Colors are represented by number between 0 and 255, so you have to think about what happens when the color values are smaller than 0 or greater than 255. A better way to implement this is to choose three random numbers each time the ball bounces.
 
-Modify the `bounce` method so that the method `changeColor()` is called after the ball bounces. Be sure to add the method call to both conditionals. If not, the ball will only change color when it hits two of the four walls.
+Modify the `bounceBall` method so that the method `changeColor()` is called after the ball bounces. Be sure to add the method call to both conditionals. If not, the ball will only change color when it hits two of the four walls.
 
 ```java
   void bounceBall() {
@@ -43,7 +43,7 @@ Now, declare the `changeColor` method. To make the code easy to read, the variab
 
 ### Random Direction
 
-The animation always starts in the same way. It would be more interesting if the ball moved in a randomly selected direction. Using the `random` method from above, a random value for `xVelocity` and `yVelocity` seems pretty easy; just use `random(-3, 3)`. However, there is a chance that a number close to 0 will be selected. That means the ball will move very slowly, and perhaps not move at all if both velocities are 0. What you really want to do is pick a random number between -3 and -1 or between 1 and 3. In the constructor, set the values of `xVelocity` and `yVelocity` to `randomVelocity`.
+The animation always starts in the same way. It would be more interesting if the ball moved in a randomly selected direction. Using the `random` method from above, create random values for `xVelocity` and `yVelocity` seems pretty easy; just use `random(-3, 3)`. However, there is a chance that a number close to 0 will be selected. That means the ball will move very slowly, and perhaps not move at all if both velocities are 0. What you really want to do is pick a random number between -3 and -1 or between 1 and 3. In the constructor, set the values of `xVelocity` and `yVelocity` to `randomVelocity`.
 
 ```java
   Ball(int x, int y) {
@@ -76,7 +76,7 @@ Assume we want to start the ball in the middle of the window when the animation 
 ball = new Ball(200, 200, 20);
 ```
 
-The window is 400 by 400, the middle would be position (200, 200). Change the window dimensions to 500 by 500, and the ball is no longer in the middle. That is because the starting position is hard coded into the program. That is, the starting position is a fixed number that is independent of the window dimensions. A better way to create the animation is to make the starting position dependent upon the window. Processing has two variables that you do no need to declare: `width` and `height`. Divide these variables by 2 when instantiating the `Ball` object. The ball should always start in the middle of the window.
+The window is 400 by 400, so the middle would be position (200, 200). Change the window dimensions to 500 by 500, and the ball is no longer in the middle. That is because the starting position is hard coded into the program. That is, the starting position is a fixed number that is independent of the window dimensions. A better way to create the animation is to make the starting position dependent upon the window. Processing has two variables that you do no need to declare: `width` and `height`. These variables represent the width and height of the window. Divide them by 2 when instantiating the `Ball` object. The ball should always start in the middle of the window.
 
 ```java
 ball = new Ball(width / 2, height / 2, 20);

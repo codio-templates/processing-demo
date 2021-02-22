@@ -124,7 +124,7 @@ Create the string variable `item` and set it to the first element in `course`. C
     }
 ```
 
-Create a for loop to iterate over the `course` ArrayList. We have already printed the first element from the ArrayList. So initialize the loop variable with 1 instead of 0. The last element in `course` needs to have the word `and` appear before element. The last element occurs when `i` is equal to the size of `course` minus 1. Check for this condition, and use a `print` statement when printing `and` and the element. If it is not the element, use a `print` statement to print the element followed by a comma. After the loop, use a `println` statement to print the rest of the sentence.
+Create a for loop to iterate over the `course` ArrayList. We have already printed the first element from the ArrayList. So initialize the loop variable with 1 instead of 0. The last element in `course` needs to have the word `and` appear before element. The last element occurs when `i` is equal to the size of `course` minus 1. Check for this condition, and use a `print` statement when printing `and` and the element. If it is not the last element, use a `print` statement to print the element followed by a comma. After the loop, use a `println` statement to print the rest of the sentence.
 
 ```java
     } else { // more than two items
