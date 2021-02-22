@@ -2221,5 +2221,122 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create an instance method"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-4205667561",
+  "source": {
+   "name": "static methods formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code and determine which method is a static method and which one is an instance method.\n\n```java\nDog myDog = new Dog(\"spike\", \"pomeranian\");\nmyDog.sit();\nDog.bark();\n```\n\nFill in the blanks below.",
+   "showValues": false,
+   "text": "<<<`sit()`>>> is an instance method.\n<<<`bark()`>>> is a static method.",
+   "distractors": "",
+   "guidance": "The correct answer is:\n\n`sit()` is an instance method.\n`bark()` is a static method.\n\nOnly static method can be called from the class (`Dog.bark()`). Therefore, `sit()` must be an instance method",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Static Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify a static method",
+   "tokens": {
+    "blank": [
+     "`sit()`",
+     "`bark()`"
+    ],
+    "text": [
+     0,
+     " is an instance method.\n",
+     0,
+     " is a static method."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3234133400",
+  "source": {
+   "name": "static methods formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nWhy does the following code generate an error?\n\n```java\nclass SmartPhone {\n  String manufacturer;\n  String model;\n\n  SmartPhone(String ma, String mo) {\n    manufacturer = ma;\n    model = mo;\n  }\n\n  static void describe() {\n    System.out.println(manufacturer + \" \" + model);\n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "99ffe7c1-b2c1-8714-5e66-ac4c1b0ea465",
+     "correct": true,
+     "answer": "Static methods are not allowed to directly access instance attributes."
+    },
+    {
+     "_id": "4a8770d3-c578-eda9-3b2f-af089def806e",
+     "correct": false,
+     "answer": "The return type of the `describe` method should be `String`."
+    },
+    {
+     "_id": "dafa4014-35e4-50c9-1946-cc8e8394f62d",
+     "correct": false,
+     "answer": "The constructor has too many parameters."
+    },
+    {
+     "_id": "5ade9994-35d0-29f8-829e-e3010cc6920f",
+     "correct": false,
+     "answer": "There is nothing wrong with the code."
+    }
+   ],
+   "guidance": "Static methods are not allowed to directly access instance attributes. Either the method needs to be an instance method (remove the `static` keyword), or you need to pass a `SmartPhone` object to `describe` and access the attributes via the argument.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Static Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT recognize that static methods cannot directly access instance attributes"
+  }
  }
 ]

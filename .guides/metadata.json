@@ -747,23 +747,36 @@
    "learningObjectives": ""
   },
   {
-   "id": "8eebf637-a945-fd08-5f3e-4f9f4aca662d",
-   "title": "Method Scope",
+   "id": "5f8d517b-eb04-36be-99c9-b43f7adcbf37",
+   "title": "Static Methods Formative Assessment 1",
    "files": [
     {
      "path": "#tabs",
      "action": "close"
-    },
-    {
-     "path": "code/mutability/MethodScope.java",
-     "panel": 0,
-     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Method-Scope-8eeb.md",
+   "content-file": ".guides/content/Static-Methods-Formative-Assessment-1-5f8d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d54a45b7-9611-4700-1ef9-6e7b608cb520",
+   "title": "Static Methods Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Static-Methods-Formative-Assessment-2-d54a.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
