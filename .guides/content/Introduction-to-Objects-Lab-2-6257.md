@@ -51,6 +51,8 @@ Create a text label for your window. Be sure to add the label to the `window` ob
     //add code above this line
 ```
 
+{Try it}(bash .guides/swing.sh javac code/introObjects/IntroSwing.java java -cp code/introObjects/ IntroSwing 12)
+
 Other options for text `Labels`:
 * Font - You can set the font family and size by creating a `Font` object. The available fonts are `Monospaced`, `Serif`, `SansSerif`, `Dialog`, `DialogInput`. You can also set the font to `BOLD`, `ITALIC`, or `PLAIN` as well. Use the `setFont` method to change the font for the label.
 ```java
