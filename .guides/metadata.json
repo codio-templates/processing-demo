@@ -544,7 +544,7 @@
   },
   {
    "id": "3a1b986b-dfe5-df70-1164-6634c85583d6",
-   "title": "Learning Objectives - Class Methods",
+   "title": "Learning Objectives - Instance Methods",
    "files": [
     {
      "path": "#tabs",
@@ -554,7 +554,7 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Learning-Objectives---Class-Methods-3a1b.md",
+   "content-file": ".guides/content/Learning-Objectives---Instance-Methods-3a1b.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
@@ -586,7 +586,18 @@
   {
    "id": "056b51b2-9e28-6cea-2a45-953ef1b7ab0d",
    "title": "More Class Methods",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/MoreMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/More-Class-Methods-056b.md",
@@ -598,7 +609,18 @@
   {
    "id": "57d6a813-cb0e-cd20-85cd-95689f260f3f",
    "title": "Printing the Meal 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/MoreMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Printing-the-Meal-1-57d6.md",
@@ -610,7 +632,18 @@
   {
    "id": "88ec2efa-3fc3-5a76-f48b-90794bedd110",
    "title": "Printing the Meal 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/MoreMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Printing-the-Meal-2-88ec.md",
@@ -622,7 +655,13 @@
   {
    "id": "949369da-8c31-d279-7e45-62964daab2db",
    "title": "Changing Objects with Class Methods Formative Assessment 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Changing-Objects-with-Class-Methods-Formative-Assessment-1-9493.md",
@@ -634,7 +673,13 @@
   {
    "id": "8aa0377e-e29d-92e9-1ea9-7bfd23f5bbee",
    "title": "Changing Objects with Class Methods Formative Assessment 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Changing-Objects-with-Class-Methods-Formative-Assessment-2-8aa0.md",
@@ -644,9 +689,114 @@
    "learningObjectives": ""
   },
   {
+   "id": "a325cd4f-1d4e-b254-751c-bab67f6c409a",
+   "title": "Learning Objectives - Static Methods",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Static-Methods-a325.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "076d0858-4303-ffeb-3c8c-37981d306768",
+   "title": "Static Methods",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/StaticMethods.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Static-Methods-076d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "230892bc-0af8-2ec8-abfe-4dcf8c4f7a0f",
+   "title": "Independence From Objects",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/Independent.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Independence-From-Objects-2308.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "5f8d517b-eb04-36be-99c9-b43f7adcbf37",
+   "title": "Static Methods Formative Assessment 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Static-Methods-Formative-Assessment-1-5f8d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d54a45b7-9611-4700-1ef9-6e7b608cb520",
+   "title": "Static Methods Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Static-Methods-Formative-Assessment-2-d54a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "c7f99bf4-a633-7ad7-b1d7-ed46122b36cf",
    "title": "Mutability Lab 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-1-c7f9.md",
@@ -658,7 +808,18 @@
   {
    "id": "c1cb1653-806e-5521-0a11-c59e95fe0a11",
    "title": "Mutability Lab 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-2-c1cb.md",
@@ -670,7 +831,18 @@
   {
    "id": "a721313f-c2aa-a945-ca5f-4a881b9389d1",
    "title": "Mutability Lab 3",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-3-a721.md",
@@ -682,7 +854,18 @@
   {
    "id": "1023a2fe-dbf3-26b4-7320-ffe80bb968b6",
    "title": "Mutability Lab 4",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-4-1023.md",
@@ -694,7 +877,18 @@
   {
    "id": "97926e94-9608-124b-08be-17ce484ce796",
    "title": "Mutability Lab Challenge",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/mutability/LabChallenge.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Lab-Challenge-9792.md",
@@ -710,6 +904,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise1.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -728,6 +927,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise2.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -746,6 +950,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise3.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -764,6 +973,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise4.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -782,6 +996,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/mutability/Exercise5.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
@@ -797,7 +1016,7 @@
  "theme": "light",
  "scripts": [],
  "lexikonTopic": "",
- "suppressPageNumbering": false,
+ "suppressPageNumbering": true,
  "useSubmitButtons": true,
  "useMarkAsComplete": true,
  "hideMenu": false,
