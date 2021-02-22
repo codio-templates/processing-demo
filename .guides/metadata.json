@@ -654,7 +654,7 @@
   },
   {
    "id": "949369da-8c31-d279-7e45-62964daab2db",
-   "title": "Changing Objects with Class Methods Formative Assessment 1",
+   "title": "Changing Objects with Instance Methods Formative Assessment 1",
    "files": [
     {
      "path": "#tabs",
@@ -664,7 +664,7 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Changing-Objects-with-Class-Methods-Formative-Assessment-1-9493.md",
+   "content-file": ".guides/content/Changing-Objects-with-Instance-Methods-Formative-Assessment-1-9493.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
@@ -672,7 +672,7 @@
   },
   {
    "id": "8aa0377e-e29d-92e9-1ea9-7bfd23f5bbee",
-   "title": "Changing Objects with Class Methods Formative Assessment 2",
+   "title": "Changing Objects with Instance Methods Formative Assessment 2",
    "files": [
     {
      "path": "#tabs",
@@ -682,7 +682,7 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Changing-Objects-with-Class-Methods-Formative-Assessment-2-8aa0.md",
+   "content-file": ".guides/content/Changing-Objects-with-Instance-Methods-Formative-Assessment-2-8aa0.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
