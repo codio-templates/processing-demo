@@ -2,124 +2,146 @@
 
 ## Lab 4 - Tips and Tricks
 
+|||info
+## Animation File
+For the next three pages, you are going to use the `animation.pde` file. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `animation`. Finally, open the `animation.pde` file.
+
+|||
+
+{Launch Processing}(bash .guides/processing.sh)
+
 ### Change Colors
 
-One way to make the animation more interesting would be to have the ball change color each time it bounces. Since color is represented by three numbers, you could add to or subtract from these numbers. Doing so would only make minor changes to the color. Colors are represented by number between 0 and 255, so you have to think about what happens when the color values are smaller than 0 or greater than 255. A better way to implement this is to choose three random numbers each time the ball bounces. To do this, import the `random` module at the top of the program.
+One way to make the animation more interesting would be to have the ball change color each time it bounces. Since color is represented by three numbers, you could add to or subtract from these numbers. Doing so would only make minor changes to the color. Colors are represented by number between 0 and 255, so you have to think about what happens when the color values are smaller than 0 or greater than 255. A better way to implement this is to choose three random numbers each time the ball bounces.
 
-```python
-import pygame
-import random
+Modify the `bounce` method so that the method `changeColor()` is called after the ball bounces. Be sure to add the method call to both conditionals. If not, the ball will only change color when it hits two of the four walls.
 
-class Ball:
-  def __init__(self, surface, color, x, y, r):
+```java
+  void bounceBall() {
+    if (xPosition - radius < 0 || xPosition + radius > 400) {
+      xVelocity *= -1;
+      changeColor();
+    }
+
+    if (yPosition - radius < 0 || yPosition + radius > 400) {
+      yVelocity *= -1;
+      changeColor();
+    }
+  }
 ```
 
-Next, modify the `bounce` method so that `self.color` has a new value. Be sure to add the method call for `self.change_color()` to both conditionals. If not, the ball will only change color when it hits two of the four walls.
+Now, declare the `changeColor` method. To make the code easy to read, the variables `red`, `green`, and `blue` each get a random integer between 0 and 255. The `random` method returns a float between 0 and up to (but not including) the number in parentheses. `floor` is used to truncate a float into an int. These new values will be the new color. The ball should now change color every time it touches the edge of the window.
 
-```python
-def bounce(self):
-    if self.x < self.r or self.x > 400 - self.r:
-      self.vel_x *= -1
-      self.change_color()
-    if self.y < self.r or self.y > 400 - self.r:
-      self.vel_y *= -1
-      self.change_color()
+```java
+  void changeColor() {
+    int red = floor(random(256));
+    int green = floor(random(256));
+    int blue = floor(random(256));
+    ballColor = color(red, green, blue);
+  }
 ```
-
-Finally, declare the `change_color` method. To make the code easy to read, the variables `red`, `green`, and `blue` each get a random integer between 0 and 255. These new values will be the new color. Do not forget the parentheses as colors in Pygame are stored as a tuple.
-
-```python
-def change_color(self):
-  red = random.randint(0, 255)
-  green = random.randint(0, 255)
-  blue = random.randint(0, 255)
-  self.color = (red, green, blue)
-```
-
-{Try it}(sh .guides/bg.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 5)
 
 ### Random Direction
 
-The animation always starts in the same way. It would be more interesting if the ball moved in a randomly selected direction. Using the `randint` method from above, a random value for `self.vel_x` and `self.vel_y` seems pretty easy; just use `random.randint(-3, 3)`. However, there is a one-in-seven chance that 0 will be selected. That means the ball will not move diagonally, and perhaps not move at all if both velocities are 0. What you really want to do is pick a random number between -3 and -1 or between 1 and 3. In the constructor, set the values of `self.vel_x` and `self.vel_y` to `Ball.random_velocity`.
+The animation always starts in the same way. It would be more interesting if the ball moved in a randomly selected direction. Using the `random` method from above, a random value for `xVelocity` and `yVelocity` seems pretty easy; just use `random(-3, 3)`. However, there is a chance that a number close to 0 will be selected. That means the ball will move very slowly, and perhaps not move at all if both velocities are 0. What you really want to do is pick a random number between -3 and -1 or between 1 and 3. In the constructor, set the values of `xVelocity` and `yVelocity` to `randomVelocity`.
 
-```python
-class Ball:
-  def __init__(self, surface, color, x, y, r):
-    self.surface = surface
-    self.color = color
-    self.x = x
-    self.y = y
-    self.r = r
-    self.vel_x = Ball.random_velocity()
-    self.vel_y = Ball.random_velocity()
+```java
+  Ball(int x, int y) {
+    xPosition = x;
+    yPosition = y;
+    radius = 20;
+    ballColor = color(255, 255, 255);
+    xVelocity = randomVelocity();
+    yVelocity = randomVelocity();
+  }
 ```
 
-Since the `random_velocity` method is not changing an instance variable (it is just returning a value), this would be a good time to use a static method. That also explains why the method call is `Ball.random_velocity` and not `self.random_velocity`. This method is going to use `random.choice` which takes a list as a parameter. Python will randomly select one element from the list. The list `direction` contains the strings `"positive"` and `"negative"`. If `"positive"` is selected, the velocity will be between 1 and 3. If `"negative"` is selected, the velocity will be between -3 and -1.
+There are two random decisions that need to be made. One, will the ball move in a positive or negative direction. Two, define that random number. Start with by asking if `random(1) < 0.5`. This means to take a random float from 0 up to but not including 1. If it is less then `0.5` the ball will travel in one direction; if it is greater it will travel in the other. If the conditional is true, choose a random number between 1 and 3. If false, choose a random number from -3 to -1. Every time you start the program, the ball should move in a randomly selected direction.
 
-```python
-@staticmethod
-def random_velocity():
-  direction = random.choice(["positive", "negative"])
-  if direction == "positive":
-    return random.randint(1, 3)
-  else:
-    return random.randint(-3, -1)
+```java
+  float randomVelocity() {
+    if (random(1) < 0.5) {
+      return random(1, 3);
+    } else {
+      return random(-3, -1);
+    }
+  }
 ```
-
-{Try it}(sh .guides/bg.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 6)
 
 ### Avoiding Hard Coding
 
-The ball always starts in the middle of the window. That is because the window is 400 by 400 and the ball's starting position is (200, 200). Change the window dimensions to 500 by 500, and the ball is no longer in the middle. That is because the starting position is hard coded into the program. That is, the starting position is a fixed number that is independent of the window dimensions. A better way to create the animation is to make the starting position dependent upon the window. Before `window` is declared, create the variables `WIDTH` and `HEIGHT` and set their values to 400. Use these variables when setting the size of the window. Finally, set the ball's starting position to middle of the window (divide these variables by 2). **Note**, Pygame requires that x and y positions be represented as an integer. Make sure the dimensions are even numbers or use floor division to avoid floating point positions.
+Assume we want to start the ball in the middle of the window when the animation starts. You could instantiate the `Ball` object like this.
 
-```python
-pygame.init()
-WIDTH = 400
-HEIGHT = 400
-window = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Bouncing Ball")
-clock = pygame.time.Clock()
-ball = Ball(window, (255, 0, 0), WIDTH/2, HEIGHT/2, 20)
+```java
+ball = new Ball(200, 200, 20);
 ```
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 7)
+The window is 400 by 400, the middle would be position (200, 200). Change the window dimensions to 500 by 500, and the ball is no longer in the middle. That is because the starting position is hard coded into the program. That is, the starting position is a fixed number that is independent of the window dimensions. A better way to create the animation is to make the starting position dependent upon the window. Processing has two variables that you do no need to declare: `width` and `height`. Divide these variables by 2 when instantiating the `Ball` object. The ball should always start in the middle of the window.
 
-<details>
-  <summary><strong>Why are some variables in all caps?</strong></summary>
-  A constant is a variable whose value never changes. Using all capital letters is a Python convention for declaring a constant. Since the animation window should not change once it starts, this is a good example of when to use a constant.
-</details>
+```java
+ball = new Ball(width / 2, height / 2, 20);
+```
+
 
 |||challenge
 ## Try these variations:
-* Change the size of the window and run the animation.
+* If you change the window size, the ball no longer bounces when it touches the edge of the screen. Modify the `bounceBall` method so that it always bounces when it touches the edge of the screen.
+
+<details>
+  <summary><strong>Possible Solution</strong></summary>
+  The problem is that <code>400</code> is hard coded in this method. Replace these numbers with <code>width</code> (x-direction) and <code>height</code> (y-direction).
+  
+  ```java
+  void bounceBall() {
+    if (xPosition - radius < 0 || xPosition + radius > width) {
+      xVelocity *= -1;
+      changeColor();
+    }
+
+    if (yPosition - radius < 0 || yPosition + radius > height) {
+      yVelocity *= -1;
+      changeColor();
+    }
+  }
+  ```
+</details><br>
+
 * Add a method that increases the speed of the ball each time it bounces.
 
 <details>
   <summary><strong>Possible Solution</strong></summary>
-  Note, the x velocity increases when the ball hits the left or right sides of the window, and the y velocity when the ball hits the top or bottom of the window. So there are two methods to increase the velocity.
+  Note, the x-velocity increases when the ball hits the left or right sides of the window, and the y-velocity when the ball hits the top or bottom of the window. Call the <code>increaseVelocity</code> method after the ball bounces. Then create the <code>increaseVelocity</code> method and pass it <code>"x"</code> or <code>"y"</code> to increase the correct velocity. If the current velocity is negative, subtract 1. If the current velocity is positive, then add 1.
   
-  ```python
-  def bounce(self):
-    if self.x < self.r or self.x > 400 - self.r:
-      self.vel_x *= -1
-      self.change_color()
-      self.increase_vel_x()
-    if self.y < self.r or self.y > 400 - self.r:
-      self.vel_y *= -1
-      self.change_color()
-      self.increase_vel_y()
-      
-  def increase_vel_x(self):
-    if self.vel_x > 0:
-      self.vel_x += 1
-    else:
-      self.vel_x -= 1
+  ```java
+  void bounceBall() {
+    if (xPosition - radius < 0 || xPosition + radius > width) {
+      xVelocity *= -1;
+      changeColor();
+      increaseVelocity("x");
+    }
 
-  def increase_vel_y(self):
-    if self.vel_y > 0:
-      self.vel_y += 1
-    else:
-      self.vel_y -= 1
+    if (yPosition - radius < 0 || yPosition + radius > height) {
+      yVelocity *= -1;
+      changeColor();
+      increaseVelocity("y");
+    }
+  }
+      
+  void increaseVelocity(String direction) {
+    if (direction.equals("x")) {
+      if (xVelocity > 0) {
+        xVelocity += 1;
+      } else {
+        xVelocity -= 1;
+      }
+    } else {
+      if (yVelocity > 0) {
+        yVelocity += 1;
+      } else {
+        yVelocity -= 1;
+      }
+    }
+  }
   ```
   
 </details> <br>
@@ -129,27 +151,136 @@ ball = Ball(window, (255, 0, 0), WIDTH/2, HEIGHT/2, 20)
 <details>
   <summary><strong>Possible Solution</strong></summary>
   
-  ```python
-  def bounce(self):
-    if self.x < self.r or self.x > 400 - self.r:
-      self.vel_x *= -1
-      self.change_color()
-      self.increase_vel_x()
-      self.grow_ball()
-    if self.y < self.r or self.y > 400 - self.r:
-      self.vel_y *= -1
-      self.change_color()
-      self.increase_vel_y()
-      self.grow_ball()
+  Call the <code>growBall</code> method after the ball bounces. Then define this method to increase the <code>radius</code> attribute by 1.
+  
+```java
+  void bounceBall() {
+    if (xPosition - radius < 0 || xPosition + radius > width) {
+      xVelocity *= -1;
+      changeColor();
+      increaseVelocity("x");
+      growBall();
+    }
+
+    if (yPosition - radius < 0 || yPosition + radius > height) {
+      yVelocity *= -1;
+      changeColor();
+      increaseVelocity("y");
+      growBall();
+    }
+  }
       
-  def grow_ball(self):
-    self.r += 1
+  void growBall() {
+    radius += 1;
+  }
   ```
   
 </details>
 
 |||
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Animation.java java -cp code/mutability/ Animation 8)
+<details>
+  <summary><strong>Code</strong></summary>
+  
+  ```java
+  //add class definitions below this line
 
+  class Ball {
+    float xPosition;
+    float yPosition;
+    color ballColor;
+    int radius;
+    float xVelocity;
+    float yVelocity;
+
+    Ball(float x, float y) {
+      xPosition = x;
+      yPosition = y;
+      ballColor = color(255, 255, 255);
+      radius = 20;
+      xVelocity = randomVelocity();
+      yVelocity = randomVelocity();
+    }
+
+    void drawBall() {
+      noStroke();
+      fill(ballColor);
+      circle(xPosition, yPosition, radius * 2);
+    }
+
+    void updateBall() {
+      xPosition += xVelocity;
+      yPosition += yVelocity;
+    }
+
+    void bounceBall() {
+      if (xPosition - radius < 0 || xPosition + radius > width) {
+        xVelocity *= -1;
+        changeColor();
+        increaseVelocity("x");
+        growBall();
+      }
+
+      if (yPosition - radius < 0 || yPosition + radius > height) {
+        yVelocity *= -1;
+        changeColor();
+        increaseVelocity("y");
+        growBall();
+      }
+    }
+
+    void growBall() {
+      radius += 1;
+    }
+
+    void increaseVelocity(String direction) {
+      if (direction.equals("x")) {
+        if (xVelocity > 0) {
+          xVelocity += 1;
+        } else {
+          xVelocity -= 1;
+        }
+      } else {
+        if (yVelocity > 0) {
+          yVelocity += 1;
+        } else {
+          yVelocity -= 1;
+        }
+      }
+    }
+
+      void changeColor() {
+        int red = floor(random(256));
+        int green = floor(random(256));
+        int blue = floor(random(256));
+        ballColor = color(red, green, blue);
+      }
+
+      float randomVelocity() {
+        if (random(1) < 0.5) {
+          return random(1, 3);
+        } else {
+          return random(-3, -1);
+        }
+      }
+    }
+
+    //add class definitions above this line
+
+    Ball ball;
+
+    void setup() {
+      size(500, 500);
+      ball = new Ball(width / 2, height / 2);
+    }
+
+    void draw() {
+      background(55, 55, 55);
+      ball.drawBall();
+      ball.updateBall();
+      ball.bounceBall();
+    }
+  ```
+  
+</details>
 
