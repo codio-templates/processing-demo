@@ -2407,5 +2407,71 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify the lack of keyword used to declare an instance method."
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2390758956",
+  "source": {
+   "name": "what is encapsulation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect the **best** definition of encapsulation from the choices below.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "02b39ee9-e50d-4ec4-3a5a-078e78460ddd",
+     "correct": true,
+     "answer": "Encapsulation occurs when you group together related data and methods, and when you hide or restrict access to data."
+    },
+    {
+     "_id": "88bdd045-0fb1-73d3-e6c3-96f58ccaac07",
+     "correct": false,
+     "answer": "Encapsulation occurs when you hide or restrict access to data."
+    },
+    {
+     "_id": "18c367a0-1b3e-0d4f-7f8e-d23f430bff53",
+     "correct": false,
+     "answer": "Encapsulation occurs when you group together related data and methods."
+    }
+   ],
+   "guidance": "There are two main ideas behind encapsulation: grouping together related data and restricting this data. Each idea on its own can be an example of encapsulation. However, the best definition is one that includes grouping the data and restricting the data.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Encapsulation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/Encapsulation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/Encapsulation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define encapsulation"
+  }
  }
 ]

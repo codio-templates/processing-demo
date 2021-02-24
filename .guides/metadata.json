@@ -1031,6 +1031,29 @@
    "learningObjectives": ""
   },
   {
+   "id": "71689278-f8fd-a0c0-5dd4-d6b9df0f3e03",
+   "title": "What is Encapsulation?",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/Encapsulation.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/What-is-Encapsulation--7168.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "bfa463da-951b-0ace-4c36-392a05be177e",
    "title": "Encapsulation Formative Assessment 1",
    "files": [
