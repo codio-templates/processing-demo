@@ -1015,7 +1015,13 @@
   {
    "id": "30fc1606-7a28-ea24-df98-bf1bf18e7f95",
    "title": "Learning Objectives",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Learning-Objectives-30fc.md",
