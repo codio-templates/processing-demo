@@ -1013,6 +1013,18 @@
    "learningObjectives": ""
   },
   {
+   "id": "30fc1606-7a28-ea24-df98-bf1bf18e7f95",
+   "title": "Learning Objectives",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives-30fc.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "bfa463da-951b-0ace-4c36-392a05be177e",
    "title": "Encapsulation Formative Assessment 1",
    "files": [

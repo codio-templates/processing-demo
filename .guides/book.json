@@ -384,7 +384,14 @@
      "title": "What is Encapsulation?",
      "id": "98fc75fb-a901-3537-d69a-f298fc41a501",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "9538c2e5-32af-d4cd-98fd-c7b558031b77",
+       "title": "Learning Objectives",
+       "pageId": "30fc1606-7a28-ea24-df98-bf1bf18e7f95",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Encapsulation Formative Assessment",
