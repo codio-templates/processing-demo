@@ -10,5 +10,5 @@
 Students understand the basics of declaring a methods and attributes.
 
 ## Limitations
-This discussion focuses on attributes and methods being public or private. How these keywords affect classes will be discussed later on.
+This discussion focuses on attributes and methods being public or private. How these keywords affect classes will be discussed later on. The `protected` keyword will be introduced in the lesson on inheritance.
 |||

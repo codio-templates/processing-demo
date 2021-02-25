@@ -2473,5 +2473,71 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT define encapsulation"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-4197611854",
+  "source": {
+   "name": "public access modifier reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect **all** the parts of your program that should use the `public` access modifier.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "76f2659a-51ab-f40b-8d89-5ca554fa1fa1",
+     "correct": true,
+     "answer": "Constructor"
+    },
+    {
+     "_id": "47af5564-447c-0e8f-f39e-83be8d7b9a1a",
+     "correct": true,
+     "answer": "Methods"
+    },
+    {
+     "_id": "a0cb6385-695e-a993-a5c0-027278dcd4e2",
+     "correct": false,
+     "answer": "Attributes"
+    }
+   ],
+   "guidance": "Constructors and methods should make use of the `public` access modifier. Not every method will be public, but encapsulation requires that some methods be public. As a general rule, all attributes should be private even though Java allows for public attributes.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Public Access Modifier"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/PublicKeyword.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/PublicKeyword.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify what parts of their program should be public."
+  }
  }
 ]

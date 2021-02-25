@@ -1054,6 +1054,41 @@
    "learningObjectives": ""
   },
   {
+   "id": "07d18743-fdf6-99e2-4dfd-3f3d3c4165ac",
+   "title": "Public Access Modifier",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/PublicKeyword.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Public-Access-Modifier-07d1.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ccc6fb06-8ee6-f5e3-83c7-20369598840e",
+   "title": "Private Access Modifier",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Private-Access-Modifier-ccc6.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "bfa463da-951b-0ace-4c36-392a05be177e",
    "title": "Encapsulation Formative Assessment 1",
    "files": [

@@ -396,6 +396,18 @@
        "title": "What is Encapsulation?",
        "pageId": "71689278-f8fd-a0c0-5dd4-d6b9df0f3e03",
        "type": "page"
+      },
+      {
+       "id": "e14775ed-6191-04c0-359c-1d04c084234c",
+       "title": "Public Access Modifier",
+       "pageId": "07d18743-fdf6-99e2-4dfd-3f3d3c4165ac",
+       "type": "page"
+      },
+      {
+       "id": "7480d84a-b7bc-63e1-a88e-7a61dcb2c72f",
+       "title": "Private Access Modifier",
+       "pageId": "ccc6fb06-8ee6-f5e3-83c7-20369598840e",
+       "type": "page"
       }
      ]
     },

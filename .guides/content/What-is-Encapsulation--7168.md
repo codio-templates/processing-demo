@@ -4,7 +4,7 @@
 
 Encapsulation is a concept in which related data and methods are grouped together, and in which access to data is restricted. Grouping related data and methods makes thinking about your program a bit easier. Hiding or restricting how the user interacts with the data can keep the user from making unwanted changes. 
 
-The two main ideas of data restriction are public and private. These adjectives can refer to classes, methods, and attributes. Public means that the constructors, methods, or attributes can be accessed by an instance of a class. Private means that the constructor, attribute, or method can only be accessed by the class itself.
+The two main ideas of data restriction are `public` and `private`. These access modifiers (or keywords) can refer to classes, methods, and attributes. Public means that the constructors, methods, or attributes can be accessed by an instance of a class. Private means that the constructor, attribute, or method can only be accessed by the class itself.
 
 ## Classes as Encapsulation
 
@@ -14,7 +14,7 @@ Classes in Java are a form of encapsulation; they group together related data an
 
 ## Hiding Data
 
-Up until now, we have been creating classes without using `public` or `private` keywords. That means we have not fully implemented encapsulation because we did not put any restrictions on accessing the class. From now on, **all** classes will use `public` and `private` keywords. The chart below gives a brief overview of when to use each keyword.
+Up until now, we have been creating classes without using `public` or `private` keywords. When no access modifiers are used, Java assumes the `default` keyword. This means we have not fully implemented encapsulation because we did not put any restrictions on accessing the class. From now on, **all** classes will use `public` and `private` access modifiers. The chart below gives a brief overview of when to use each keyword.
 
 |Category   |Public|Private|
 |:----------|:----:|:-----:|
@@ -27,7 +27,7 @@ Up until now, we have been creating classes without using `public` or `private` 
   In the pages that follow, you will see when making methods public is a good idea, and when keeping methods private is preferable. A well designed program will use a mix of public and private methods.
 </details><br>
 
-This is the `ExampleClass` from the image above. It now uses the `public` and `private` keywords to hide data.
+This is the `ExampleClass` from the image above. It now uses the `public` and `private` access modifiers to hide data.
 
 ```java
 //add class definitions below this line
