@@ -1079,10 +1079,33 @@
   {
    "id": "ccc6fb06-8ee6-f5e3-83c7-20369598840e",
    "title": "Private Access Modifier",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/PrivateKeyword.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Private-Access-Modifier-ccc6.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9c4d4beb-cf27-0027-72c9-e27653d5adca",
+   "title": "Code as a Black Box",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Code-as-a-Black-Box-9c4d.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

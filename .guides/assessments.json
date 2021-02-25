@@ -2539,5 +2539,76 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify what parts of their program should be public."
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2739099056",
+  "source": {
+   "name": "private access modifier reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect **all** of the true statements.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "3c7aa379-cb96-edbd-5bf9-8d5d55ac3576",
+     "correct": true,
+     "answer": "All attributes should be private"
+    },
+    {
+     "_id": "f83654f5-cb9f-17b4-8379-c3e3e622b352",
+     "correct": true,
+     "answer": "Some methods should be private while others public"
+    },
+    {
+     "_id": "f90d9535-eab6-35f0-da4f-17126221876f",
+     "correct": false,
+     "answer": "It is impossible to access private attributes and methods"
+    },
+    {
+     "_id": "911b1638-5baa-4428-3f7b-75eb3e05d63d",
+     "correct": false,
+     "answer": "Methods called by the user should be private"
+    }
+   ],
+   "guidance": "## True Statements\n* The statement `All attributes should be private` is true because encapsulation dictates that access to attributes should be restricted.\n* The statement `Some methods should be private while others public` is true because encapsulation says to restrict access with private methods. However, if all methods are private then the user could not call them. Therefore you need a mix of private and public methods.\n\n## False Statements\n* The statement `It is impossible to access private attributes and methods` is false because public methods can invoke private attributes and methods.\n* The statement `Methods called by the user should be private` is false because methods called by the user need to be public.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Private Access Modifier"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/PrivateKeyword.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/PrivateKeyword.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT recognize true statements about the private access modifier"
+  }
  }
 ]
