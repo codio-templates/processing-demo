@@ -1159,6 +1159,71 @@
    "learningObjectives": ""
   },
   {
+   "id": "2b4ad484-c385-7b5f-7cc2-7986d49fc62f",
+   "title": "Learning Objectives - Getters and Setters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Getters-and-Setters-2b4a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d37e136c-9469-91ea-c9f9-9de2b0825500",
+   "title": "Getters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/Getters.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Getters-d37e.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9f2841cd-c2e7-162c-d89c-af6923950d3e",
+   "title": "Setters",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Setters-9f28.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bf42553d-0f8d-b6b9-a0e6-ebf6ef482d33",
+   "title": "Data Validation",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Data-Validation-bf42.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "9eba0edb-cfb5-aa0b-e1a9-b99c3af00488",
    "title": "Getters and Setters Formative Assessment 1",
    "files": [

@@ -440,7 +440,32 @@
      "title": "Getters and Setters",
      "id": "3dcb9868-93c4-e6a9-9da7-331e5999c53a",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "f90fee59-9be5-3e34-e57b-de20d3b3cbda",
+       "title": "Learning Objectives - Getters and Setters",
+       "pageId": "2b4ad484-c385-7b5f-7cc2-7986d49fc62f",
+       "type": "page"
+      },
+      {
+       "id": "80a4ade7-f92b-9dcd-f68d-a8502acf0861",
+       "title": "Getters",
+       "pageId": "d37e136c-9469-91ea-c9f9-9de2b0825500",
+       "type": "page"
+      },
+      {
+       "id": "070761df-305c-8ce6-02c2-60dfb2ec2ec6",
+       "title": "Setters",
+       "pageId": "9f2841cd-c2e7-162c-d89c-af6923950d3e",
+       "type": "page"
+      },
+      {
+       "id": "e392bf9d-5a95-612d-d9a9-8d0ceddf057c",
+       "title": "Data Validation",
+       "pageId": "bf42553d-0f8d-b6b9-a0e6-ebf6ef482d33",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Getters and Setters Formative Assessment",

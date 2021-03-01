@@ -2792,5 +2792,53 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1957726401",
+  "source": {
+   "name": "getters reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** getter method for the `language` attribute. **Hint**, not all of the blocks will be used.",
+   "initial": "public String[] getLanguages() {\n  return languages;\n}\nprivate String[] getLanguages() { #distractor\npublic String[] returnLanguages() { #distractor\nSystem.out.println(languages); #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic String[] getLanguages() {\n  return languages;\n}\n```\n\n* Getter methods are accessible to the user, so they need to have the `public` access modifier. \n* The convention in Java is to start a getter method with the word `get`. Java would not throw an error if the method is named `returnLanguages`, but best practices say to use `getLanguages`.\n* A getter method should do only one thing, return the value of an attribute. Printing should not be done by a getter method.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Getter Methods "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/Getters.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/Getters.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a getter method"
+  }
  }
 ]
