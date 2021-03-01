@@ -2637,7 +2637,7 @@
      "answer": "When the `private` access modifier is used."
     }
    ],
-   "guidance": "The best definition is:\n> When users know how to interact with the code, but they do not understand the inner workings of the code.\nA key part of code as a black box is that users do not need to understand the inner workings of the code. However, users are expected to use black box code, so they need to understand how to interact with it. While the `private` keyword is used to hide code from the user, simply using `private` does not create a black box. A black box is the result of careful planning — hiding everything that should not be directly accessed while making certain methods public.",
+   "guidance": "The best definition is:\n\n> When users know how to interact with the code, but they do not understand the inner workings of the code.\n\nA key part of code as a black box is that users do not need to understand the inner workings of the code. However, users are expected to use black box code, so they need to understand how to interact with it. While the `private` keyword is used to hide code from the user, simply using `private` does not create a black box. A black box is the result of careful planning — hiding everything that should not be directly accessed while making certain methods public.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -2675,6 +2675,122 @@
    },
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT define black box code"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-892924295",
+  "source": {
+   "name": "encapsulation formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  private String name;\n  private String breed;\n\n  private Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n\n  private void bark() {\n    System.out.println(\"Woof! Woof!\");\n  }\n}\n```\n\nThe code does not make proper use of encapsulation. Why?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "ec1cdc6f-44be-ae79-3c09-6eecf7ff12e9",
+     "correct": true,
+     "answer": "Everything is private. There is no way to instantiate a `Dog` object or call the `bark` method."
+    },
+    {
+     "_id": "637c8c57-d98c-329c-2ff0-38773dbd8fb4",
+     "correct": false,
+     "answer": "Trick question, there is nothing wrong with the code."
+    },
+    {
+     "_id": "fc223f4b-6be2-184a-b5f5-13c2283ee6ee",
+     "correct": false,
+     "answer": "The instance attributes should be public."
+    }
+   ],
+   "guidance": "The correct answer is:\n\n>Everything is private. There is no way to instantiate a `Dog` object or call the `bark` method.\n\nEncapsulation is the practice of hiding and exposing information to the user. As written, the `Dog` class cannot be instantiated because the constructor is private. Even if this were public, the user could not call the `bark` method. Encapsulation means using both the `public` and `private` access modifiers.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Encapsulation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify incorrect encapsulation"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2607923838",
+  "source": {
+   "name": "encapsulation formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nEncapsulation requires the use of the `public` and `private` keywords. Fill in the blanks so that the proper access modifier(s) correspond to different parts of a program.",
+   "showValues": true,
+   "text": "The constructor should be <<<public>>>.\nInstance attributes should be <<<private>>>.\nMethods should be <<<public and private>>>.",
+   "distractors": "",
+   "guidance": "Here are the correct answers:\n\n* Constructors should be public. If not, you cannot instantiate an object.\n* The convention in Java is to always make instance attributes private.\n* Methods need to be both public and private. Only those methods need by the user should be public; the rest should be private.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify when the public and private access modifiers should be used",
+   "tokens": {
+    "blank": [
+     "public",
+     "private",
+     "public and private"
+    ],
+    "text": [
+     "The constructor should be ",
+     0,
+     ".\nInstance attributes should be ",
+     0,
+     ".\nMethods should be ",
+     0,
+     "."
+    ],
+    "regexPositions": []
+   }
   }
  }
 ]
