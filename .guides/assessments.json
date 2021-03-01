@@ -2840,5 +2840,53 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a getter method"
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-3781411493",
+  "source": {
+   "name": "setters reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** setter method for the `language` attribute. **Hint**, not all of the blocks will be used.",
+   "initial": "public void setLanguages(String[] newLanguages) {\n  languages = newLanguages;\n}\npublic String[] setLanguages(String[] newLanguages) { #distractor\npublic void setLanguages() { #distractor\nprivate String[] setLanguages(String[] newLanguages) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic void setLanguages(String[] newLanguages) {\n  languages = newLanguages;\n}\n```\n\n* Setter methods do not return a value, so their type should be `void`.\n* Setter methods update an attribute to a new value, so they require a parameter that represents this new value.\n* Setter methods need to be public so they can be called by users of the class.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Setter Methods "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/Setters.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/Setters.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a setter method"
+  }
  }
 ]
