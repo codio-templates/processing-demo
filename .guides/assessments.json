@@ -2610,5 +2610,71 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT recognize true statements about the private access modifier"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-44663644",
+  "source": {
+   "name": "black box reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhich definition below is the **best** definition for code as a black box?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "81eeaa02-a024-c064-eae3-be19cb126586",
+     "correct": true,
+     "answer": "When users know how to interact with the code, but they do not understand the inner workings of the code."
+    },
+    {
+     "_id": "5dbcb0d0-26f6-967e-94a2-882c3aa80d3f",
+     "correct": false,
+     "answer": "When users do not understand the inner workings of the code."
+    },
+    {
+     "_id": "6f2fa3e0-977b-6d59-15ab-40c384325e91",
+     "correct": false,
+     "answer": "When the `private` access modifier is used."
+    }
+   ],
+   "guidance": "The best definition is:\n> When users know how to interact with the code, but they do not understand the inner workings of the code.\nA key part of code as a black box is that users do not need to understand the inner workings of the code. However, users are expected to use black box code, so they need to understand how to interact with it. While the `private` keyword is used to hide code from the user, simply using `private` does not create a black box. A black box is the result of careful planning — hiding everything that should not be directly accessed while making certain methods public.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Black Box"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/BlackBox.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/BlackBox.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define black box code"
+  }
  }
 ]

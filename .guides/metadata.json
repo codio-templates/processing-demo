@@ -1102,7 +1102,18 @@
   {
    "id": "9c4d4beb-cf27-0027-72c9-e27653d5adca",
    "title": "Code as a Black Box",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/BlackBox.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Code-as-a-Black-Box-9c4d.md",
