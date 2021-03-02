@@ -1225,7 +1225,18 @@
   {
    "id": "bf42553d-0f8d-b6b9-a0e6-ebf6ef482d33",
    "title": "Data Validation",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/DataValidation.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Data-Validation-bf42.md",
