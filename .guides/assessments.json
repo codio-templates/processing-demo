@@ -2888,5 +2888,76 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a setter method"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3712924918",
+  "source": {
+   "name": "data validation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect **all** of the true statements about data validation.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "db82b984-96d7-1415-a543-0d344286111a",
+     "correct": true,
+     "answer": "Data validation is done in a setter method"
+    },
+    {
+     "_id": "77fe7c4b-7b22-480e-0295-976bef6aa05f",
+     "correct": true,
+     "answer": "Data validation is important because the Java compiler cannot find all errors"
+    },
+    {
+     "_id": "5da35b23-1698-988f-191f-fb700a684788",
+     "correct": false,
+     "answer": "Data validation is done in a getter method"
+    },
+    {
+     "_id": "69613594-c599-e147-dfdf-45199b9366bb",
+     "correct": false,
+     "answer": "Data validation is important because you want to make sure values of the wrong data type are not assigned to an attribute"
+    }
+   ],
+   "guidance": "The true statements are:\n\n>Data validation is done in a setter method\nData validation is important because the Java compiler cannot find all errors\n\n* The job of a getter method is to return the value of an attribute. These methods should never update the value of an attribute, so data validation should not be done in a getter method.\n* The Java compiler will find some kinds of errors like incorrect data types. However, the compiler does not understand the context of the code. Data validation is the process of making sure a value is appropriate for its intended use.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/DataValidation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/DataValidation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify true statements about data validation"
+  }
  }
 ]

@@ -1,5 +1,5 @@
 ----------
-Data validation is the process by which you verify that the data is correct before using it. Java already has a type system which will flag errors when a boolean value is passed to a method that does not take a boolean. Just because a method takes an integer does not mean that all integers are valid for that method. Take a look at the `Person` class.
+Java already has a type system which will flag errors when a boolean value is passed to a method that takes an integer. However, just because a method takes an integer does not mean that all integers are valid for that method. Data validation is the process of asking if this data is appropriate for its intended use. Take a look at the `Person` class.
 
 ```java
 //add class definitions below this line
@@ -33,7 +33,7 @@ class Person {
 //add class definitions above this line
 ```
 
-The `setAge` method will assign any value to the attribute `age` as long as the value is an integer. There are some integers which makes no sense when thought of an age. The code sample below sets the age of `myPerson` to `-100`. `-100` is a valid integer, but it is not a valid age. This is why data validation is important. Java's compiler is not sufficient to catch all errors.
+The `setAge` method will assign any value to the attribute `age` as long as the value is an integer. There are some integers which makes no sense when thought of as an age. The code sample below sets the age of `myPerson` to `-100`. `-100` is a valid integer, but it is not a valid age. This is why data validation is important. Java's compiler is not sufficient to catch all errors.
 
 ```java
     //add code below this line
@@ -97,3 +97,5 @@ Another benefit to using setters is that data validation can take place before t
 |||
 
 {Try it}(sh .guides/bg.sh javac code/encapsulation/DataValidation.java java -cp code/encapsulation/ DataValidation 3)
+  
+{Check It!|assessment}(multiple-choice-3712924918)
