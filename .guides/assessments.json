@@ -2959,5 +2959,100 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT identify true statements about data validation"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3069619256",
+  "source": {
+   "name": "getters and setters formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nFill in the blanks below.",
+   "showValues": false,
+   "text": "A <<<getter>>> accesses the value of a private instance variable.\nA <<<setter>>> mutates the value of a private instance variable.",
+   "distractors": "",
+   "guidance": "A **getter** accesses the value of a private instance variable.\nA **setter** mutates the value of a private instance variable.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Getters and Setters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "C++, Python, Java, JavaScript"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define getters and setters",
+   "tokens": {
+    "blank": [
+     "getter",
+     "setter"
+    ],
+    "text": [
+     "A ",
+     0,
+     " accesses the value of a private instance variable.\nA ",
+     0,
+     " mutates the value of a private instance variable."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-45499968",
+  "source": {
+   "name": "getters and setters formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the class `PrimaryColors` as defined below:\n\n```java\nclass PrimaryColor {\n  private String color = \"red\";\n\n  public String getColor() {\n    return color:\n  }\n}\n```\n\nDrag the code blocks into the box below to create a setter that validates if the new color is a primary color. **Hint**, not all of the code blocks will be used.",
+   "initial": "public setColor(String newColor) {\n  String[] primaryColors = {&quot;red&quot;, &quot;blue&quot;, &quot;yellow&quot;};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\nnewColor = color; #distractor\npublic getColor(String newColor) { #distractor\nif (newColor == color) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic setColor(String newColor) {\n  String[] primaryColors = {\"red\", \"blue\", \"yellow\"};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\n```\n\n* Setter methods should start with `set` which is why `public getColor(String newColor) {` is incorrect.\n* String comparison is done with the `equals` method, which is why `if (newColor == color) {` is incorrect.\n* This method should update the `color` attribute, which is why `newColor = color;` is incorrect.\n",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT construct a setter with data validation"
+  }
  }
 ]
