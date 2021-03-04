@@ -3054,5 +3054,208 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT construct a setter with data validation"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-333953468",
+  "source": {
+   "name": "encapsulation lab 1 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blanks below with the appropriate access modifier.",
+   "showValues": true,
+   "text": "The <<<private>>> access modifier means that an instance cannot directly access an attribute or method.\nThe <<<public>>> access modifier means that an instance can directly access an attribute or method.\nThe <<<default>>> access modifier is assumed when no modifier is used before an attribute or method.",
+   "distractors": "",
+   "guidance": "* The `private` access modifier means an instance cannot directly access an attribute or method. Instead, you have to use a public method (like a getter or a setter) to access private attributes or private methods.\n* The `public` access modifier means that an instance can directly access or modify the attribute or method.\n* If you do not use an access modifier, Java assumes the `default` access modifier, which is similar to `public`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define public, private, and default access modifiers",
+   "tokens": {
+    "blank": [
+     "private",
+     "public",
+     "default"
+    ],
+    "text": [
+     "The ",
+     0,
+     " access modifier means that an instance cannot directly access an attribute or method.\nThe ",
+     0,
+     " access modifier means that an instance can directly access an attribute or method.\nThe ",
+     0,
+     " access modifier is assumed when no modifier is used before an attribute or method."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3169021649",
+  "source": {
+   "name": "encapsulation lab 2 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nPredict the output of the following code:\n\n```java\nclass TestClass {\n  private String color;\n\n  public TestClass(String c) {\n    color = c;\n  }\n}\n\npublic class LabQuestion {\n  public static void main(String[] args) {\n    TestClass myObject = new TestClass(\"red\");\n    myObject.color = \"blue\";\n    System.out.println(myObject.color);\n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "a89395ba-aed3-f2c4-111e-6b76dbcdb2c0",
+     "correct": true,
+     "answer": "Error message, `color` is a private attribute."
+    },
+    {
+     "_id": "0c132af5-3b7b-fa34-9727-db8277be9984",
+     "correct": false,
+     "answer": "`blue`"
+    },
+    {
+     "_id": "941944d3-a64d-648c-7076-915228330db1",
+     "correct": false,
+     "answer": "`red`"
+    }
+   ],
+   "guidance": "The `color` attribute is private which means an instance cannot access or modify it. Java would throw an error message.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Private Access Modifier"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT predict output from code"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3946797564",
+  "source": {
+   "name": "encapsulation lab 3 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\npublic void setAttribute(int newNumber) {\n  if (newNumber % 2 == 0) {\n    number = newNumber;\n  }\n}\n```\n\nSelect all of the true statements about the setter method above. **Hint**, there is more than one right answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "177ed6cf-e5b0-cdee-53a1-6839e7855b7b",
+     "correct": true,
+     "answer": "The setter method only works with integers"
+    },
+    {
+     "_id": "e7d7aa41-da20-1191-5e59-c33548e78b20",
+     "correct": true,
+     "answer": "The setter method only works with even numbers"
+    },
+    {
+     "_id": "29bac1db-af60-8b52-d88c-1641d7d5d8e5",
+     "correct": false,
+     "answer": "The setter method only works with doubles"
+    },
+    {
+     "_id": "38adce83-62e2-3162-f750-e8d1b33b7f71",
+     "correct": false,
+     "answer": "The setter method only works with odd numbers"
+    }
+   ],
+   "guidance": "The correct answers are:\n\n```\nThe setter method only works with integers\nThe setter method only works with even numbers\n```\n\nThe method header for `setAttribute` requires that an integer be passed to the method. It does not work with any other data type. The `%` operator is modulus which returns the remainder from `newNumber` and `2`. If the parameter is even (no remainder when divided by 2) then the `number` attribute will take a new value.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT understand how data is being validated"
+  }
  }
 ]
