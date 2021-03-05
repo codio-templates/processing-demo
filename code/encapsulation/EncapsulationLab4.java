@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //add class definitions below this line
-    
+
 class CoffeeJournal {
   private String file;
   private String roaster;
@@ -13,7 +13,7 @@ class CoffeeJournal {
   private String region;
   private String stars;
   private ArrayList<String[]> coffee;
-  
+
   public CoffeeJournal(String f) {
     file = f;
     roaster = "";
@@ -22,7 +22,7 @@ class CoffeeJournal {
     stars = "";
     coffee = loadCoffee();
   }
-  
+
   private ArrayList<String[]> loadCoffee() {
     ArrayList<String[]> savedCoffee = new ArrayList<String[]>();
     try {
@@ -36,23 +36,39 @@ class CoffeeJournal {
     }
     return savedCoffee;
   }
-  
+
+  public String getRoaster() {
+    return roaster;
+  }
+
   public void setRoaster(String newRoaster) {
     roaster = newRoaster;
   }
-  
+
+  public String getCountry() {
+    return country;
+  }
+
   public void setCountry(String newCountry) {
     country = newCountry;
   }
-  
+
+  public String getRegion() {
+    return region;
+  }
+
   public void setRegion(String newRegion) {
     region = newRegion;
   }
-  
+
+  public String getStars() {
+    return stars;
+  }
+
   public void setStars(String newStars) {
     stars = newStars;
   }
-  
+
   public void addCoffee() {
     String[] newCoffee = new String[4];
     newCoffee[0] = roaster;
@@ -61,7 +77,7 @@ class CoffeeJournal {
     newCoffee[3] = stars;
     coffee.add(newCoffee);
   }
-  
+
   public void save() {
     try {
       CSVWriter writer = new CSVWriter(new FileWriter(file));
@@ -73,7 +89,7 @@ class CoffeeJournal {
       System.out.println(e);
     }
   }
-  
+
   public void showCoffee() {
     if (coffee.size() == 1) {
       System.out.println("Enter a coffee");
@@ -85,74 +101,22 @@ class CoffeeJournal {
     }
   }
 }
-  
+
 //add class definitions above this line
 
-public class EncapsulationLab4 {
+public class EncapsulationLab3 {
   public static void main(String[] args) {
-    
+
     //add code below this line
-    
-    String file = "code/encapsulation/coffeeJournal.csv";
-    CoffeeJournal journal = new CoffeeJournal(file);
-    boolean run = true;
-    int choice;
-    
-    while (run) {
-      choice = mainMenu();
-      run = performAction(journal, choice);
-    }
+
+
 
     //add code above this line
   }
-  
+
   //add method definitions below this line
-  public static int mainMenu() {
-    Scanner sc = new Scanner(System.in);
-    System.out.println();
-    System.out.println("Coffess of the World");
-    System.out.println("\t1. Show Coffee");
-    System.out.println("\t2. Add Coffee");
-    System.out.println("\t3. Save and Quit");
-    return sc.nextInt();
-  }
-  
-  public static boolean performAction(CoffeeJournal journal, int choice) {
-    if (choice == 1) {
-      System.out.println();
-      journal.showCoffee();
-    } else if (choice == 2) {
-      enterCoffee(journal);
-    } else if (choice == 3) {
-      quit(journal);
-      return false;
-    }
-    return true;
-  }
-  
-  public static void enterCoffee(CoffeeJournal journal) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println();
-    System.out.println("Enter the name of the roaster: ");
-    String newRoaster = sc.nextLine();
-    journal.setRoaster(newRoaster);
-    System.out.println("Enter the country of origin: ");
-    String newCountry = sc.nextLine();
-    journal.setCountry(newCountry);
-    System.out.println("Enter the region: ");
-    String newRegion = sc.nextLine();
-    journal.setRegion(newRegion);
-    System.out.println("Enter the number of stars '*' (1-4): ");
-    String newStars = sc.nextLine();
-    journal.setStars(newStars);
-    System.out.println();
-    journal.addCoffee();
-  }
-  
-  public static void quit(CoffeeJournal journal) {
-    System.out.println("Closing the coffee journal");
-    journal.save();
-  }
-  
+
+
+
   //add method definitions above this line
 }
