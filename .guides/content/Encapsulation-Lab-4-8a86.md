@@ -15,6 +15,7 @@ The menu provides three options. The first one can be handled by the `CoffeeJour
 
   public static int mainMenu() {
     Scanner sc = new Scanner(System.in);
+    System.out.println();
     System.out.println("Coffess of the World");
     System.out.println("\t1. Show Coffee");
     System.out.println("\t2. Add Coffee");
@@ -22,14 +23,17 @@ The menu provides three options. The first one can be handled by the `CoffeeJour
     return sc.nextInt();
   }
   
-  public static void performAction(CoffeeJournal journal, int choice, boolean run) {
+  public static boolean performAction(CoffeeJournal journal, int choice) {
     if (choice == 1) {
+      System.out.println();
       journal.showCoffee();
     } else if (choice == 2) {
       enterCoffee(journal);
     } else if (choice == 3) {
-      quit(journal, run);
+      quit(journal);
+      return false;
     }
+    return true;
   }
   
   //add method definitions above this line
@@ -57,9 +61,9 @@ The `enterCoffee` method asks the user to input information about the coffee. Se
     journal.addCoffee();
   }
   
-  public static void quit(CoffeeJournal journal, boolean run) {
+  public static void quit(CoffeeJournal journal) {
+    System.out.println("Closing the coffee journal");
     journal.save();
-    run = false;
   }
 ```
 
@@ -104,3 +108,5 @@ Peace River     Rawanda         Remera           ***
 Ritual          Guatemala       Antigua          ***
 Oak Cliff       Peru            Oxapampa         **
 ```
+
+{Check It!|assessment}(multiple-choice-1447429733)

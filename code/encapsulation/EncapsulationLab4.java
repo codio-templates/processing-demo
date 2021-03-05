@@ -100,7 +100,7 @@ public class EncapsulationLab4 {
     
     while (run) {
       choice = mainMenu();
-      performAction(journal, choice, run);
+      run = performAction(journal, choice);
     }
 
     //add code above this line
@@ -109,6 +109,7 @@ public class EncapsulationLab4 {
   //add method definitions below this line
   public static int mainMenu() {
     Scanner sc = new Scanner(System.in);
+    System.out.println();
     System.out.println("Coffess of the World");
     System.out.println("\t1. Show Coffee");
     System.out.println("\t2. Add Coffee");
@@ -116,14 +117,17 @@ public class EncapsulationLab4 {
     return sc.nextInt();
   }
   
-  public static void performAction(CoffeeJournal journal, int choice, boolean run) {
+  public static boolean performAction(CoffeeJournal journal, int choice) {
     if (choice == 1) {
+      System.out.println();
       journal.showCoffee();
     } else if (choice == 2) {
       enterCoffee(journal);
     } else if (choice == 3) {
-      quit(journal, run);
+      quit(journal);
+      return false;
     }
+    return true;
   }
   
   public static void enterCoffee(CoffeeJournal journal) {
@@ -145,9 +149,9 @@ public class EncapsulationLab4 {
     journal.addCoffee();
   }
   
-  public static void quit(CoffeeJournal journal, boolean run) {
+  public static void quit(CoffeeJournal journal) {
+    System.out.println("Closing the coffee journal");
     journal.save();
-    run = false;
   }
   
   //add method definitions above this line

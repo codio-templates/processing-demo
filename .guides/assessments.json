@@ -3257,5 +3257,76 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT understand how data is being validated"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1447429733",
+  "source": {
+   "name": "encapsulation lab 4 question",
+   "showName": true,
+   "instructions": "## Lab Question\n\nWhat is the output of the following code?\n\n```java\nclass TestClass {\n  private String color;\n\n  public TestClass(String c) {\n    color = c;\n  }\n\n  public void returnColor() {\n    return color;\n  }\n\n  public String changeColor(String newColor) {\n    color = newColor();\n  }\n}\n\npublic class LabQuestion {\n  public static void main(String[] args) {\n    TestClass myObject = new TestClass(\"red\");\n    myObject.changeColor(\"blue\");\n    System.out.println(myObject.returnColor());\n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "6aba3959-1363-14fa-066e-cb8054b491c4",
+     "correct": true,
+     "answer": "`blue`"
+    },
+    {
+     "_id": "fbfe8913-81a2-1e1c-65ac-24391bb3aa4e",
+     "correct": false,
+     "answer": "`red`"
+    },
+    {
+     "_id": "55592a79-f93d-f30f-1e93-49f0b5996051",
+     "correct": false,
+     "answer": "Error message, the getter and setter should be called `getColor` and `setColor`."
+    }
+   ],
+   "guidance": "The code will print `blue`. The convention is to name the getter and setter `getColor` and `setColor`. However, Java will not throw an error message if this convention is ignored.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Getters and Setters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab4.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify naming conventions for getters and setters"
+  }
  }
 ]
