@@ -3328,5 +3328,55 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify naming conventions for getters and setters"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-791041872",
+  "source": {
+   "name": "encapsulation lab challegne",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Person {\n  private String name;\n  private int age;\n  private String occupation;\n  \n  public Person(String n, int a, String o) {\n    name = n;\n    age = a;\n    occupation = o;\n  }\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String newName) {\n    name = newName;\n  }\n  \n  public int getAge() {\n    return age;\n  }\n  \n  public void setAge(int newAge) {\n    age = newAge;\n  }\n  \n  public String getOccupation() {\n    return occupation;\n  }\n  \n  public void setOccupation(String newOccupation) {\n    occupation = newOccupation;\n  }\n}\n  \n//add class definitions above this line\n\npublic class EncapsulationLabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Person myPerson = new Person(\"Citra Curie\", 16, \"student\");\n    \n    System.out.println(myPerson.getName());\n    myPerson.setName(\"Roman Faraday\");\n    System.out.println(myPerson.getName());\n    \n    System.out.println(myPerson.getAge());\n    myPerson.setAge(18);\n    System.out.println(myPerson.getAge());\n    \n    System.out.println(myPerson.getOccupation());\n    myPerson.setOccupation(\"plumber\");\n    System.out.println(myPerson.getOccupation());\n\n    //add code above this line\n  }\n}\n```\n\n* Be sure to use the `private` access modifier for the `name`, `age`, and `occupation` attributes.\n* Follow the naming conventions for the getters and setters in the **Expected Output** section.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters and Setters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/EncapsulationLabChallenge.java",
+     "code/encapsulation/EncapsulationLabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/EncapsulationLabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "5",
+   "learningObjectives": "SWBAT create a class that makes use of getters and setters"
+  }
  }
 ]

@@ -104,7 +104,7 @@ class CoffeeJournal {
 
 //add class definitions above this line
 
-public class EncapsulationLab3 {
+public class EncapsulationLab4 {
   public static void main(String[] args) {
 
     //add code below this line
