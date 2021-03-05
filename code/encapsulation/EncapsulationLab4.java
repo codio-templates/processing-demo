@@ -93,36 +93,14 @@ public class EncapsulationLab4 {
     
     //add code below this line
     
-    String file = "code/encapsulation/testJournal2.csv";
+    String file = "code/encapsulation/coffeeJournal.csv";
     CoffeeJournal journal = new CoffeeJournal(file);
-//     journal.showCoffee();
-    journal.setRoaster("Peace River");
-    journal.setCountry("Rawanda");
-    journal.setRegion("Remera");
-    journal.setStars("***");
-    journal.addCoffee();
-    journal.showCoffee();
-    journal.save();
-//     System.out.println(journal.getRoaster());
-//     System.out.println(journal.getCountry());
-//     System.out.println(journal.getRegion());
-//     System.out.println(journal.getStars());
-    
-//     journal.setRoaster("Peace River");
-//     journal.setCountry("Ethiopia");
-//     journal.setRegion("Sidoma");
-//     journal.setStars("****");
-//     journal.addCoffee();
-//     journal.showCoffee();
-//     journal.save();
-    
-    Scanner sc = new Scanner(System.in);
     boolean run = true;
     int choice;
     
     while (run) {
       choice = mainMenu();
-      performAction(journal, choice);
+      performAction(journal, choice, run);
     }
 
     //add code above this line
@@ -130,24 +108,26 @@ public class EncapsulationLab4 {
   
   //add method definitions below this line
   public static int mainMenu() {
+    Scanner sc = new Scanner(System.in);
     System.out.println("Coffess of the World");
     System.out.println("\t1. Show Coffee");
     System.out.println("\t2. Add Coffee");
     System.out.println("\t3. Save and Quit");
-    return sc.nextint();
+    return sc.nextInt();
   }
   
-  public static void performAction(CoffeeJournal journal, int choice) {
+  public static void performAction(CoffeeJournal journal, int choice, boolean run) {
     if (choice == 1) {
       journal.showCoffee();
     } else if (choice == 2) {
-      enterCoffee();
+      enterCoffee(journal);
     } else if (choice == 3) {
-      quit(journal);
+      quit(journal, run);
     }
   }
   
   public static void enterCoffee(CoffeeJournal journal) {
+    Scanner sc = new Scanner(System.in);
     System.out.println();
     System.out.println("Enter the name of the roaster: ");
     String newRoaster = sc.nextLine();
@@ -165,7 +145,7 @@ public class EncapsulationLab4 {
     journal.addCoffee();
   }
   
-  public static void quit(CoffeeJournal journal) {
+  public static void quit(CoffeeJournal journal, boolean run) {
     journal.save();
     run = false;
   }
