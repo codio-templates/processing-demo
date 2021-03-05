@@ -3378,5 +3378,54 @@
    "bloomsObjectiveLevel": "5",
    "learningObjectives": "SWBAT create a class that makes use of getters and setters"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3447362335",
+  "source": {
+   "name": "encapsulation coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise1Tester.java\",\"className\":\"CodingExercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Fruit {\n  private String name;\n  private String color;\n  \n  public Fruit(String n, String c) {\n    name = n;\n    color = c;\n  }\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String newName) {\n    name = newName;\n  }\n  \n  public String getColor() {\n    return color;\n  }\n  \n  public void setColor(String newColor) {\n    color = newColor;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Fruit myFruit = new Fruit(\"strawberry\", \"red\");\n    \n    System.out.println(myFruit.getName());\n    System.out.println(myFruit.getColor());\n    \n    myFruit.setName(\"tangerine\");\n    myFruit.setColor(\"orange\");\n    System.out.println(myFruit.getName());\n    System.out.println(myFruit.getColor());\n\n    //add code above this line\n  }\n}\n```\n* All attributes should be private\n* The constructor should be public\n* Create a getter and setter for each attribute so that you can access and change them",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters, Setters, and Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT convert a class with the default access modifier to a class with encapsulation"
+  }
  }
 ]

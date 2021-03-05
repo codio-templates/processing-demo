@@ -1,10 +1,18 @@
 //add class definitions below this line
     
-
+class Fruit {
+  String name;
+  String color;
+  
+  Fruit(String n, String c) {
+    name = n;
+    color = c;
+  }
+}
   
 //add class definitions above this line
 
-public class EncapsulationLabChallenge {
+public class CodingExercise1 {
   public static void main(String[] args) {
     
     //add code below this line

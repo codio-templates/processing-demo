@@ -4,6 +4,7 @@
 * ### Differentiate between `public` and `private`
 * ### Explain which parts of a class should public, private, or both
 * ### Explain why encapsulation can be beneficial
+* ### Define data validation
 
 |||guidance
 ## Assumptions

@@ -1404,7 +1404,18 @@
   {
    "id": "62be7c1e-0d93-2f4b-5caa-fdcc2a876edf",
    "title": "Encapsulation Exercise 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise1.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Encapsulation-Exercise-1-62be.md",
@@ -1416,7 +1427,18 @@
   {
    "id": "edbe74c1-9acf-e5e8-c32e-139e91d346a1",
    "title": "Encapsulation Exercise 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise2.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Encapsulation-Exercise-2-edbe.md",
@@ -1428,7 +1450,18 @@
   {
    "id": "9eb3575d-69de-626e-c077-2a1cc23e0dd6",
    "title": "Encapsulation Exercise 3",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise3.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Encapsulation-Exercise-3-9eb3.md",
@@ -1440,7 +1473,18 @@
   {
    "id": "97fa39fb-f187-36be-e387-e1346a19c20b",
    "title": "Encapsulation Exercise 4",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise4.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Encapsulation-Exercise-4-97fa.md",
@@ -1452,7 +1496,18 @@
   {
    "id": "41eb4054-d9a6-2119-74d9-b95d1bc98288",
    "title": "Encapsulation Exercise 5",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise5.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Encapsulation-Exercise-5-41eb.md",
