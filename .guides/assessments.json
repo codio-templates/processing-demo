@@ -3448,6 +3448,18 @@
      {
       "name": "Assessment Type",
       "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters, Setters, and a Public Method"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
      }
     ],
     "files": [
@@ -3461,8 +3473,106 @@
      }
     ]
    },
-   "bloomsObjectiveLevel": "",
-   "learningObjectives": ""
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with encapsulation, getters, setters, and a public method"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1440786407",
+  "source": {
+   "name": "encapsulation coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise3Tester.java\",\"className\":\"CodingExercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Song {\n  private String artist;\n  private String title;\n  private String album;\n  private int playCount;\n  private final double payRate;\n  private double moneyEarned;\n  \n  public Song(String ar, String t, String al, double p) {\n    artist = ar;\n    title = t;\n    album = al;\n    playCount = 0;\n    payRate = p;\n    moneyEarned = 0;\n  }\n  \n  public String getArtist() {\n    return artist;\n  }\n  \n  public void setArtist(String newArtist) {\n    artist = newArtist;\n  }\n  \n  public String getTitle() {\n    return title;\n  }\n  \n  public void setTitle(String newTitle) {\n    title = newTitle;\n  }\n  \n  public String getAlbum() {\n    return album;\n  }\n  \n  public void setAlbum(String newAlbum) {\n    album = newAlbum;\n  }\n  \n  public int getPlayCount() {\n    return playCount;\n  }\n  \n  public void setPlayCount(int newPlayCount) {\n    playCount = newPlayCount;\n  }\n  \n  public double getMoneyEarned() {\n    return moneyEarned;\n  }\n  \n  public double getPayRate() {\n    return payRate;\n  }\n  \n  public void play() {\n    updatePlayCount();\n    updateMoneyEarned();\n  }\n  \n  private void updatePlayCount() {\n    playCount++;\n  }\n  \n  private void updateMoneyEarned() {\n    moneyEarned = playCount * payRate;\n  }\n  \n}\n  \n//add class definitions above this line\n\npublic class CodingExercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Song mySong = new Song(\"led zeppelin\", \"ten years gone\", \"physical graffiti\", 0.001);\n    mySong.play();\n    System.out.println(mySong.getMoneyEarned());\n    for (int i = 0; i < 10000; i++) {\n      mySong.play();\n    }\n    System.out.println(mySong.getMoneyEarned());\n\n    //add code above this line\n  }\n}\n```\n\n* All of the attributes should be private\n* Because the `payRate` attribute is a constant, use the `final` keyword when declaring the attribute\n* The attributes `playCount` and `moneyEarned` should be set to 0 in the constructor\n* All of the attributes should have a getter method\n* All of the attributes **except for** `payRate` and `moneyEarned` should have a setter method\n* In this example, the `play` method calls two private helper methods, `updatePlayCount` and `updateMoneyEarned`\n* `updatePlayCount` increments the `playCount` method by 1\n* `updateMoneyEarned` updates `moneyEarned` to `payRate` multiplied by `playCount`",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters, Setters, and Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with encapsulation, specifically getters, setters, and access modifiers"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2521092329",
+  "source": {
+   "name": "encapsulation coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise4Tester.java\",\"className\":\"CodingExercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Atm {\n  private double money;\n  \n  public Atm(double m) {\n    money = m;\n  }\n  \n  public double getMoney() {\n    return money;\n  }\n  \n  public void withdraw(double amount) {\n    if (haveEnoughMoney(amount)) {\n      if (positiveMoney(amount)) {\n         money -= amount;\n      } else {\n        System.out.println(\"You cannot withdraw a negative amount of money.\");\n      }\n    } else {\n      System.out.println(\"You do not have enough funds to withdraw that amount.\");\n    }\n  }\n  \n  public void deposit(double amount) {\n    if (positiveMoney(amount)) {\n      money += amount;\n    } else {\n      System.out.println(\"You cannot deposit a negative amount of money.\");\n    }\n  }\n  \n  private boolean haveEnoughMoney(double amount) {\n    return money > amount;\n  }\n  \n  private boolean positiveMoney(double amount) {\n    return amount >= 0;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Atm myAtm = new Atm(1000);\n    myAtm.deposit(50);\n    System.out.println(myAtm.getMoney());\n    myAtm.withdraw(925);\n    System.out.println(myAtm.getMoney());    \n\n    //add code above this line\n  }\n}\n```\n\n* The only attribute should be `money`\n* `money` has a getter method, but no setter\n* The `withdraw` method needs to test for two different conditions: the amount to be withdrawn is less than the money in the account, and the money to be withdrawn is positive\n* The private method `positiveMoney` asks if the amount of money is positive and returns a boolean value\n* The private method `haveEnoughMoney` asks if the amount of money to be withdrawn is greater than the money in the account and returns a boolean value\n* Data validation for the `deposit` method also uses the `positiveMoney` helper method",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT to create a class with encapsulation and data validation"
   }
  }
 ]
