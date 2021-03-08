@@ -3427,5 +3427,42 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT convert a class with the default access modifier to a class with encapsulation"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3393708180",
+  "source": {
+   "name": "encapsulation coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise2Tester.java\",\"className\":\"CodingExercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Watch {\n  private String manufacturer;\n  private String model;\n  private int diameter;\n  private int waterResistance;\n  private String material;\n  \n  public Watch (String ma, String mo, int d, int wr, String mat) {\n    manufacturer = ma;\n    model = mo;\n    diameter = d;\n    waterResistance = wr;\n    material = mat;\n  }\n  \n  public String getManufacturer() {\n    return manufacturer;\n  }\n  \n  public void setManufacturer(String newManufacturer) {\n    manufacturer = newManufacturer;\n  }\n  \n  public String getModel() {\n    return model;\n  }\n  \n  public void setModel(String newModel) {\n    model = newModel;\n  }\n  \n  public int getDiameter() {\n    return diameter;\n  }\n  \n  public void setDiameter(int newDiameter) {\n    diameter = newDiameter;\n  }\n  \n  public int getWaterResistance() {\n    return waterResistance;\n  }\n  \n  public void setWaterResistance(int newWaterResistance) {\n    waterResistance = newWaterResistance;\n  }\n  \n  public String getMaterial() {\n    return material;\n  }\n  \n  public void setMaterial(String newMaterial) {\n    material = newMaterial;\n  }\n  \n  public String summary() {\n    String summary = \"\";\n    summary += \"Manufacturer: \" + capitalize(manufacturer) + \"\\n\";\n    summary += \"Model: \" + capitalize(model) + \"\\n\";\n    summary += \"Diameter: \" + diameter + \" mm\\n\";\n    summary += \"Water Resistance: \" + waterResistance + \" m\\n\";\n    summary += \"Material: \" + capitalize(material);\n    return summary;\n  }\n  \n  private String capitalize(String s) {\n    String capitalizedString = \"\";\n    capitalizedString += s.substring(0, 1).toUpperCase();\n    capitalizedString += s.substring(1);\n    return capitalizedString;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Watch myWatch = new Watch(\"omega\", \"speedmaster\", 42, 50, \"steel\");\n    System.out.println(myWatch.summary());\n\n    //add code above this line\n  }\n}\n```\n\n* All of the attributes should be private\n* Create getters and setters for each of the attributes\n* The summary method needs to return a multiline string. Start with an empty string and then concatenate each line to the string followed by a newline character. There should **not** be a newline character on the last line of the string.\n* The string attributes need to have an uppercase first letter. This task is done in its own private method. Pass in the lowercase string and return a string with the first letter capitalized. Start with an empty string. Use the `substring` to get the first character of the string (`substring(0, 1)`) and capitalize it. Concatenate this to the empty string. Then get the remainder of the string (`substring(1)`) and concatenate this to the string with the capital letter.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
+  }
  }
 ]
