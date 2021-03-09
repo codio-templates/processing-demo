@@ -237,18 +237,18 @@
      ]
     },
     {
-     "title": "Changing Objects with Class Methods Formative Assessment",
+     "title": "Changing Objects with Instance Methods Formative Assessment",
      "id": "b6905cba-eb84-3289-8b01-8b89694801d3",
      "type": "section",
      "children": [
       {
-       "title": "Changing Objects with Class Methods Formative Assessment 1",
+       "title": "Changing Objects with Instance Methods Formative Assessment 1",
        "id": "cc22164e-0bf2-5f66-8170-3b25bee71050",
        "type": "page",
        "pageId": "949369da-8c31-d279-7e45-62964daab2db"
       },
       {
-       "title": "Changing Objects with Class Methods Formative Assessment 2",
+       "title": "Changing Objects with Instance Methods Formative Assessment 2",
        "id": "db166b49-5426-83ab-b90c-7b3d42ab3407",
        "type": "page",
        "pageId": "8aa0377e-e29d-92e9-1ea9-7bfd23f5bbee"
@@ -286,16 +286,16 @@
      "type": "section",
      "children": [
       {
-       "id": "9e4d71a1-6620-f7ec-d357-9346246425c0",
        "title": "Static Methods Formative Assessment 1",
-       "pageId": "5f8d517b-eb04-36be-99c9-b43f7adcbf37",
-       "type": "page"
+       "id": "9e4d71a1-6620-f7ec-d357-9346246425c0",
+       "type": "page",
+       "pageId": "5f8d517b-eb04-36be-99c9-b43f7adcbf37"
       },
       {
-       "id": "05eadd57-06c3-d497-7fa5-341e6958b2a3",
        "title": "Static Methods Formative Assessment 2",
-       "pageId": "d54a45b7-9611-4700-1ef9-6e7b608cb520",
-       "type": "page"
+       "id": "05eadd57-06c3-d497-7fa5-341e6958b2a3",
+       "type": "page",
+       "pageId": "d54a45b7-9611-4700-1ef9-6e7b608cb520"
       }
      ]
     },
@@ -370,6 +370,193 @@
        "id": "7745dc08-8f74-c347-485f-20b71888322b",
        "type": "page",
        "pageId": "9a522932-01e6-5c15-aa0e-a169705f358c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Encapsulation",
+   "id": "d0ecfab7-1772-b4c1-7f3b-324864962dbb",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "What is Encapsulation?",
+     "id": "98fc75fb-a901-3537-d69a-f298fc41a501",
+     "type": "section",
+     "children": [
+      {
+       "id": "9538c2e5-32af-d4cd-98fd-c7b558031b77",
+       "title": "Learning Objectives",
+       "pageId": "30fc1606-7a28-ea24-df98-bf1bf18e7f95",
+       "type": "page"
+      },
+      {
+       "id": "4c07ecc8-40d4-2fdf-8a19-01d09f07dfae",
+       "title": "What is Encapsulation?",
+       "pageId": "71689278-f8fd-a0c0-5dd4-d6b9df0f3e03",
+       "type": "page"
+      },
+      {
+       "id": "e14775ed-6191-04c0-359c-1d04c084234c",
+       "title": "Public Access Modifier",
+       "pageId": "07d18743-fdf6-99e2-4dfd-3f3d3c4165ac",
+       "type": "page"
+      },
+      {
+       "id": "7480d84a-b7bc-63e1-a88e-7a61dcb2c72f",
+       "title": "Private Access Modifier",
+       "pageId": "ccc6fb06-8ee6-f5e3-83c7-20369598840e",
+       "type": "page"
+      },
+      {
+       "id": "79d896ca-d355-3508-e43f-31596cc4f74c",
+       "title": "Code as a Black Box",
+       "pageId": "9c4d4beb-cf27-0027-72c9-e27653d5adca",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Encapsulation Formative Assessment",
+     "id": "5d08261e-5102-7e21-e140-940b4324e733",
+     "type": "section",
+     "children": [
+      {
+       "title": "Encapsulation Formative Assessment 1",
+       "id": "a18e82cc-fd83-bc8a-b5f0-144869e3f8d9",
+       "type": "page",
+       "pageId": "bfa463da-951b-0ace-4c36-392a05be177e"
+      },
+      {
+       "title": "Encapsulation Formative Assessment 2",
+       "id": "4d772dce-4dd3-a055-2ff8-0fe8138bb421",
+       "type": "page",
+       "pageId": "4d772dce-4dd3-a055-2ff8-0fe8138bb421"
+      }
+     ]
+    },
+    {
+     "title": "Getters and Setters",
+     "id": "3dcb9868-93c4-e6a9-9da7-331e5999c53a",
+     "type": "section",
+     "children": [
+      {
+       "id": "f90fee59-9be5-3e34-e57b-de20d3b3cbda",
+       "title": "Learning Objectives - Getters and Setters",
+       "pageId": "2b4ad484-c385-7b5f-7cc2-7986d49fc62f",
+       "type": "page"
+      },
+      {
+       "id": "80a4ade7-f92b-9dcd-f68d-a8502acf0861",
+       "title": "Getters",
+       "pageId": "d37e136c-9469-91ea-c9f9-9de2b0825500",
+       "type": "page"
+      },
+      {
+       "id": "070761df-305c-8ce6-02c2-60dfb2ec2ec6",
+       "title": "Setters",
+       "pageId": "9f2841cd-c2e7-162c-d89c-af6923950d3e",
+       "type": "page"
+      },
+      {
+       "id": "e392bf9d-5a95-612d-d9a9-8d0ceddf057c",
+       "title": "Data Validation",
+       "pageId": "bf42553d-0f8d-b6b9-a0e6-ebf6ef482d33",
+       "type": "page"
+      }
+     ]
+    },
+    {
+     "title": "Getters and Setters Formative Assessment",
+     "id": "9cff3c9c-834c-83bf-bb1b-08ef0c150ea5",
+     "type": "section",
+     "children": [
+      {
+       "title": "Getters and Setters Formative Assessment 1",
+       "id": "bec5c199-f185-cb7a-7930-b2eab3b3f280",
+       "type": "page",
+       "pageId": "9eba0edb-cfb5-aa0b-e1a9-b99c3af00488"
+      },
+      {
+       "title": "Getters and Setters Formative Assessment 2",
+       "id": "ec88e23e-5dad-4192-4dd2-f71bd616c43c",
+       "type": "page",
+       "pageId": "ec88e23e-5dad-4192-4dd2-f71bd616c43c"
+      }
+     ]
+    },
+    {
+     "title": "Lab - Encapsulation",
+     "id": "f3a53f53-fc99-d8bb-c3a6-4b62a39a76d3",
+     "type": "section",
+     "children": [
+      {
+       "title": "Encapsulation Lab 1",
+       "id": "bf98b469-8ef9-0139-f417-a43cfd1f841f",
+       "type": "page",
+       "pageId": "58bbccb4-43a9-2cd2-2ae5-8ee1ccf967e9"
+      },
+      {
+       "title": "Encapsulation Lab 2",
+       "id": "fd2a5ab8-ce4c-9e2a-b911-c1b028062956",
+       "type": "page",
+       "pageId": "2934e81a-69c9-a349-d31c-416f573fbced"
+      },
+      {
+       "title": "Encapsulation Lab 3",
+       "id": "2793d99f-fe18-7674-d4f0-1e363a93b3a7",
+       "type": "page",
+       "pageId": "a21060ce-6532-4aed-eadb-b81532e83042"
+      },
+      {
+       "title": "Encapsulation Lab 4",
+       "id": "8cd876ae-8b2a-5ffe-b47e-515ef62dffc0",
+       "type": "page",
+       "pageId": "8a863c62-6356-9e49-e2f0-e9c4e0e7e9fa"
+      },
+      {
+       "title": "Lab Challenge",
+       "id": "d750d27e-e667-19db-4c8c-7442a032925a",
+       "type": "page",
+       "pageId": "0d3de547-155d-d19c-282b-5f715365d6e9"
+      }
+     ]
+    },
+    {
+     "title": "Coding Exercises - Encapsulation",
+     "id": "1094e4ec-fffa-1be6-6096-57b824eed489",
+     "type": "section",
+     "children": [
+      {
+       "title": "Encapsulation Exercise 1",
+       "id": "af7cdb65-b6c0-e0ac-fcc2-2db630308541",
+       "type": "page",
+       "pageId": "62be7c1e-0d93-2f4b-5caa-fdcc2a876edf"
+      },
+      {
+       "title": "Encapsulation Exercise 2",
+       "id": "16233886-fe06-7042-fa8b-db6f371c84a1",
+       "type": "page",
+       "pageId": "edbe74c1-9acf-e5e8-c32e-139e91d346a1"
+      },
+      {
+       "title": "Encapsulation Exercise 3",
+       "id": "8bf5cd4b-0d70-351c-7129-4f4f280dff45",
+       "type": "page",
+       "pageId": "9eb3575d-69de-626e-c077-2a1cc23e0dd6"
+      },
+      {
+       "title": "Encapsulation Exercise 4",
+       "id": "385176ef-ac8a-4b1d-ccb1-f013bee4a611",
+       "type": "page",
+       "pageId": "97fa39fb-f187-36be-e387-e1346a19c20b"
+      },
+      {
+       "title": "Encapsulation Exercise 5",
+       "id": "03ee9cf5-1047-0523-7c2b-cba8d5c4a595",
+       "type": "page",
+       "pageId": "41eb4054-d9a6-2119-74d9-b95d1bc98288"
       }
      ]
     }

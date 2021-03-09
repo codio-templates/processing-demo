@@ -2407,5 +2407,1221 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify the lack of keyword used to declare an instance method."
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2390758956",
+  "source": {
+   "name": "what is encapsulation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect the **best** definition of encapsulation from the choices below.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "02b39ee9-e50d-4ec4-3a5a-078e78460ddd",
+     "correct": true,
+     "answer": "Encapsulation occurs when you group together related data and methods, and when you hide or restrict access to data."
+    },
+    {
+     "_id": "88bdd045-0fb1-73d3-e6c3-96f58ccaac07",
+     "correct": false,
+     "answer": "Encapsulation occurs when you hide or restrict access to data."
+    },
+    {
+     "_id": "18c367a0-1b3e-0d4f-7f8e-d23f430bff53",
+     "correct": false,
+     "answer": "Encapsulation occurs when you group together related data and methods."
+    }
+   ],
+   "guidance": "There are two main ideas behind encapsulation: grouping together related data and restricting this data. Each idea on its own can be an example of encapsulation. However, the best definition is one that includes grouping the data and restricting the data.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Encapsulation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/Encapsulation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/Encapsulation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define encapsulation"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-4197611854",
+  "source": {
+   "name": "public access modifier reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect **all** the parts of your program that should use the `public` access modifier.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "76f2659a-51ab-f40b-8d89-5ca554fa1fa1",
+     "correct": true,
+     "answer": "Constructor"
+    },
+    {
+     "_id": "47af5564-447c-0e8f-f39e-83be8d7b9a1a",
+     "correct": true,
+     "answer": "Methods"
+    },
+    {
+     "_id": "a0cb6385-695e-a993-a5c0-027278dcd4e2",
+     "correct": false,
+     "answer": "Attributes"
+    }
+   ],
+   "guidance": "Constructors and methods should make use of the `public` access modifier. Not every method will be public, but encapsulation requires that some methods be public. As a general rule, all attributes should be private even though Java allows for public attributes.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Public Access Modifier"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/PublicKeyword.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/PublicKeyword.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify what parts of their program should be public."
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2739099056",
+  "source": {
+   "name": "private access modifier reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect **all** of the true statements.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "3c7aa379-cb96-edbd-5bf9-8d5d55ac3576",
+     "correct": true,
+     "answer": "All attributes should be private"
+    },
+    {
+     "_id": "f83654f5-cb9f-17b4-8379-c3e3e622b352",
+     "correct": true,
+     "answer": "Some methods should be private while others public"
+    },
+    {
+     "_id": "f90d9535-eab6-35f0-da4f-17126221876f",
+     "correct": false,
+     "answer": "It is impossible to access private attributes and methods"
+    },
+    {
+     "_id": "911b1638-5baa-4428-3f7b-75eb3e05d63d",
+     "correct": false,
+     "answer": "Methods called by the user should be private"
+    }
+   ],
+   "guidance": "## True Statements\n* The statement `All attributes should be private` is true because encapsulation dictates that access to attributes should be restricted.\n* The statement `Some methods should be private while others public` is true because encapsulation says to restrict access with private methods. However, if all methods are private then the user could not call them. Therefore you need a mix of private and public methods.\n\n## False Statements\n* The statement `It is impossible to access private attributes and methods` is false because public methods can invoke private attributes and methods.\n* The statement `Methods called by the user should be private` is false because methods called by the user need to be public.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Private Access Modifier"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/PrivateKeyword.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/PrivateKeyword.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT recognize true statements about the private access modifier"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-44663644",
+  "source": {
+   "name": "black box reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhich definition below is the **best** definition for code as a black box?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "81eeaa02-a024-c064-eae3-be19cb126586",
+     "correct": true,
+     "answer": "When users know how to interact with the code, but they do not understand the inner workings of the code."
+    },
+    {
+     "_id": "5dbcb0d0-26f6-967e-94a2-882c3aa80d3f",
+     "correct": false,
+     "answer": "When users do not understand the inner workings of the code."
+    },
+    {
+     "_id": "6f2fa3e0-977b-6d59-15ab-40c384325e91",
+     "correct": false,
+     "answer": "When the `private` access modifier is used."
+    }
+   ],
+   "guidance": "The best definition is:\n\n> When users know how to interact with the code, but they do not understand the inner workings of the code.\n\nA key part of code as a black box is that users do not need to understand the inner workings of the code. However, users are expected to use black box code, so they need to understand how to interact with it. While the `private` keyword is used to hide code from the user, simply using `private` does not create a black box. A black box is the result of careful planning — hiding everything that should not be directly accessed while making certain methods public.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Black Box"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/BlackBox.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/BlackBox.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define black box code"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-892924295",
+  "source": {
+   "name": "encapsulation formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  private String name;\n  private String breed;\n\n  private Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n\n  private void bark() {\n    System.out.println(\"Woof! Woof!\");\n  }\n}\n```\n\nThe code does not make proper use of encapsulation. Why?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "ec1cdc6f-44be-ae79-3c09-6eecf7ff12e9",
+     "correct": true,
+     "answer": "Everything is private. There is no way to instantiate a `Dog` object or call the `bark` method."
+    },
+    {
+     "_id": "637c8c57-d98c-329c-2ff0-38773dbd8fb4",
+     "correct": false,
+     "answer": "Trick question, there is nothing wrong with the code."
+    },
+    {
+     "_id": "fc223f4b-6be2-184a-b5f5-13c2283ee6ee",
+     "correct": false,
+     "answer": "The instance attributes should be public."
+    }
+   ],
+   "guidance": "The correct answer is:\n\n>Everything is private. There is no way to instantiate a `Dog` object or call the `bark` method.\n\nEncapsulation is the practice of hiding and exposing information to the user. As written, the `Dog` class cannot be instantiated because the constructor is private. Even if this were public, the user could not call the `bark` method. Encapsulation means using both the `public` and `private` access modifiers.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Encapsulation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify incorrect encapsulation"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2607923838",
+  "source": {
+   "name": "encapsulation formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nEncapsulation requires the use of the `public` and `private` keywords. Fill in the blanks so that the proper access modifier(s) correspond to different parts of a program.",
+   "showValues": true,
+   "text": "The constructor should be <<<public>>>.\nInstance attributes should be <<<private>>>.\nMethods should be <<<public and private>>>.",
+   "distractors": "",
+   "guidance": "Here are the correct answers:\n\n* Constructors should be public. If not, you cannot instantiate an object.\n* The convention in Java is to always make instance attributes private.\n* Methods need to be both public and private. Only those methods need by the user should be public; the rest should be private.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify when the public and private access modifiers should be used",
+   "tokens": {
+    "blank": [
+     "public",
+     "private",
+     "public and private"
+    ],
+    "text": [
+     "The constructor should be ",
+     0,
+     ".\nInstance attributes should be ",
+     0,
+     ".\nMethods should be ",
+     0,
+     "."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1957726401",
+  "source": {
+   "name": "getters reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** getter method for the `language` attribute. **Hint**, not all of the blocks will be used.",
+   "initial": "public String[] getLanguages() {\n  return languages;\n}\nprivate String[] getLanguages() { #distractor\npublic String[] returnLanguages() { #distractor\nSystem.out.println(languages); #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic String[] getLanguages() {\n  return languages;\n}\n```\n\n* Getter methods are accessible to the user, so they need to have the `public` access modifier. \n* The convention in Java is to start a getter method with the word `get`. Java would not throw an error if the method is named `returnLanguages`, but best practices say to use `getLanguages`.\n* A getter method should do only one thing, return the value of an attribute. Printing should not be done by a getter method.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Getter Methods "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/Getters.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/Getters.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a getter method"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-3781411493",
+  "source": {
+   "name": "setters reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** setter method for the `language` attribute. **Hint**, not all of the blocks will be used.",
+   "initial": "public void setLanguages(String[] newLanguages) {\n  languages = newLanguages;\n}\npublic String[] setLanguages(String[] newLanguages) { #distractor\npublic void setLanguages() { #distractor\nprivate String[] setLanguages(String[] newLanguages) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic void setLanguages(String[] newLanguages) {\n  languages = newLanguages;\n}\n```\n\n* Setter methods do not return a value, so their type should be `void`.\n* Setter methods update an attribute to a new value, so they require a parameter that represents this new value.\n* Setter methods need to be public so they can be called by users of the class.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Setter Methods "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/Setters.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/Setters.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a setter method"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3712924918",
+  "source": {
+   "name": "data validation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect **all** of the true statements about data validation.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "db82b984-96d7-1415-a543-0d344286111a",
+     "correct": true,
+     "answer": "Data validation is done in a setter method"
+    },
+    {
+     "_id": "77fe7c4b-7b22-480e-0295-976bef6aa05f",
+     "correct": true,
+     "answer": "Data validation is important because the Java compiler cannot find all errors"
+    },
+    {
+     "_id": "5da35b23-1698-988f-191f-fb700a684788",
+     "correct": false,
+     "answer": "Data validation is done in a getter method"
+    },
+    {
+     "_id": "69613594-c599-e147-dfdf-45199b9366bb",
+     "correct": false,
+     "answer": "Data validation is important because you want to make sure values of the wrong data type are not assigned to an attribute"
+    }
+   ],
+   "guidance": "The true statements are:\n\n>Data validation is done in a setter method\nData validation is important because the Java compiler cannot find all errors\n\n* The job of a getter method is to return the value of an attribute. These methods should never update the value of an attribute, so data validation should not be done in a getter method.\n* The Java compiler will find some kinds of errors like incorrect data types. However, the compiler does not understand the context of the code. Data validation is the process of making sure a value is appropriate for its intended use.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/DataValidation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/DataValidation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify true statements about data validation"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3069619256",
+  "source": {
+   "name": "getters and setters formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nFill in the blanks below.",
+   "showValues": false,
+   "text": "A <<<getter>>> accesses the value of a private instance variable.\nA <<<setter>>> mutates the value of a private instance variable.",
+   "distractors": "",
+   "guidance": "A **getter** accesses the value of a private instance variable.\nA **setter** mutates the value of a private instance variable.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Getters and Setters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "C++, Python, Java, JavaScript"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define getters and setters",
+   "tokens": {
+    "blank": [
+     "getter",
+     "setter"
+    ],
+    "text": [
+     "A ",
+     0,
+     " accesses the value of a private instance variable.\nA ",
+     0,
+     " mutates the value of a private instance variable."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-45499968",
+  "source": {
+   "name": "getters and setters formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the class `PrimaryColors` as defined below:\n\n```java\nclass PrimaryColor {\n  private String color = \"red\";\n\n  public String getColor() {\n    return color:\n  }\n}\n```\n\nDrag the code blocks into the box below to create a setter that validates if the new color is a primary color. **Hint**, not all of the code blocks will be used.",
+   "initial": "public setColor(String newColor) {\n  String[] primaryColors = {&quot;red&quot;, &quot;blue&quot;, &quot;yellow&quot;};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\nnewColor = color; #distractor\npublic getColor(String newColor) { #distractor\nif (newColor == color) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic setColor(String newColor) {\n  String[] primaryColors = {\"red\", \"blue\", \"yellow\"};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\n```\n\n* Setter methods should start with `set` which is why `public getColor(String newColor) {` is incorrect.\n* String comparison is done with the `equals` method, which is why `if (newColor == color) {` is incorrect.\n* This method should update the `color` attribute, which is why `newColor = color;` is incorrect.\n",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT construct a setter with data validation"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-333953468",
+  "source": {
+   "name": "encapsulation lab 1 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blanks below with the appropriate access modifier.",
+   "showValues": true,
+   "text": "The <<<private>>> access modifier means that an instance cannot directly access an attribute or method.\nThe <<<public>>> access modifier means that an instance can directly access an attribute or method.\nThe <<<default>>> access modifier is assumed when no modifier is used before an attribute or method.",
+   "distractors": "",
+   "guidance": "* The `private` access modifier means an instance cannot directly access an attribute or method. Instead, you have to use a public method (like a getter or a setter) to access private attributes or private methods.\n* The `public` access modifier means that an instance can directly access or modify the attribute or method.\n* If you do not use an access modifier, Java assumes the `default` access modifier, which is similar to `public`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define public, private, and default access modifiers",
+   "tokens": {
+    "blank": [
+     "private",
+     "public",
+     "default"
+    ],
+    "text": [
+     "The ",
+     0,
+     " access modifier means that an instance cannot directly access an attribute or method.\nThe ",
+     0,
+     " access modifier means that an instance can directly access an attribute or method.\nThe ",
+     0,
+     " access modifier is assumed when no modifier is used before an attribute or method."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3169021649",
+  "source": {
+   "name": "encapsulation lab 2 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nPredict the output of the following code:\n\n```java\nclass TestClass {\n  private String color;\n\n  public TestClass(String c) {\n    color = c;\n  }\n}\n\npublic class LabQuestion {\n  public static void main(String[] args) {\n    TestClass myObject = new TestClass(\"red\");\n    myObject.color = \"blue\";\n    System.out.println(myObject.color);\n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "a89395ba-aed3-f2c4-111e-6b76dbcdb2c0",
+     "correct": true,
+     "answer": "Error message, `color` is a private attribute."
+    },
+    {
+     "_id": "0c132af5-3b7b-fa34-9727-db8277be9984",
+     "correct": false,
+     "answer": "`blue`"
+    },
+    {
+     "_id": "941944d3-a64d-648c-7076-915228330db1",
+     "correct": false,
+     "answer": "`red`"
+    }
+   ],
+   "guidance": "The `color` attribute is private which means an instance cannot access or modify it. Java would throw an error message.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Private Access Modifier"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT predict output from code"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3946797564",
+  "source": {
+   "name": "encapsulation lab 3 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\npublic void setAttribute(int newNumber) {\n  if (newNumber % 2 == 0) {\n    number = newNumber;\n  }\n}\n```\n\nSelect all of the true statements about the setter method above. **Hint**, there is more than one right answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "177ed6cf-e5b0-cdee-53a1-6839e7855b7b",
+     "correct": true,
+     "answer": "The setter method only works with integers"
+    },
+    {
+     "_id": "e7d7aa41-da20-1191-5e59-c33548e78b20",
+     "correct": true,
+     "answer": "The setter method only works with even numbers"
+    },
+    {
+     "_id": "29bac1db-af60-8b52-d88c-1641d7d5d8e5",
+     "correct": false,
+     "answer": "The setter method only works with doubles"
+    },
+    {
+     "_id": "38adce83-62e2-3162-f750-e8d1b33b7f71",
+     "correct": false,
+     "answer": "The setter method only works with odd numbers"
+    }
+   ],
+   "guidance": "The correct answers are:\n\n```\nThe setter method only works with integers\nThe setter method only works with even numbers\n```\n\nThe method header for `setAttribute` requires that an integer be passed to the method. It does not work with any other data type. The `%` operator is modulus which returns the remainder from `newNumber` and `2`. If the parameter is even (no remainder when divided by 2) then the `number` attribute will take a new value.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT understand how data is being validated"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1447429733",
+  "source": {
+   "name": "encapsulation lab 4 question",
+   "showName": true,
+   "instructions": "## Lab Question\n\nWhat is the output of the following code?\n\n```java\nclass TestClass {\n  private String color;\n\n  public TestClass(String c) {\n    color = c;\n  }\n\n  public void returnColor() {\n    return color;\n  }\n\n  public String changeColor(String newColor) {\n    color = newColor();\n  }\n}\n\npublic class LabQuestion {\n  public static void main(String[] args) {\n    TestClass myObject = new TestClass(\"red\");\n    myObject.changeColor(\"blue\");\n    System.out.println(myObject.returnColor());\n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "6aba3959-1363-14fa-066e-cb8054b491c4",
+     "correct": true,
+     "answer": "`blue`"
+    },
+    {
+     "_id": "fbfe8913-81a2-1e1c-65ac-24391bb3aa4e",
+     "correct": false,
+     "answer": "`red`"
+    },
+    {
+     "_id": "55592a79-f93d-f30f-1e93-49f0b5996051",
+     "correct": false,
+     "answer": "Error message, the getter and setter should be called `getColor` and `setColor`."
+    }
+   ],
+   "guidance": "The code will print `blue`. The convention is to name the getter and setter `getColor` and `setColor`. However, Java will not throw an error message if this convention is ignored.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Getters and Setters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/EncapsulationLab4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/EncapsulationLab4.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify naming conventions for getters and setters"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-791041872",
+  "source": {
+   "name": "encapsulation lab challegne",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Person {\n  private String name;\n  private int age;\n  private String occupation;\n  \n  public Person(String n, int a, String o) {\n    name = n;\n    age = a;\n    occupation = o;\n  }\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String newName) {\n    name = newName;\n  }\n  \n  public int getAge() {\n    return age;\n  }\n  \n  public void setAge(int newAge) {\n    age = newAge;\n  }\n  \n  public String getOccupation() {\n    return occupation;\n  }\n  \n  public void setOccupation(String newOccupation) {\n    occupation = newOccupation;\n  }\n}\n  \n//add class definitions above this line\n\npublic class EncapsulationLabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Person myPerson = new Person(\"Citra Curie\", 16, \"student\");\n    \n    System.out.println(myPerson.getName());\n    myPerson.setName(\"Roman Faraday\");\n    System.out.println(myPerson.getName());\n    \n    System.out.println(myPerson.getAge());\n    myPerson.setAge(18);\n    System.out.println(myPerson.getAge());\n    \n    System.out.println(myPerson.getOccupation());\n    myPerson.setOccupation(\"plumber\");\n    System.out.println(myPerson.getOccupation());\n\n    //add code above this line\n  }\n}\n```\n\n* Be sure to use the `private` access modifier for the `name`, `age`, and `occupation` attributes.\n* Follow the naming conventions for the getters and setters in the **Expected Output** section.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters and Setters"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/EncapsulationLabChallenge.java",
+     "code/encapsulation/EncapsulationLabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/EncapsulationLabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "5",
+   "learningObjectives": "SWBAT create a class that makes use of getters and setters"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3447362335",
+  "source": {
+   "name": "encapsulation coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise1Tester.java\",\"className\":\"CodingExercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Fruit {\n  private String name;\n  private String color;\n  \n  public Fruit(String n, String c) {\n    name = n;\n    color = c;\n  }\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String newName) {\n    name = newName;\n  }\n  \n  public String getColor() {\n    return color;\n  }\n  \n  public void setColor(String newColor) {\n    color = newColor;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Fruit myFruit = new Fruit(\"strawberry\", \"red\");\n    \n    System.out.println(myFruit.getName());\n    System.out.println(myFruit.getColor());\n    \n    myFruit.setName(\"tangerine\");\n    myFruit.setColor(\"orange\");\n    System.out.println(myFruit.getName());\n    System.out.println(myFruit.getColor());\n\n    //add code above this line\n  }\n}\n```\n* All attributes should be private\n* The constructor should be public\n* Create a getter and setter for each attribute so that you can access and change them",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters, Setters, and Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT convert a class with the default access modifier to a class with encapsulation"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3393708180",
+  "source": {
+   "name": "encapsulation coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise2Tester.java\",\"className\":\"CodingExercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Watch {\n  private String manufacturer;\n  private String model;\n  private int diameter;\n  private int waterResistance;\n  private String material;\n  \n  public Watch (String ma, String mo, int d, int wr, String mat) {\n    manufacturer = ma;\n    model = mo;\n    diameter = d;\n    waterResistance = wr;\n    material = mat;\n  }\n  \n  public String getManufacturer() {\n    return manufacturer;\n  }\n  \n  public void setManufacturer(String newManufacturer) {\n    manufacturer = newManufacturer;\n  }\n  \n  public String getModel() {\n    return model;\n  }\n  \n  public void setModel(String newModel) {\n    model = newModel;\n  }\n  \n  public int getDiameter() {\n    return diameter;\n  }\n  \n  public void setDiameter(int newDiameter) {\n    diameter = newDiameter;\n  }\n  \n  public int getWaterResistance() {\n    return waterResistance;\n  }\n  \n  public void setWaterResistance(int newWaterResistance) {\n    waterResistance = newWaterResistance;\n  }\n  \n  public String getMaterial() {\n    return material;\n  }\n  \n  public void setMaterial(String newMaterial) {\n    material = newMaterial;\n  }\n  \n  public String summary() {\n    String summary = \"\";\n    summary += \"Manufacturer: \" + capitalize(manufacturer) + \"\\n\";\n    summary += \"Model: \" + capitalize(model) + \"\\n\";\n    summary += \"Diameter: \" + diameter + \" mm\\n\";\n    summary += \"Water Resistance: \" + waterResistance + \" m\\n\";\n    summary += \"Material: \" + capitalize(material);\n    return summary;\n  }\n  \n  private String capitalize(String s) {\n    String capitalizedString = \"\";\n    capitalizedString += s.substring(0, 1).toUpperCase();\n    capitalizedString += s.substring(1);\n    return capitalizedString;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Watch myWatch = new Watch(\"omega\", \"speedmaster\", 42, 50, \"steel\");\n    System.out.println(myWatch.summary());\n\n    //add code above this line\n  }\n}\n```\n\n* All of the attributes should be private\n* Create getters and setters for each of the attributes\n* The summary method needs to return a multiline string. Start with an empty string and then concatenate each line to the string followed by a newline character. There should **not** be a newline character on the last line of the string.\n* The string attributes need to have an uppercase first letter. This task is done in its own private method. Pass in the lowercase string and return a string with the first letter capitalized. Start with an empty string. Use the `substring` to get the first character of the string (`substring(0, 1)`) and capitalize it. Concatenate this to the empty string. Then get the remainder of the string (`substring(1)`) and concatenate this to the string with the capital letter.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters, Setters, and a Public Method"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with encapsulation, getters, setters, and a public method"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1440786407",
+  "source": {
+   "name": "encapsulation coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise3Tester.java\",\"className\":\"CodingExercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Song {\n  private String artist;\n  private String title;\n  private String album;\n  private int playCount;\n  private final double payRate;\n  private double moneyEarned;\n  \n  public Song(String ar, String t, String al, double p) {\n    artist = ar;\n    title = t;\n    album = al;\n    playCount = 0;\n    payRate = p;\n    moneyEarned = 0;\n  }\n  \n  public String getArtist() {\n    return artist;\n  }\n  \n  public void setArtist(String newArtist) {\n    artist = newArtist;\n  }\n  \n  public String getTitle() {\n    return title;\n  }\n  \n  public void setTitle(String newTitle) {\n    title = newTitle;\n  }\n  \n  public String getAlbum() {\n    return album;\n  }\n  \n  public void setAlbum(String newAlbum) {\n    album = newAlbum;\n  }\n  \n  public int getPlayCount() {\n    return playCount;\n  }\n  \n  public void setPlayCount(int newPlayCount) {\n    playCount = newPlayCount;\n  }\n  \n  public double getMoneyEarned() {\n    return moneyEarned;\n  }\n  \n  public double getPayRate() {\n    return payRate;\n  }\n  \n  public void play() {\n    updatePlayCount();\n    updateMoneyEarned();\n  }\n  \n  private void updatePlayCount() {\n    playCount++;\n  }\n  \n  private void updateMoneyEarned() {\n    moneyEarned = playCount * payRate;\n  }\n  \n}\n  \n//add class definitions above this line\n\npublic class CodingExercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Song mySong = new Song(\"led zeppelin\", \"ten years gone\", \"physical graffiti\", 0.001);\n    mySong.play();\n    System.out.println(mySong.getMoneyEarned());\n    for (int i = 0; i < 10000; i++) {\n      mySong.play();\n    }\n    System.out.println(mySong.getMoneyEarned());\n\n    //add code above this line\n  }\n}\n```\n\n* All of the attributes should be private\n* Because the `payRate` attribute is a constant, use the `final` keyword when declaring the attribute\n* The attributes `playCount` and `moneyEarned` should be set to 0 in the constructor\n* All of the attributes should have a getter method\n* All of the attributes **except for** `payRate` and `moneyEarned` should have a setter method\n* In this example, the `play` method calls two private helper methods, `updatePlayCount` and `updateMoneyEarned`\n* `updatePlayCount` increments the `playCount` method by 1\n* `updateMoneyEarned` updates `moneyEarned` to `payRate` multiplied by `playCount`",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Getters, Setters, and Access Modifiers"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with encapsulation, specifically getters, setters, and access modifiers"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2521092329",
+  "source": {
+   "name": "encapsulation coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise4Tester.java\",\"className\":\"CodingExercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Atm {\n  private double money;\n  \n  public Atm(double m) {\n    money = m;\n  }\n  \n  public double getMoney() {\n    return money;\n  }\n  \n  public void withdraw(double amount) {\n    if (haveEnoughMoney(amount)) {\n      if (positiveMoney(amount)) {\n         money -= amount;\n      } else {\n        System.out.println(\"You cannot withdraw a negative amount of money.\");\n      }\n    } else {\n      System.out.println(\"You do not have enough funds to withdraw that amount.\");\n    }\n  }\n  \n  public void deposit(double amount) {\n    if (positiveMoney(amount)) {\n      money += amount;\n    } else {\n      System.out.println(\"You cannot deposit a negative amount of money.\");\n    }\n  }\n  \n  private boolean haveEnoughMoney(double amount) {\n    return money > amount;\n  }\n  \n  private boolean positiveMoney(double amount) {\n    return amount >= 0;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Atm myAtm = new Atm(1000);\n    myAtm.deposit(50);\n    System.out.println(myAtm.getMoney());\n    myAtm.withdraw(925);\n    System.out.println(myAtm.getMoney());    \n\n    //add code above this line\n  }\n}\n```\n\n* The only attribute should be `money`\n* `money` has a getter method, but no setter\n* The `withdraw` method needs to test for two different conditions: the amount to be withdrawn is less than the money in the account, and the money to be withdrawn is positive\n* The private method `positiveMoney` asks if the amount of money is positive and returns a boolean value\n* The private method `haveEnoughMoney` asks if the amount of money to be withdrawn is greater than the money in the account and returns a boolean value\n* Data validation for the `deposit` method also uses the `positiveMoney` helper method",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT to create a class with encapsulation and data validation"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-336914172",
+  "source": {
+   "name": "encapsulation coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise5Tester.java\",\"className\":\"CodingExercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass SodaMachine {\n  private String[] sodas = {\"coke\", \"pepsi\", \"sprite\", \"dr. pepper\"};\n  private int cokeInventory;\n  private int pepsiInventory;\n  private int spriteInventory;\n  private int drPepperInventory;\n  private int money;\n    \n  public SodaMachine() {\n    cokeInventory = 20;\n    pepsiInventory = 20;\n    spriteInventory = 20;\n    drPepperInventory = 20;\n    money = 10;\n  }\n  \n  public String[] getSodas() {\n    return sodas;\n  }\n  \n  public void setSodas(int index, String newSoda) {\n    sodas[index] = newSoda;\n  }\n  \n  public int getCokeInventory() {\n    return cokeInventory;\n  }\n  \n  public void setCokeInventory(int newInventory){\n    cokeInventory = newInventory;\n  }\n  \n  public int getPepsiInventory() {\n    return pepsiInventory;\n  }\n  \n  public void setPepsiInventory(int newInventory){\n    pepsiInventory = newInventory;\n  }\n  \n  public int getSpriteInventory() {\n    return spriteInventory;\n  }\n  \n  public void setSpriteInventory(int newInventory){\n    spriteInventory = newInventory;\n  }\n  \n  public int getDrPepperInventory() {\n    return drPepperInventory;\n  }\n  \n  public void setDrPepperInventory(int newInventory){\n    drPepperInventory = newInventory;\n  }\n  \n  public int getMoney() {\n    return money;\n  }\n  \n  public void setMoney(int newMoney){\n    money = newMoney;\n  }\n  \n  public void buySoda(String soda, int amount) {\n    if (validSoda(soda) && enoughSoda(soda) && enoughMoney(amount)) {\n      updateInventory(soda);\n      updateMoney();\n    }\n  }\n  \n  private boolean validSoda(String soda) {\n    boolean correctSoda = false;\n    \n    for (String s : sodas) {\n      if (soda.equals(s)) {\n        correctSoda = true;\n      }\n    }\n    \n    if (correctSoda == false) {\n      System.out.println(\"That soda is not sold in this machine\");\n    }\n    return correctSoda;\n  }\n  \n  private boolean enoughMoney(int amount) {\n    if (amount >= 2) {\n      return true;\n    } else {\n      System.out.println(\"You did not insert enough money\");\n      return false;\n    }\n  }\n  \n  private boolean enoughSoda(String soda) {\n    if (soda.equals(\"coke\")) {\n      if (cokeInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Coke.\");\n        return false;\n      }\n    } else if (soda.equals(\"sprite\")) {\n      if (spriteInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Sprite.\");\n        return false;\n      }\n    } else if (soda.equals(\"pepsi\")) {\n      if (pepsiInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Pepsi.\");\n        return false;\n      }\n    } else if (soda.equals(\"dr. pepper\")) {\n      if (drPepperInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Dr. Pepper.\");\n        return false;\n      }\n    }\n    return false;\n  }\n  \n  private void updateInventory(String soda) {\n    if (soda.equals(\"coke\")) {\n      cokeInventory--;\n    } else if (soda.equals(\"sprite\")) {\n      spriteInventory--;\n    } else if (soda.equals(\"pepsi\")) {\n      pepsiInventory--;\n    } else if (soda.equals(\"dr. pepper\")) {\n      drPepperInventory--;\n    }\n  }\n  \n  private void updateMoney() {\n    money += 2;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    SodaMachine myMachine = new SodaMachine();\n    myMachine.buySoda(\"coke\", 4);\n    System.out.println(myMachine.getMoney());\n    System.out.println(myMachine.getCokeInventory());\n\n    //add code above this line\n  }\n}\n```\n\n* Make all attributes private.\n* The constructor does not have any parameters. The initial values were discussed in the list at the top of the page.\n* Create getters and setters for each attribute. These methods follow Java naming conventions. The setter for the `sodas` attribute requires an index and the name of a new soda. All other setters have one parameter.\n* The `buySoda` method is public. It takes the name of the soda to purchase (string) and the amount of money inserted into the machine (integer). In this example, there are five helper methods. Three are for data validation and two are used to update the `SodaMachine` object.\n* `validSoda` takes the name of a soda (string) and validates that this string is found in the `sodas` attribute.\n* `enoughSoda` takes the name of a soda (string) and validates that there is at least one said in the inventory.\n* `enoughMoney` takes the money inserted in the machine (integer) and validates that it is greater than or equal to the price of a soda ($2).\n* `updateInventory` takes the name of a soda (string) and reduces the inventory attribute for that soda by 1.\n* `updateMoney` has no parameters and increases the `money` attribute by 2 (the cost of a soda).",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Data Validation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Encapsulation"
+     }
+    ],
+    "files": [
+     "code/encapsulation/exercises/CodingExercise5.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/encapsulation/exercises/CodingExercise5.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class with encapsulation and data validation"
+  }
  }
 ]

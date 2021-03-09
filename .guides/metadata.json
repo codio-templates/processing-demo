@@ -654,7 +654,7 @@
   },
   {
    "id": "949369da-8c31-d279-7e45-62964daab2db",
-   "title": "Changing Objects with Class Methods Formative Assessment 1",
+   "title": "Changing Objects with Instance Methods Formative Assessment 1",
    "files": [
     {
      "path": "#tabs",
@@ -664,7 +664,7 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Changing-Objects-with-Class-Methods-Formative-Assessment-1-9493.md",
+   "content-file": ".guides/content/Changing-Objects-with-Instance-Methods-Formative-Assessment-1-9493.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
@@ -672,7 +672,7 @@
   },
   {
    "id": "8aa0377e-e29d-92e9-1ea9-7bfd23f5bbee",
-   "title": "Changing Objects with Class Methods Formative Assessment 2",
+   "title": "Changing Objects with Instance Methods Formative Assessment 2",
    "files": [
     {
      "path": "#tabs",
@@ -682,7 +682,7 @@
    "layout": "1-panel",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/Changing-Objects-with-Class-Methods-Formative-Assessment-2-8aa0.md",
+   "content-file": ".guides/content/Changing-Objects-with-Instance-Methods-Formative-Assessment-2-8aa0.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
@@ -1007,6 +1007,510 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Mutability-Exercise-5-9a52.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "30fc1606-7a28-ea24-df98-bf1bf18e7f95",
+   "title": "Learning Objectives",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives-30fc.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "71689278-f8fd-a0c0-5dd4-d6b9df0f3e03",
+   "title": "What is Encapsulation?",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/Encapsulation.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/What-is-Encapsulation--7168.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "07d18743-fdf6-99e2-4dfd-3f3d3c4165ac",
+   "title": "Public Access Modifier",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/PublicKeyword.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Public-Access-Modifier-07d1.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ccc6fb06-8ee6-f5e3-83c7-20369598840e",
+   "title": "Private Access Modifier",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/PrivateKeyword.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Private-Access-Modifier-ccc6.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9c4d4beb-cf27-0027-72c9-e27653d5adca",
+   "title": "Code as a Black Box",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/BlackBox.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Code-as-a-Black-Box-9c4d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bfa463da-951b-0ace-4c36-392a05be177e",
+   "title": "Encapsulation Formative Assessment 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Formative-Assessment-1-bfa4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "4d772dce-4dd3-a055-2ff8-0fe8138bb421",
+   "title": "Encapsulation Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Formative-Assessment-2-4d77.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2b4ad484-c385-7b5f-7cc2-7986d49fc62f",
+   "title": "Learning Objectives - Getters and Setters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Getters-and-Setters-2b4a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d37e136c-9469-91ea-c9f9-9de2b0825500",
+   "title": "Getters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/Getters.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Getters-d37e.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9f2841cd-c2e7-162c-d89c-af6923950d3e",
+   "title": "Setters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/Setters.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Setters-9f28.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bf42553d-0f8d-b6b9-a0e6-ebf6ef482d33",
+   "title": "Data Validation",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/DataValidation.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Data-Validation-bf42.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9eba0edb-cfb5-aa0b-e1a9-b99c3af00488",
+   "title": "Getters and Setters Formative Assessment 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Getters-and-Setters-Formative-Assessment-1-9eba.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ec88e23e-5dad-4192-4dd2-f71bd616c43c",
+   "title": "Getters and Setters Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Getters-and-Setters-Formative-Assessment-2-ec88.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "58bbccb4-43a9-2cd2-2ae5-8ee1ccf967e9",
+   "title": "Encapsulation Lab 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/EncapsulationLab1.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Lab-1-58bb.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2934e81a-69c9-a349-d31c-416f573fbced",
+   "title": "Encapsulation Lab 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/EncapsulationLab2.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Lab-2-2934.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "a21060ce-6532-4aed-eadb-b81532e83042",
+   "title": "Encapsulation Lab 3",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/EncapsulationLab3.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Lab-3-a210.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "8a863c62-6356-9e49-e2f0-e9c4e0e7e9fa",
+   "title": "Encapsulation Lab 4",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/EncapsulationLab4.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Lab-4-8a86.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "0d3de547-155d-d19c-282b-5f715365d6e9",
+   "title": "Lab Challenge",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/EncapsulationLabChallenge.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Lab-Challenge-0d3d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "62be7c1e-0d93-2f4b-5caa-fdcc2a876edf",
+   "title": "Encapsulation Exercise 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise1.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Exercise-1-62be.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "edbe74c1-9acf-e5e8-c32e-139e91d346a1",
+   "title": "Encapsulation Exercise 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise2.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Exercise-2-edbe.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9eb3575d-69de-626e-c077-2a1cc23e0dd6",
+   "title": "Encapsulation Exercise 3",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise3.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Exercise-3-9eb3.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "97fa39fb-f187-36be-e387-e1346a19c20b",
+   "title": "Encapsulation Exercise 4",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise4.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Exercise-4-97fa.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "41eb4054-d9a6-2119-74d9-b95d1bc98288",
+   "title": "Encapsulation Exercise 5",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/encapsulation/exercises/CodingExercise5.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Encapsulation-Exercise-5-41eb.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

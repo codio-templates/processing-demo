@@ -6,7 +6,7 @@ Now that you have all of the information needed to make a post, you can turn tha
 
 <details>
   <summary><strong>What to learn more about <code>Swing</code>?</strong></summary>
-  These labs will only cover a tiny fraction of what can be done with the <code>Swing</code> library. The full documentation for <code>Tkinter</code> can be found <a href="https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html">here</a>. This documentation is not very user-friendly. A more beginner-friendly way to learn about <code>Swing</code> is a video tutorial like this YouTube <a href="https://www.youtube.com/watch?v=ZDw18yUwz6I&list=PLywxFF6tce1-yXyp0qSPYPl2-Mdx7l0A-">playlist</a>.
+  These labs will only cover a tiny fraction of what can be done with the <code>Swing</code> library. The full documentation for <code>Swing</code> can be found <a href="https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html">here</a>. This documentation is not very user-friendly. A more beginner-friendly way to learn about <code>Swing</code> is a video tutorial like this YouTube <a href="https://www.youtube.com/watch?v=ZDw18yUwz6I&list=PLywxFF6tce1-yXyp0qSPYPl2-Mdx7l0A-">playlist</a>.
 </details>
 
 ### Main Window
