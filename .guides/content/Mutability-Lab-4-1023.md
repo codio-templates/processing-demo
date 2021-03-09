@@ -73,13 +73,13 @@ There are two random decisions that need to be made. One, will the ball move in 
 Assume we want to start the ball in the middle of the window when the animation starts. You could instantiate the `Ball` object like this.
 
 ```java
-ball = new Ball(200, 200, 20);
+ball = new Ball(200, 200);
 ```
 
 The window is 400 by 400, so the middle would be position (200, 200). Change the window dimensions to 500 by 500, and the ball is no longer in the middle. That is because the starting position is hard coded into the program. That is, the starting position is a fixed number that is independent of the window dimensions. A better way to create the animation is to make the starting position dependent upon the window. Processing has two variables that you do no need to declare: `width` and `height`. These variables represent the width and height of the window. Divide them by 2 when instantiating the `Ball` object. The ball should always start in the middle of the window.
 
 ```java
-ball = new Ball(width / 2, height / 2, 20);
+ball = new Ball(width / 2, height / 2);
 ```
 
 

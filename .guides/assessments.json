@@ -1231,7 +1231,7 @@
   "source": {
    "name": "mutability external methods formative assessment 1",
    "showName": false,
-   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  String name;\n  String breed;\n\n  Dog() {\n    name = \"fido\";\n    breed = \"golden retriever\";\n  }\n}\n```\nUse the code blocks below to create the function `changeBreed` that updates the breed attribute of the `Dog` object. **Note**, not all of the blocks will be used.",
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  String name;\n  String breed;\n\n  Dog() {\n    name = \"fido\";\n    breed = \"golden retriever\";\n  }\n}\n```\nUse the code blocks below to create the function `changeBreed` that updates the breed attribute of the `Dog` object. **Note**, not all of the blocks will be used, and code blocks must be properly indented.",
    "initial": "public static void changeBreed(Dog dog, String newBreed) {\n  dog.breed = newBreed;\n}\nd.breed = newBreed;  #distractor\npublic static void changeBreed() {  #distractor\nbreed = newBreed;  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
@@ -1395,7 +1395,7 @@
   "source": {
    "name": "more class methods reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume you have the `Person` class as defined below:\n\n```java\nclass Person {\n  String name;\n  int age;\n\n  Person(String n, int a) {\n    name = n;\n    age = a;\n  }\n}\n```\n\nIn addition, `alice` is an instance of the `Person` class:\n\n```java\nPerson alice = Person(\"Alice\", 32);\n```\n\nUsing the code blocks below to create an instance method called `birthday` that adds a year to Alice's age. **Note**, not all of the code blocks will be used.",
+   "instructions": "## Reading Question\n\nAssume you have the `Person` class as defined below:\n\n```java\nclass Person {\n  String name;\n  int age;\n\n  Person(String n, int a) {\n    name = n;\n    age = a;\n  }\n}\n```\n\nIn addition, `alice` is an instance of the `Person` class:\n\n```java\nPerson alice = Person(\"Alice\", 32);\n```\n\nUsing the code blocks below to create an instance method called `birthday` that adds a year to Alice's age. **Note**, not all of the code blocks will be used, and code blocks must be properly indented.",
    "initial": "void birthday() {\n  age += 1;\n}\nint birthday() {  #distractor\nvoid birthday(int newAge) {  #distractor\nage = newAge;  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
@@ -1640,7 +1640,7 @@
   "source": {
    "name": "methods formative assessment 1",
    "showName": false,
-   "instructions": "## Formative Assessment\n\nDrag the code blocks into the box below so that the instance method `hello` will print a greeting using the `name` attribute. **Note**, not all of the code blocks will be used.",
+   "instructions": "## Formative Assessment\n\nDrag the code blocks into the box below so that the instance method `hello` will print a greeting using the `name` attribute. **Note**, not all of the code blocks will be used, and code blocks must be properly indented.",
    "initial": "void hello() {\n  System.out.println(&quot;Hello, &quot; + name);\n}\nString hello() {  #distractor\nvoid hello(String name) {  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
@@ -2182,7 +2182,7 @@
   "source": {
    "name": "mutability lab 2 question",
    "showName": false,
-   "instructions": "## Lab Question\n\nAssume that the `TravelLog` class exists with the following constructor:\n\n```java\nclass TravelLog {\n  ArrayList<String> cities;\n\n  TravelLog() {\n    cities = new ArrayList<String>();\n  }\n}\n```\n\nCreate the instance method `addCity` by dragging the code blocks into the box below. The method should add the name of a city to the list of cities visited. **Note**, not all of the code blocks will be used.",
+   "instructions": "## Lab Question\n\nAssume that the `TravelLog` class exists with the following constructor:\n\n```java\nclass TravelLog {\n  ArrayList<String> cities;\n\n  TravelLog() {\n    cities = new ArrayList<String>();\n  }\n}\n```\n\nCreate the instance method `addCity` by dragging the code blocks into the box below. The method should add the name of a city to the list of cities visited. **Note**, not all of the code blocks will be used, and code blocks must be properly indented.",
    "initial": "void addCity(String city) {\n  cities.add(city);\n}\nstatic void addCity(String city) { #distractor\ncity.add(cities); #distractor\nvoid addCity(int city) { #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
@@ -2230,7 +2230,7 @@
    "showName": false,
    "instructions": "## Formative Assessment\n\nAssume the following code and determine which method is a static method and which one is an instance method.\n\n```java\nDog myDog = new Dog(\"spike\", \"pomeranian\");\nmyDog.sit();\nDog.bark();\n```\n\nFill in the blanks below.",
    "showValues": true,
-   "text": "<<<`sit()`>>> is an instance method.\n<<<`bark()`>>> is a static method.",
+   "text": "<<<sit()>>> is an instance method.\n<<<bark()>>> is a static method.",
    "distractors": "",
    "guidance": "The correct answer is:\n\n`sit()` is an instance method.\n`bark()` is a static method.\n\nOnly static method can be called from the class (`Dog.bark()`). Therefore, `sit()` must be an instance method",
    "showGuidanceAfterResponse": true,
@@ -2263,8 +2263,8 @@
    "learningObjectives": "SWBAT identify a static method",
    "tokens": {
     "blank": [
-     "`sit()`",
-     "`bark()`"
+     "sit()",
+     "bark()"
     ],
     "text": [
      0,

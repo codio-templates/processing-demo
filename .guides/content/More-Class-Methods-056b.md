@@ -131,7 +131,7 @@ Test your code using `"roast chicken"` as a main course and `"chocolate cake"` a
       System.out.println(dinner.drinks);
       System.out.println(dinner.appetizers);
       System.out.println(dinner.mainCourse);
-      System.out.println(dinner.desserts);
+      System.out.println(dinner.dessert);
 
       //add code above this line
     }
