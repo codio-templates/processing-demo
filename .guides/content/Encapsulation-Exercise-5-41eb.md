@@ -15,11 +15,108 @@ Each attribute should have a getter and a setter. In addition, there should be t
 
 * Validate that the soda is sold by the machine; provide a message to the user.
 * Validate that the user inserted enough money; provide a message to the user.
-* Validate that the amount entered is a positive number; provide a message to the user.
+* Validate that there is enough cans of soda to be sold; provide a message to the user.
 
 ### Expected Output
+Verify that your program works for each of the following scenarios.
+* **Scenario 1** - Select a valid soda and a valid amount of money
+
+```java
+    //add code below this line
+
+    SodaMachine myMachine = new SodaMachine();
+    myMachine.buySoda("coke", 4);
+    System.out.println(myMachine.getMoney());
+    System.out.println(myMachine.getCokeInventory());
+
+    //add code above this line
+```
+
+This code should produce the following output. The `money` attribute is increased by the price of the soda, and `cokeInventory` has decreased by 1.
+
+```java
+12
+19
+```
+
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise5.java java -cp code/encapsulation/exercises/ CodingExercise5 1)
+
+* **Scenario 2** - Select an invalid soda and a valid amount of money
+
+```java
+    //add code below this line
+
+    SodaMachine myMachine = new SodaMachine();
+    myMachine.buySoda("diet coke", 4);
+    System.out.println(myMachine.getMoney());
+    System.out.println(myMachine.getCokeInventory());
+    System.out.println(myMachine.getSprteInventory());
+    System.out.println(myMachine.getPepsiInventory());
+    System.out.println(myMachine.getDrPepperInventory());
+
+    //add code above this line
+```
+
+This code should produce the following output. There should be a message about the soda not being sold. The `money` attribute should not change, and none of the inventory attributes should change either.
+
+```java
+That soda is not sold in this machine
+10
+20
+20
+20
+20
+```
+
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise5.java java -cp code/encapsulation/exercises/ CodingExercise5 2)
+
+* **Scenario 3** - Select a valid soda and not enough money
+
+```java
+    //add code below this line
+
+    SodaMachine myMachine = new SodaMachine();
+    myMachine.buySoda("sprite", 1);
+    System.out.println(myMachine.getMoney());
+    System.out.println(myMachine.getSpriteInventory());
+
+    //add code above this line
+```
+
+This code should produce the following output. There should be a message about not inserting enough money. Because this is not a valid transaction, the `money` and `spriteInventory` attributes should not change.
+
+```java
+You did not insert enough money
+10
+20
+```
+
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise5.java java -cp code/encapsulation/exercises/ CodingExercise5 3)
+
+* **Scenario 4** - Select a valid soda and negative money
+
+```java
+    //add code below this line
+
+    SodaMachine myMachine = new SodaMachine();
+    myMachine.setDrPepperInventory(0);
+    myMachine.buySoda("dr. pepper", 2);
+    System.out.println(myMachine.getMoney());
+    System.out.println(myMachine.getDrPepperInventory());
+
+    //add code above this line
+```
+
+This code should produce the following output:
+
+```java
+There are no cans of Dr. Pepper.
+10
+0
+```
+
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise5.java java -cp code/encapsulation/exercises/ CodingExercise5 4)
 
 ### Important
 The constructor does not have any parameters. Use the Java convention for naming getters and setters. The setter method for `sodas` needs an index and the name of the new soda.
 
-{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise5.java java -cp code/encapsulation/exercises/ CodingExercise5 1)

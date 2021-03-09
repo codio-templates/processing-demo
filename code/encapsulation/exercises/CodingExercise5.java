@@ -1,16 +1,16 @@
 //add class definitions below this line
     
 class SodaMachine {
-  private String[] sodas = new String[5];
+  private String[] sodas = {"coke", "pepsi", "sprite", "dr. pepper"};
   private int cokeInventory;
   private int pepsiInventory;
   private int spriteInventory;
   private int drPepperInventory;
   private int canadaDryInventory;
-  private double money;
+  private int money;
     
   public SodaMachine() {
-    sodas = {"coke", "pepsi", "sprite", "dr. pepper"};
+//     sodas = {"coke", "pepsi", "sprite", "dr. pepper"};
     cokeInventory = 20;
     pepsiInventory = 20;
     spriteInventory = 20;
@@ -22,7 +22,7 @@ class SodaMachine {
     return sodas;
   }
   
-  public void setSodas(int inde, String newSoda) {
+  public void setSodas(int index, String newSoda) {
     sodas[index] = newSoda;
   }
   
@@ -42,7 +42,7 @@ class SodaMachine {
     pepsiInventory = newInventory;
   }
   
-  public int getSprteInventory() {
+  public int getSpriteInventory() {
     return spriteInventory;
   }
   
@@ -70,8 +70,8 @@ class SodaMachine {
     return cokeInventory + pepsiInventory + spriteInventory + drPepperInventory + canadaDryInventory;
   }
   
-  public void buySoday(String soda, int amount) {
-    if (validSoda(soda) && enoughMoney(amount) && positiveAmount(amount)) {
+  public void buySoda(String soda, int amount) {
+    if (validSoda(soda) && enoughSoda(soda) && enoughMoney(amount)) {
       updateInventory(soda);
       updateMoney();
     }
@@ -101,13 +101,37 @@ class SodaMachine {
     }
   }
   
-  private boolean positiveAmount(int amount) {
-    if (amount > 0) {
-      return true;
-    } else {
-      System.out.println("You must enter a positive number");
-      return false;
+  private boolean enoughSoda(String soda) {
+    if (soda.equals("coke")) {
+      if (cokeInventory > 0) {
+        return true;
+      } else {
+        System.out.println("There are no cans of Coke.");
+        return false;
+      }
+    } else if (soda.equals("sprite")) {
+      if (spriteInventory > 0) {
+        return true;
+      } else {
+        System.out.println("There are no cans of Sprite.");
+        return false;
+      }
+    } else if (soda.equals("pepsi")) {
+      if (pepsiInventory > 0) {
+        return true;
+      } else {
+        System.out.println("There are no cans of Pepsi.");
+        return false;
+      }
+    } else if (soda.equals("dr. pepper")) {
+      if (drPepperInventory > 0) {
+        return true;
+      } else {
+        System.out.println("There are no cans of Dr. Pepper.");
+        return false;
+      }
     }
+    return false;
   }
   
   private void updateInventory(String soda) {
@@ -122,7 +146,7 @@ class SodaMachine {
     }
   }
   
-  private updateMoney() {
+  private void updateMoney() {
     money += 2;
   }
 }
@@ -134,7 +158,11 @@ public class CodingExercise5 {
     
     //add code below this line
 
-    
+    SodaMachine myMachine = new SodaMachine();
+    myMachine.setDrPepperInventory(0);
+    myMachine.buySoda("dr. pepper", 2);
+    System.out.println(myMachine.getMoney());
+    System.out.println(myMachine.getDrPepperInventory());
 
     //add code above this line
   }
