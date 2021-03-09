@@ -31,6 +31,8 @@ This code should produce the following output:
 125.0
 ```
 
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise4.java java -cp code/encapsulation/exercises/ CodingExercise4 1)
+
 * **Scenario 2** - Deposit amount is not positive
 
 ```java
@@ -49,6 +51,8 @@ This code should produce the following output:
 You cannot deposit a negative amount of money.
 1000.0
 ```
+
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise4.java java -cp code/encapsulation/exercises/ CodingExercise4 2)
 
 * **Scenario 3** - Withdrawal amount is too large
 
@@ -69,6 +73,8 @@ You do not have enough funds to withdraw that amount.
 1000.0
 ```
 
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise4.java java -cp code/encapsulation/exercises/ CodingExercise4 3)
+
 * **Scenario 4** - Withdrawal amount is not positive
 
 ```java
@@ -88,9 +94,9 @@ You cannot withdraw a negative amount of money.
 1000.0
 ```
 
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise4.java java -cp code/encapsulation/exercises/ CodingExercise4 4)
+
 ### Important
 In order withdraw money, the amount leftover must be greater than 0.
-
-{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/CodingExercise4.java java -cp code/encapsulation/exercises/ CodingExercise4 1)
 
 {Check It!|assessment}(test-2521092329)
