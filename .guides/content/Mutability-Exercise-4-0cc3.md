@@ -39,7 +39,7 @@ Assume you have an instance of the `Library` class called `myLibrary`. Add some 
 You should see the following output:
 
 ```java
-["Four Seasons", "Say Nothing", "Milkman", "Harry Potter and the Order of the Phoenix"]
+[Four Seasons, Say Nothing, Milkman, Harry Potter and the Order of the Phoenix]
 ```
 {Try it}(sh .guides/bg.sh javac code/mutability/Exercise4.java java -cp code/mutability/ Exercise4 1)
 
@@ -55,8 +55,8 @@ Now borrow "Harry Potter and the Order of the Phoenix" and "Say Nothing". Then p
 You should see the following output:
 
 ```java
-["Four Seasons", "Milkman"]
-["Harry Potter and the Order of the Phoenix", "Say Nothing"]
+[Four Seasons, Milkman]
+[Harry Potter and the Order of the Phoenix, Say Nothing]
 ```
 
 {Try it}(sh .guides/bg.sh javac code/mutability/Exercise4.java java -cp code/mutability/ Exercise4 2)
@@ -72,8 +72,8 @@ Finally, return "Say Nothing" and print the lists of the books on loan and the a
 You should see the following output:
 
 ```java
-["Four Seasons", "Milkman", "Say Nothing"]
-["Harry Potter and the Order of the Phoenix"]
+[Four Seasons, Milkman, Say Nothing]
+[Harry Potter and the Order of the Phoenix]
 ```
 
 {Try it}(sh .guides/bg.sh javac code/mutability/Exercise4.java java -cp code/mutability/ Exercise4 3)

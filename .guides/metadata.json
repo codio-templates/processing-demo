@@ -883,7 +883,7 @@
      "action": "close"
     },
     {
-     "path": "code/mutability/LabChallenge.java",
+     "path": "code/mutability/labChallenge/LabChallenge.java",
      "panel": 0,
      "action": "open"
     }
@@ -906,7 +906,7 @@
      "action": "close"
     },
     {
-     "path": "code/mutability/Exercise1.java",
+     "path": "code/mutability/exercise1/Exercise1.java",
      "panel": 0,
      "action": "open"
     }
@@ -929,7 +929,7 @@
      "action": "close"
     },
     {
-     "path": "code/mutability/Exercise2.java",
+     "path": "code/mutability/exercise2/Exercise2.java",
      "panel": 0,
      "action": "open"
     }
@@ -952,7 +952,7 @@
      "action": "close"
     },
     {
-     "path": "code/mutability/Exercise3.java",
+     "path": "code/mutability/exercise3/Exercise3.java",
      "panel": 0,
      "action": "open"
     }
@@ -975,7 +975,7 @@
      "action": "close"
     },
     {
-     "path": "code/mutability/Exercise4.java",
+     "path": "code/mutability/exercise4/Exercise4.java",
      "panel": 0,
      "action": "open"
     }
@@ -998,7 +998,7 @@
      "action": "close"
     },
     {
-     "path": "code/mutability/Exercise5.java",
+     "path": "code/mutability/exercise5/Exercise5.java",
      "panel": 0,
      "action": "open"
     }

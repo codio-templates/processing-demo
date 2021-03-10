@@ -1,9 +1,9 @@
 //add class definitions below this line
 
 class Mass {
-  int milligrams;
-  int grams;
-  int kilograms;
+  double milligrams;
+  double grams;
+  double kilograms;
   
   Mass(int mg, int g, int kg) {
     milligrams = mg;
@@ -24,11 +24,11 @@ class Mass {
     double mass1 = totalWeight();
     double mass2 = m.totalWeight();
     if (mass1 > mass2) {
-      return "The first object is heavier"
+      return "The first object is heavier";
     } else if (mass2 > mass1) {
-      return "The second object is heavier"
+      return "The second object is heavier";
     } else {
-      return "The two objects weigh the same"
+      return "The two objects weigh the same";
     }
   }
   

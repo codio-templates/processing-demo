@@ -90,7 +90,7 @@ Create the static method `describe` for the `Rectangle` class that prints a desc
   
   ```java
   static void describe(Rectangle r) {
-    System.out.println("The rectangle has width of " + r.width + " and a length of" + r.length + ".");
+    System.out.println("The rectangle has width of " + r.width + " and a length of " + r.length + ".");
   }
   ```
 </details>

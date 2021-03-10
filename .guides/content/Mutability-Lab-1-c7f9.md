@@ -113,7 +113,7 @@ void setup() {
 ```
 <details>
   <summary><strong>What happened?</strong></summary>
-  It was hard to see the lines and stroke of each shape. `strokeWeight` determines how thick lines are drawn. Since we want all shapes and lines to have the same stroke weight, we only need to call this line of code one time, which is why it is in the `setup` method.
+  It was hard to see the lines and stroke of each shape. <code>strokeWeight</code> determines how thick lines are drawn. Since we want all shapes and lines to have the same stroke weight, we only need to call this line of code one time, which is why it is in the <code>setup</code> method.
 </details><br>
 
 * Draw a rectangle at position 100, 100 with a width of 50 and a heght of 75. Choose any color you want.

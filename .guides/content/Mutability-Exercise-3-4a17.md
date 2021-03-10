@@ -6,7 +6,7 @@ The class `Mass` is comprised of instance methods. None of these methods change 
 
 ### Expected Output
 
-The `combinedWeight` method should return `6506.532` when used with the following `Mass` objects.
+The `combinedWeight` method should return `5506.532` when used with the following `Mass` objects.
 
 ```java
     //add code below this line

@@ -58,6 +58,7 @@ Now that the `Ball` class has a method to draw a shape to the window, we are goi
 Ball ball;
 
 void setup() {
+  size(400, 400);
   ball = new Ball(50, 50);
 }
 
