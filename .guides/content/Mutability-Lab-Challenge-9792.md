@@ -17,6 +17,7 @@ class Zoo {
     reptiles = r;
     birds = b;
   }
+}
 //add class definitions above this line
 ```
 

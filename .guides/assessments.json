@@ -1816,7 +1816,7 @@
    "showName": false,
    "instructions": "Submit your code for evaluation",
    "command": "python /usr/share/codio/assessments/assessments.py",
-   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability/exercise1\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CelestialBody {\n  String name;\n  double diameter;\n  long distance;\n  int moons;\n  \n  CelestialBody(String n, double diam, long dist, int m) {\n    name = n;\n    diameter = diam;\n    distance = dist;\n    moons = m;\n  }\n  \n  double comparedToEarth() {\n    double earth = 12765.3;\n    double relativeSize = diameter / earth;\n    return relativeSize;\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n\n    CelestialBody planet = new CelestialBody(\"Jupiter\", 142984, 778360000L, 79);\n    System.out.println(planet.comparedToEarth());\n\n    //add code above this line\n  }\n}\n```\n\n* Move the `comparedToEarth` method inside of the `CelestialBody` class.\n* Remove the `public` and `static` keywords from the method.\n* `comparedToEarth`does not need any parameters since it can directly access the `diameter` attribute.\n* Remove `planet` from `comparedToEarth`. The method no longer has the parameter `planet`.",
@@ -1843,13 +1843,14 @@
      }
     ],
     "files": [
+     "code/mutability/exercise1/Exercise1.java",
      "code/mutability/Exercise1.java"
     ],
     "opened": [
      {
       "type": "file",
       "panelNumber": 0,
-      "content": "code/mutability/Exercise1.java"
+      "content": "code/mutability/exercise1/Exercise1.java"
      }
     ]
    },
@@ -1865,7 +1866,7 @@
    "showName": false,
    "instructions": "Submit your code for evaluation.",
    "command": "python /usr/share/codio/assessments/assessments.py",
-   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability/exercise2\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CelestialBody {\n  String name;\n  double diameter;\n  long distance;\n  int moons;\n  \n  CelestialBody(String n, double diam, long dist, int m) {\n    name = n;\n    diameter = diam;\n    distance = dist;\n    moons = m;\n  }\n  \n  static String closerToSun(CelestialBody b1, CelestialBody b2) {\n    if (b1.distance < b2.distance) {\n      return b1.name;\n    } else {\n      return b2.name;\n    }\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    CelestialBody mercury = new CelestialBody(\"Mercury\", 4879.4, 57909000, 0);\n    CelestialBody venus = new CelestialBody(\"Venus\", 12103.6, 108160000, 0);\n    String closest = CelestialBody.closerToSun(mercury, venus);\n    System.out.println(closest);\n    \n    //add code above this line\n  }\n}\n```\n\n* Static methods require the use of the `static` method.\n* The `closerToSun` method takes two `CelestialBody` objects as parameters.\n* Find the smaller of the two `distance` attributes of the `CelestialBody` objects.\n* Return the `name` attribute of the object that is closest to the sun.",
@@ -1892,13 +1893,14 @@
      }
     ],
     "files": [
+     "code/mutability/exercise2/Exercise2.java",
      "code/mutability/Exercise2.java"
     ],
     "opened": [
      {
       "type": "file",
       "panelNumber": 0,
-      "content": "code/mutability/Exercise2.java"
+      "content": "code/mutability/exercise2/Exercise2.java"
      }
     ]
    },
@@ -1914,7 +1916,7 @@
    "showName": false,
    "instructions": "Submit your work for evaluation.",
    "command": "python /usr/share/codio/assessments/assessments.py",
-   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability/exercise4\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\n\n//add class definitions below this line\n\nclass Library {\n  ArrayList<String> available;\n  ArrayList<String> onLoan;\n  \n  Library() {\n    available = new ArrayList<String>();\n    onLoan = new ArrayList<String>();\n  }\n  \n  void addBooks(String[] books) {\n    for (String book : books) {\n      available.add(book);\n    }\n  }\n  \n  void borrowBook(String book) {\n    onLoan.add(book);\n    available.remove(book);\n  }\n  \n  void returnBook(String book) {\n    onLoan.remove(book);\n    available.add(book);\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise4 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    Library myLibrary = new Library();\n    String[] books = {\"Four Seasons\", \"Say Nothing\", \"Milkman\", \"Harry Potter and the Order of the Phoenix\"};\n    myLibrary.addBooks(books);\n    myLibrary.borrowBook(\"Harry Potter and the Order of the Phoenix\");\n    myLibrary.borrowBook(\"Say Nothing\");\n    myLibrary.returnBook(\"Say Nothing\");\n    System.out.println(myLibrary.available);\n    System.out.println(myLibrary.onLoan);  \n\n    //add code above this line\n  }\n}\n```\n\n* The `addBooks` method should iterate over the list of books passed to the method. Each element of the list should be added to the ArrayList attribute `available`. \n* The `borrowBook` method removes the book from the `available` attribute and adds it to the `onLoan` attribute.\n* The `returnBook` method removes the book from the `onLoan` attribute and adds it to the `available` attribute.",
@@ -1941,13 +1943,14 @@
      }
     ],
     "files": [
+     "code/mutability/exercise4/Exercise4.java",
      "code/mutability/Exercise4.java"
     ],
     "opened": [
      {
       "type": "file",
       "panelNumber": 0,
-      "content": "code/mutability/Exercise4.java"
+      "content": "code/mutability/exercise4/Exercise4.java"
      }
     ]
    },
@@ -1963,7 +1966,7 @@
    "showName": false,
    "instructions": "Submit your code for evaluation.",
    "command": "python /usr/share/codio/assessments/assessments.py",
-   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability/exercise5\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "```java\n  void board(int p) {\n    passengers += p;\n    calculateFares(p);\n  }\n```\nThe `board` method takes an integer of the people boarding the train. This number is added to the `passengers` attribute. Because people pay for the subway when boarding, be sure to call the `calculateFares` method when people are boarding the subway. This will keep track of the total fares.\n\n```java\n  void calculateFares(int p) {\n    totalFares += p * fare;\n  }\n```\nThe `calculateFares` method takes an integer representing the people boarding the subway. Multiply this number by the `fare` attribute and add this to the `totalFares` attribute.\n\n```java\n  void disembark(int p) {\n    if (passengers - p < 0) {\n      passengers = 0;\n    } else {\n      passengers -= p;\n    }\n  }\n```\nThe `disembark` method takes an integer representing the number of people exiting the subway. Remember, there cannot be a negative number of people on board a subway. Check to make sure that the `passengers` attribute minus the number of people disembarking is less than 0. If so, set `passengers` to 0. If not, subtract the people leaving the subway from `passengers`.\n\n```java\n  static void changeFare(double newFare) {\n    fare = newFare;\n  }\n```\nThe `changeFare` method is a `static` method because this method only changes the value of the `static` attribute `fare`. This method takes a double that represents the new fare. This value is assigned to the `fare` attribute.\n\n```java\n  int getIndex(String element) {\n    for (int i = 0; i < stops.length; i++) {\n      if (element.equals(stops[i])) {\n        return i;\n      }\n    }\n    return -1;\n  }\n```\nThis coding exercise does not ask you to make the `getIndex` method. However, this helper method allows us to reuse code instead of writing it multiple times. This method is used for the `distance` and `advance` methods.\n\n```java\n  int distance(String destination) {\n    int currentIndex = getIndex(currentStop);\n    int destinationIndex = getIndex(destination);\n    return Math.abs(destinationIndex - currentIndex);\n  }\n```\nThe `distance` method takes a string that represents the subway stop to which you are going to calculate the distance. We will calculate the distance (number of stops away) by using the index (the attribute `stops` is an array) for the destination and the index of the subway's current stop. Use the helper method `getIndex` to get the index of `currentStop` and the index of `destination`. The difference between these two numbers is the distance. However, we do not want a negative number to represent the difference, so we use the absolute value method (`Math.abs`) to keep the distance positive.\n\n```java\n  void advance() {\n    if (direction.equals(\"south\")) {\n      if (currentStop.equals(\"Kendall\")) {\n        currentStop = \"Central\";\n        direction = \"north\";\n      } else {\n        int currentIndex = getIndex(currentStop);\n        currentStop = stops[currentIndex + 1];\n      }\n    } else if (direction.equals(\"north\")) {\n      if (currentStop.equals(\"Alewife\")) {\n        currentStop = \"Davis\";\n        direction = \"south\";\n      } else {\n        int currentIndex = getIndex(currentStop);\n        currentStop = stops[currentIndex - 1];\n      }\n    }\n  }\n```\nThe `advance` method is the most complex. There are four different scenarios to take into account:\n1) The subway is travelling South and is at the terminus (`\"Kendall\"`). For this scenario, the `currentStop` attribute becomes the previous stop (`\"Central\"`) and the `direction` attribute becomes `\"north\"`. \n1) The subway is traveling South but is not at the terminus. For this scenario, use the `getIndex` helper method to get the index of the subway's current stop. Then update `currentStop` to the next element in the `stops` attribute.\n1) The subway is travelling North and is at the terminus (`\"Alewife\"`). For this scenario, the `currentStop` attribute becomes the next stop (`\"Davis\"`) and the `direction` attribute becomes `\"south\"`.\n1) The subway is travelling North but is not at the terminus. For this scenario, use the `getIndex` helper method to get the index of the subway's current stop. Then update `currentStop` to the previous element in the `stops` attribute.",
@@ -1990,13 +1993,14 @@
      }
     ],
     "files": [
+     "code/mutability/exercise5/Exercise5.java",
      "code/mutability/Exercise5.java"
     ],
     "opened": [
      {
       "type": "file",
       "panelNumber": 0,
-      "content": "code/mutability/Exercise5.java"
+      "content": "code/mutability/exercise5/Exercise5.java"
      }
     ]
    },
@@ -2012,7 +2016,7 @@
    "showName": false,
    "instructions": "Submit your code for evaluation.",
    "command": "python /usr/share/codio/assessments/assessments.py",
-   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability/labChallenge\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n  int totalAnimals() {\n    return bigCats + primates + reptiles + birds;\n  }\n```\nThe `totalAnimals` does not have any parameters, and it returns the sum of the `bigCats`, `primates`, `reptiles`, and `birds` attributes.\n\n```java\n  int totalMammals() {\n    return bigCats + primates;\n  }\n```\nThe `totalMammals` method does not have any parameters. Return only the sum of `bigCats` and `primates` attributes. The other animals are not mammals.\n\n```java\n  String mostAnimals() {\n    if (bigCats > primates && bigCats > reptiles && bigCats > birds) {\n      return \"big cats\";\n    } else if (primates > bigCats && primates > reptiles && primates > birds) {\n      return \"primates\";\n    } else if (reptiles > bigCats && reptiles > primates && reptiles > birds) {\n      return \"reptiles\";\n    } else if (birds > bigCats && birds > primates && birds > reptiles) {\n      return \"birds\";\n    } else {\n      return \"There are an equal amount of animals\";\n    }\n  }\n```\nThe `mostAnimals` method does not have any parameters. Use a series of compound conditionals to ask if each attribute is greater than the rest of the attributes. Return a string for the name of the attribute with the most animals.",
@@ -2135,7 +2139,7 @@
    "showName": false,
    "instructions": "Submit your code for evaluation.",
    "command": "python /usr/share/codio/assessments/assessments.py",
-   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability\",\"libs\":\"\",\"testsources\":\"\"}",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/mutability/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/mutability/exercise3\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Mass {\n  double milligrams;\n  double grams;\n  double kilograms;\n  \n  Mass(int mg, int g, int kg) {\n    milligrams = mg;\n    grams = g;\n    kilograms = kg;\n  }\n  \n  double totalWeight() {\n    double tw = kilograms * 1000 + grams + milligrams / 1000;\n    return tw;\n  }\n  \n  static double combinedWeight(Mass m1, Mass m2) {\n    return m1.totalWeight() + m2.totalWeight();\n  }\n  \n  static String heavier(Mass m1, Mass m2) {\n    double mass1 = m1.totalWeight();\n    double mass2 = m2.totalWeight();\n    if (mass1 > mass2) {\n      return \"The first object is heavier\";\n    } else if (mass2 > mass1) {\n      return \"The second object is heavier\";\n    } else {\n      return \"The two objects weigh the same\";\n    }\n  }\n  \n  static double averageWeight(Mass m1, Mass m2) {\n    return combinedWeight(m1, m2) / 2;\n  }\n}\n \n//add class definitions above this line\n```\n\nThe `totalWeight` method is a helper method and needs direct access to the instance attributes of a `Mass` object. Static methods cannot directly access instance attributes, so `totalWeight` cannot be a static method. For all of the other methods, add the `static` keyword. Each method takes two `Mass` objects as parameters. Be sure that each static methods references both of these arguments (`m1` and `m2` in the example above) when calling the `totalWeight` method or calling the `combinedWeight` method.",
@@ -2162,13 +2166,14 @@
      }
     ],
     "files": [
+     "code/mutability/exercise3/Exercise3.java",
      "code/mutability/Exercise3.java"
     ],
     "opened": [
      {
       "type": "file",
       "panelNumber": 0,
-      "content": "code/mutability/Exercise3.java"
+      "content": "code/mutability/exercise3/Exercise3.java"
      }
     ]
    },
@@ -3622,6 +3627,52 @@
    },
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create a class with encapsulation and data validation"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-2434922771",
+  "source": {
+   "name": "mutability lab 4 question",
+   "showName": true,
+   "instructions": "## Lab Question\n\nDrag the code blocks into the box below to create a static method called `addition`. This method accepts two integer parameters (`num1` and `num2`) and returns the sum of these two parameters. **Note**, not all of the code blocks will be used, and code blocks must be properly indented.",
+   "initial": "static int addition(int num1, int num2) {\n  return num1 + num2;\n}\nint static addition(int num1, int num2) { #distractor\nstatic int addition(double num1, int num2) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\nstatic int addition(int num1, int num2) {\n  return num1 + num2;\n}\n```\n\n* The `static` keyword comes before the return type for the method, which is why `int static addition(int num1, int num2) {` is incorrect.\n* This method takes two integers as parameters, which is why `static int addition(double num1, int num2) {` is incorrect.\n",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Static Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Mutability"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a static method"
   }
  }
 ]
