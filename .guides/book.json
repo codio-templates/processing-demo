@@ -386,34 +386,34 @@
      "type": "section",
      "children": [
       {
-       "id": "9538c2e5-32af-d4cd-98fd-c7b558031b77",
        "title": "Learning Objectives",
-       "pageId": "30fc1606-7a28-ea24-df98-bf1bf18e7f95",
-       "type": "page"
+       "id": "9538c2e5-32af-d4cd-98fd-c7b558031b77",
+       "type": "page",
+       "pageId": "30fc1606-7a28-ea24-df98-bf1bf18e7f95"
       },
       {
-       "id": "4c07ecc8-40d4-2fdf-8a19-01d09f07dfae",
        "title": "What is Encapsulation?",
-       "pageId": "71689278-f8fd-a0c0-5dd4-d6b9df0f3e03",
-       "type": "page"
+       "id": "4c07ecc8-40d4-2fdf-8a19-01d09f07dfae",
+       "type": "page",
+       "pageId": "71689278-f8fd-a0c0-5dd4-d6b9df0f3e03"
       },
       {
-       "id": "e14775ed-6191-04c0-359c-1d04c084234c",
        "title": "Public Access Modifier",
-       "pageId": "07d18743-fdf6-99e2-4dfd-3f3d3c4165ac",
-       "type": "page"
+       "id": "e14775ed-6191-04c0-359c-1d04c084234c",
+       "type": "page",
+       "pageId": "07d18743-fdf6-99e2-4dfd-3f3d3c4165ac"
       },
       {
-       "id": "7480d84a-b7bc-63e1-a88e-7a61dcb2c72f",
        "title": "Private Access Modifier",
-       "pageId": "ccc6fb06-8ee6-f5e3-83c7-20369598840e",
-       "type": "page"
+       "id": "7480d84a-b7bc-63e1-a88e-7a61dcb2c72f",
+       "type": "page",
+       "pageId": "ccc6fb06-8ee6-f5e3-83c7-20369598840e"
       },
       {
-       "id": "79d896ca-d355-3508-e43f-31596cc4f74c",
        "title": "Code as a Black Box",
-       "pageId": "9c4d4beb-cf27-0027-72c9-e27653d5adca",
-       "type": "page"
+       "id": "79d896ca-d355-3508-e43f-31596cc4f74c",
+       "type": "page",
+       "pageId": "9c4d4beb-cf27-0027-72c9-e27653d5adca"
       }
      ]
     },
@@ -442,28 +442,28 @@
      "type": "section",
      "children": [
       {
-       "id": "f90fee59-9be5-3e34-e57b-de20d3b3cbda",
        "title": "Learning Objectives - Getters and Setters",
-       "pageId": "2b4ad484-c385-7b5f-7cc2-7986d49fc62f",
-       "type": "page"
+       "id": "f90fee59-9be5-3e34-e57b-de20d3b3cbda",
+       "type": "page",
+       "pageId": "2b4ad484-c385-7b5f-7cc2-7986d49fc62f"
       },
       {
-       "id": "80a4ade7-f92b-9dcd-f68d-a8502acf0861",
        "title": "Getters",
-       "pageId": "d37e136c-9469-91ea-c9f9-9de2b0825500",
-       "type": "page"
+       "id": "80a4ade7-f92b-9dcd-f68d-a8502acf0861",
+       "type": "page",
+       "pageId": "d37e136c-9469-91ea-c9f9-9de2b0825500"
       },
       {
-       "id": "070761df-305c-8ce6-02c2-60dfb2ec2ec6",
        "title": "Setters",
-       "pageId": "9f2841cd-c2e7-162c-d89c-af6923950d3e",
-       "type": "page"
+       "id": "070761df-305c-8ce6-02c2-60dfb2ec2ec6",
+       "type": "page",
+       "pageId": "9f2841cd-c2e7-162c-d89c-af6923950d3e"
       },
       {
-       "id": "e392bf9d-5a95-612d-d9a9-8d0ceddf057c",
        "title": "Data Validation",
-       "pageId": "bf42553d-0f8d-b6b9-a0e6-ebf6ef482d33",
-       "type": "page"
+       "id": "e392bf9d-5a95-612d-d9a9-8d0ceddf057c",
+       "type": "page",
+       "pageId": "bf42553d-0f8d-b6b9-a0e6-ebf6ef482d33"
       }
      ]
     },
@@ -559,6 +559,61 @@
        "pageId": "41eb4054-d9a6-2119-74d9-b95d1bc98288"
       }
      ]
+    }
+   ]
+  },
+  {
+   "title": "Inheritance",
+   "id": "5f4aa1f5-ec62-caaa-278e-a6b6c7c1ae72",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Parent & Child Classes",
+     "id": "3b0685f4-3a13-5ad2-b774-db8bbd677aab",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Parent & Child Classes Formative Assessment",
+     "id": "0d7c45b1-aa2b-7306-dd64-9c6ca0e39943",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Extending & Overriding",
+     "id": "1f6ef6cb-2a8c-d17b-8cbd-7127e0fc887e",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Extending & Overriding Formative Assessment",
+     "id": "bd2fcca5-2aa3-05ea-93cc-52db243d7720",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Multiple Inheritance",
+     "id": "f763888c-388e-f1e8-06b2-c063fd4b69ae",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Multiple Inheritance Formative Assessment",
+     "id": "81f39224-e897-62a4-4708-88d3269219d4",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Lab - Inheritance",
+     "id": "f488de8b-d10e-9851-46cd-0dc3d38458cc",
+     "type": "section",
+     "children": []
+    },
+    {
+     "title": "Coding Exercises - Inheritance",
+     "id": "88ff597d-9ec3-da52-5cbb-f5355fba647b",
+     "type": "section",
+     "children": []
     }
    ]
   }
