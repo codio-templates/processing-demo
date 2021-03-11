@@ -3674,5 +3674,76 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a static method"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2081032533",
+  "source": {
+   "name": "what is inheritance reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nUse the code below to help you answer the question.\n\n```java\nclass XYZ {\n\n}\n\nclass ABC extends XYZ {\n\n}\n```\n\nFrom the options below indicate which class is the superclass and which class is the subclass. **Note**, there are two answers for this problem.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "dff5ea80-0986-416b-8527-e70944d87755",
+     "correct": true,
+     "answer": "`ABC` is the subclass"
+    },
+    {
+     "_id": "115ae69d-5a5d-3f2f-8113-4877eec8253c",
+     "correct": true,
+     "answer": "`XYZ` is the superclass"
+    },
+    {
+     "_id": "aafa253c-2311-09a9-4dea-bd2c5b4a4afa",
+     "correct": false,
+     "answer": "`ABC` is the superclass"
+    },
+    {
+     "_id": "471538a5-802c-56d5-5e24-73ce8e098205",
+     "correct": false,
+     "answer": "`XYZ` is the subclass"
+    }
+   ],
+   "guidance": "The correct answers are:\n* `ABC` is the subclass\n* `XYZ` is the superclass\n\nBecause the definition of `ABC` contains `extends XYZ`, `ABC` is the subclass. That means `XYZ` must be the superclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Superclass and Subclass"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/WhatIsInheritance.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/WhatIsInheritance.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT distinguish between the superclass and the subclass"
+  }
  }
 ]

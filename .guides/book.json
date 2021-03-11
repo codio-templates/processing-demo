@@ -568,13 +568,26 @@
    "type": "chapter",
    "children": [
     {
-     "title": "Parent & Child Classes",
+     "title": "Superclass & Subclass",
      "id": "3b0685f4-3a13-5ad2-b774-db8bbd677aab",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "bc80dccd-6b80-b0ab-6af3-aef450568d2b",
+       "title": "Learning Objectives - Superclass & Subclass",
+       "pageId": "3aad2aab-4031-801e-b684-33809ae92b20",
+       "type": "page"
+      },
+      {
+       "id": "5626b3ac-7328-17e1-aeff-a12d72a9a474",
+       "title": "What is Inheritance?",
+       "pageId": "7216c2f4-8aee-d235-32ba-fc549c0752fe",
+       "type": "page"
+      }
+     ]
     },
     {
-     "title": "Parent & Child Classes Formative Assessment",
+     "title": "Superclass & Subclass Formative Assessment",
      "id": "0d7c45b1-aa2b-7306-dd64-9c6ca0e39943",
      "type": "section",
      "children": []

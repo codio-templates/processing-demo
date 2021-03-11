@@ -1515,6 +1515,47 @@
    "reset": [],
    "teacherOnly": false,
    "learningObjectives": ""
+  },
+  {
+   "id": "3aad2aab-4031-801e-b684-33809ae92b20",
+   "title": "Learning Objectives - Superclass & Subclass",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Superclass---Subclass-3aad.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7216c2f4-8aee-d235-32ba-fc549c0752fe",
+   "title": "What is Inheritance?",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/WhatIsInheritance.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/What-is-Inheritance--7216.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
   }
  ],
  "theme": "light",
