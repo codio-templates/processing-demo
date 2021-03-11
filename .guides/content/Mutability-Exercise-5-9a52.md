@@ -55,6 +55,6 @@ If the subway is currently at Davis and the desired stop is Central, the distanc
 * **Changing the Fare**
 If the subway fare increased to $2.75, then `fare` should be 2.75 for all instances of the `Subway` class.
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Exercise5.java java -cp code/mutability/ Exercise5 1)
+{Try it}(sh .guides/bg.sh javac code/mutability/exercise5/Exercise5.java java -cp code/mutability/exercise5/ Exercise5 1)
 
 {Check It!|assessment}(test-2231923768)

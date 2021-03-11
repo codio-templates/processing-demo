@@ -61,6 +61,6 @@ public class Exercise1 {
   Kilometers are the units of measure for the <code>diameter</code> and <code>distance</code> attributes. The <code>distance</code> attribute refers to the distance between the celestial body and the sun. Information used for this activity was taken from <a href="https://upload.wikimedia.org/wikipedia/commons/6/64/Solar-System.pdf">Wikipedia</a>.
 </details><br>
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Exercise1.java java -cp code/mutability/ Exercise1 1)
+{Try it}(sh .guides/bg.sh javac code/mutability/exercise1/Exercise1.java java -cp code/mutability/exercise1/ Exercise1 1)
 
 {Check It!|assessment}(test-643654737)

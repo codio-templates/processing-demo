@@ -49,6 +49,6 @@ Then the output would be:
 birds
 ```
 
-{Try it}(sh .guides/bg.sh javac code/mutability/LabChallenge.java java -cp code/mutability/ LabChallenge 1)
+{Try it}(sh .guides/bg.sh javac code/mutability/labChallenge/LabChallenge.java java -cp code/mutability/labChallenge/ LabChallenge 1)
 
 {Check It!|assessment}(test-83966248)

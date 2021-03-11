@@ -42,6 +42,6 @@ The `averageWeight` method should return `1146.51` when used with the following 
     //add code above this line
 ```
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Exercise3.java java -cp code/mutability/ Exercise3 1)
+{Try it}(sh .guides/bg.sh javac code/mutability/exercise3/Exercise3.java java -cp code/mutability/exercise3/ Exercise3 1)
 
 {Check It!|assessment}(test-2519445590)
