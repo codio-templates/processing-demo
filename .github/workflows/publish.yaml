@@ -8,6 +8,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cleanup
+        run: rm -rf .github README.md .git
+
+      - name: Archive
+        run: tar czf ../data.tar.gz .
+
+      - name: Upload artifactory
+        uses: actions/upload-artifact@master
+        with:
+          name: book-compiled
+          path: ../data.tar.gz
+          retention-days: 2
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: book-compiled
+
       - name: Log into Codio
         id: codio-login
         uses: codio/codio-auth-action@master
@@ -15,15 +39,6 @@ jobs:
           client-id: ${{ secrets.JAVA_OBJECTS_CLIENT_ID }}
           secret-id: ${{ secrets.JAVA_OBJECTS_SECRET_ID }}
           domain: codio.com
-
-      - name: Checkout
-        uses: actions/checkout@v1
-
-      - name: Cleanup
-        run: rm -rf .github README.md
-
-      - name: Archive
-        run: tar czf ../data.tar.gz .
 
       - name: Publish to Codio
         uses: codio/codio-book-publish-action@master
