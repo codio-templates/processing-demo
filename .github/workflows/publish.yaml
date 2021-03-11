@@ -15,13 +15,13 @@ jobs:
         run: rm -rf .github README.md .git
 
       - name: Archive
-        run: tar czf ../data.tar.gz .
+        run: tar czf ../data.tar.gz . && mv ../data.tar.gz data.tar.gz
 
       - name: Upload artifactory
         uses: actions/upload-artifact@master
         with:
           name: book-compiled
-          path: ../data.tar.gz
+          path: data.tar.gz
           retention-days: 2
 
   publish:
@@ -46,7 +46,7 @@ jobs:
           token: ${{ steps.codio-login.outputs.token }}
           book-id: 61a5efce71eb25b4e2fa2f982c2c33bc
           domain: codio.com
-          zip: ../data.tar.gz
+          zip: data.tar.gz
           changelog: ${{ github.event.head_commit.message }}
 
       - name: Update Codio Course
