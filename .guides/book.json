@@ -583,6 +583,12 @@
        "title": "What is Inheritance?",
        "pageId": "7216c2f4-8aee-d235-32ba-fc549c0752fe",
        "type": "page"
+      },
+      {
+       "id": "1444d1eb-965d-5009-0bd9-fbdd14c77e3a",
+       "title": "Super",
+       "pageId": "88d31eaf-cb22-32e5-b44e-c5f40fab0e7e",
+       "type": "page"
       }
      ]
     },
