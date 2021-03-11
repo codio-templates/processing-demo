@@ -3634,7 +3634,7 @@
   "taskId": "parsons-puzzle-2434922771",
   "source": {
    "name": "mutability lab 4 question",
-   "showName": true,
+   "showName": false,
    "instructions": "## Lab Question\n\nDrag the code blocks into the box below to create a static method called `addition`. This method accepts two integer parameters (`num1` and `num2`) and returns the sum of these two parameters. **Note**, not all of the code blocks will be used, and code blocks must be properly indented.",
    "initial": "static int addition(int num1, int num2) {\n  return num1 + num2;\n}\nint static addition(int num1, int num2) { #distractor\nstatic int addition(double num1, int num2) { #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
