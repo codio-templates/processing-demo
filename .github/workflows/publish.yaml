@@ -22,11 +22,8 @@ jobs:
       - name: Cleanup
         run: rm -rf .github README.md
 
-      - name: Install Zip
-        uses: montudor/action-zip@v0.1.1
-
-      - name: Zip
-        run: zip -qq -r ../data.zip .
+      - name: Archive
+        run: tar czf ../data.tar.gz .
 
       - name: Publish to Codio
         uses: codio/codio-book-publish-action@master
@@ -34,9 +31,9 @@ jobs:
           token: ${{ steps.codio-login.outputs.token }}
           book-id: 61a5efce71eb25b4e2fa2f982c2c33bc
           domain: codio.com
-          zip: ../data.zip
+          zip: ../data.tar.gz
           changelog: ${{ github.event.head_commit.message }}
-          
+
       - name: Update Codio Course
         uses: codio/codio-course-book-update-action@master
         with:
