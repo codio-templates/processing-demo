@@ -41,7 +41,7 @@ You should see the following output:
 ```java
 [Four Seasons, Say Nothing, Milkman, Harry Potter and the Order of the Phoenix]
 ```
-{Try it}(sh .guides/bg.sh javac code/mutability/Exercise4.java java -cp code/mutability/ Exercise4 1)
+{Try it}(sh .guides/bg.sh javac code/mutability/exercise4/Exercise4.java java -cp code/mutability/exercise4/ Exercise4 1)
 
 Now borrow "Harry Potter and the Order of the Phoenix" and "Say Nothing". Then print the lists of available books and books on loan.
 
@@ -59,7 +59,7 @@ You should see the following output:
 [Harry Potter and the Order of the Phoenix, Say Nothing]
 ```
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Exercise4.java java -cp code/mutability/ Exercise4 2)
+{Try it}(sh .guides/bg.sh javac code/mutability/exercise4/Exercise4.java java -cp code/mutability/exercise4/ Exercise4 2)
 
 Finally, return "Say Nothing" and print the lists of the books on loan and the available books.
 
@@ -76,6 +76,6 @@ You should see the following output:
 [Harry Potter and the Order of the Phoenix]
 ```
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Exercise4.java java -cp code/mutability/ Exercise4 3)
+{Try it}(sh .guides/bg.sh javac code/mutability/exercise4/Exercise4.java java -cp code/mutability/exercise4/ Exercise4 3)
 
 {Check It!|assessment}(test-3144038960)

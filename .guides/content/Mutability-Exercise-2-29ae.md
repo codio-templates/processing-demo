@@ -40,6 +40,6 @@ public class Exercise2 {
 }
 ```
 
-{Try it}(sh .guides/bg.sh javac code/mutability/Exercise2.java java -cp code/mutability/ Exercise2 1)
+{Try it}(sh .guides/bg.sh javac code/mutability/exercise2/Exercise2.java java -cp code/mutability/exercise2/ Exercise2 1)
 
 {Check It!|assessment}(test-3842605)
