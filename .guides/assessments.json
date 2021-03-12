@@ -3745,5 +3745,71 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT distinguish between the superclass and the subclass"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2940799859",
+  "source": {
+   "name": "super keyword reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhat does the keyword `super` refer to?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "30f415ed-65d4-eef9-6529-648308b7f3ab",
+     "correct": true,
+     "answer": "The superclass"
+    },
+    {
+     "_id": "674f7527-ce02-8aa5-63a2-938435fbff14",
+     "correct": false,
+     "answer": "The subclass"
+    },
+    {
+     "_id": "4cecb445-23f7-95ab-eee1-619b27638fe4",
+     "correct": false,
+     "answer": "A newly instantiated object"
+    }
+   ],
+   "guidance": "The keyword `super` refers to the superclass, which is sometimes called the parent class. For example, calling `super` in the constructor of the subclass will call the constructor of the superclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Super Keyword"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/Super.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/Super.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify to what the super keyword refers"
+  }
  }
 ]

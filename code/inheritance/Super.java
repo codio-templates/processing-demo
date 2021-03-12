@@ -9,12 +9,6 @@ class Person {
     occupation = "VP Sales";
   }
   
-  public Person(String n, int a, String o) {
-    name = n;
-    age = a;
-    occupation = o;
-  }
-  
   public String getName() {
     return name;
   }
@@ -50,16 +44,7 @@ class Person {
 
 //add class definitions below this line
 
-class Superhero extends Person {
-  public Superhero(String n, int a, String o) {
-    super(n, a, o);
-  }
-  
-  public void sayHello() {
-    super.sayHello();
-    System.out.println("Superhero");
-  }
-}
+
   
 //add class definitions above this line
 
@@ -68,9 +53,7 @@ public class Super {
     
     //add code below this line
 
-    Superhero hero = new Superhero("Wonder Woman", 27, "intelligence officer");
-    hero.sayHello();
-    hero.sayAge();
+    
 
     //add code above this line
   }
