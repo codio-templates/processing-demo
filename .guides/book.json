@@ -589,6 +589,12 @@
        "title": "Super",
        "pageId": "88d31eaf-cb22-32e5-b44e-c5f40fab0e7e",
        "type": "page"
+      },
+      {
+       "id": "fe1603bd-7eea-80b7-7bdf-8583d231a689",
+       "title": "Inheritance Hierarchy",
+       "pageId": "ea5dcab6-e2b0-dbfc-591e-a8fde259aa74",
+       "type": "page"
       }
      ]
     },
