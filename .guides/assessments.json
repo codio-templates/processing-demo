@@ -4041,5 +4041,76 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT extend the constructor of the superclass"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1159177153",
+  "source": {
+   "name": "method overriding reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect all of the statements that are true for method overriding and extending a class. **Hint:** there is more than one correct answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "c7e83a29-2ed3-a1fa-9b9b-4b590a184c48",
+     "correct": true,
+     "answer": "Extending a class happens when new attributes or methods are added to the subclass that do not exist in the superclass."
+    },
+    {
+     "_id": "a29a60c4-fa48-8862-ef5d-3dec648677ba",
+     "correct": true,
+     "answer": "Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different."
+    },
+    {
+     "_id": "c544c606-b734-d987-7e1b-e116a16357b6",
+     "correct": false,
+     "answer": "Method overriding happens when new attributes or methods are added to the subclass that do not exist in the superclass."
+    },
+    {
+     "_id": "39a81076-3aa7-4158-5d20-637561804d44",
+     "correct": false,
+     "answer": "Extending a class happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different."
+    }
+   ],
+   "guidance": "The correct answers are:\n\n* Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different.\n* Extending a class happens when new attributes or methods are added to the subclass that do not exist in the superclass.\n\nThe other two choices are incorrect because they have confused \"method overriding\" with the definition for \"extending a class\" and vice versa.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Extending & Overriding a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/OverrideMethod.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/OverrideMethod.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between extending a class and method overriding"
+  }
  }
 ]

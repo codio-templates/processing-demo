@@ -1689,7 +1689,7 @@
      "action": "close"
     },
     {
-     "path": "code/inheritance/OverridMethod.java",
+     "path": "code/inheritance/OverrideMethod.java",
      "panel": 0,
      "action": "open"
     }
