@@ -1704,6 +1704,29 @@
    "learningObjectives": ""
   },
   {
+   "id": "d28a0869-8f0f-6a8b-dd49-20544edea919",
+   "title": "Overriding Annotation",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/OverridingAnnotation.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Overriding-Annotation-d28a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "f03114cb-35d4-5341-4093-e1eb867e7ce4",
    "title": "Extending & Overriding Formative Assessment 1",
    "files": [
@@ -1734,6 +1757,18 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Extending---Overriding-Formative-Assessment-2-8fdb.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c0e63a91-6857-cb88-884c-ae3df6608ee1",
+   "title": "Learning Objectives - Multiple Inheritance",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Multiple-Inheritance-c0e6.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

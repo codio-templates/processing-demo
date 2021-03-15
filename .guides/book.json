@@ -639,6 +639,12 @@
        "title": "Method Overriding",
        "pageId": "9caed2f9-9092-1c6e-71c7-4ef9468ebd5e",
        "type": "page"
+      },
+      {
+       "id": "fbef786d-a2ad-0429-f4d6-37d59807fc57",
+       "title": "Overriding Annotation",
+       "pageId": "d28a0869-8f0f-6a8b-dd49-20544edea919",
+       "type": "page"
       }
      ]
     },
@@ -665,7 +671,14 @@
      "title": "Multiple Inheritance",
      "id": "f763888c-388e-f1e8-06b2-c063fd4b69ae",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "07e4504e-b1ea-c896-6fd2-4ba39d9a24dd",
+       "title": "Learning Objectives - Multiple Inheritance",
+       "pageId": "c0e63a91-6857-cb88-884c-ae3df6608ee1",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Multiple Inheritance Formative Assessment",

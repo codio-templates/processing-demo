@@ -4215,5 +4215,77 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT override a method from a superclass"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3981125571",
+  "source": {
+   "name": "overriding annotation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Train {\n  private int cars;\n\n  public Train() {\n    cars = 10;\n  }\n\n  public int getCars() {\n    return cars;\n  }\n\n  public void length() {\n    System.out.println(\"The train has \" + cars + \" cars.\");\n  }\n}\n```\n\nFill in the blanks to complete the `FreightTrain` method which extends the `Train` class and overrides the the `length` method.",
+   "showValues": true,
+   "text": "class <<<FreightTrain>>> extends <<<Train>>> {\n  <<<@Override>>>\n  public void <<<length>>>() {\n    System.out.println(\"The train has \" + <<<getCars()>>> + \" freight cars.\");\n  }\n}",
+   "distractors": "cars\nOverride\n@Extends",
+   "guidance": "The correct answer is:\n\n```java\nclass FreightTrain extends Train {\n  @Override\n  public void length() {\n    System.out.println(\"The train has \" + getCars() + \" freight cars.\");\n  }\n}\n```\n\n* When using the `extends` keyword, the subclass (`FreightTrain`) comes before and the superclass (`Train`) comes after.\n* The correct annotation for override is `@Override`.\n* You are overriding the `length` method, so make sure it appears in the `FreightTrain` class.\n* The `cars` attribute is private to the superclass, so use `getCars` to access it.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Overriding Annotation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/OverridingAnnotation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/OverridingAnnotation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT annotate when overriding a method",
+   "tokens": {
+    "blank": [
+     "FreightTrain",
+     "Train",
+     "@Override",
+     "length",
+     "getCars()"
+    ],
+    "text": [
+     "class ",
+     0,
+     " extends ",
+     0,
+     " {\n  ",
+     0,
+     "\n  public void ",
+     0,
+     "() {\n    System.out.println(\"The train has \" + ",
+     0,
+     " + \" freight cars.\");\n  }\n}"
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
