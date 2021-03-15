@@ -4112,5 +4112,108 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT differentiate between extending a class and method overriding"
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1932407461",
+  "source": {
+   "name": "Extending & Overriding Formative Assessment 1",
+   "showName": false,
+   "instructions": "Assume the following code:\n\n```java\nclass Car{\n  private String make;\n  private String model;\n  private String color;\n\n  public Car(String ma, String mo, String c) {\n    make = ma;\n    model = mo;\n    color = c;\n  }\n\n  public void getMake() {\n    return make;\n  }\n\n  public void getModel() {\n    return make;\n  }\n\n  public void getColor() {\n    return make;\n  }\n}\n```\n\nCreate the subclass `Sedan`. Extend this class by adding the `describe` method. This method prints the string `I am a red Toyota Camry.` \"Toyota\" is the make and \"Camry\" is the model. \n\nDrag the appropriate code blocks into the box below. **Hint:** not all of the code blocks will be used, and the code blocks must be properly indented.",
+   "initial": "class Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(&quot;I am a &quot; + getColor() + &quot; &quot;);\n    System.out.println(getMake() + &quot; &quot; getModel() + &quot;.&quot;);\n  }\n}\nSystem.out.print(&quot;I am a &quot; + color + &quot; &quot;); #distractor\nSystem.out.println(make + &quot; &quot; model + &quot;.&quot;); #distractor\nclass Sedan { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the answer: \n\n```java\nclass Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(\"I am a \" + getColor() + \" \");\n    System.out.println(getMake() + \" \" getModel() + \".\");\n  }\n}\n```\n\n* The `Sedan` class should inherit from the `Car` class, so be sure to use the `extends` keyword.\n* The `Sedan` class needs to invoke a `Car` constructor to pass it three arguments. Use the `super` keyword for this.\n* The `make`, `model`, and `color` keywords are a part of the superclass, so you need to use the getter methods to access these values.\n\n",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Extending a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT extend the subclass with a new method"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3124334261",
+  "source": {
+   "name": "extending & overriding formative assessment 2",
+   "showName": false,
+   "instructions": "Assume the following code:\n\n```java\nclass SportsCar extends Car{\n  private double acceleration;\n\n  public SportsCar(String self, String ma, String mo, String c, Double a) {\n    super(ma, mo, c);\n    acceleration = a;\n  }\n\n  public void acceleration(super) {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n}\n```\n\nThe `SportsCar` class inherits from the `Car` class and the `acceleration` method overrides a method from the superclass. What is wrong with the `acceleration` method?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "7d7819b5-886d-113b-6e44-7d8111da189a",
+     "correct": true,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```"
+    },
+    {
+     "_id": "90bf200d-e249-6a35-5f3e-5fa16dfd5918",
+     "correct": false,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration extends acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```"
+    },
+    {
+     "_id": "3a81a2c4-b528-38f0-6e48-07df224072cf",
+     "correct": false,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration() {\n    super.acceleration();\n  }\n```"
+    },
+    {
+     "_id": "dcbc957c-2570-fa8c-a5bb-b6d262033802",
+     "correct": false,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + getAcceleration() + \" seconds!\");\n  }\n```"
+    }
+   ],
+   "guidance": "You do not need to use any special key words to tell Java that the current method is overriding a method from the suerclass. Method declarations and method overriding look the same from the declaration point of view.\n\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Overridng a Method"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT override a method from a superclass"
+  }
  }
 ]
