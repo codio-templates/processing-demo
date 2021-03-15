@@ -3811,5 +3811,187 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify to what the super keyword refers"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1313898131",
+  "source": {
+   "name": "inheritance hierarchy reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhen does the `instanceof` operator return `true`? **Hint**, there is more than one right answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "a6123970-5bc7-8547-f1ac-605987edcbbc",
+     "correct": true,
+     "answer": "When the object is an instance of the same class."
+    },
+    {
+     "_id": "186ae633-3985-468b-540b-14e307a6449c",
+     "correct": true,
+     "answer": "When the object is an instance of the subclass."
+    },
+    {
+     "_id": "29a49127-eb0f-811c-2a68-14a2460067c4",
+     "correct": false,
+     "answer": "When the object is an instance of the superclass."
+    },
+    {
+     "_id": "e3b704f4-cad6-4fcd-247b-a1554c674170",
+     "correct": false,
+     "answer": "Whenever inheritance is used."
+    }
+   ],
+   "guidance": "The correct answers are:\n* `When the object is an instance of the same class.`\n* `When the object is an instance of the subclass.`\n\nThe `instanceof` operator compares an object and a class. If the object has the same type as the comparison class it returns `true`. It also returns `true` when the object is a subclass of the comparison class.\n\n",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Inheritance Hiearchy, Superclasses and Subclasses"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/Hierarchy.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/Hierarchy.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT test for inheritance hierarchy"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2353549155",
+  "source": {
+   "name": "superclass & subclass formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following class:\n\n```java\nclass Pet {\n  private String name;\n}\n```\n\nSelect the code that creates the `Dog` class that inherits from `Pet`.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "69268177-491b-44cb-927f-0a97bb4c03f9",
+     "correct": true,
+     "answer": "class Dog extends Pet {}"
+    },
+    {
+     "_id": "077111a3-6b8a-b641-f1f8-4f303e215c4c",
+     "correct": false,
+     "answer": "class Dog inherits Pet {}"
+    },
+    {
+     "_id": "fcdea550-a444-a47f-1cb5-55ecbe05caec",
+     "correct": false,
+     "answer": "class Dog(Pet) {}"
+    },
+    {
+     "_id": "3e8ac4a3-db8d-98f9-651e-b580dc21fcb6",
+     "correct": false,
+     "answer": "class Dog extend Pet {}"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\nclass Dog extends Pet {}\n```\n\nJava uses the `extends` keyword to indicate inheritance.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Create a Subclass"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/Hierarchy.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/Hierarchy.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a subclass"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-255782616",
+  "source": {
+   "name": "superclass & subclass formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  private String name;\n  private String breed;\n\n  public Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n}\n```\n\nRearrange the code blocks below to create the subclass `Pug` that calls the constructor from the superclass with arguments. **Hint**, not all code blocks will be used, and they must be properly indented.",
+   "initial": "class Pug extends Dog {\n  public Pug(String n, String b) {\n    super(n, b);\n  }\n}\nDog(n, b); #distractor\nclass Pug inherits Dog { #distractor\npublic Pug() { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\nclass Pug extends Dog {\n  public Pug(String n, String b) {\n    super(n, b);\n  }\n}\n```\n\nCreate a public constructor that has the same parameters as the superclass. Within the constructor, use the `super` keyword and pass it the parameters. Java will call the constructor from the superclass with the appropriate parameters.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Super Keyword"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT call the constructor from the superclass with arguments"
+  }
  }
 ]
