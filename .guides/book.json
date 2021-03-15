@@ -621,7 +621,26 @@
      "title": "Extending & Overriding",
      "id": "1f6ef6cb-2a8c-d17b-8cbd-7127e0fc887e",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "00fb5002-d128-3b9b-4b00-0063b5324244",
+       "title": "Learning Objectives - Extending & Overriding",
+       "pageId": "fdc77d3f-80de-2a5b-3aab-be445490fddc",
+       "type": "page"
+      },
+      {
+       "id": "5436086f-d44c-23cd-79d0-1bac973a433a",
+       "title": "Extending a Class",
+       "pageId": "2505334e-f40e-ba2d-a79b-dd582ca57dd0",
+       "type": "page"
+      },
+      {
+       "id": "13753032-8235-3f1a-b453-036abf593640",
+       "title": "Method Overriding",
+       "pageId": "9caed2f9-9092-1c6e-71c7-4ef9468ebd5e",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Extending & Overriding Formative Assessment",

@@ -3993,5 +3993,53 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT call the constructor from the superclass with arguments"
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-678926361",
+  "source": {
+   "name": "extending a class reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Pet {\n  private String name;\n  private String age;\n\n  public Pet(String n, String a) {\n    name = n;\n    age = a;\n  }\n}\n```\n\nUsing the code blocks below, create the class `Dog` that inherits from `Pet`. In addition, extend the constructor to have the attribute `breed`.  **Hint**, not all of the code blocks will be used, and the code blocks must be properly indented.",
+   "initial": "class Dog extends Pet {\n  private String breed;\n  public Dog(String n, String a, String b) {\n    super(n, a);\n    breed = b;\n  }\n}\nclass Pet extends Dog { #distractor\npublic Dog(String n, String a) { #distractor\nsuper(n, a, b); #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the correct answer:\n\n```java\nclass Dog extends Pet {\n  private String breed;\n  public Dog(String n, String a, String b) {\n    super(n, a);\n    breed = b;\n  }\n}\n```\n\n* The `Dog` class extends the `Pet` class, not the other way around.\n* Declare the `breed` attribute.\n* The constructor for `Dog` needs all of the parameters of the `Pet` class plus the parameter for `breed`.\n* The `Pet` constructor only takes two arguments, so only pass it information for the `name` and `age` attributes.\n* Initialize the `breed` attribute in the `Dog` constructor.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Extend a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/ExtendClass.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/ExtendClass.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT extend the constructor of the superclass"
+  }
  }
 ]
