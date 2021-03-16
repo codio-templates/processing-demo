@@ -1604,6 +1604,29 @@
    "learningObjectives": ""
   },
   {
+   "id": "a7c0d086-31b0-1b90-05eb-dc013f3503e2",
+   "title": "Substitution Principle",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/Substitution.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Substitution-Principle-a7c0.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "18a5f608-7ed4-70cc-eef8-4cd923973a73",
    "title": "Superclass & Subclass Formative Assessment 1",
    "files": [
