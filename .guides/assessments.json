@@ -4224,7 +4224,7 @@
    "showName": false,
    "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Train {\n  private int cars;\n\n  public Train() {\n    cars = 10;\n  }\n\n  public int getCars() {\n    return cars;\n  }\n\n  public void length() {\n    System.out.println(\"The train has \" + cars + \" cars.\");\n  }\n}\n```\n\nFill in the blanks to complete the `FreightTrain` method which extends the `Train` class and overrides the the `length` method.",
    "showValues": true,
-   "text": "class <<<FreightTrain>>> extends <<<Train>>> {\n  <<<@Override>>>\n  public void <<<length>>>() {\n    System.out.println(\"The train has \" + <<<getCars()>>> + \" freight cars.\");\n  }\n}",
+   "text": "```\nclass <<<FreightTrain>>> extends <<<Train>>> {\n  <<<@Override>>>\n  public void <<<length>>>() {\n    System.out.println(\"The train has \" + <<<getCars()>>> + \" freight cars.\");\n  }\n}\n```",
    "distractors": "cars\nOverride\n@Extends",
    "guidance": "The correct answer is:\n\n```java\nclass FreightTrain extends Train {\n  @Override\n  public void length() {\n    System.out.println(\"The train has \" + getCars() + \" freight cars.\");\n  }\n}\n```\n\n* When using the `extends` keyword, the subclass (`FreightTrain`) comes before and the superclass (`Train`) comes after.\n* The correct annotation for override is `@Override`.\n* You are overriding the `length` method, so make sure it appears in the `FreightTrain` class.\n* The `cars` attribute is private to the superclass, so use `getCars` to access it.",
    "showGuidanceAfterResponse": true,
@@ -4272,7 +4272,7 @@
      "getCars()"
     ],
     "text": [
-     "class ",
+     "```\nclass ",
      0,
      " extends ",
      0,
@@ -4282,10 +4282,81 @@
      0,
      "() {\n    System.out.println(\"The train has \" + ",
      0,
-     " + \" freight cars.\");\n  }\n}"
+     " + \" freight cars.\");\n  }\n}\n```"
     ],
     "regexPositions": []
    }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1007431142",
+  "source": {
+   "name": "multiple inheritance reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhy does Java not allow for multiple inheritance where two or more superclasses are of different data types?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "9958e615-4d58-b510-a928-8c24252e6371",
+     "correct": true,
+     "answer": "This type of multiple inheritance leads to ambiguity."
+    },
+    {
+     "_id": "fd738f95-76e8-cf26-9d83-4369e52e5ca4",
+     "correct": false,
+     "answer": "This type of multiple inheritance is impossible. No programming languages allow for this type of multiple inheritance."
+    },
+    {
+     "_id": "08823efb-d564-26d5-4c4b-e1600354910c",
+     "correct": false,
+     "answer": "Trick question, this type of multiple inheritance is allowed."
+    },
+    {
+     "_id": "0cc02e8a-aa68-942b-5f03-d3d440ac189a",
+     "correct": false,
+     "answer": "This type of multiple inheritance causes a syntax error."
+    }
+   ],
+   "guidance": "Multiple inheritance where the superclasses have different data types leads to ambiguity. Imagine that each superclass has a method with the same name. Java cannot tell which method to invoke if the subclass calls this method. ",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Multiple Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/MultipleInheritance.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/MultipleInheritance.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain why multiple inheritance with superclasses of different types is not allowed"
   }
  }
 ]

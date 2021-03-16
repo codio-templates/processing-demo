@@ -58,42 +58,6 @@ Think of inheritance hierarchy as a downward flow chart. The superclass is on to
 Add the following code to your program.
 * `System.out.println(a instanceof ClassB);`
 * `System.out.println(d instanceof ClassC);`
-*  Add `ClassE` which extends `ClassD`
-```java
-//add class definitions below this line
-
-class ClassA {}
-class ClassB extends ClassA {}
-class ClassC {}
-class ClassD extends ClassC {}
-class ClassE extends ClassD {}
-
-//add class definitions above this line
-```
-
-Now change the print statements to:
-
-```java
-    //add code below this line
-
-    ClassA a = new ClassA();
-    ClassB b = new ClassB();
-    ClassC c = new ClassC();
-    ClassD d = new ClassD();
-    ClassE e = new ClassE();
-    
-    System.out.println(e instanceof ClassD);
-    System.out.println(e instanceof ClassC);
-
-    //add code above this line
-```
-
-<details>
-  <summary><strong>Explanation</strong></summary>
-  Classes can inherit from a class which also inherit from another class. You would add another node to the inheritance hierarchy. The `instanceof` operator will return `true` as long as the class being tested is above the object in the inheritance hierarchy.
-  
-  ![.guides/img/inheritance/inheritance_hierarchy2](.guides/img/inheritance/inheritance_hierarchy2.png)
-</details>
 
 |||
 

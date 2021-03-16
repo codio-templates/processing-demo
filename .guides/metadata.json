@@ -1773,6 +1773,53 @@
    "reset": [],
    "teacherOnly": false,
    "learningObjectives": ""
+  },
+  {
+   "id": "d2d1a6a6-52a9-bacf-0afa-c266d064a10d",
+   "title": "Multiple Inheritance",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/MultipleInheritance.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Multiple-Inheritance-d2d1.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3ad4e554-5455-9ccd-906d-f7e7e0f0742e",
+   "title": "Extending and Overriding Methods",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Extending-and-Overriding-Methods-3ad4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2cbc7fac-ddfe-b44c-2bbb-cf56cae41712",
+   "title": "Multiple Inheritance Hierarchy",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Multiple-Inheritance-Hierarchy-2cbc.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
   }
  ],
  "theme": "light",

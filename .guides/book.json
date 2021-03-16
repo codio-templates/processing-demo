@@ -677,6 +677,24 @@
        "title": "Learning Objectives - Multiple Inheritance",
        "pageId": "c0e63a91-6857-cb88-884c-ae3df6608ee1",
        "type": "page"
+      },
+      {
+       "id": "1ed03e95-def7-e14f-638f-b9322389ce70",
+       "title": "Multiple Inheritance",
+       "pageId": "d2d1a6a6-52a9-bacf-0afa-c266d064a10d",
+       "type": "page"
+      },
+      {
+       "id": "296f545e-f93f-1ed5-0159-26dffa416f76",
+       "title": "Extending and Overriding Methods",
+       "pageId": "3ad4e554-5455-9ccd-906d-f7e7e0f0742e",
+       "type": "page"
+      },
+      {
+       "id": "a5d7f9bc-162e-2639-aec8-01bcb681fe8b",
+       "title": "Multiple Inheritance Hierarchy",
+       "pageId": "2cbc7fac-ddfe-b44c-2bbb-cf56cae41712",
+       "type": "page"
       }
      ]
     },

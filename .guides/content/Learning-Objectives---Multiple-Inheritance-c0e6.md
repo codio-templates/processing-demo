@@ -1,6 +1,6 @@
 * ### Define multiple inheritance
-* ### Explain why multiple inheritance is not allowed with classes in Java
-* ### Override the constructor to inherit attributes from both superclasses
+* ### Explain why multiple inheritance from two different classes is not allowed in Java
+* ### Create multiple inheritance from a class with a superclass
 * ### Define the inheritance hierarchy of an object with more than one superclass
 
 |||guidance
