@@ -1750,6 +1750,29 @@
    "learningObjectives": ""
   },
   {
+   "id": "d28ae261-2439-3cfa-5c0d-a273f0223087",
+   "title": "Prohibit Overriding",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/ProhibitOverriding.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Prohibit-Overriding-d28a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "f03114cb-35d4-5341-4093-e1eb867e7ce4",
    "title": "Extending & Overriding Formative Assessment 1",
    "files": [
