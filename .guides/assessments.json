@@ -4421,5 +4421,67 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-154590934",
+  "source": {
+   "name": "extending and overriding multilevel inheritance reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nUse the image below to help you fill in the blanks.\n\n![Reading Question](.guides/img/inheritance/multilevel_reading_question.png)",
+   "showValues": true,
+   "text": "<<<Code sample 1>>> is an example of extending a class.\n<<<Code sample 2>>> is an example of overriding a method.",
+   "distractors": "",
+   "guidance": "Extending a class is when a new method is added to the subclass that is not present in either superclass. Overriding a method is when the subclass has a method that shares a name with method form a superclass, but the subclass method performs a different task.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/MultilevelExtendOverride.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/MultilevelExtendOverride.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between extending and overriding in multilevel inheritance",
+   "tokens": {
+    "blank": [
+     "Code sample 1",
+     "Code sample 2"
+    ],
+    "text": [
+     0,
+     " is an example of extending a class.\n",
+     0,
+     " is an example of overriding a method."
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
