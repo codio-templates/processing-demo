@@ -1846,7 +1846,18 @@
   {
    "id": "2cbc7fac-ddfe-b44c-2bbb-cf56cae41712",
    "title": "Multiple Inheritance Hierarchy",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/MultilevelHierarchy.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Multiple-Inheritance-Hierarchy-2cbc.md",

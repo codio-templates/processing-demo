@@ -4432,7 +4432,7 @@
    "showValues": true,
    "text": "<<<Code sample 1>>> is an example of extending a class.\n<<<Code sample 2>>> is an example of overriding a method.",
    "distractors": "",
-   "guidance": "Extending a class is when a new method is added to the subclass that is not present in either superclass. Overriding a method is when the subclass has a method that shares a name with method form a superclass, but the subclass method performs a different task.",
+   "guidance": "Extending a class is when a new method is added to the subclass that is not present in either superclass. Overriding a method is when the subclass has a method that shares a name with a method from a superclass, but the subclass method performs a different task.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -4479,6 +4479,72 @@
      " is an example of extending a class.\n",
      0,
      " is an example of overriding a method."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-1778577812",
+  "source": {
+   "name": "multiple inheritance hierarchy reading question",
+   "showName": false,
+   "instructions": "Assume the following code:\n\n```java\nBravo b = new Bravo();\nDelta d = new Delta();\n\nb.display();\nd.display();\n```\n\nWhich produces the following output:\n\n```\nBravo\nAlpha\nDelta\nCharlie\nAlpha\n```\n\nUsing the above information, fill in the blanks for inheritance.",
+   "showValues": true,
+   "text": "```python\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```",
+   "distractors": "extends Bravo\nextends Delta",
+   "guidance": "Here is the solution:\n\n```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```\n\n* The `b` object runs the `display` method which prints `Bravo`. \n* The next line of output is `Alpha` which means `super` refers to class `Alpha`. Therefore, class `Bravo` extends class `Alpha`.\n* The `d` object runs the `display` method which prints `Delta`. However, there are two more lines of output. That means class `Delta` has multilevel inheritance.\n* The next line of output is `Charlie` which means `super` refers to class `Charlie`. Therefore, class `Delta` extends class `Charlie`.\n* Finally, calling `display` in class `Charlie` must also print `Alpha`. That means class `Charlie` extends class `Alpha`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/MultilevelHierarchy.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/MultilevelHierarchy.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT choose the proper inheritance scheme to match a given output",
+   "tokens": {
+    "blank": [
+     "extends Alpha",
+     "extends Alpha",
+     "extends Charlie"
+    ],
+    "text": [
+     "```python\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() ",
+     0,
+     " {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() ",
+     0,
+     " {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta ",
+     0,
+     " () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```"
     ],
     "regexPositions": []
    }
