@@ -4597,5 +4597,129 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a method that cannot be overriden"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1464079495",
+  "source": {
+   "name": "multiple inheritance formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume **only** the following code:\n\n```java\nclass Foxtrot extends Golf {\n  public void hello() {\n    System.out.println(\"hello\");\n    super.hello();\n  }\n}\n\nclass Echo extends Foxtrot {\n  public void hello() {\n    System.out.println(\"hello world\");\n  }\n}\n```\n\nSelect all of the true statements. **Hint**, there is more than one right answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "a16f0be4-b071-1010-b57d-e52b7569ff31",
+     "correct": true,
+     "answer": "Class `Foxtrot` overrides the `hello` method."
+    },
+    {
+     "_id": "8cfaa0d5-de61-780e-228b-6856ec6f2a2e",
+     "correct": true,
+     "answer": "Class `Foxtrot` is a superclass to `Echo` and a subclass to `Golf`."
+    },
+    {
+     "_id": "800bc164-7532-53e9-536e-015e559a70be",
+     "correct": true,
+     "answer": "Class `Echo` is an example of multilevel inheritance."
+    },
+    {
+     "_id": "782734e9-329d-1e3c-8656-e1465f42ede9",
+     "correct": false,
+     "answer": "You can substitute class `Golf` for class `Echo`."
+    }
+   ],
+   "guidance": "The correct answers are:\n* `Class `Foxtrot` overrides the `hello` method.` This is true because `super.hello` means another method `hello` exists in the superclass.\n* `Class `Foxtrot` is a superclass to `Echo` and a subclass to `Golf`.` This is true because `Foxtrot` extends `Golf` and `Echo` extends `Foxtrot`.\n* `Class `Echo` is an example of multilevel inheritance.` This is true because it inherits from `Foxtrot` who in turn inherits from `Golf`.\n\nThe substitution principle only works when you substitute a subclass for a superclass. `Golf` is a superclass to `Echno`, so the substitution does not work.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance, Inheritancy Hierarchy, Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT make inferences about multilevel inheritance, inheritance hierarchy, and method overriding"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-1205746188",
+  "source": {
+   "name": "multiple inheritance formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Human {\n  private String name;\n  public Human(String n) {\n    name = n;\n  }\n}\n\nclass Adult extends Human {\n  private int numChildren;\n  public Human(String n, int c) {\n    super(n);\n    numChildren = c;\n  }\n}\n```\n\nUse these superclasses to fill in the blanks below. The class `Parent` should inherit the attributes `name` and `numChildren`.",
+   "showValues": true,
+   "text": "```python\nclass Parent <<<extends Adult>>> {\n  public Parent(<<<String n>>>, int c) {\n    <<<super>>>(n, <<<c>>>);\n  }\n}\n```",
+   "distractors": "extends Human\nString name\nfinal\nnumChildren",
+   "guidance": "The correct answer is:\n\n```java\nclass Parent extends Adult {\n  public Parent(String n, int c) {\n    super(n, c);\n  }\n}\n```\n\n* The `Parent` class must have the `name` and `numChildren` attributes. To do that, inherit from `Adult` who then inherits from `Human`\n* The constructor uses the variable `n`, so the parameter should be `String n` not `String name`.\n* The constructor has the parameter `c`, so the variable should be `c` not `numChildren`.\n",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create a class with multilevel inheritance",
+   "tokens": {
+    "blank": [
+     "extends Adult",
+     "String n",
+     "super",
+     "c"
+    ],
+    "text": [
+     "```python\nclass Parent ",
+     0,
+     " {\n  public Parent(",
+     0,
+     ", int c) {\n    ",
+     0,
+     "(n, ",
+     0,
+     ");\n  }\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]

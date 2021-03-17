@@ -714,7 +714,20 @@
      "title": "Multiple Inheritance Formative Assessment",
      "id": "81f39224-e897-62a4-4708-88d3269219d4",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "61bff2d6-5f0e-2010-3c4f-dc3962016ef0",
+       "title": "Multiple Inheritance Formative Assessment 1",
+       "pageId": "9d0f0314-1217-19c8-86fd-638a60d3c9e7",
+       "type": "page"
+      },
+      {
+       "id": "5f683a64-fdb0-8d7b-b10d-5ca3d98af857",
+       "title": "Multiple Inheritance Formative Assessment 2",
+       "pageId": "8aa49421-0404-740a-0201-78b37077efed",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Lab - Inheritance",
