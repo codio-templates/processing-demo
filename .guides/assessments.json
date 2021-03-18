@@ -4748,7 +4748,7 @@
      "answer": "Golf"
     }
    ],
-   "guidance": "The correct answer is:\n\n```text\nIndia\n```\n\n* `Golf` extends `India`, so it is a subclass. However, nothing extends `Golf` so it is not a superclass.\n* `Hotel` does not extend any classes so it is not a subclass. `India` extends `Hotel`, so `Hotel` is a superclass.\n*  `India` extends `Hotel` so it is a subclass. In addition, `Golf` extends `India` so `India` is a superclass.",
+   "guidance": "The correct answer is:\n\n```markdown\nIndia\n```\n\n* `Golf` extends `India`, so it is a subclass. However, nothing extends `Golf` so it is not a superclass.\n* `Hotel` does not extend any classes so it is not a subclass. `India` extends `Hotel`, so `Hotel` is a superclass.\n*  `India` extends `Hotel` so it is a subclass. In addition, `Golf` extends `India` so `India` is a superclass.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -4784,6 +4784,65 @@
    },
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT identify inheritance hierarchy order"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1306573375",
+  "source": {
+   "name": "inheritance lab 2 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhat will the following code produce?\n\n```java\nclass Juliet {}\nclass Kilo extends Juliet {}\n\npublic class LabQuestion {  \n  public static void main(String[] args) {\n  Kilo k = new Kilo();\n  System.out.println(k instanceof Juliet);  \n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "f0d992ca-eae5-e2b8-5be6-e2ddc0632284",
+     "correct": true,
+     "answer": "true"
+    },
+    {
+     "_id": "60c5a9bc-0cfb-fb25-a664-06f9593e294b",
+     "correct": false,
+     "answer": "false"
+    }
+   ],
+   "guidance": "The code would print `true` because object `k` is an instance of the `Kilo` class, and the `Kilo` class inherits from the `Juliet` class. Therefore, `k` is an instance of the `Juliet` class.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Inheritance Hiearchy "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT determine if an object is an instance of another class"
   }
  }
 ]
