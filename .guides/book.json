@@ -733,7 +733,32 @@
      "title": "Lab - Inheritance",
      "id": "f488de8b-d10e-9851-46cd-0dc3d38458cc",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "af58d921-c698-3213-f7cb-d541d1b19b17",
+       "title": "Inheritance Lab 1",
+       "pageId": "74b39e56-198b-6f75-c8c5-d12ce3eeba84",
+       "type": "page"
+      },
+      {
+       "id": "7a678bac-8b2c-be16-61c2-f0630573ccac",
+       "title": "Inheritance Lab 2",
+       "pageId": "94b3e5ce-2145-ff6b-f114-b6da40ff4b63",
+       "type": "page"
+      },
+      {
+       "id": "9f1cf15d-a24d-e6f2-b044-18acfedf903f",
+       "title": "Inheritance Lab 3",
+       "pageId": "422957e8-168f-c714-002e-77eab9b6b58e",
+       "type": "page"
+      },
+      {
+       "id": "a8dbdae6-6008-899d-8761-2f1b8339232c",
+       "title": "Inheritance Lab Challenge",
+       "pageId": "c0de7b50-0cba-f8ba-000e-e7809a6f073d",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Coding Exercises - Inheritance",

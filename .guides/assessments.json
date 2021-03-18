@@ -4721,5 +4721,69 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2287591926",
+  "source": {
+   "name": "inheritance lab 1 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass Golf extends India {}\nclass Hotel {}\nclass India extends Hotel {}\n```\n\nWhich one of the three classes is **both** a superclass and a subclass?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "d98e01fd-bb00-dd90-b09f-290e3334245f",
+     "correct": true,
+     "answer": "India"
+    },
+    {
+     "_id": "baf5bbf1-3f2e-b127-8044-5ead8a41740b",
+     "correct": false,
+     "answer": "Hotel"
+    },
+    {
+     "_id": "21e5b404-a4b8-d689-9dc9-a60442f3e831",
+     "correct": false,
+     "answer": "Golf"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```text\nIndia\n```\n\n* `Golf` extends `India`, so it is a subclass. However, nothing extends `Golf` so it is not a superclass.\n* `Hotel` does not extend any classes so it is not a subclass. `India` extends `Hotel`, so `Hotel` is a superclass.\n*  `India` extends `Hotel` so it is a subclass. In addition, `Golf` extends `India` so `India` is a superclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Inheritance Hiearchy "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Multiple Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify inheritance hierarchy order"
+  }
  }
 ]
