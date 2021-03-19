@@ -1,6 +1,6 @@
 ----------
 
-## Lab 3 - Extending the Superclass
+## Lab 4 - Extending the Superclass
 
 Now that we have a superclass, it is time to extend it through inheritance. We want a more general `Polygon` class that can have a user-defined number of vertices. Start by creating the `Polygon` class as a subclass of the `Hexagon` class. Then override the constructor so `vertices` is user-defined. Use the `setVertices` method to update the value `vertices`. In addition, we need to recalculate the `angle` attribute, otherwise the `Polygon` class will draw a hexagon.
 
@@ -283,3 +283,5 @@ If Processing runs your code without any errors, be sure to save your work. This
 </details>
 
 |||
+
+{Check It!|assessment}(multiple-choice-172195837)

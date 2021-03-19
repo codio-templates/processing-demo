@@ -4913,5 +4913,74 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT recognize the substitution principle in action"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-172195837",
+  "source": {
+   "name": "inheritance lab 4 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhich keyword will allow a subclass to access a method but not override it?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "cffa03e5-80a8-5582-ea70-1a6ad40d4e24",
+     "correct": true,
+     "answer": "`final`"
+    },
+    {
+     "_id": "a777c6b5-6623-dcbf-2910-598a4aaf63bf",
+     "correct": false,
+     "answer": "`private`"
+    },
+    {
+     "_id": "7556d497-f3a2-3c0d-3808-8a1a2d0ef4cb",
+     "correct": false,
+     "answer": "`static`"
+    },
+    {
+     "_id": "622ead6a-8e70-7b78-5c47-5fc8a9f542f7",
+     "correct": false,
+     "answer": "`restricted`"
+    }
+   ],
+   "guidance": "The `final` keyword means that a subclass can access the method, but it cannot override it.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Prohibit Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain what the \"final\" keyword does in a method of a superclass"
+  }
  }
 ]
