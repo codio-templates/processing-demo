@@ -63,7 +63,7 @@ class Hexagon {
     strokeW = sw;
   }
   
-  public void draw() {
+  public void show() {
     beginShape();
     noFill();
     stroke(clr);
@@ -93,7 +93,7 @@ class Polygon extends Hexagon {
     return length;
   }
   
-  public void draw() {
+  public void show() {
     beginShape();
     noFill();
     stroke(getClr());
@@ -117,5 +117,5 @@ void setup() {
 
 void draw() {
   background(0);
-  p.draw();
+  p.show();
 }

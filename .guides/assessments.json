@@ -4844,5 +4844,74 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT determine if an object is an instance of another class"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1112060896",
+  "source": {
+   "name": "inheritance lab 3 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhich principle means the code below is valid?\n\n```java\nclass A {}\nclass B extends A {}\n\npublic A myMethod(A objA) {}\n\nB objB = new B();\nmyMethod(objB);\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "e38bee61-d2ef-310a-7b08-cbf59a8bcc07",
+     "correct": true,
+     "answer": "Substitution principle"
+    },
+    {
+     "_id": "8163783c-9128-aeaf-ccf9-7357bf6b2ec1",
+     "correct": false,
+     "answer": "Inheritance"
+    },
+    {
+     "_id": "1eba07ff-5293-3e63-b841-ffb5c97d0354",
+     "correct": false,
+     "answer": "Exchange principle"
+    },
+    {
+     "_id": "796dc350-e8b1-79f8-ea98-ec5ddc47ddd4",
+     "correct": false,
+     "answer": "Multilevel inheritance"
+    }
+   ],
+   "guidance": "The substitution principle says that a subclass can be used in place of the superclass. Since `myMethod` has a parameter of type `A` and `B` is a subclass of `A`, an object of type `B` can be passed to `myMethod`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Substitution principle"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT recognize the substitution principle in action"
+  }
  }
 ]

@@ -103,7 +103,7 @@ Now create a constructor that takes several parameters. There is no need to pass
 
 ### Test Your Code
 
-Before moving on, we need to test the `Hexagon` object to make sure both constructors work as expected. After the `Hexagon` class and before the `setup` method, create two `Hexagon` objects. In the `setup` method, initialize each object, one with the default constructor and the other with some arguments. Processing will create a black window, but it will not draw anything to the screen.
+Before moving on, we need to test the `Hexagon` object to make sure both constructors work as expected. After the `Hexagon` class and before the `setup` method, create two `Hexagon` objects. In the `setup` method, initialize each object, one with the default constructor and the other with some arguments. Processing will create a dark gray window, but it will not draw anything to the screen.
 
 ```java
 Hexagon h1;
@@ -116,7 +116,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(55);
 }
 ```
 
@@ -206,7 +206,7 @@ If Processing runs your code without any errors, be sure to save your work. This
   }
 
   void draw() {
-    background(0);
+    background(55);
   }
   ```
 </details>
