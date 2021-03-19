@@ -2013,6 +2013,11 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/inheritance/labChallenge/LabChallenge.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",
