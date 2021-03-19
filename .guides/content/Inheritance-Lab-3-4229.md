@@ -73,6 +73,12 @@ void draw() {
 }
 ```
 
+|||important
+## Save Your Work
+If Processing runs your code without any errors, be sure to save your work. This **will not** happen automatically. Click `File` and then `Save`, or press `Ctrl + S` on the keyboard to save your work.
+
+|||
+
 <details>
   <summary><strong>Code</strong></summary>
   Your code should produce the following output:
