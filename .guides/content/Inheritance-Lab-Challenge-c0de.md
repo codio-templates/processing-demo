@@ -26,10 +26,12 @@ The table below shows the method calls (left) and the output (right). Your class
 
 |Method Call|Return Value|
 |:----------|:-----------|
-|`p.displayName();`|`The name is Planet Money`|
-|`p.displayTitle();`|`The title is Hollywood's Black List`|
-|`p.displayLength();`|`The length is 24 minutes and 20 seconds`|
-|`p.displayGenre();`|`The genre is economics`|
-|`p.displayDate();`|`The date is 10 July 2020`|
+|`System.out.println(p.displayName());`|`The name is Planet Money`|
+|`System.out.println(p.displayTitle());`|`The title is Hollywood's Black List`|
+|`System.out.println(p.displayLength());`|`The length is 24 minutes and 20 seconds`|
+|`System.out.println(p.displayGenre());`|`The genre is economics`|
+|`System.out.println(p.displayDate());`|`The date is 10 July 2020`|
 
 {Try it}(sh .guides/bg.sh javac code/inheritance/labChallenge/LabChallenge.java java -cp code/inheritance/labChallenge/ LabChallenge 1)
+
+{Check It!|assessment}(test-847910647)

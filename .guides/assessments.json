@@ -4982,5 +4982,54 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT explain what the \"final\" keyword does in a method of a superclass"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-847910647",
+  "source": {
+   "name": "inheritance lab challenge",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/labChallenge\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Podcast extends MP3 {\n  private String name;\n  private String date;\n  \n  public Podcast(String n, String t, int l, String g, String d) {\n    name = n;\n    setTitle(t);\n    setLength(l);\n    setGenre(g);\n    date = d;\n  }\n  \n  public String displayName() {\n    return \"The name is \" + name;\n  }\n  \n  public String displayTitle() {\n    return \"The title is \" + getTitle();\n  }\n  \n  public String displayLength() {\n    int minutes = getLength() / 60;\n    int seconds = getLength() % 60;\n    return \"The length is \" + minutes + \" minutes and \" + seconds + \" seconds\";\n  }\n  \n  public String displayGenre() {\n    return \"The genre is \" + getGenre();\n  }\n  \n  public String displayDate() {\n    return \"The date is \" + date;\n  }\n}\n\n//add class definitions above this line\n\npublic class LabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Podcast p = new Podcast(\"Planet Money\", \"Hollywood's Black List\", 1460, \"economics\", \"10 July 2020\");\n    System.out.println(p.displayName());\n    System.out.println(p.displayTitle());\n    System.out.println(p.displayLength());\n    System.out.println(p.displayGenre());\n    System.out.println(p.displayDate());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Create the `name` and `date` attributes for the `Podcast` class.\n* The constructor requires `name`, `title`, `length`, `genre`, and `date` as parameters.\n* Set the `name` and `date` attributes like normal.\n* Use setter methods to set the attributes `title`, `length`, and `genre`.\n* The `displayName` and `displayDate` methods concatenate the required text and `name` and `date` attributes.\n* The `displayTitle` and `displayGenre` methods concatenate the required text and the getter methods for the `title` and `genre` attributes.\n* The `displayLength` method needs to transform seconds into minutes and seconds. To calculate minutes, divide `getLength()` by `60`. Since these numbers are both integers, Java will truncate the decimal output (it will not round up or down). To calculate the seconds, use `getLength()` modulo (`%`) `60`. This will return the remainder when dividing the length by 60.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Overrinding and Extending"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/labChallenge/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/labChallenge/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT construct a class that overrides and extends the parent class"
+  }
  }
 ]

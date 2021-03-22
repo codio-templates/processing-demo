@@ -1,4 +1,8 @@
-
+class Bank {
+  private String name;
+  private int customers;
+  private double
+}
 
 //add class definitions below this line
 

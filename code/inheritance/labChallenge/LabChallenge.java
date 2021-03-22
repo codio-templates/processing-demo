@@ -48,40 +48,7 @@ class MP3 {
 
 //add class definitions below this line
 
-class Podcast extends MP3 {
-  private String name;
-  private String date;
-  
-  public Podcast(String n, String t, int l, String g, String d) {
-    name = n;
-    setTitle(t);
-    setLength(l);
-    setGenre(g);
-    date = d;
-  }
-  
-  public String displayName() {
-    return "The name is " + name;
-  }
-  
-  public String displayTitle() {
-    return "The title is " + getTitle();
-  }
-  
-  public String displayLength() {
-    int minutes = getLength() / 60;
-    int seconds = getLength() % 60;
-    return "The length is " + minutes + " minutes and " + seconds + " seconds";
-  }
-  
-  public String displayGenre() {
-    return "The genre is " + getGenre();
-  }
-  
-  public String displayDate() {
-    return "The date is " + date;
-  }
-}
+
 
 //add class definitions above this line
 
@@ -90,12 +57,7 @@ public class LabChallenge {
     
     //add code below this line
   
-    Podcast p = new Podcast("Planet Money", "Hollywood's Black List", 1460, "economics", "10 July 2020");
-    System.out.println(p.displayName());
-    System.out.println(p.displayTitle());
-    System.out.println(p.displayLength());
-    System.out.println(p.displayGenre());
-    System.out.println(p.displayDate());
+    
   
     //add code above this line   
   }
