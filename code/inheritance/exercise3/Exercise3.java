@@ -1,12 +1,12 @@
 class Parent1 {
-  public void identify() {
-    System.out.println("This method is called from Parent1")
+  public String identify() {
+    return "This method is called from Parent1";
   }
 }
 
-class Parent2 extends Parent1 {
-  public void identify() {
-    System.out.println("This method is called from Parent2")
+class Parent2 {
+  public String identify() {
+    return "This method is called from Parent2";
   }
 }
 

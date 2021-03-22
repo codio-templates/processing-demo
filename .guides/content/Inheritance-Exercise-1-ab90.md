@@ -27,10 +27,10 @@ Instantiate an object for both the `Satellite` and `Planet` classes:
     //add code above this line
 ```
 
-Your code should produce the following output for the given method call:
+Your code should produce the following output for the given print statements:
 
-|Method Call|Output|
-|:----------|:-----|
+|Prin Statements|Output|
+|:--------------|:-----|
 |`System.out.println(s.getSize());`|`2651.0`|
 |`System.out.println(s.getMass());`|`3716.0`|
 |`System.out.println(s.getComposition());`|`helium`|

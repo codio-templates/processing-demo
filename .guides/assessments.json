@@ -5080,5 +5080,103 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT extend the constructor of the parent class"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3351852341",
+  "source": {
+   "name": "inheritance coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise2\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass BlogPost extends Book {\n  private String website;\n  private int wordCount;\n  private int pageViews;\n  \n  public BlogPost (String t, String a, String g, String w, int wc, int pv) {\n    super(t, a, g);\n    website = w;\n    wordCount = wc;\n    pageViews = pv;\n  }\n  \n  public String getWebsite() {\n    return website;\n  }\n  \n  public void setWebsite(String newWebsite) {\n    website = newWebsite;\n  }\n  \n  public int getWordCount() {\n    return wordCount;\n  }\n  \n  public void setWordCount(int newWordCount) {\n    wordCount = newWordCount;\n  }\n  \n  public int getPageViews() {\n    return pageViews;\n  }\n  \n  public void setPageViews(int newPageViews) {\n    pageViews = newPageViews;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    BlogPost myPost = new BlogPost(\"Hot Summer Trends\", \"Amy Gutierrez\", \"fashion\", \"Vogue\", 2319, 2748);\n    \n    System.out.println(myPost.getWebsite());\n    System.out.println(myPost.getTitle());\n    System.out.println(myPost.getAuthor());\n    System.out.println(myPost.getWordCount());\n    System.out.println(myPost.getGenre());\n    System.out.println(myPost.getPageViews());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Create the `BlogPost` class that inherits from the `Book` class.\n* Create the attributes `website`, `wordCount`, and `pageViews`.\n* The `BlogPost` constructor takes the same arguments as the `Book` class plus the three attributes unique to the `BlogPost` class.\n* Use the `super` keyword and pass it the `title`, `author`, and `genre` attributes.\n* Initialize the `website`, `wordCount`, and `pageViews` attributes.\n* Create getters and setters for `website`, `wordCount`, and `pageViews`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Extend the constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise2/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise2/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT extend the constructor of the parent class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-665191771",
+  "source": {
+   "name": "inheritance coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise3\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass Parent1 {\n  public String identify() {\n    return \"This method is called from Parent1\";\n  }\n}\n\nclass Parent2 extends Parent1 {\n  public String identify() {\n    return \"This method is called from Parent2\";\n  }\n  \n  public String identify2() {\n    return super.identify();\n  }\n}\n\n//add class definitions below this line\n\nclass Child extends Parent2 {\n  public String identify() {\n    return \"This method is called from Child\";\n  }\n  \n  public String identify2() {\n    return super.identify();\n  }\n  \n  public String identify3() {\n    return super.identify2();\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Child childObject = new Child();\n    System.out.println(childObject.identify());\n    System.out.println(childObject.identify2());\n    System.out.println(childObject.identify3());\n  \n    //add code above this line   \n  }\n}\n```\n\n### `Parent1` Class\nNo changes need to be made to this class.\n\n### `Parent2` Class\n* Make this class inherit from `Parent1`.\n* Create a methods that calls the `identify` method from the `Parent1` class with the `super` keyword. In this case, the method is called `identify2`.\n\n### `Child` Class\n* Create this class and make it inherit from `Parent2`.\n* Override the `identify` class so the message references the `Child` class.\n* Create the `identify2` method that uses the `super` keyword to call `identify` from `Parent2`.\n* Create the `identify3` method that uses the `super` keyword to call the method in `Parent2` that references the `identify` method in the `Parent1` class. In this case, the method call is `super.identify2()`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise3/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise3/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class that has multilevel inheritance"
+  }
  }
 ]
