@@ -5031,5 +5031,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT construct a class that overrides and extends the parent class"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-51862033",
+  "source": {
+   "name": "inheritance coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise1\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Satellite extends CelestialBody {\n  private String hostPlanet;\n  \n  public Satellite(double s, double m, String c, String n, String h) {\n    super(s, m, c, n);\n    hostPlanet = h;\n  }\n  \n  public String getHostPlanet() {\n    return hostPlanet;\n  }\n  \n  public void setHostPlanet(String newHostPlanet) {\n    hostPlanet = newHostPlanet;\n  }\n}\n\nclass Planet extends CelestialBody {\n  private String hostStar;\n  \n  public Planet(double s, double m, String c, String n, String st) {\n    super(s, m, c, n);\n    hostStar = st;\n  }\n  \n  public String getHostStar() {\n    return hostStar;\n  }\n  \n  public void setHostStar(String newHostStar) {\n    hostStar = newHostStar;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Satellite s = new Satellite(2651, 3716, \"helium\", \"moon\", \"earth\");\n    Planet p = new Planet(5349, 8910, \"nitrogen\", \"earth\", \"sun\");\n    \n    System.out.println(s.getSize());\n    System.out.println(s.getMass());\n    System.out.println(s.getComposition());\n    System.out.println(s.getName());\n    System.out.println(s.getHostPlanet());\n    System.out.println(p.getSize());\n    System.out.println(p.getMass());\n    System.out.println(p.getComposition());\n    System.out.println(p.getName());\n    System.out.println(p.getHostStar());\n  \n    //add code above this line   \n  }\n}\n```\n\n### For the `Satellite` class:\n* Inherit from the `CelestialBody` class.\n* Create the attribute `hostPlanet`.\n* Create a constructor with the arguments for the superclass and `hostPlanet`.\n* Call the constructor from the superclass with `super` and pass it the required arguments.\n* Assign a value to the `hostPlanet` attribute.\n* Create a getter and setter for `hostPlanet`.\n\n### For the `Planet` class:\n* Inherit from the `CelestialBody` class.\n* Create the attribute `hostStar`.\n* Create a constructor with the arguments for the superclass and `hostStar`.\n* Call the constructor from the superclass with `super` and pass it the required arguments.\n* Assign a value to the `hostStar` attribute.\n* Create a getter and setter for `hostStar`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Extend the constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise1/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise1/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT extend the constructor of the parent class"
+  }
  }
 ]
