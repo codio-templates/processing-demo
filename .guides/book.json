@@ -770,7 +770,38 @@
      "title": "Coding Exercises - Inheritance",
      "id": "88ff597d-9ec3-da52-5cbb-f5355fba647b",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "85913658-9811-810e-cc11-3f0fb4e3dc2c",
+       "title": "Inheritance Exercise 1",
+       "pageId": "ab90394a-86e8-2fd0-4979-3e67b4b21229",
+       "type": "page"
+      },
+      {
+       "id": "c34991e5-fbc3-455c-2db1-57cbfaa92edf",
+       "title": "Inheritance Exercise 2",
+       "pageId": "51c78086-fe2e-a495-0242-f49ff65d5804",
+       "type": "page"
+      },
+      {
+       "id": "bec32eaa-7b64-200b-1fa1-6ab78a6a0d7e",
+       "title": "Inheritance Exercise 3",
+       "pageId": "4a748ae6-5bbe-9de7-ab4b-757be65d2ba4",
+       "type": "page"
+      },
+      {
+       "id": "568a7c8a-043e-a6b9-7a12-ea4ad909ecd4",
+       "title": "Inheritance Exercise 4",
+       "pageId": "809e9fdc-b437-af70-b117-a6f8f8d5e803",
+       "type": "page"
+      },
+      {
+       "id": "e2a2f6f2-9548-0a26-433a-b69dcad09148",
+       "title": "Inheritance Exercise 5",
+       "pageId": "59755ed0-e199-c501-eb7c-a1b9d5229d4d",
+       "type": "page"
+      }
+     ]
     }
    ]
   }
