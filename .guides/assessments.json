@@ -5227,5 +5227,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create two classes with multilevel inheritance"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3432435518",
+  "source": {
+   "name": "inheritance coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise4\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass RegionalBank extends Bank {\n  public double[][] regionalAccounts;\n  \n  public RegionalBank(String n, int c, double[][] a) {\n    setName(n);\n    setCustomers(c);\n    regionalAccounts = a;\n  }\n  \n  public double[][] getRegionalAccounts() {\n    return regionalAccounts;\n  }\n  \n  public void setRegionalAccounts(double[][] newAccounts) {\n    regionalAccounts = newAccounts;\n  }\n  \n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      setAccounts(accounts);\n      total += branchTotal();\n    }\n    return total;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n    double[][] accounts = {{10000, 13000, 22000},\n                           {30000, 7000, 19000},\n                           {15000, 23000, 31000}};\n    RegionalBank rb = new RegionalBank(\"Main Street Bank\", 9, accounts);\n    System.out.println(rb.regionalTotal());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Extend the `Bank` class.\n* The constructor should take values for `name`, `customers`, and `accounts`. Remember, the `accounts` attribute should be a 2D array of doubles.\n* Use the `setName` and `setCustomers` methods to set the values for `name` and `customers`. You can set the value of `accounts` normally.\n* Add a getter and a setter for `accounts`.\n* Create the `regionalTotal` method. This method needs to sum all of the elements in a 2D array. Create a variable that stores the sum of the accounts and set it to `0`.\n* One way to solve this problem is to use a nested loop. That solution would look something like this:\n\n```java\n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      for (double account : accounts) {\n        total += account;\n      }\n    }\n    return total;\n  }\n```\n* The sample solution above makes use of the `bankTotal` method in the superclass `Bank`. This method only works if the attribute `accounts` is an array of doubles. The variable `accounts` is an array of doubles. Pass it to `setAccounts` and then increment `total` with return value from `branchTotal`. \n\n```java\n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      setAccounts(accounts);\n      total += branchTotal();\n    }\n    return total;\n  }\n```",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Extending the superclass"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise4/Exercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise4/Exercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT extend the parent class with a new method"
+  }
  }
 ]
