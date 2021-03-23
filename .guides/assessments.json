@@ -5178,5 +5178,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create a class that has multilevel inheritance"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3218412596",
+  "source": {
+   "name": "inheritance coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise5\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CardHolder extends Person {\n  private int accountNumber;\n  private double balance;\n  private int creditLimit;\n  \n  public CardHolder(String n, String a, int an) {\n    super(n, a);\n    accountNumber = an;\n    balance = 0;\n    creditLimit = 5000;\n  }\n  \n  public int getAccountNumber() {\n    return accountNumber;\n  }\n  \n  public void setAccountNumber(int newAccountNumber) {\n    accountNumber = newAccountNumber;\n  }\n  \n  public double getBalance() {\n    return balance;\n  }\n  \n  public void setBalance(double newBalance) {\n    balance = newBalance;\n  }\n  \n  public int getCreditLimit() {\n    return creditLimit;\n  }\n  \n  public void setCreditLimit(int newCreditLimit) {\n    creditLimit = newCreditLimit;\n  }\n  \n  public void processSale(double price) {\n    balance += price;\n  }\n  \n  public void makePayment(double amount) {\n    balance -= amount;\n  }\n}\n\nclass PlatinumClient extends CardHolder {\n  private double cashBack;\n  private double rewards;\n  \n  public PlatinumClient(String n, String a, int an) {\n    super(n, a, an);\n    cashBack = 0.02;\n    rewards = 0;\n  }\n  \n  public double getCashBack() {\n    return cashBack;\n  }\n  \n  public void setCashBack(double newCashBack) {\n    cashBack = newCashBack;\n  }\n  \n  public double getRewards() {\n    return rewards;\n  }\n  \n  public void setRewards(double newRewards) {\n    rewards = newRewards;\n  }\n  \n  public void processSale(double price) {\n    rewards += cashBack * price;\n    setBalance(getBalance() + price);\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    PlatinumClient p = new PlatinumClient(\"Sarah\", \"101 Main Street\", 123364);\n    p.processSale(100);\n    System.out.println(p.getRewards());\n    System.out.println(p.getBalance());\n    p.makePayment(50);\n    System.out.println(p.getBalance());\n    System.out.println(p.info());\n  \n    //add code above this line   \n  }\n}\n```\n\n### For the `CardHolder` Class\n* Extend the `Person` class.\n* Add the attributes `accountNumber`, `balance`, and `creditLimit`.\n* The constructor should take arguments for `name`, `address`, and `accountNumber`. Call the constructor from the superclass with the `super` keyword and the values for `name` and `address`. The values for `balance` and `creditLimit` should be set to `0` and `5000` respectively.\n* Create getters and setters for `accountNumber`, `balance`, and `creditLimit`.\n* The method `processSale` takes a double and adds this to `balance`.\n* The method `makePayment` takes a double and subtracts it from `balance`.\n\n### For the `PlatinumClient` Class\n* Extend the `CardHolder` class.\n* Add the attributes `cashBack` and `rewards`.\n* The constructor takes values for `name`, `address`, and `accountNumber`. Pass these three values to the constructor of the superclass with the `super` keyword. Manually set `rewards` to `0` and `cashBack` to `0.02`.\n* Create getters and setters for `cashBack` and `rewards`.\n* Override the `processSale` method so that `rewards` increases by the sale amount times `cashBack`. The `balance` attribute should also increase by the sale amount.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise5/Exercise5.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise5/Exercise5.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create two classes with multilevel inheritance"
+  }
  }
 ]

@@ -28,7 +28,7 @@ PlatinumClient p = new PlatinumClient("Sarah", "101 Main Street", 123364);
 
 Your class should be able to execute the code below in the stated order and produce the given return values.
 
-|Order|Code|Return Value|
+|Order|Code|Output|
 |:----|:---|:-----------|
 |1|`p.processSale(100);`|N/A|
 |2|`System.out.println(p.getRewards());`|`2.0`|
@@ -38,3 +38,5 @@ Your class should be able to execute the code below in the stated order and prod
 |6|`System.out.println(p.info());`|`Sarah lives at 101 Main Street.`|
 
 {Try it}(sh .guides/bg.sh javac code/inheritance/exercise5/Exercise5.java java -cp code/inheritance/exercise5/ Exercise5 1)
+
+{Check It!|assessment}(test-3218412596)
