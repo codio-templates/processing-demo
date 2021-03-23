@@ -1515,6 +1515,634 @@
    "reset": [],
    "teacherOnly": false,
    "learningObjectives": ""
+  },
+  {
+   "id": "3aad2aab-4031-801e-b684-33809ae92b20",
+   "title": "Learning Objectives - Superclass & Subclass",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Superclass---Subclass-3aad.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7216c2f4-8aee-d235-32ba-fc549c0752fe",
+   "title": "What is Inheritance?",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/WhatIsInheritance.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/What-is-Inheritance--7216.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "88d31eaf-cb22-32e5-b44e-c5f40fab0e7e",
+   "title": "Super",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/Super.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Super-88d3.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ea5dcab6-e2b0-dbfc-591e-a8fde259aa74",
+   "title": "Inheritance Hierarchy",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/Hierarchy.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Hierarchy-ea5d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "a7c0d086-31b0-1b90-05eb-dc013f3503e2",
+   "title": "Substitution Principle",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/Substitution.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Substitution-Principle-a7c0.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "18a5f608-7ed4-70cc-eef8-4cd923973a73",
+   "title": "Superclass & Subclass Formative Assessment 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Superclass---Subclass-Formative-Assessment-1-18a5.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "eead49ec-0a75-9428-c6a7-44d3dbea57e6",
+   "title": "Superclass & Subclass Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Superclass---Subclass-Formative-Assessment-2-eead.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "fdc77d3f-80de-2a5b-3aab-be445490fddc",
+   "title": "Learning Objectives - Extending & Overriding",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Extending---Overriding-fdc7.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2505334e-f40e-ba2d-a79b-dd582ca57dd0",
+   "title": "Extending a Class",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/ExtendClass.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Extending-a-Class-2505.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9caed2f9-9092-1c6e-71c7-4ef9468ebd5e",
+   "title": "Method Overriding",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/OverrideMethod.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Method-Overriding-9cae.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d28a0869-8f0f-6a8b-dd49-20544edea919",
+   "title": "Overriding Annotation",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/OverridingAnnotation.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Overriding-Annotation-d28a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d28ae261-2439-3cfa-5c0d-a273f0223087",
+   "title": "Prohibit Overriding",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/ProhibitOverriding.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Prohibit-Overriding-d28a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f03114cb-35d4-5341-4093-e1eb867e7ce4",
+   "title": "Extending & Overriding Formative Assessment 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Extending---Overriding-Formative-Assessment-1-f031.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "8fdb489b-2b18-a4f5-1219-2736a016aaed",
+   "title": "Extending & Overriding Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Extending---Overriding-Formative-Assessment-2-8fdb.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c0e63a91-6857-cb88-884c-ae3df6608ee1",
+   "title": "Learning Objectives - Multiple Inheritance",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Multiple-Inheritance-c0e6.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d2d1a6a6-52a9-bacf-0afa-c266d064a10d",
+   "title": "Multiple Inheritance",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/MultipleInheritance.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Multiple-Inheritance-d2d1.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3ad4e554-5455-9ccd-906d-f7e7e0f0742e",
+   "title": "Extending and Overriding Methods",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/MultilevelExtendOverride.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Extending-and-Overriding-Methods-3ad4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2cbc7fac-ddfe-b44c-2bbb-cf56cae41712",
+   "title": "Multiple Inheritance Hierarchy",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/MultilevelHierarchy.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Multiple-Inheritance-Hierarchy-2cbc.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9d0f0314-1217-19c8-86fd-638a60d3c9e7",
+   "title": "Multiple Inheritance Formative Assessment 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Multiple-Inheritance-Formative-Assessment-1-9d0f.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "8aa49421-0404-740a-0201-78b37077efed",
+   "title": "Multiple Inheritance Formative Assessment 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Multiple-Inheritance-Formative-Assessment-2-8aa4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "74b39e56-198b-6f75-c8c5-d12ce3eeba84",
+   "title": "Inheritance Lab 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Lab-1-74b3.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "94b3e5ce-2145-ff6b-f114-b6da40ff4b63",
+   "title": "Inheritance Lab 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Lab-2-94b3.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "422957e8-168f-c714-002e-77eab9b6b58e",
+   "title": "Inheritance Lab 3",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Lab-3-4229.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f37fa538-9861-5575-99dd-d24e973355f0",
+   "title": "Inheritance Lab 4",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Lab-4-f37f.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c0de7b50-0cba-f8ba-000e-e7809a6f073d",
+   "title": "Inheritance Lab Challenge",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/labChallenge/LabChallenge.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Lab-Challenge-c0de.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ab90394a-86e8-2fd0-4979-3e67b4b21229",
+   "title": "Inheritance Exercise 1",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/exercise1/Exercise1.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Exercise-1-ab90.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "51c78086-fe2e-a495-0242-f49ff65d5804",
+   "title": "Inheritance Exercise 2",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/exercise2/Exercise2.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Exercise-2-51c7.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "4a748ae6-5bbe-9de7-ab4b-757be65d2ba4",
+   "title": "Inheritance Exercise 3",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/exercise3/Exercise3.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Exercise-3-4a74.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "809e9fdc-b437-af70-b117-a6f8f8d5e803",
+   "title": "Inheritance Exercise 4",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/exercise4/Exercise4.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Exercise-4-809e.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "59755ed0-e199-c501-eb7c-a1b9d5229d4d",
+   "title": "Inheritance Exercise 5",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/inheritance/exercise5/Exercise5.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Inheritance-Exercise-5-5975.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
   }
  ],
  "theme": "light",

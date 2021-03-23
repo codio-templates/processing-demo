@@ -3674,5 +3674,1607 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a static method"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2081032533",
+  "source": {
+   "name": "what is inheritance reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nUse the code below to help you answer the question.\n\n```java\nclass XYZ {\n\n}\n\nclass ABC extends XYZ {\n\n}\n```\n\nFrom the options below indicate which class is the superclass and which class is the subclass. **Note**, there are two answers for this problem.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "dff5ea80-0986-416b-8527-e70944d87755",
+     "correct": true,
+     "answer": "`ABC` is the subclass"
+    },
+    {
+     "_id": "115ae69d-5a5d-3f2f-8113-4877eec8253c",
+     "correct": true,
+     "answer": "`XYZ` is the superclass"
+    },
+    {
+     "_id": "aafa253c-2311-09a9-4dea-bd2c5b4a4afa",
+     "correct": false,
+     "answer": "`ABC` is the superclass"
+    },
+    {
+     "_id": "471538a5-802c-56d5-5e24-73ce8e098205",
+     "correct": false,
+     "answer": "`XYZ` is the subclass"
+    }
+   ],
+   "guidance": "The correct answers are:\n* `ABC` is the subclass\n* `XYZ` is the superclass\n\nBecause the definition of `ABC` contains `extends XYZ`, `ABC` is the subclass. That means `XYZ` must be the superclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Superclass and Subclass"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/WhatIsInheritance.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/WhatIsInheritance.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT distinguish between the superclass and the subclass"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2940799859",
+  "source": {
+   "name": "super keyword reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhat does the keyword `super` refer to?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "30f415ed-65d4-eef9-6529-648308b7f3ab",
+     "correct": true,
+     "answer": "The superclass"
+    },
+    {
+     "_id": "674f7527-ce02-8aa5-63a2-938435fbff14",
+     "correct": false,
+     "answer": "The subclass"
+    },
+    {
+     "_id": "4cecb445-23f7-95ab-eee1-619b27638fe4",
+     "correct": false,
+     "answer": "A newly instantiated object"
+    }
+   ],
+   "guidance": "The keyword `super` refers to the superclass, which is sometimes called the parent class. For example, calling `super` in the constructor of the subclass will call the constructor of the superclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Super Keyword"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/Super.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/Super.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify to what the super keyword refers"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1313898131",
+  "source": {
+   "name": "inheritance hierarchy reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhen does the `instanceof` operator return `true`? **Hint**, there is more than one right answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "a6123970-5bc7-8547-f1ac-605987edcbbc",
+     "correct": true,
+     "answer": "When the object is an instance of the same class."
+    },
+    {
+     "_id": "186ae633-3985-468b-540b-14e307a6449c",
+     "correct": true,
+     "answer": "When the object is an instance of the subclass."
+    },
+    {
+     "_id": "29a49127-eb0f-811c-2a68-14a2460067c4",
+     "correct": false,
+     "answer": "When the object is an instance of the superclass."
+    },
+    {
+     "_id": "e3b704f4-cad6-4fcd-247b-a1554c674170",
+     "correct": false,
+     "answer": "Whenever inheritance is used."
+    }
+   ],
+   "guidance": "The correct answers are:\n* `When the object is an instance of the same class.`\n* `When the object is an instance of the subclass.`\n\nThe `instanceof` operator compares an object and a class. If the object has the same type as the comparison class it returns `true`. It also returns `true` when the object is a subclass of the comparison class.\n\n",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Inheritance Hiearchy, Superclasses and Subclasses"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/Hierarchy.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/Hierarchy.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT test for inheritance hierarchy"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2353549155",
+  "source": {
+   "name": "superclass & subclass formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following class:\n\n```java\nclass Pet {\n  private String name;\n}\n```\n\nSelect the code that creates the `Dog` class that inherits from `Pet`.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "69268177-491b-44cb-927f-0a97bb4c03f9",
+     "correct": true,
+     "answer": "class Dog extends Pet {}"
+    },
+    {
+     "_id": "077111a3-6b8a-b641-f1f8-4f303e215c4c",
+     "correct": false,
+     "answer": "class Dog inherits Pet {}"
+    },
+    {
+     "_id": "fcdea550-a444-a47f-1cb5-55ecbe05caec",
+     "correct": false,
+     "answer": "class Dog(Pet) {}"
+    },
+    {
+     "_id": "3e8ac4a3-db8d-98f9-651e-b580dc21fcb6",
+     "correct": false,
+     "answer": "class Dog extend Pet {}"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\nclass Dog extends Pet {}\n```\n\nJava uses the `extends` keyword to indicate inheritance.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Create a Subclass"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/Hierarchy.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/Hierarchy.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a subclass"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-255782616",
+  "source": {
+   "name": "superclass & subclass formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Dog {\n  private String name;\n  private String breed;\n\n  public Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n}\n```\n\nRearrange the code blocks below to create the subclass `Pug` that calls the constructor from the superclass with arguments. **Hint**, not all code blocks will be used, and they must be properly indented.",
+   "initial": "class Pug extends Dog {\n  public Pug(String n, String b) {\n    super(n, b);\n  }\n}\nDog(n, b); #distractor\nclass Pug inherits Dog { #distractor\npublic Pug() { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\nclass Pug extends Dog {\n  public Pug(String n, String b) {\n    super(n, b);\n  }\n}\n```\n\nCreate a public constructor that has the same parameters as the superclass. Within the constructor, use the `super` keyword and pass it the parameters. Java will call the constructor from the superclass with the appropriate parameters.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Super Keyword"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT call the constructor from the superclass with arguments"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-678926361",
+  "source": {
+   "name": "extending a class reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Pet {\n  private String name;\n  private String age;\n\n  public Pet(String n, String a) {\n    name = n;\n    age = a;\n  }\n}\n```\n\nUsing the code blocks below, create the class `Dog` that inherits from `Pet`. In addition, extend the constructor to have the attribute `breed`.  **Hint**, not all of the code blocks will be used, and the code blocks must be properly indented.",
+   "initial": "class Dog extends Pet {\n  private String breed;\n  public Dog(String n, String a, String b) {\n    super(n, a);\n    breed = b;\n  }\n}\nclass Pet extends Dog { #distractor\npublic Dog(String n, String a) { #distractor\nsuper(n, a, b); #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the correct answer:\n\n```java\nclass Dog extends Pet {\n  private String breed;\n  public Dog(String n, String a, String b) {\n    super(n, a);\n    breed = b;\n  }\n}\n```\n\n* The `Dog` class extends the `Pet` class, not the other way around.\n* Declare the `breed` attribute.\n* The constructor for `Dog` needs all of the parameters of the `Pet` class plus the parameter for `breed`.\n* The `Pet` constructor only takes two arguments, so only pass it information for the `name` and `age` attributes.\n* Initialize the `breed` attribute in the `Dog` constructor.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Extend a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/ExtendClass.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/ExtendClass.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT extend the constructor of the superclass"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1159177153",
+  "source": {
+   "name": "method overriding reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nSelect all of the statements that are true for method overriding and extending a class. **Hint:** there is more than one correct answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "c7e83a29-2ed3-a1fa-9b9b-4b590a184c48",
+     "correct": true,
+     "answer": "Extending a class happens when new attributes or methods are added to the subclass that do not exist in the superclass."
+    },
+    {
+     "_id": "a29a60c4-fa48-8862-ef5d-3dec648677ba",
+     "correct": true,
+     "answer": "Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different."
+    },
+    {
+     "_id": "c544c606-b734-d987-7e1b-e116a16357b6",
+     "correct": false,
+     "answer": "Method overriding happens when new attributes or methods are added to the subclass that do not exist in the superclass."
+    },
+    {
+     "_id": "39a81076-3aa7-4158-5d20-637561804d44",
+     "correct": false,
+     "answer": "Extending a class happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different."
+    }
+   ],
+   "guidance": "The correct answers are:\n\n* Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different.\n* Extending a class happens when new attributes or methods are added to the subclass that do not exist in the superclass.\n\nThe other two choices are incorrect because they have confused \"method overriding\" with the definition for \"extending a class\" and vice versa.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Extending & Overriding a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/OverrideMethod.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/OverrideMethod.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between extending a class and method overriding"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1932407461",
+  "source": {
+   "name": "Extending & Overriding Formative Assessment 1",
+   "showName": false,
+   "instructions": "Assume the following code:\n\n```java\nclass Car{\n  private String make;\n  private String model;\n  private String color;\n\n  public Car(String ma, String mo, String c) {\n    make = ma;\n    model = mo;\n    color = c;\n  }\n\n  public void getMake() {\n    return make;\n  }\n\n  public void getModel() {\n    return make;\n  }\n\n  public void getColor() {\n    return make;\n  }\n}\n```\n\nCreate the subclass `Sedan`. Extend this class by adding the `describe` method. This method prints the string `I am a red Toyota Camry.` \"Toyota\" is the make and \"Camry\" is the model. \n\nDrag the appropriate code blocks into the box below. **Hint:** not all of the code blocks will be used, and the code blocks must be properly indented.",
+   "initial": "class Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(&quot;I am a &quot; + getColor() + &quot; &quot;);\n    System.out.println(getMake() + &quot; &quot; getModel() + &quot;.&quot;);\n  }\n}\nSystem.out.print(&quot;I am a &quot; + color + &quot; &quot;); #distractor\nSystem.out.println(make + &quot; &quot; model + &quot;.&quot;); #distractor\nclass Sedan { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the answer: \n\n```java\nclass Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(\"I am a \" + getColor() + \" \");\n    System.out.println(getMake() + \" \" getModel() + \".\");\n  }\n}\n```\n\n* The `Sedan` class should inherit from the `Car` class, so be sure to use the `extends` keyword.\n* The `Sedan` class needs to invoke a `Car` constructor to pass it three arguments. Use the `super` keyword for this.\n* The `make`, `model`, and `color` keywords are a part of the superclass, so you need to use the getter methods to access these values.\n\n",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Extending a Class"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT extend the subclass with a new method"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3124334261",
+  "source": {
+   "name": "extending & overriding formative assessment 2",
+   "showName": false,
+   "instructions": "Assume the following code:\n\n```java\nclass SportsCar extends Car{\n  private double acceleration;\n\n  public SportsCar(String self, String ma, String mo, String c, Double a) {\n    super(ma, mo, c);\n    acceleration = a;\n  }\n\n  public void acceleration(super) {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n}\n```\n\nThe `SportsCar` class inherits from the `Car` class and the `acceleration` method overrides a method from the superclass. What is wrong with the `acceleration` method?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "7d7819b5-886d-113b-6e44-7d8111da189a",
+     "correct": true,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```"
+    },
+    {
+     "_id": "90bf200d-e249-6a35-5f3e-5fa16dfd5918",
+     "correct": false,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration extends acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```"
+    },
+    {
+     "_id": "3a81a2c4-b528-38f0-6e48-07df224072cf",
+     "correct": false,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration() {\n    super.acceleration();\n  }\n```"
+    },
+    {
+     "_id": "dcbc957c-2570-fa8c-a5bb-b6d262033802",
+     "correct": false,
+     "answer": "The method declaration should be:\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + getAcceleration() + \" seconds!\");\n  }\n```"
+    }
+   ],
+   "guidance": "You do not need to use any special key words to tell Java that the current method is overriding a method from the suerclass. Method declarations and method overriding look the same from the declaration point of view.\n\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Overridng a Method"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT override a method from a superclass"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3981125571",
+  "source": {
+   "name": "overriding annotation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Train {\n  private int cars;\n\n  public Train() {\n    cars = 10;\n  }\n\n  public int getCars() {\n    return cars;\n  }\n\n  public void length() {\n    System.out.println(\"The train has \" + cars + \" cars.\");\n  }\n}\n```\n\nFill in the blanks to complete the `FreightTrain` method which extends the `Train` class and overrides the the `length` method.",
+   "showValues": true,
+   "text": "```\nclass <<<FreightTrain>>> extends <<<Train>>> {\n  <<<@Override>>>\n  public void <<<length>>>() {\n    System.out.println(\"The train has \" + <<<getCars()>>> + \" freight cars.\");\n  }\n}\n```",
+   "distractors": "cars\nOverride\n@Extends",
+   "guidance": "The correct answer is:\n\n```java\nclass FreightTrain extends Train {\n  @Override\n  public void length() {\n    System.out.println(\"The train has \" + getCars() + \" freight cars.\");\n  }\n}\n```\n\n* When using the `extends` keyword, the subclass (`FreightTrain`) comes before and the superclass (`Train`) comes after.\n* The correct annotation for override is `@Override`.\n* You are overriding the `length` method, so make sure it appears in the `FreightTrain` class.\n* The `cars` attribute is private to the superclass, so use `getCars` to access it.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Overriding Annotation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/OverridingAnnotation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/OverridingAnnotation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT annotate when overriding a method",
+   "tokens": {
+    "blank": [
+     "FreightTrain",
+     "Train",
+     "@Override",
+     "length",
+     "getCars()"
+    ],
+    "text": [
+     "```\nclass ",
+     0,
+     " extends ",
+     0,
+     " {\n  ",
+     0,
+     "\n  public void ",
+     0,
+     "() {\n    System.out.println(\"The train has \" + ",
+     0,
+     " + \" freight cars.\");\n  }\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1007431142",
+  "source": {
+   "name": "multiple inheritance reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhy does Java not allow for multiple inheritance where two or more superclasses are of different data types?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "9958e615-4d58-b510-a928-8c24252e6371",
+     "correct": true,
+     "answer": "This type of multiple inheritance leads to ambiguity."
+    },
+    {
+     "_id": "fd738f95-76e8-cf26-9d83-4369e52e5ca4",
+     "correct": false,
+     "answer": "This type of multiple inheritance is impossible. No programming languages allow for this type of multiple inheritance."
+    },
+    {
+     "_id": "08823efb-d564-26d5-4c4b-e1600354910c",
+     "correct": false,
+     "answer": "Trick question, this type of multiple inheritance is allowed."
+    },
+    {
+     "_id": "0cc02e8a-aa68-942b-5f03-d3d440ac189a",
+     "correct": false,
+     "answer": "This type of multiple inheritance causes a syntax error."
+    }
+   ],
+   "guidance": "Multiple inheritance where the superclasses have different data types leads to ambiguity. Imagine that each superclass has a method with the same name. Java cannot tell which method to invoke if the subclass calls this method. ",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Multiple Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/MultipleInheritance.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/MultipleInheritance.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain why multiple inheritance with superclasses of different types is not allowed"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2412811547",
+  "source": {
+   "name": "substitution principle reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "The substitution principle states that a substitution can be made if a <<<subclass>>> is used in place of its <<<superclass>>>.",
+   "distractors": "class\nmethod\nobject",
+   "guidance": "The substitution works when a subclass is used in place of its superclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Subsitution Principle"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/Substitution.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/Substitution.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define the substitution principle",
+   "tokens": {
+    "blank": [
+     "subclass",
+     "superclass"
+    ],
+    "text": [
+     "The substitution principle states that a substitution can be made if a ",
+     0,
+     " is used in place of its ",
+     0,
+     "."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-154590934",
+  "source": {
+   "name": "extending and overriding multilevel inheritance reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nUse the image below to help you fill in the blanks.\n\n![Reading Question](.guides/img/inheritance/multilevel_reading_question.png)",
+   "showValues": true,
+   "text": "<<<Code sample 1>>> is an example of extending a class.\n<<<Code sample 2>>> is an example of overriding a method.",
+   "distractors": "",
+   "guidance": "Extending a class is when a new method is added to the subclass that is not present in either superclass. Overriding a method is when the subclass has a method that shares a name with a method from a superclass, but the subclass method performs a different task.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/MultilevelExtendOverride.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/MultilevelExtendOverride.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between extending and overriding in multilevel inheritance",
+   "tokens": {
+    "blank": [
+     "Code sample 1",
+     "Code sample 2"
+    ],
+    "text": [
+     0,
+     " is an example of extending a class.\n",
+     0,
+     " is an example of overriding a method."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-1778577812",
+  "source": {
+   "name": "multiple inheritance hierarchy reading question",
+   "showName": false,
+   "instructions": "Assume the following code:\n\n```java\nBravo b = new Bravo();\nDelta d = new Delta();\n\nb.display();\nd.display();\n```\n\nWhich produces the following output:\n\n```\nBravo\nAlpha\nDelta\nCharlie\nAlpha\n```\n\nUsing the above information, fill in the blanks for inheritance.",
+   "showValues": true,
+   "text": "```python\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```",
+   "distractors": "extends Bravo\nextends Delta",
+   "guidance": "Here is the solution:\n\n```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```\n\n* The `b` object runs the `display` method which prints `Bravo`. \n* The next line of output is `Alpha` which means `super` refers to class `Alpha`. Therefore, class `Bravo` extends class `Alpha`.\n* The `d` object runs the `display` method which prints `Delta`. However, there are two more lines of output. That means class `Delta` has multilevel inheritance.\n* The next line of output is `Charlie` which means `super` refers to class `Charlie`. Therefore, class `Delta` extends class `Charlie`.\n* Finally, calling `display` in class `Charlie` must also print `Alpha`. That means class `Charlie` extends class `Alpha`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/MultilevelHierarchy.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/MultilevelHierarchy.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT choose the proper inheritance scheme to match a given output",
+   "tokens": {
+    "blank": [
+     "extends Alpha",
+     "extends Alpha",
+     "extends Charlie"
+    ],
+    "text": [
+     "```python\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() ",
+     0,
+     " {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() ",
+     0,
+     " {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta ",
+     0,
+     " () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-2513308691",
+  "source": {
+   "name": "prohibit overriding reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nRearrange the code blocks into the box below to create a method that cannot be overriden. **Hint**, not all of the code blocks will be used, and the blocks need to be properly indented.",
+   "initial": "public final void immutable() {\n  System.out.println(&quot;Cannot override this method&quot;);\n}\npublic void immutable(final) { #distractor\npublic void immutable() extends final { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\npublic final void immutable() {\n  System.out.println(\"Cannot override this method\");\n}\n```\n\n* The `final` keyword comes before data type. Only parameters go between the parentheses.\n* Method declarations do not use the `extends` keyword,",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Prohibit Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/ProhibitOverriding.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/ProhibitOverriding.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a method that cannot be overriden"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1464079495",
+  "source": {
+   "name": "multiple inheritance formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume **only** the following code:\n\n```java\nclass Foxtrot extends Golf {\n  public void hello() {\n    System.out.println(\"hello\");\n    super.hello();\n  }\n}\n\nclass Echo extends Foxtrot {\n  public void hello() {\n    System.out.println(\"hello world\");\n  }\n}\n```\n\nSelect all of the true statements. **Hint**, there is more than one right answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "a16f0be4-b071-1010-b57d-e52b7569ff31",
+     "correct": true,
+     "answer": "Class `Foxtrot` overrides the `hello` method."
+    },
+    {
+     "_id": "8cfaa0d5-de61-780e-228b-6856ec6f2a2e",
+     "correct": true,
+     "answer": "Class `Foxtrot` is a superclass to `Echo` and a subclass to `Golf`."
+    },
+    {
+     "_id": "800bc164-7532-53e9-536e-015e559a70be",
+     "correct": true,
+     "answer": "Class `Echo` is an example of multilevel inheritance."
+    },
+    {
+     "_id": "782734e9-329d-1e3c-8656-e1465f42ede9",
+     "correct": false,
+     "answer": "You can substitute class `Golf` for class `Echo`."
+    }
+   ],
+   "guidance": "The correct answers are:\n* `Class `Foxtrot` overrides the `hello` method.` This is true because `super.hello` means another method `hello` exists in the superclass.\n* `Class `Foxtrot` is a superclass to `Echo` and a subclass to `Golf`.` This is true because `Foxtrot` extends `Golf` and `Echo` extends `Foxtrot`.\n* `Class `Echo` is an example of multilevel inheritance.` This is true because it inherits from `Foxtrot` who in turn inherits from `Golf`.\n\nThe substitution principle only works when you substitute a subclass for a superclass. `Golf` is a superclass to `Echno`, so the substitution does not work.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance, Inheritancy Hierarchy, Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT make inferences about multilevel inheritance, inheritance hierarchy, and method overriding"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-1205746188",
+  "source": {
+   "name": "multiple inheritance formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Human {\n  private String name;\n  public Human(String n) {\n    name = n;\n  }\n}\n\nclass Adult extends Human {\n  private int numChildren;\n  public Human(String n, int c) {\n    super(n);\n    numChildren = c;\n  }\n}\n```\n\nUse these superclasses to fill in the blanks below. The class `Parent` should inherit the attributes `name` and `numChildren`.",
+   "showValues": true,
+   "text": "```python\nclass Parent <<<extends Adult>>> {\n  public Parent(<<<String n>>>, int c) {\n    <<<super>>>(n, <<<c>>>);\n  }\n}\n```",
+   "distractors": "extends Human\nString name\nfinal\nnumChildren",
+   "guidance": "The correct answer is:\n\n```java\nclass Parent extends Adult {\n  public Parent(String n, int c) {\n    super(n, c);\n  }\n}\n```\n\n* The `Parent` class must have the `name` and `numChildren` attributes. To do that, inherit from `Adult` who then inherits from `Human`\n* The constructor uses the variable `n`, so the parameter should be `String n` not `String name`.\n* The constructor has the parameter `c`, so the variable should be `c` not `numChildren`.\n",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create a class with multilevel inheritance",
+   "tokens": {
+    "blank": [
+     "extends Adult",
+     "String n",
+     "super",
+     "c"
+    ],
+    "text": [
+     "```python\nclass Parent ",
+     0,
+     " {\n  public Parent(",
+     0,
+     ", int c) {\n    ",
+     0,
+     "(n, ",
+     0,
+     ");\n  }\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2287591926",
+  "source": {
+   "name": "inheritance lab 1 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass Golf extends India {}\nclass Hotel {}\nclass India extends Hotel {}\n```\n\nWhich one of the three classes is **both** a superclass and a subclass?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "d98e01fd-bb00-dd90-b09f-290e3334245f",
+     "correct": true,
+     "answer": "India"
+    },
+    {
+     "_id": "baf5bbf1-3f2e-b127-8044-5ead8a41740b",
+     "correct": false,
+     "answer": "Hotel"
+    },
+    {
+     "_id": "21e5b404-a4b8-d689-9dc9-a60442f3e831",
+     "correct": false,
+     "answer": "Golf"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```markdown\nIndia\n```\n\n* `Golf` extends `India`, so it is a subclass. However, nothing extends `Golf` so it is not a superclass.\n* `Hotel` does not extend any classes so it is not a subclass. `India` extends `Hotel`, so `Hotel` is a superclass.\n*  `India` extends `Hotel` so it is a subclass. In addition, `Golf` extends `India` so `India` is a superclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Inheritance Hiearchy "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Multiple Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify inheritance hierarchy order"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1306573375",
+  "source": {
+   "name": "inheritance lab 2 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhat will the following code produce?\n\n```java\nclass Juliet {}\nclass Kilo extends Juliet {}\n\npublic class LabQuestion {  \n  public static void main(String[] args) {\n  Kilo k = new Kilo();\n  System.out.println(k instanceof Juliet);  \n  }\n}\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "f0d992ca-eae5-e2b8-5be6-e2ddc0632284",
+     "correct": true,
+     "answer": "true"
+    },
+    {
+     "_id": "60c5a9bc-0cfb-fb25-a664-06f9593e294b",
+     "correct": false,
+     "answer": "false"
+    }
+   ],
+   "guidance": "The code would print `true` because object `k` is an instance of the `Kilo` class, and the `Kilo` class inherits from the `Juliet` class. Therefore, `k` is an instance of the `Juliet` class.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Inheritance Hiearchy "
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT determine if an object is an instance of another class"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1112060896",
+  "source": {
+   "name": "inheritance lab 3 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhich principle means the code below is valid?\n\n```java\nclass A {}\nclass B extends A {}\n\npublic A myMethod(A objA) {}\n\nB objB = new B();\nmyMethod(objB);\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "e38bee61-d2ef-310a-7b08-cbf59a8bcc07",
+     "correct": true,
+     "answer": "Substitution principle"
+    },
+    {
+     "_id": "8163783c-9128-aeaf-ccf9-7357bf6b2ec1",
+     "correct": false,
+     "answer": "Inheritance"
+    },
+    {
+     "_id": "1eba07ff-5293-3e63-b841-ffb5c97d0354",
+     "correct": false,
+     "answer": "Exchange principle"
+    },
+    {
+     "_id": "796dc350-e8b1-79f8-ea98-ec5ddc47ddd4",
+     "correct": false,
+     "answer": "Multilevel inheritance"
+    }
+   ],
+   "guidance": "The substitution principle says that a subclass can be used in place of the superclass. Since `myMethod` has a parameter of type `A` and `B` is a subclass of `A`, an object of type `B` can be passed to `myMethod`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Substitution principle"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT recognize the substitution principle in action"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-172195837",
+  "source": {
+   "name": "inheritance lab 4 question",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhich keyword will allow a subclass to access a method but not override it?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "cffa03e5-80a8-5582-ea70-1a6ad40d4e24",
+     "correct": true,
+     "answer": "`final`"
+    },
+    {
+     "_id": "a777c6b5-6623-dcbf-2910-598a4aaf63bf",
+     "correct": false,
+     "answer": "`private`"
+    },
+    {
+     "_id": "7556d497-f3a2-3c0d-3808-8a1a2d0ef4cb",
+     "correct": false,
+     "answer": "`static`"
+    },
+    {
+     "_id": "622ead6a-8e70-7b78-5c47-5fc8a9f542f7",
+     "correct": false,
+     "answer": "`restricted`"
+    }
+   ],
+   "guidance": "The `final` keyword means that a subclass can access the method, but it cannot override it.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Prohibit Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain what the \"final\" keyword does in a method of a superclass"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-847910647",
+  "source": {
+   "name": "inheritance lab challenge",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/labChallenge\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Podcast extends MP3 {\n  private String name;\n  private String date;\n  \n  public Podcast(String n, String t, int l, String g, String d) {\n    name = n;\n    setTitle(t);\n    setLength(l);\n    setGenre(g);\n    date = d;\n  }\n  \n  public String displayName() {\n    return \"The name is \" + name;\n  }\n  \n  public String displayTitle() {\n    return \"The title is \" + getTitle();\n  }\n  \n  public String displayLength() {\n    int minutes = getLength() / 60;\n    int seconds = getLength() % 60;\n    return \"The length is \" + minutes + \" minutes and \" + seconds + \" seconds\";\n  }\n  \n  public String displayGenre() {\n    return \"The genre is \" + getGenre();\n  }\n  \n  public String displayDate() {\n    return \"The date is \" + date;\n  }\n}\n\n//add class definitions above this line\n\npublic class LabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Podcast p = new Podcast(\"Planet Money\", \"Hollywood's Black List\", 1460, \"economics\", \"10 July 2020\");\n    System.out.println(p.displayName());\n    System.out.println(p.displayTitle());\n    System.out.println(p.displayLength());\n    System.out.println(p.displayGenre());\n    System.out.println(p.displayDate());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Create the `name` and `date` attributes for the `Podcast` class.\n* The constructor requires `name`, `title`, `length`, `genre`, and `date` as parameters.\n* Set the `name` and `date` attributes like normal.\n* Use setter methods to set the attributes `title`, `length`, and `genre`.\n* The `displayName` and `displayDate` methods concatenate the required text and `name` and `date` attributes.\n* The `displayTitle` and `displayGenre` methods concatenate the required text and the getter methods for the `title` and `genre` attributes.\n* The `displayLength` method needs to transform seconds into minutes and seconds. To calculate minutes, divide `getLength()` by `60`. Since these numbers are both integers, Java will truncate the decimal output (it will not round up or down). To calculate the seconds, use `getLength()` modulo (`%`) `60`. This will return the remainder when dividing the length by 60.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Overrinding and Extending"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/labChallenge/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/labChallenge/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT construct a class that overrides and extends the parent class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-51862033",
+  "source": {
+   "name": "inheritance coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise1\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Satellite extends CelestialBody {\n  private String hostPlanet;\n  \n  public Satellite(double s, double m, String c, String n, String h) {\n    super(s, m, c, n);\n    hostPlanet = h;\n  }\n  \n  public String getHostPlanet() {\n    return hostPlanet;\n  }\n  \n  public void setHostPlanet(String newHostPlanet) {\n    hostPlanet = newHostPlanet;\n  }\n}\n\nclass Planet extends CelestialBody {\n  private String hostStar;\n  \n  public Planet(double s, double m, String c, String n, String st) {\n    super(s, m, c, n);\n    hostStar = st;\n  }\n  \n  public String getHostStar() {\n    return hostStar;\n  }\n  \n  public void setHostStar(String newHostStar) {\n    hostStar = newHostStar;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Satellite s = new Satellite(2651, 3716, \"helium\", \"moon\", \"earth\");\n    Planet p = new Planet(5349, 8910, \"nitrogen\", \"earth\", \"sun\");\n    \n    System.out.println(s.getSize());\n    System.out.println(s.getMass());\n    System.out.println(s.getComposition());\n    System.out.println(s.getName());\n    System.out.println(s.getHostPlanet());\n    System.out.println(p.getSize());\n    System.out.println(p.getMass());\n    System.out.println(p.getComposition());\n    System.out.println(p.getName());\n    System.out.println(p.getHostStar());\n  \n    //add code above this line   \n  }\n}\n```\n\n### For the `Satellite` class:\n* Inherit from the `CelestialBody` class.\n* Create the attribute `hostPlanet`.\n* Create a constructor with the arguments for the superclass and `hostPlanet`.\n* Call the constructor from the superclass with `super` and pass it the required arguments.\n* Assign a value to the `hostPlanet` attribute.\n* Create a getter and setter for `hostPlanet`.\n\n### For the `Planet` class:\n* Inherit from the `CelestialBody` class.\n* Create the attribute `hostStar`.\n* Create a constructor with the arguments for the superclass and `hostStar`.\n* Call the constructor from the superclass with `super` and pass it the required arguments.\n* Assign a value to the `hostStar` attribute.\n* Create a getter and setter for `hostStar`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Extend the constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise1/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise1/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT extend the constructor of the parent class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3351852341",
+  "source": {
+   "name": "inheritance coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise2\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass BlogPost extends Book {\n  private String website;\n  private int wordCount;\n  private int pageViews;\n  \n  public BlogPost (String t, String a, String g, String w, int wc, int pv) {\n    super(t, a, g);\n    website = w;\n    wordCount = wc;\n    pageViews = pv;\n  }\n  \n  public String getWebsite() {\n    return website;\n  }\n  \n  public void setWebsite(String newWebsite) {\n    website = newWebsite;\n  }\n  \n  public int getWordCount() {\n    return wordCount;\n  }\n  \n  public void setWordCount(int newWordCount) {\n    wordCount = newWordCount;\n  }\n  \n  public int getPageViews() {\n    return pageViews;\n  }\n  \n  public void setPageViews(int newPageViews) {\n    pageViews = newPageViews;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    BlogPost myPost = new BlogPost(\"Hot Summer Trends\", \"Amy Gutierrez\", \"fashion\", \"Vogue\", 2319, 2748);\n    \n    System.out.println(myPost.getWebsite());\n    System.out.println(myPost.getTitle());\n    System.out.println(myPost.getAuthor());\n    System.out.println(myPost.getWordCount());\n    System.out.println(myPost.getGenre());\n    System.out.println(myPost.getPageViews());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Create the `BlogPost` class that inherits from the `Book` class.\n* Create the attributes `website`, `wordCount`, and `pageViews`.\n* The `BlogPost` constructor takes the same arguments as the `Book` class plus the three attributes unique to the `BlogPost` class.\n* Use the `super` keyword and pass it the `title`, `author`, and `genre` attributes.\n* Initialize the `website`, `wordCount`, and `pageViews` attributes.\n* Create getters and setters for `website`, `wordCount`, and `pageViews`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Extend the constructor"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise2/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise2/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT extend the constructor of the parent class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-665191771",
+  "source": {
+   "name": "inheritance coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise3\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass Parent1 {\n  public String identify() {\n    return \"This method is called from Parent1\";\n  }\n}\n\nclass Parent2 extends Parent1 {\n  public String identify() {\n    return \"This method is called from Parent2\";\n  }\n  \n  public String identify2() {\n    return super.identify();\n  }\n}\n\n//add class definitions below this line\n\nclass Child extends Parent2 {\n  public String identify() {\n    return \"This method is called from Child\";\n  }\n  \n  public String identify2() {\n    return super.identify();\n  }\n  \n  public String identify3() {\n    return super.identify2();\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Child childObject = new Child();\n    System.out.println(childObject.identify());\n    System.out.println(childObject.identify2());\n    System.out.println(childObject.identify3());\n  \n    //add code above this line   \n  }\n}\n```\n\n### `Parent1` Class\nNo changes need to be made to this class.\n\n### `Parent2` Class\n* Make this class inherit from `Parent1`.\n* Create a methods that calls the `identify` method from the `Parent1` class with the `super` keyword. In this case, the method is called `identify2`.\n\n### `Child` Class\n* Create this class and make it inherit from `Parent2`.\n* Override the `identify` class so the message references the `Child` class.\n* Create the `identify2` method that uses the `super` keyword to call `identify` from `Parent2`.\n* Create the `identify3` method that uses the `super` keyword to call the method in `Parent2` that references the `identify` method in the `Parent1` class. In this case, the method call is `super.identify2()`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise3/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise3/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a class that has multilevel inheritance"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3218412596",
+  "source": {
+   "name": "inheritance coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise5\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CardHolder extends Person {\n  private int accountNumber;\n  private double balance;\n  private int creditLimit;\n  \n  public CardHolder(String n, String a, int an) {\n    super(n, a);\n    accountNumber = an;\n    balance = 0;\n    creditLimit = 5000;\n  }\n  \n  public int getAccountNumber() {\n    return accountNumber;\n  }\n  \n  public void setAccountNumber(int newAccountNumber) {\n    accountNumber = newAccountNumber;\n  }\n  \n  public double getBalance() {\n    return balance;\n  }\n  \n  public void setBalance(double newBalance) {\n    balance = newBalance;\n  }\n  \n  public int getCreditLimit() {\n    return creditLimit;\n  }\n  \n  public void setCreditLimit(int newCreditLimit) {\n    creditLimit = newCreditLimit;\n  }\n  \n  public void processSale(double price) {\n    balance += price;\n  }\n  \n  public void makePayment(double amount) {\n    balance -= amount;\n  }\n}\n\nclass PlatinumClient extends CardHolder {\n  private double cashBack;\n  private double rewards;\n  \n  public PlatinumClient(String n, String a, int an) {\n    super(n, a, an);\n    cashBack = 0.02;\n    rewards = 0;\n  }\n  \n  public double getCashBack() {\n    return cashBack;\n  }\n  \n  public void setCashBack(double newCashBack) {\n    cashBack = newCashBack;\n  }\n  \n  public double getRewards() {\n    return rewards;\n  }\n  \n  public void setRewards(double newRewards) {\n    rewards = newRewards;\n  }\n  \n  public void processSale(double price) {\n    rewards += cashBack * price;\n    setBalance(getBalance() + price);\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    PlatinumClient p = new PlatinumClient(\"Sarah\", \"101 Main Street\", 123364);\n    p.processSale(100);\n    System.out.println(p.getRewards());\n    System.out.println(p.getBalance());\n    p.makePayment(50);\n    System.out.println(p.getBalance());\n    System.out.println(p.info());\n  \n    //add code above this line   \n  }\n}\n```\n\n### For the `CardHolder` Class\n* Extend the `Person` class.\n* Add the attributes `accountNumber`, `balance`, and `creditLimit`.\n* The constructor should take arguments for `name`, `address`, and `accountNumber`. Call the constructor from the superclass with the `super` keyword and the values for `name` and `address`. The values for `balance` and `creditLimit` should be set to `0` and `5000` respectively.\n* Create getters and setters for `accountNumber`, `balance`, and `creditLimit`.\n* The method `processSale` takes a double and adds this to `balance`.\n* The method `makePayment` takes a double and subtracts it from `balance`.\n\n### For the `PlatinumClient` Class\n* Extend the `CardHolder` class.\n* Add the attributes `cashBack` and `rewards`.\n* The constructor takes values for `name`, `address`, and `accountNumber`. Pass these three values to the constructor of the superclass with the `super` keyword. Manually set `rewards` to `0` and `cashBack` to `0.02`.\n* Create getters and setters for `cashBack` and `rewards`.\n* Override the `processSale` method so that `rewards` increases by the sale amount times `cashBack`. The `balance` attribute should also increase by the sale amount.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Multilevel Inheritance"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise5/Exercise5.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise5/Exercise5.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create two classes with multilevel inheritance"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3432435518",
+  "source": {
+   "name": "inheritance coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/inheritance/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/inheritance/exercise4\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass RegionalBank extends Bank {\n  public double[][] regionalAccounts;\n  \n  public RegionalBank(String n, int c, double[][] a) {\n    setName(n);\n    setCustomers(c);\n    regionalAccounts = a;\n  }\n  \n  public double[][] getRegionalAccounts() {\n    return regionalAccounts;\n  }\n  \n  public void setRegionalAccounts(double[][] newAccounts) {\n    regionalAccounts = newAccounts;\n  }\n  \n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      setAccounts(accounts);\n      total += branchTotal();\n    }\n    return total;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n    double[][] accounts = {{10000, 13000, 22000},\n                           {30000, 7000, 19000},\n                           {15000, 23000, 31000}};\n    RegionalBank rb = new RegionalBank(\"Main Street Bank\", 9, accounts);\n    System.out.println(rb.regionalTotal());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Extend the `Bank` class.\n* The constructor should take values for `name`, `customers`, and `accounts`. Remember, the `accounts` attribute should be a 2D array of doubles.\n* Use the `setName` and `setCustomers` methods to set the values for `name` and `customers`. You can set the value of `accounts` normally.\n* Add a getter and a setter for `accounts`.\n* Create the `regionalTotal` method. This method needs to sum all of the elements in a 2D array. Create a variable that stores the sum of the accounts and set it to `0`.\n* One way to solve this problem is to use a nested loop. That solution would look something like this:\n\n```java\n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      for (double account : accounts) {\n        total += account;\n      }\n    }\n    return total;\n  }\n```\n* The sample solution above makes use of the `bankTotal` method in the superclass `Bank`. This method only works if the attribute `accounts` is an array of doubles. The variable `accounts` is an array of doubles. Pass it to `setAccounts` and then increment `total` with return value from `branchTotal`. \n\n```java\n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      setAccounts(accounts);\n      total += branchTotal();\n    }\n    return total;\n  }\n```",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Extending the superclass"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Inheritance"
+     }
+    ],
+    "files": [
+     "code/inheritance/exercise4/Exercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/inheritance/exercise4/Exercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT extend the parent class with a new method"
+  }
  }
 ]
