@@ -22,6 +22,11 @@ Polymorphism is a concept in object-oriented programming in which a single inter
 
 Notice how the plus operator can add together two numbers and concatenate two strings. You have a single interface (the plus operator) taking different forms — one that works with integers and and another that works with strings. This is an example of polymorphism.
 
+<details>
+  <summary><strong>Operator Overloading</strong></summary>
+  Because the plus operator can work with different forms, we can say that it is overloaded. Java overloads this operator by default. However, a user cannot manually overload an operator.
+</details>
+
 |||challenge
 ## Try this variation:
 Change your code to look like this:
