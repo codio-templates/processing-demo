@@ -5276,5 +5276,71 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT extend the parent class with a new method"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1767969218",
+  "source": {
+   "name": "polymorphism method overriding reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhy is method overriding an example of polymorphism?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "609c6d5d-db48-dfe9-04f7-5f51f3315f4d",
+     "correct": true,
+     "answer": "Method overriding has a single interface (the method name) and works with different forms (the superclass and subclass)."
+    },
+    {
+     "_id": "584eae69-02eb-6fe5-b65b-6b7b68db3e07",
+     "correct": false,
+     "answer": "Method overriding has a single interface (the method name), but only works with a single data type (the sibclass)."
+    },
+    {
+     "_id": "ee04d9eb-0cff-ca15-fbe4-a5b612102c70",
+     "correct": false,
+     "answer": "Method overriding is not an example of polymorphism, it is an example of inheritance."
+    }
+   ],
+   "guidance": "Polymorphism occurs when there is a single interface that works with multiple forms. When overriding a method, two methods have the same name (a shared interface) and they work with different forms (the superclass and the subclass). This is why method overriding is an example of polymorphism.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/MethodOverriding.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/MethodOverriding.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain why method overriding is an example of polymorphism"
+  }
  }
 ]
