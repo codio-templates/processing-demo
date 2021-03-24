@@ -5342,5 +5342,71 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT explain why method overriding is an example of polymorphism"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-994634395",
+  "source": {
+   "name": "polymorphism method overloading reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass ExampleClass {\n  public int totalChars(String s1, String s2, String s3) {\n    return s1.length() + s2.length() + s3.length();\n  }\n  \n  public int totalChars(String s1) {\n    return s1.length();\n  }\n}\n\npublic class Main {  \n  public static void main(String[] args) {\n    ExampleClass e = new ExampleClass();\n    System.out.println(e.totalChars(\"hello\", \"world\"));\n  }\n}\n```\n\nWhat is the output of the program?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "4c426c44-9584-cbc5-dfe7-71f8afa67172",
+     "correct": true,
+     "answer": "Error message"
+    },
+    {
+     "_id": "37643034-8451-db6b-2a9d-7d61a57ec4a6",
+     "correct": false,
+     "answer": "`hello world`"
+    },
+    {
+     "_id": "0eb099ec-85f2-2705-bc06-c1dd8e52ca9a",
+     "correct": false,
+     "answer": "`10`"
+    }
+   ],
+   "guidance": "This code would generate an error message. The method `totalChars` is overloaded, but it does not have a version that takes two string arguments. The method call must match one of the overloaded method definitions.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/MethodOverloading.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/MethodOverloading.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT properly call an overloaded method"
+  }
  }
 ]
