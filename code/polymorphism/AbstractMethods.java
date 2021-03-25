@@ -42,7 +42,7 @@ class Artist extends Person {
 
 //add class definitions above this line
 
-public class AbstractClasses {  
+public class AbstractMethods {  
   public static void main(String[] args) {
     
     //add code below this line
