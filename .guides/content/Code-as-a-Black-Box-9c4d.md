@@ -43,7 +43,6 @@ Notice how the `data` attribute calls the `getData` method. This is because the 
       System.out.println("Finished reading a file.");
       return intTokens;
     }
-    //add code above this line 
   }
 ```
 
@@ -62,14 +61,14 @@ The `convertToInts` method creates an array of ints that is the same length as t
 
 <details>
   <summary><strong>What are all of these methods doing?</strong></summary>
-  To create the value for the `data` attribute, the constructor calls the `getData` method. This method takes an array of strings and passes it to the `convertToInts` method. This method converts the array of strings into an array of integers. The integer array is returned to the `getData` method, which returns the same integer array to the `data` attribute.
+  To create the value for the <code>data</code> attribute, the constructor calls the <code>getData</code> method. This method takes an array of strings and passes it to the <code>convertToInts</code> method. This method converts the array of strings into an array of integers. The integer array is returned to the <code>getData</code> method, which returns the same integer array to the <code>data</code> attribute.
 </details><br>
 
 We are now ready to make the public method `summary`. This method is going to provide a summary of information about the numbers in the CSV file. Start by calculating how many numbers there are.
 
 ```java
   public void summary() {
-    printcount();
+    printCount();
   }
 
   private void printCount() {
@@ -122,7 +121,6 @@ Instantiate a `Numbers` object and pass it a file path to a CSV file. Calling th
         System.out.println("Finished reading a file.");
         return intTokens;
       }
-      //add code above this line 
     }
 
     private int[] convertToInts(String[] strings) {

@@ -17,6 +17,6 @@ Write a class named `Person` that has attributes for name, age, and occupation. 
 **Testing Your Code**
 Use the button below to test your code before submitting it for evaluation.
 
-{Try it}(sh .guides/bg.sh javac code/encapsulation/EncapsulationLabChallenge.java java -cp code/encapsulation/ EncapsulationLabChallenge 1)
+{Try it}(sh .guides/bg.sh javac code/encapsulation/exercises/EncapsulationLabChallenge.java java -cp code/encapsulation/exercises EncapsulationLabChallenge 1)
 
 {Check It!|assessment}(test-791041872)

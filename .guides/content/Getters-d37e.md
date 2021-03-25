@@ -77,7 +77,7 @@ Using a getter is the same thing as accessing a public attribute. Why not make t
     //add code above this line
 ```
 
-{Try it}(sh .guides/bg.sh javac code/encapsulation/Getters.java java -cp code/encapsulation/ Getters 2)
+{Try it}(sh .guides/bg.sh javac code/encapsulation/Getters.java java -cp code/encapsulation/ Getters 3)
 
 The code above generates an error because an instance cannot alter a private attribute. Using a getter allows limited access to an attribute, which is preferable to the full access a public access modifier allows.
 

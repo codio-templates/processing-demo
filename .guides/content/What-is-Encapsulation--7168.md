@@ -32,7 +32,7 @@ This is the `ExampleClass` from the image above. It now uses the `public` and `p
 ```java
 //add class definitions below this line
     
-public class ExampleClass {
+class ExampleClass {
   private int num1;
   private int num2;
 
