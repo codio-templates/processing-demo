@@ -5408,5 +5408,53 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT properly call an overloaded method"
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1047831703",
+  "source": {
+   "name": "abstract methods reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nabstract class ParentClass {\n  public abstract void sayHello();\n}\n```\n\nDrag the code blocks into the box below. Create the class `ChildClass` that inherits from `ParentClass`. **Hint**, not all of the blocks will be used, and the blocks must be properly indented.",
+   "initial": "class ChildClass extends ParentClass {\n  public void sayHello() {\n    System.out.println(&quot;Hello&quot;);\n  }\n}\nconcrete class ChildClass extends ParentClass {  #distractor\nclass ChildClass { #distractor\npublic void hello() {  #distractor\npublic abstract void sayHello() { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the solution:\n\n```java\nclass ChildClass extends ParentClass {\n  public void sayHello() {\n    System.out.println(\"Hello\");\n  }\n}\n```\n\n* `ChildClass` is a concrete class (not abstract), but you do not use a keyword to indicate this.\n* `ChildClass` must inherit from `ParentClass`, so you need to use the `extends` keyword.\n* `SayHello` is an abstract method, which means the subclass must override it.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/AbstractMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/AbstractMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a subclass from an abstract class"
+  }
  }
 ]
