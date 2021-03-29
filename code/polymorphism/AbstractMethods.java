@@ -8,6 +8,8 @@ class Person {
   public void setName(String newName) {
     name = newName;
   }
+  
+  public String greeting();
 }
 
 //add class definitions below this line

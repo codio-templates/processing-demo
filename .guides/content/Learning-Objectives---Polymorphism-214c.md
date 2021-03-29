@@ -2,7 +2,7 @@
 * ### Explain how method overriding is an example of polymorphism
 * ### Overload a method
 * ### Override a method
-* ### Use abstract class/method as a form of polymorphism
+* ### Use abstract method as a form of polymorphism
 
 |||guidance
 ## Assumptions

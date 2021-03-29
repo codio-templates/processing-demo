@@ -5456,5 +5456,131 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a subclass from an abstract class"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-4189147635",
+  "source": {
+   "name": "polymorphism formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nMark all of the ways in which polymorphism can be implemented. **Hint**, there is more than one correct answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "67fce068-b5a0-ab64-e18e-09028dcd2073",
+     "correct": true,
+     "answer": "Method overriding"
+    },
+    {
+     "_id": "ffea1301-b39a-804a-92f2-41e28fcd5a63",
+     "correct": true,
+     "answer": "Method overloading"
+    },
+    {
+     "_id": "fc625311-587f-2fd3-feda-4a329517906c",
+     "correct": true,
+     "answer": "Abstract methods"
+    },
+    {
+     "_id": "3310c9c9-1a04-7526-98fe-e32b02e5f886",
+     "correct": false,
+     "answer": "Inheritance"
+    },
+    {
+     "_id": "a81fba5b-0ad1-fbe5-c1cb-bf24d408687d",
+     "correct": false,
+     "answer": "Encapsulation"
+    }
+   ],
+   "guidance": "The correct answers are:\n\n```markdown\nAbstract methods\nMethod overloading\nMethod overriding\n```\n\nInheritance by itself is not a form of polymorphism. If inheritance uses method overriding, then that would be a form of polymorphism. However, you can have inheritance without method overriding, therefore inheritance is considered a form of polymorphism.\n\nEncapsulation is about hiding and sharing information in objects. This is not a form of polymorphism.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Examples of polymorphism"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify the different forms of polymorphism in Java"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1123100308",
+  "source": {
+   "name": "polymorphism formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Rectangle {\n  private double length;\n  private double width;\n\n  public Rectangle(double l, double w) {\n    length = l;\n    width = w;\n  }\n\n  public double area() {\n    return length * width;\n  }\n}\n\npublic class Square extends Rectangle {\n  private double side;\n\n  public Square(double s) {\n    side = s;\n  }\n\n  public double area() {\n    return side * side;\n  }\n}\n```\n\nWhich example of polymorphism is present in the code above?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "26e0a7da-65b2-fa51-5b14-a3664f631aec",
+     "correct": true,
+     "answer": "Method Overriding - The subclass `Circle` creates the method `area` replaces the `area` method from the superclass."
+    },
+    {
+     "_id": "ade15562-68d4-4b76-366f-28c51261cd0d",
+     "correct": false,
+     "answer": "Method Overloading - There is more than one instance of the method `area` that have different definitions (number of parameters)."
+    },
+    {
+     "_id": "4cd87135-d69f-70d2-215d-6b3774bc4d50",
+     "correct": false,
+     "answer": "Abstract Method - `Circle` extends the abstract class `Rectangle` and must define the abstract method `area`."
+    }
+   ],
+   "guidance": "The correct answer is **method overriding**.\n\n* This is not method overloading because you would need the more than one method in the same class. There are two versions of `area`, but one is in the superclass and the other is in the subclass. In addition, these methods have the same definition (neither one takes a parameter).\n* This is not abstract methods because `Rectangle` is not an abstract class, and the method `area` is not an abstract method.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify method overriding"
+  }
  }
 ]
