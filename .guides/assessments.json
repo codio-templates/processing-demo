@@ -5582,5 +5582,76 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify method overriding"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-29167309",
+  "source": {
+   "name": "polymorphism lab question 1",
+   "showName": false,
+   "instructions": "## Lab Question\n\nUse the method definitions below to help you answer the question.\n\n```java\npublic myMethod(int a) {\n  // rest of the method goes here\n}\n\npublic myMethod(int a, int b) {\n  // rest of the method goes here\n}\n```\n\nThe code sample above is representative of which form of polymorphism?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "b985c185-a332-49c6-8482-54f663623ffd",
+     "correct": true,
+     "answer": "Method overloading"
+    },
+    {
+     "_id": "0a880a6a-bf3f-2355-4c7e-9abca523a73a",
+     "correct": false,
+     "answer": "Method overriding"
+    },
+    {
+     "_id": "2c3265b7-02ad-2cab-e20d-bfbb97b89929",
+     "correct": false,
+     "answer": "Abstract methods"
+    }
+   ],
+   "guidance": "The correct answer is `Method overloading`. Neither method uses the keyword `abstract` so these are not abstract methods. These methods do not appear in a superclass and a subclass so this is not method overriding. This is method overloading because we have methods with the same name but different parameters.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab1.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify method overloading"
+  }
  }
 ]
