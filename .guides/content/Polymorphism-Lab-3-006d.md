@@ -226,12 +226,6 @@ Your script should now show the following output:
           index = num;
           view = "info";
         }
-      } else if (choice.equals("c") && view.equals("info")) {
-        view = "list";
-      } else if (choice.equals("n") && view.equals("info")) {
-        index = (index + 1 < length) ? index + 1 : 0;
-      } else if (choice.equals("p") && view.equals("info")) {
-        index = (index - 1 >= 0) ? index - 1 : length - 1;
       }
     }
 
