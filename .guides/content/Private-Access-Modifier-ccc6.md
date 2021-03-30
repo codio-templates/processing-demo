@@ -17,7 +17,7 @@ class PrivateExample {
   }
   
   public void publicMethod() {
-    hiddenMethod();
+    privateMethod();
   }
   
   private void privateMethod() {
