@@ -31,17 +31,14 @@ The print statement is to add a blank line for legibility. We also need a scanne
 
 ## Handling User Choices
 
-Every time the user makes a choice, we want to evaluate that choice and perform the appropriate action. In this case, the user can choose between adding a contact or quitting the script. Notice that `view` only changes to `"add"` if `"a"` is entered **and** we are in list view. We only want to add new contacts from the list view. Options for user input will grow, so a `switch` statement makes sense even if there are only two choices right now.
+Every time the user makes a choice, we want to evaluate that choice and perform the appropriate action. In this case, the user can choose between adding a contact or quitting the script. Notice that `view` only changes to `"add"` if `"a"` is entered **and** we are in list view. We only want to add new contacts from the list view.
 
 ```java
   public void handleChoice() {
-    switch(choice) {
-      case "q":
-        view = "quit";
-        break;
-      case "a" && view.equals("list"):
-        view = "add";
-        break;
+    if (choice.equals("q")) {
+      view = "quit";
+    } else if (choice.equals("a") && view.equals("list")) {
+      view = "add";
     }
   }
 ```

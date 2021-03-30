@@ -5724,5 +5724,75 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-195896886",
+  "source": {
+   "name": "polymorphism lab question 3",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blanks below with the appropriate definition for each term.",
+   "showValues": true,
+   "text": "When a subclass has a method with the same name as the superclass, but the subclass performs a different task. - <<<Method Overriding>>>\nWhen a method performs different tasks depending on its parameters - <<<Method Overloading>>>\nWhen a method **must** be overriden in the sublcass - <<<Abstract Method>>>",
+   "distractors": "",
+   "guidance": "**Method Overriding** - When a subclass has a method with the same name as the superclass, but the subclass performs a different task.\n**Method Overloading** - When a method performs different tasks depending on its parameters.\n**Abstract Method** - When a method must be overriden in the subclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Expressing Polymorphism"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab3.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define different ways of incorporating polymorphism",
+   "tokens": {
+    "blank": [
+     "Method Overriding",
+     "Method Overloading",
+     "Abstract Method"
+    ],
+    "text": [
+     "When a subclass has a method with the same name as the superclass, but the subclass performs a different task. - ",
+     0,
+     "\nWhen a method performs different tasks depending on its parameters - ",
+     0,
+     "\nWhen a method **must** be overriden in the sublcass - ",
+     0
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
