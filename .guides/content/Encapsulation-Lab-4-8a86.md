@@ -54,7 +54,7 @@ The `enterCoffee` method asks the user to input information about the coffee. Se
     System.out.println("Enter the region: ");
     String newRegion = sc.nextLine();
     journal.setRegion(newRegion);
-    System.out.println("Enter the number of stars '*' (1-4): ");
+    System.out.println("Enter the number of stars '*' (*, **, ***, or ****): ");
     String newStars = sc.nextLine();
     journal.setStars(newStars);
     System.out.println();
@@ -81,7 +81,7 @@ To test our code, we are going to set up a loop that controls the command line a
     
     while (run) {
       choice = mainMenu();
-      run performAction(journal, choice, run);
+      run = performAction(journal, choice, run);
     }
 
     //add code above this line
