@@ -2302,9 +2302,19 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/polymorphism/Lab2.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear",
+     "panel": 1,
+     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Polymorphism-Lab-2-0604.md",
@@ -2320,9 +2330,19 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/polymorphism/Lab3.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear",
+     "panel": 1,
+     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Polymorphism-Lab-3-006d.md",
@@ -2338,9 +2358,19 @@
     {
      "path": "#tabs",
      "action": "close"
+    },
+    {
+     "path": "code/polymorphism/Lab4.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear",
+     "panel": 1,
+     "action": "open"
     }
    ],
-   "layout": "2-panels",
+   "layout": "3-cell",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Polymorphism-Lab-4-c4d9.md",

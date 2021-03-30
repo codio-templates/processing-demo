@@ -1,50 +1,64 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 //add class definitions below this line
 
-class Information {
-  
+abstract class Information {
+  public abstract void displayInfo();
+  public abstract void addInfo();
 }
 
-class Contacts {
+class Contacts extends Information {
   private String view;
-  private ArrayList<Information> contactList;
+  private ArrayList<String> names;
+  private ArrayList<String> titles;
+  private ArrayList<String> workPhoneNumbers;
+  private ArrayList<String> workEmails;
+  private ArrayList<String> personalPhoneNumbers;
+  private ArrayList<String> personalEmails;
   private String choice;
   private int index;
-  
+  private int length;
+
   public Contacts() {
     view = "quit";
-    contactList = new ArrayList<Information>();
-    choice = "";
+    names = new ArrayList<String>();
+    titles = new ArrayList<String>();
+    workPhoneNumbers = new ArrayList<String>();
+    workEmails = new ArrayList<String>();
+    personalPhoneNumbers = new ArrayList<String>();
+    personalEmails = new ArrayList<String>();
+    choice = null;
     index = 0;
+    length = 0;
   }
-  
+
+  public void displayInfo() {
+
+  }
+
+  public void addInfo() {
+
+  }
+
+  public void showList() {
+
+  }
+
   public void display() {
     while (true) {
       if (view.equals("list")) {
         showList();
       } else if (view.equals("info")) {
-        showInfo();
+        displayInfo();
       } else if (view.equals("add")) {
         System.out.println();
-        addConctact();
+        addInfo();
       } else if (view.equals("quit")) {
         System.out.println("\nClosing the contact list...\n");
         break;
       }
     }
-  }
-  
-  public void showList() {
-    
-  }
-  
-  public void showInfo() {
-    
-  }
-  
-  public void addConctact() {
-    
   }
 }
 
@@ -52,12 +66,12 @@ class Contacts {
 
 public class Lab2 {  
   public static void main(String[] args) {
-    
+
     //add code below this line
 
     Contacts contacts = new Contacts();
     contacts.display();
-    
+
     //add code above this line
   }
 }

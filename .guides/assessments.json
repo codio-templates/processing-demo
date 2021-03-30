@@ -5653,5 +5653,76 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify method overloading"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3330823136",
+  "source": {
+   "name": "polymorphism lab question 2",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "abstract class ClassA {\n  <<<public abstract>>> void greeting();\n}\n\nclass ClassB extends <<<ClassA>>> {\n  <<<public void>>> greeting() {\n    System.out.println(\"Hello\");\n  }\n}",
+   "distractors": "ClassC\nabstract",
+   "guidance": "The correct answer is:\n\n```java\nabstract class ClassA {\n  public abstract void greeting();\n}\n\nclass ClassB extends ClassA {\n  public void greeting() {\n    System.out.println(\"Hello\");\n  }\n}\n```\n\n* Since the `greeting` method in `ClassA` is not defined, it must be an `abstract` method.\n* There is no `ClassC` defined so `ClassB` must extend `ClassA`.\n* Since `ClassB` extends `ClassA`, it must override the `greeting` method. However, this is not an abstract method; it is a concrete method. So the `abstract` keyword is not used.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Classes and Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab2.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create an abstract class with an abstract method and a subclass for the abstract class",
+   "tokens": {
+    "blank": [
+     "public abstract",
+     "ClassA",
+     "public void"
+    ],
+    "text": [
+     "abstract class ClassA {\n  ",
+     0,
+     " void greeting();\n}\n\nclass ClassB extends ",
+     0,
+     " {\n  ",
+     0,
+     " greeting() {\n    System.out.println(\"Hello\");\n  }\n}"
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
