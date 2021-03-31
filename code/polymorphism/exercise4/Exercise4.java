@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //add class definitions below this line
 
 
@@ -9,7 +11,7 @@ public class Exercise4 {
     
     //add code below this line
 
-
+    
     
     //add code above this line
   }
