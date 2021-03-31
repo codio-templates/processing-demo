@@ -2485,7 +2485,7 @@
   "source": {
    "name": "public access modifier reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nUsing the ideas of encapsulation, select **all** the parts of your program that should use the `private` access modifier.",
+   "instructions": "## Reading Question\n\nUsing the ideas of encapsulation, select **all** the parts of your program that should use the `public` access modifier.",
    "multipleResponse": true,
    "isRandomized": true,
    "answers": [

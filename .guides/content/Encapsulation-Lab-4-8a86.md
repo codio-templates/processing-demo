@@ -81,7 +81,7 @@ To test our code, we are going to set up a loop that controls the command line a
     
     while (run) {
       choice = mainMenu();
-      run = performAction(journal, choice, run);
+      run = performAction(journal, choice);
     }
 
     //add code above this line
