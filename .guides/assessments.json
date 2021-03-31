@@ -5865,5 +5865,54 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT identify method overloading"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3816089180",
+  "source": {
+   "name": "polymorphism lab challenge",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/labChallenge\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass Chef {\n  private String name;\n  private String cuisine;\n  private int michelinStars;\n  \n  //add constructors below this line\n\n  public Chef(String n) {\n    name = n;\n    cuisine = null;\n    michelinStars = 0;\n  }\n  \n  public Chef(String n, String c) {\n    name = n;\n    cuisine = c;\n    michelinStars = 0;\n  }\n  \n  public Chef(String n, String c, int s) {\n    name = n;\n    cuisine = c;\n    michelinStars = s;\n  }\n\n  //add constructors above this line\n  \n  public String display() {\n    String msg = String.format(\"%s is known for %s cuisine and has %d Michelin stars.\", name, cuisine, michelinStars);\n    return msg;\n  }\n}\n\n//add class definitions above this line\n\npublic class LabChallenge {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Chef c1 = new Chef(\"Marco Pierre White\");\n    Chef c2 = new Chef(\"Rene Redzepi\", \"Nordic\");\n    Chef c3 = new Chef(\"Thomas Keller\", \"French\", 3);\n    \n    System.out.println(c1.display());\n    System.out.println(c2.display());\n    System.out.println(c3.display());\n    \n    //add code above this line\n  }\n}\n```\n\n* One constructor needs to take a single string argument that will be assigned to the `name` attribute. The attributes `cuisine` and `michelinStars` will be set to `null` and `0` respectively.\n* One constructor needs to take two string arguments. One will be assigned to the `name` attribute, and the other will be assigned to the `cuisine` attribute. Set the value of `michelinStars` to `0`.\n* One constructor takes three parameters. The first one is assigned to `name`, the second to `cuisine`, and the third is assigned to the `michelinStars` attribute.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/labChallenge/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/labChallenge/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT overload the constructor"
+  }
  }
 ]

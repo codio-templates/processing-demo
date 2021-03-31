@@ -2,7 +2,7 @@
 
 ### Problem
 
-In the IDE to the left, the class `Chef` is already defined, but it does not have a constructor. Create three constructors that take one, two, and three parameters respectively.
+In the IDE to the left, the class `Chef` is already defined, as is the `display` method. However, it does not have a constructor. Create three constructors that take one, two, and three parameters respectively.
 
 ### Expected Output
 
@@ -27,3 +27,5 @@ Calling the `display` method for each object should return the following text:
 |`c3.display()`|Thomas Keller is known for French cuisine and has 3 Michelin stars.|
 
 {Try it}(sh .guides/bg.sh javac code/polymorphism/labChallenge/LabChallenge.java java -cp code/polymorphism/labChallenge/ LabChallenge 1)
+
+{Check It!|assessment}(test-3816089180)
