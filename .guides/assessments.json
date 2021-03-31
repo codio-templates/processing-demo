@@ -5794,5 +5794,76 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2280652319",
+  "source": {
+   "name": "polymorphism lab question 4",
+   "showName": true,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass ExampleClass {\n  public void greeting(String s) {\n    System.out.println(\"Hello \" + s + \"!\");\n  }\n\n  public void greeting(String s1, String s2) {\n    System.out.println(\"Hello \" + s1 + \" and \" + s2 + !\");\n  }\n}\n```\n\nWhat does the code sample best represent?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "1c3e259d-1dd6-bcad-c09a-d9aa78a2cd87",
+     "correct": true,
+     "answer": "Method overloading"
+    },
+    {
+     "_id": "4a1133b5-fae6-3c98-9b0d-204f66ba91e7",
+     "correct": false,
+     "answer": "Method overriding"
+    },
+    {
+     "_id": "0dae7562-5d3f-e066-328c-afbe4c42b0f5",
+     "correct": false,
+     "answer": "Abstract method"
+    }
+   ],
+   "guidance": "The correct answer is method overloading because you have more than one method in the same class with the same name but different sets of parameters. In addition, there is no inheritance. A subclass needs to inherit from a superclass before it can override a method. Similarly, you must inherit from an abstract class before implementing an abstract method.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab4.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify method overloading"
+  }
  }
 ]
