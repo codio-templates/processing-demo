@@ -5914,5 +5914,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT overload the constructor"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1690807397",
+  "source": {
+   "name": "polymorphism coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise1\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\nimport java.util.Random; \n\nclass Lottery {\n  public ArrayList<Integer> shuffle() {\n    Random r = new Random();\n    ArrayList<Integer> nums = new ArrayList<Integer>();\n    for (int i = 0; i < 5; i++) {\n      int num = r.nextInt(20);\n      nums.add(num);\n    }\n    return nums;\n  }\n}\n\n//add class definitions below this line\n\nclass PowerBall extends Lottery {\n  public ArrayList<Integer> shuffle() {\n    Random r = new Random();\n    ArrayList<Integer> nums = new ArrayList<Integer>();\n    for (int i = 0; i < 6; i++) {\n      int num = r.nextInt(100);\n      nums.add(num);\n    }\n    return nums;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    PowerBall p = new PowerBall();\n    System.out.println(p.shuffle());\n    \n    //add code above this line\n  }\n}\n```\n\n* Be sure that `PowerBall` extends the `Lottery` class.\n* Override the `shuffle` method.\n* In the for loop, change the `5` to a `6` so that it returns six random integers.\n* The `nextInt` method takes one argument. It will return a random integer up to but not including the argument. Since you want to return a random number up to 99, use `nextInt(100)`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise1/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise1/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override a method from a superclass"
+  }
  }
 ]
