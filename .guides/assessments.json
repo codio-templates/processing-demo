@@ -6012,5 +6012,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT overload a method with four different type signatures"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1537667893",
+  "source": {
+   "name": "polymorphism coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise5\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\nimport java.io.*;\n\nclass Substitute {\n  private String sourceFile;\n  private String answerFile;\n  private ArrayList<String[]> wordsList;\n  private String wordsString;\n  \n  public Substitute(String source, String answer) {\n    sourceFile = source;\n    answerFile = answer;\n    wordsList = new ArrayList<String[]>();\n    wordsString = null;\n  }\n  \n  public ArrayList<String[]> getWordsList() {\n    return wordsList;\n  }\n  \n  public String getWordsString() {\n    return wordsString;\n  }\n  \n  public String getAnswerFile() {\n    return answerFile;\n  }\n  \n  /**\n   * Reads the text file stored in sourceFile and converts it to an\n   * ArrayList of arrays of strings. Each array represents a sentence,\n   * and element represents a word of the sentence. This ArrayList of\n   * arrays of strings is stored in the attribute wordsList.\n   */\n  public void stringToList() {\n    try {\n      ArrayList<String> lines = new ArrayList<String>();\n      BufferedReader reader = new BufferedReader(new FileReader(sourceFile));\n      String currentLine = reader.readLine();\n      while(currentLine != null) {\n        lines.add(currentLine);\n        currentLine = reader.readLine();\n      }\n      reader.close();\n      for (String line : lines) {\n        wordsList.add(line.split(\" \"));\n      }\n    } catch (IOException e) {\n      System.out.println(e);\n    }\n  }\n  \n  /**\n   * Takes the ArrayList of arrays of strings and coverts it back into\n   * a single string with newline characters. This string is stored\n   * in the wordsString attribute.\n   */\n  public void listToString() {\n    ArrayList lines = new ArrayList<String>();\n    for (String[] line : wordsList) {\n      lines.add(String.join(\" \", line));\n    }\n    wordsString = String.join(\"\\n\", lines);\n  }\n  \n  /**\n   * Calls stringToList. Then iterates through the ArrayList of arrays of\n   * strings. If it is the fifth word, the element is replaces with\n   * \"HELLO\". This method calls listToString and prints the results.\n   */\n  public void swapWords() {\n    stringToList();\n    for (String[] line : wordsList) {\n      for (int i = 0; i < line.length; i++) {\n        if ((i + 1) % 5 == 0) {\n          line[i] = \"HELLO\";\n        }\n      }\n    }\n    listToString();\n    System.out.println(wordsString);\n  }\n}\n\n//add class definitions below this line\n\nclass Stars extends Substitute {\n  public Stars(String source, String answer) {\n    super(source, answer);\n  }\n  \n  private String createStars(String s) {\n    String stars = \"\";\n    for (int i = 0; i < s.length(); i++) {\n      stars += \"*\";\n    }\n    return stars;\n  }\n  \n  public void swapWords() {\n    stringToList();\n    for (String[] line : getWordsList()) {\n      for (int i = 0; i < line.length; i++) {\n        if ((i + 1) % 3 == 0) {\n          line[i] = createStars(line[i]);\n        }\n      }\n    }\n    listToString();\n    try {\n      BufferedWriter writer = new BufferedWriter(new FileWriter(getAnswerFile()));\n      writer.write(getWordsString());\n      writer.close();\n    } catch (IOException e) {\n      System.out.println(e);\n    } \n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise5 {  \n  public static void main(String[] args) {\n    String source = \"/home/codio/workspace/code/polymorphism/exercise5/words.txt\";\n    String answer = \"/home/codio/workspace/code/polymorphism/exercise5/answer.txt\";\n    \n    //add code below this line\n\n    Stars s = new Stars(source, answer);\n    s.swapWords();\n    \n    //add code above this line\n  }\n}\n```\n\n* The `swapWords` method needs to call the constructor of the superclass. Use the `super` keyword and pass it the required parameters.\n```java\n  public Stars(String source, String answer) {\n    super(source, answer);\n  }\n```\n* The `swapWords` method is almost the same as in the `Substitute` class except that you are going to change every third word. Use `% 3` instead of `% 5`. In addition, you do not want to replace the word with `HELLO` but a number of `*`. This example calls a helper method that will return the correct number of `*`.\n```java\n        if ((i + 1) % 3 == 0) {\n          line[i] = createStars(line[i]);\n        }\n```\n* This helper method takes the word to be replaced as an argument. Create an empty string that will contain the asterisks. Iterate a for loop as many times as the length of the word to be replaced. Add an asterisk to the string variable every time the loop runs. Finally, return the string variable with the asterisks. \n```java\n  private String createStars(String s) {\n    String stars = \"\";\n    for (int i = 0; i < s.length(); i++) {\n      stars += \"*\";\n    }\n    return stars;\n  }\n```",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise5/Exercise5.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise5/Exercise5.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override a method that works with files."
+  }
  }
 ]
