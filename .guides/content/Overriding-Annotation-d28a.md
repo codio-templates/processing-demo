@@ -2,7 +2,7 @@
 
 ## Overriding Annotation
 
-Java allows you to provide an optional annotation when overriding a method. The `@Override` annotation lets the Java compiler that the following method overrides a method from the superclass. Adding annotations when overriding methods is also helpful when other developers look at your code. Java can flag an issue when method overriding does not work as expected. For example, the class below is supposed to override the `greeting` method, but there is a typo.
+Java allows you to provide an optional annotation when overriding a method. The `@Override` annotation lets the Java compiler know that the following method overrides a method from the superclass. Adding annotations when overriding methods is also helpful when other developers look at your code. Java can flag an issue when method overriding does not work as expected. For example, the class below is supposed to override the `greeting` method, but there is a typo.
 
 ```java
 //add class definitions below this line
@@ -32,7 +32,7 @@ Now create instances of `ClassA` and `ClassB` and call the `greeting` method. Yo
 
 {Try it}(sh .guides/bg.sh javac code/inheritance/OverridingAnnotation.java java -cp code/inheritance/ OverridingAnnotation 1)
 
-If we add the `@Override` annotation to `ClassB`, you will how Java notices the problem and brings it to your attention. Java expects `ClassB` to override the `greeting` method. Because it does not, the compiler generates an error message. Annotating method overriding helps programmers catch small problems that are otherwise hard to track down.
+If we add the `@Override` annotation to `ClassB`, you will see how Java notices the problem and brings it to your attention. Java expects `ClassB` to override the `greeting` method. Because it does not, the compiler generates an error message. Annotating method overriding helps programmers catch small problems that are otherwise hard to track down.
 
 ```java
 //add class definitions below this line

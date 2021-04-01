@@ -59,12 +59,12 @@ class ClassC extends ClassB {
 
 ## Overriding a Method with Multiple Inheritance
 
-Like extending a class, overriding a method works the same in multilevel inheritance as it does in single inheritance. Change `ClassC` so that it overrides the `hello` method.
+Like extending a class, overriding a method works the same in multilevel inheritance as it does in single inheritance. Override the `hello` method so that it prints a message.
 
 ```java
 //add class definitions below this line
 
-class ClassC extends ClassB {
+class ClassC extends ClassB {  
   public void hello() {
     System.out.println("Hello from Class C");
   }  
@@ -73,7 +73,7 @@ class ClassC extends ClassB {
 //add class definitions above this line
 ```
 
-Now replace the call to `bonjour` with a call to `hello`.
+Now call the `hello` method.
 
 ```java
     //add code below this line

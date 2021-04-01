@@ -1,6 +1,6 @@
 ----------
 
-## Overriding Annotation
+## Prohibit Overriding
 
 In Java, you can override any public method from the superclass. The code below overrides the `greeting` method. But what if you do not want another user to override a method from your class? The `final` keyword will keep users from overriding a method. Notice how the `greeting` method in `ClassA` uses `final`. Copy and paste this code into the IDE and run it.
 

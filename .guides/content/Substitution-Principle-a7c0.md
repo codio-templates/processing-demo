@@ -49,10 +49,10 @@ Instantiate an object of `ClassB` and pass it to the `substitution` method. Even
 
 |||challenge
 ## Try this variation:
-* Remove the `extends` keyword from the `ClassB` and run the code again.
+* Remove `extends ClassA` from the `ClassB` declaration and run the code again.
 <details>
   <summary><strong>Why did this produce an error?</strong></summary>
-  Deleting <code>extends</code> means that <code>ClassB</code> no longer inherits from <code>ClassA</code>. Therefore, the substitution principle no longer applies. Java now says there is a type mismatch error.
+  Deleting <code>extends ClassA</code> means that <code>ClassB</code> no longer inherits from <code>ClassA</code>. Therefore, the substitution principle no longer applies. Java now says there is a type mismatch error.
 </details>
 
 |||

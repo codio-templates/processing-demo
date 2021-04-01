@@ -6,7 +6,7 @@
 
 |||info
 ## Open the File
-You have to tell Processing the file you want to open. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `InheritanceLab2`. Finally, open the `InheritanceLab2.pde` file. This file will be used for the animation.
+You have to tell Processing the file you want to open. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `inheritance`, and double click on `InheritanceLab2`. Finally, open the `InheritanceLab2.pde` file. This file will be used for the animation.
 
 |||
 
@@ -57,7 +57,7 @@ These formulas need to be tweaked a bit for the `Hexagon` class. First, the abov
 
 ### Test Your Code
 
-To be sure that the `Hexagon` class works, we are going to add an object and draw it to the window. Before the `setup` method create a `Hexagon` object. Inside the `setup` method instantiate the object. We want it to be centered in the window, so set the x-position to `width/2` and the y-position to `height/2`. Give the a radius of `125`, a color of `(179, 55, 113)`, and a stroke weight of `3`. Finally go into the `draw` method and call the `show` method on the `Hexagon` object.
+To be sure that the `Hexagon` class works, we are going to add an object and draw it to the window. Before the `setup` method create a `Hexagon` object. Inside the `setup` method instantiate the object. We want it to be centered in the window, so set the x-position to `width/2` and the y-position to `height/2`. Give it a radius of `125`, a color of `(179, 55, 113)`, and a stroke weight of `3`. Finally go into the `draw` method and call the `show` method on the `Hexagon` object.
 
 ```java
 Hexagon h;
