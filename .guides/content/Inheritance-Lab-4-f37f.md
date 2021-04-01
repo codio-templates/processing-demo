@@ -2,6 +2,14 @@
 
 ## Lab 4 - Extending the Superclass
 
+{Launch Processing}(bash .guides/processing.sh)
+
+|||info
+## Open the File
+You have to tell Processing the file you want to open. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `inheritance`, and double click on `InheritanceLab2`. Finally, open the `InheritanceLab2.pde` file. This file will be used for the animation.
+
+|||
+
 Now that we have a superclass, it is time to extend it through inheritance. We want a more general `Polygon` class that can have a user-defined number of vertices. Start by creating the `Polygon` class as a subclass of the `Hexagon` class. Then override the constructor so `vertices` is user-defined. Use the `setVertices` method to update the value `vertices`. In addition, we need to recalculate the `angle` attribute, otherwise the `Polygon` class will draw a hexagon.
 
 ```java

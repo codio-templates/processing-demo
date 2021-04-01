@@ -4,7 +4,7 @@
 
 In the IDE to the left, the class `MP3` is already defined. Use this class to do the following things:
 * Create the class `Podcast` that inherits from `MP3`
-* Override the `__init__` method such that the podcast has the following attributes:
+* Override the constructor such that the podcast has the following attributes:
   * `name` - a string that is the name of the podcast
   * `title` - a string that is the title of the episode
   * `length` - an integer that has the length of the podcast **in seconds**
