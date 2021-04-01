@@ -3830,12 +3830,12 @@
     {
      "_id": "186ae633-3985-468b-540b-14e307a6449c",
      "correct": true,
-     "answer": "When the object is an instance of the subclass."
+     "answer": "When the object is a subclass of the comparison class."
     },
     {
      "_id": "29a49127-eb0f-811c-2a68-14a2460067c4",
      "correct": false,
-     "answer": "When the object is an instance of the superclass."
+     "answer": "When the object is a superclass of the comparison class."
     },
     {
      "_id": "e3b704f4-cad6-4fcd-247b-a1554c674170",
@@ -3896,22 +3896,22 @@
     {
      "_id": "69268177-491b-44cb-927f-0a97bb4c03f9",
      "correct": true,
-     "answer": "class Dog extends Pet {}"
+     "answer": "```java\nclass Dog extends Pet {}\n```"
     },
     {
      "_id": "077111a3-6b8a-b641-f1f8-4f303e215c4c",
      "correct": false,
-     "answer": "class Dog inherits Pet {}"
+     "answer": "```java\nclass Dog inherits Pet {}\n```"
     },
     {
      "_id": "fcdea550-a444-a47f-1cb5-55ecbe05caec",
      "correct": false,
-     "answer": "class Dog(Pet) {}"
+     "answer": "```java\nclass Dog(Pet) {}\n```"
     },
     {
      "_id": "3e8ac4a3-db8d-98f9-651e-b580dc21fcb6",
      "correct": false,
-     "answer": "class Dog extend Pet {}"
+     "answer": "```java\nclass Dog extend Pet {}\n```"
     }
    ],
    "guidance": "The correct answer is:\n\n```java\nclass Dog extends Pet {}\n```\n\nJava uses the `extends` keyword to indicate inheritance.",
@@ -3942,13 +3942,7 @@
     "files": [
      "code/inheritance/Hierarchy.java"
     ],
-    "opened": [
-     {
-      "type": "file",
-      "panelNumber": 0,
-      "content": "code/inheritance/Hierarchy.java"
-     }
-    ]
+    "opened": []
    },
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a subclass"
