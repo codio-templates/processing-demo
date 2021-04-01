@@ -56,7 +56,7 @@ class Substitute {
    * in the wordsString attribute.
    */
   public void listToString() {
-    ArrayList lines = new ArrayList<String>();
+    ArrayList<String> lines = new ArrayList<String>();
     for (String[] line : wordsList) {
       lines.add(String.join(" ", line));
     }
