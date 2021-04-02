@@ -6061,5 +6061,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT override a method that works with files."
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2016365405",
+  "source": {
+   "name": "polymorphism coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise2\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nabstract class Vehicle {\n  public abstract double travel(double time);\n}\n\n//add class definitions below this line\n\nclass Airplane extends Vehicle {\n  private double speed;\n  \n  public Airplane(double s) {\n    speed = s;\n  }\n  \n  public double travel(double time) {\n    return speed * time;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Airplane a = new Airplane(550.0);\n    System.out.println(a.travel(2));\n    System.out.println(a.travel(3.15));\n    System.out.println(a.travel(10.63));\n    \n    //add code above this line\n  }\n}\n```\n\n* Have `Airplane` extend the `Vehicle` class.\n* Since `distance` is an abstract method, the `Airplane` class must override this method.\n* The code sample that initiates an `Airplane` object shows that this class takes a value for the constructor.\n* Calculating distance is done by multiplying speed of the vehicle by time it is traveling. The `distance` method takes time as an argument, so the value representing speed is contained within the object (the value passed to the constructor).\n* The constructor for the `Airplane` class takes a double which represents speed.\n* The `distance` method returns `time` multiplied by the valued passed to the constructor.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Classes and Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise2/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise2/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT inherit from an abstract class"
+  }
  }
 ]
