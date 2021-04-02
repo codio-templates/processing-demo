@@ -6110,5 +6110,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT inherit from an abstract class"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1241253698",
+  "source": {
+   "name": "polymorphism coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise3\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nabstract class Temperature {\n  public abstract double celsius(double temp);\n  public abstract double fahrenheit(double temp);\n}\n\n//add class definitions below this line\n\nclass Conversion extends Temperature {\n  public double celsius(double temp) {\n    return (temp - 32) / 1.8;\n  }\n  \n  public double fahrenheit(double temp) {\n    return temp * 1.8 + 32;\n  }\n  \n  public double convertTo(String unit, double temp) {\n    if (unit.toLowerCase().equals(\"celsius\")) {\n      return celsius(temp);\n    } else if (unit.toLowerCase().equals(\"fahrenheit\")) {\n      return fahrenheit(temp);\n    }\n    \n    return 0;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise3 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Conversion c = new Conversion();\n    System.out.println(c.convertTo(\"Celsius\", 212.0));\n    System.out.println(c.convertTo(\"CELSIUS\", 78.0));\n    System.out.println(c.convertTo(\"celsius\", 23.0));\n    System.out.println(c.convertTo(\"Fahrenheit\", 0.0));\n    System.out.println(c.convertTo(\"FAHRENHEIT\", 29.0));\n    System.out.println(c.convertTo(\"fahrenheit\", 112.0));\n    \n    //add code above this line\n  }\n}\n```\n* Make sure that `Conversion` extends the `Temperature` class.\n* Becuase `Temperature` is an abstract class, the `Conversion` class must override the `celsius` and `fahrenheit` methods.\n* The `celsius` method has the argument `temp` and returns `(temp - 32) / 1.8`.\n* The `fahrenheit` method has the argument `temp` and returns `temp * 1.8 + 32`.\n* The `convertTo` method takes a string (`unit`) and a double (`temp`) as arguments. Convert the `unit` to lowercase and ask if it equals `\"celsius\"`. If yes, return the output of `celsius(temp)`. If `unit` is equal to `\"fahrenheit\"`, return the output of `fahrenheit(temp)`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise3/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise3/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override abstract methods inherited from an abstract class"
+  }
  }
 ]

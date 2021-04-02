@@ -1,3 +1,8 @@
+abstract class Temperature {
+  public abstract double celsius(double temp);
+  public abstract double fahrenheit(double temp);
+}
+
 //add class definitions below this line
 
 
@@ -9,7 +14,7 @@ public class Exercise3 {
     
     //add code below this line
 
-
+    
     
     //add code above this line
   }

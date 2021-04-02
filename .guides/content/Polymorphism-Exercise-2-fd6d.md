@@ -6,7 +6,7 @@
 
 ## Expected Output
 
-If you instantiate an `Airplane` object as shown below, the table indicates the expected return values for three different method calls.
+Instantiate an `Airplane` object as shown below. 
 
 ```java
     //add code below this line
@@ -15,6 +15,8 @@ If you instantiate an `Airplane` object as shown below, the table indicates the 
     
     //add code above this line
 ```
+
+The table indicates the expected return values when calling `distance` with three different arguments.
 
 |Method Call|Return Value|
 |-----------|------------|
