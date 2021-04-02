@@ -11,7 +11,7 @@ The first thing we need to do is change the default view when a `Contacts` objec
   }
 ```
 
-Next we want to modify the `showList` method to show the list of people in the contact list. There are two possible states for the list view: the list is empty or there are contacts in the list. When the list is empty, the user will be provided with the choice to add a contact or quit the script. Use a conditional to represent these two states. For now, set `view` to `"quit"` in the `else` branch.
+Next we want to modify the `showList` method to show the list of people in the contact list. There are two possible states for the list view: the list is empty or there are contacts in the list. When the list is empty, the user will be provided with the choice to add a contact or quit the program. Use a conditional to represent these two states. For now, set `view` to `"quit"` in the `else` branch.
 
 The print statement is to add a blank line for legibility. We also need a scanner object to collect input from the user. If `length` is 0, then present the user with a choice. Store their input in `choice`. The `.toLowerCase()` will convert the user choice to a lowercase letter. This will make comparisons easier. Remember, Java is case sensitive; `q` and `Q` are not the same. By forcing all input to lowercase, we only need to test for the lowercase letter. The `showList` method ends by calling another method to handle the user's choice.
 
@@ -31,7 +31,7 @@ The print statement is to add a blank line for legibility. We also need a scanne
 
 ## Handling User Choices
 
-Every time the user makes a choice, we want to evaluate that choice and perform the appropriate action. In this case, the user can choose between adding a contact or quitting the script. Notice that `view` only changes to `"add"` if `"a"` is entered **and** we are in list view. We only want to add new contacts from the list view.
+Every time the user makes a choice, we want to evaluate that choice and perform the appropriate action. In this case, the user can choose between adding a contact or quitting the program. Notice that `view` only changes to `"add"` if `"a"` is entered **and** we are in list view. We only want to add new contacts from the list view.
 
 ```java
   public void handleChoice() {
@@ -82,7 +82,7 @@ When the user enters `"a"`, we need to create a new contact. To do this, we are 
 
 ## Testing Your Code
 
-Before moving on to the next part of the script, we want to check that our code is adding a contact to the list. To do that, we need to create a getter for the `length` attribute.
+Before moving on to the next part of the program, we want to check that our code is adding a contact to the list. To do that, we need to create a getter for the `length` attribute.
 
 ```java
   public int getLength() {
@@ -107,10 +107,10 @@ Run the program and enter `a` when prompted, then add the following contact:
 ```markdown
 Rachel Kim
 555 123-4567
-rachel_k@myMail.com
+rachel_k@personalMail.com
 Senior Software Engineer
 555 890-1234
-rkim@appleComputer.com
+rkim@workMail.com
 ```
 
 If everything worked properly, your program should print `1` in the terminal as there is one person in our contact list.

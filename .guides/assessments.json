@@ -5295,7 +5295,7 @@
     {
      "_id": "584eae69-02eb-6fe5-b65b-6b7b68db3e07",
      "correct": false,
-     "answer": "Method overriding has a single interface (the method name), but only works with a single data type (the sibclass)."
+     "answer": "Method overriding has a single interface (the method name), but only works with a single data type (the subclass)."
     },
     {
      "_id": "ee04d9eb-0cff-ca15-fbe4-a5b612102c70",

@@ -2,7 +2,7 @@
 
 ## Method Overloading
 
-Method overloading is another example of polymorphism. Method overloading occurs when you have a single method name that can take different sets of parameters. Imagine you want to write the method `sum` that can sum up to three numbers. The math involved with three parameters is slightly different that two parameters, which is different from 1 parameter, etc. Traditionally, if you declare a method that takes three parameters but only pass two, Java will throw an error message. Instead let's create a class that has two `sum` methods; one with two parameters and another with three parameters.
+Method overloading is another example of polymorphism. Method overloading occurs when you have a single method name that can take different sets of parameters. Imagine you want to write the method `sum` that can sum up to three numbers. The math involved with three parameters is slightly different than two parameters, which is different from 1 parameter, etc. Traditionally, if you declare a method that takes three parameters but only pass two, Java will throw an error message. Instead let's create a class that has two `sum` methods; one with two parameters and another with three parameters.
 
 ```java
 //add class definitions below this line
@@ -38,7 +38,7 @@ Java looks at the number and types of arguments and, as long there is a matching
 
 |||challenge
 ## Try this variation:
-* Add on to the `sum` method such that it can take up to five numbers as parameters. Be sure to test all possible method calls.
+* Continue to overload the `sum` method such that it can take up to five numbers as parameters. Be sure to test all possible method calls.
 
 <details>
   <summary><strong>Solution</strong></summary>
@@ -186,7 +186,7 @@ Do not make any changes to the object instantiation.
 
 <details>
   <summary><strong>Why is there an error?</strong></summary>
-  Java automatically uses the default constructor when there are no constructors defined. If you want to overload the constructor, you must declare the default constructor if you want to instantiate an object without any arguments.
+  Java automatically uses the default constructor when there are no constructors defined. If a constructor exists, you must declare a default constructor if you want to instantiate an object without any arguments.
 </details>
 
 |||

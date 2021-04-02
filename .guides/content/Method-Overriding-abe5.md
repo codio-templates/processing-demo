@@ -2,7 +2,7 @@
 
 ## What is Polymorphism?
 
-Polymorphism is a concept in object-oriented programming in which a single interface that takes different forms (polymorphism means "many forms"). Often this means similar operations are grouped together with the same name. However, these operations with the same name will produce different results. You have already encountered a few examples of polymorphism. Enter the following code into the IDE.
+Polymorphism is a concept in object-oriented programming in which a single interface takes different forms (polymorphism means "many forms"). Often this means similar operations are grouped together with the same name. However, these operations with the same name will produce different results. You have already encountered a few examples of polymorphism. Enter the following code into the IDE.
 
 ```java
     //add code below this line
@@ -88,7 +88,7 @@ As expected, the script prints `I am from class Alpha`. Now change the line of c
 
 {Try it}(sh .guides/bg.sh javac code/polymorphism/MethodOverriding.java java -cp code/polymorphism/ MethodOverriding 4)
 
-Now the script prints `I am from class Bravo`. The method call did not change, but the output did. A single interface (the `.show()` method) works with multiple forms (the `Alpha` and `Bravo` data types). This is why method overriding is an example of polymorphism.
+Now the script prints `I am from class Bravo`. The method call did not change, but the output did. A single interface (the `show` method) works with multiple forms (the `Alpha` and `Bravo` data types). This is why method overriding is an example of polymorphism.
 
 |||challenge
 ## Try this variation:

@@ -11,7 +11,7 @@ This lab is built around the `Contacts` class, which has four attributes:
   * List view - Shows the list of all of the contacts.
   * Information view - Shows the work and personal information for a particular contact.
   * Add view - Add information for a new contact.
-  * Quit view - Leave a message for the user and then end the script.
+  * Quit view - Leave a message for the user and then end the program.
 * `names` - ArrayList of strings that stores the names of each person in the contact list.
 * `titles` - ArrayList of strings that stores the titles for each person in the contact list.
 * `workPhoneNumbers` - ArrayList of strings that stores the work phone numbers for each person in the contact list.
@@ -95,7 +95,7 @@ class Contacts extends Information {
 
 ## The Display Method
 
-The `display` method is designed to be a loop that runs until the user tells the script to end. The method checks the value of the `view` attribute and calls the appropriate method that displays the information for each view. Since the loop is `while (true)`, be sure to include a `break` statement otherwise the loop would never stop (Java would eventually stop the script with an error message).
+The `display` method is designed to be a loop that runs until the user tells the program to end. The method checks the value of the `view` attribute and calls the appropriate method that displays the information for each view. Since the loop is `while (true)`, be sure to include a `break` statement otherwise the loop would never stop (Java would eventually stop the program with an error message).
 
 ```java
   public void displayInfo() {
@@ -125,7 +125,7 @@ The `display` method is designed to be a loop that runs until the user tells the
 
 ## Starting the Other Methods
 
-The `display` method calls three other methods; `displayInfo` and `addInfo` have already been declared. Trying to test the code would cause your script to crash as the `showList` method has not yet been defined. Create the empty method `showList` just as was done with `displayInfo` and `addInfo`. We will come back later and add working code to each method.
+The `display` method calls three other methods; `displayInfo` and `addInfo` have already been declared. Trying to test the code would cause your program to crash as the `showList` method has not yet been defined. Create the empty method `showList` just as was done with `displayInfo` and `addInfo`. We will come back later and add working code to each method.
 
 ```java
   public void displayInfo() {
@@ -154,7 +154,7 @@ Before moving on to the next part of the script, we want to check that our code 
     //add code above this line
 ```
 
-Run your program. Because the `view` attribute is `'quit'`, the script should immediately display a message and then stop. Your output should look something like this.
+Run your program. Because the `view` attribute is `"quit"`, the script should immediately display a message and then stop. Your output should look something like this.
 
 ![Lab 1 Output](.guides/img/polymorphism/output_lab1.png)
 

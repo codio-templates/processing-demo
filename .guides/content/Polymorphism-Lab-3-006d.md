@@ -9,12 +9,11 @@ Now that we can add a contact to the list, we will want to show all of the conta
 
     Contacts contacts = new Contacts();
     contacts.display();
-    System.out.println(contacts.getLength());
 
     //add code above this line
 ```
 
-We are going to iterate through the list of contacts and print the first and last name. To help users select a contact, a number will appear before each name. This way, the user types the number, and the contact's information appears. In the `else` branch of the `showList` method, create a for loop to go from 0 to `length`. We want a number followed by the name. The numbers should start at 1, so print the loop index plus 1 followed by the element from the `names` ArrayList. After displaying the list of names, ask the user to make a selection. Entering a number will show all of the information about a contact.
+We are going to iterate through the list of contacts and print the name. To help users select a contact, a number will appear before each name. This way, the user types the number, and the contact's information appears. In the `else` branch of the `showList` method, create a for loop to go from 0 to `length`. We want a number followed by the name. The numbers should start at 1, so print the loop index plus 1 followed by the element from the `names` ArrayList. After displaying the list of names, ask the user to make a selection. Entering a number will show all of the information about a contact.
 
 ```java
   public void showList() {
@@ -55,7 +54,7 @@ Add an `else if` branch to the `handleChoice` method that asks if the user input
   }
 ```
 
-We need to create the boolean helper method `isNumeric` which takes the user input and determines if they entered a number. First to see if the user input (a string) is `null` or empty. Return `false` if either condition is true. Then try to convert the string to an integer. If this works return `true`. If Java throws an exception because the string cannot be converted to an integer, then return `false`.
+We need to create the boolean helper method `isNumeric` which takes the user input and determines if they entered a number. First see if the user input (a string) is `null` or empty. Return `false` if either condition is true. Then try to convert the string to an integer. If this works return `true`. If Java throws an exception because the string cannot be converted to an integer, then return `false`.
 
 ```java
   private boolean isNumeric(String s) {
@@ -76,7 +75,7 @@ We need to create the boolean helper method `isNumeric` which takes the user inp
 
 ## Testing Your Code
 
-Before moving on to the next part of the script, we want to check that our code is displaying all of the contacts in the list. To do that, enter two different contacts. The first one is:
+Before moving on to the next part of the program, we want to check that our code is displaying all of the contacts in the list. To do that, enter two different contacts. The first one is:
 
 ```markdown
 John Calvin
@@ -102,7 +101,7 @@ Philosopher
 tom_hobbes@work.org
 ```
 
-Your script should now show the following output:
+Your program should now show the following output:
 
 ![Contact 2](.guides/img/polymorphism/lab3_pic2.png)
 
