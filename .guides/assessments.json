@@ -5270,5 +5270,888 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT extend the parent class with a new method"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1767969218",
+  "source": {
+   "name": "polymorphism method overriding reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nWhy is method overriding an example of polymorphism?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "609c6d5d-db48-dfe9-04f7-5f51f3315f4d",
+     "correct": true,
+     "answer": "Method overriding has a single interface (the method name) and works with different forms (the superclass and subclass)."
+    },
+    {
+     "_id": "584eae69-02eb-6fe5-b65b-6b7b68db3e07",
+     "correct": false,
+     "answer": "Method overriding has a single interface (the method name), but only works with a single data type (the subclass)."
+    },
+    {
+     "_id": "ee04d9eb-0cff-ca15-fbe4-a5b612102c70",
+     "correct": false,
+     "answer": "Method overriding is not an example of polymorphism, it is an example of inheritance."
+    }
+   ],
+   "guidance": "Polymorphism occurs when there is a single interface that works with multiple forms. When overriding a method, two methods have the same name (a shared interface) and they work with different forms (the superclass and the subclass). This is why method overriding is an example of polymorphism.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/MethodOverriding.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/MethodOverriding.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain why method overriding is an example of polymorphism"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-994634395",
+  "source": {
+   "name": "polymorphism method overloading reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass ExampleClass {\n  public int totalChars(String s1, String s2, String s3) {\n    return s1.length() + s2.length() + s3.length();\n  }\n  \n  public int totalChars(String s1) {\n    return s1.length();\n  }\n}\n\npublic class Main {  \n  public static void main(String[] args) {\n    ExampleClass e = new ExampleClass();\n    System.out.println(e.totalChars(\"hello\", \"world\"));\n  }\n}\n```\n\nWhat is the output of the program?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "4c426c44-9584-cbc5-dfe7-71f8afa67172",
+     "correct": true,
+     "answer": "Error message"
+    },
+    {
+     "_id": "37643034-8451-db6b-2a9d-7d61a57ec4a6",
+     "correct": false,
+     "answer": "`hello world`"
+    },
+    {
+     "_id": "0eb099ec-85f2-2705-bc06-c1dd8e52ca9a",
+     "correct": false,
+     "answer": "`10`"
+    }
+   ],
+   "guidance": "This code would generate an error message. The method `totalChars` is overloaded, but it does not have a version that takes two string arguments. The method call must match one of the overloaded method definitions.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/MethodOverloading.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/MethodOverloading.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT properly call an overloaded method"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1047831703",
+  "source": {
+   "name": "abstract methods reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nabstract class ParentClass {\n  public abstract void sayHello();\n}\n```\n\nDrag the code blocks into the box below. Create the class `ChildClass` that inherits from `ParentClass`. **Hint**, not all of the blocks will be used, and the blocks must be properly indented.",
+   "initial": "class ChildClass extends ParentClass {\n  public void sayHello() {\n    System.out.println(&quot;Hello&quot;);\n  }\n}\nconcrete class ChildClass extends ParentClass {  #distractor\nclass ChildClass { #distractor\npublic void hello() {  #distractor\npublic abstract void sayHello() { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the solution:\n\n```java\nclass ChildClass extends ParentClass {\n  public void sayHello() {\n    System.out.println(\"Hello\");\n  }\n}\n```\n\n* `ChildClass` is a concrete class (not abstract), but you do not use a keyword to indicate this.\n* `ChildClass` must inherit from `ParentClass`, so you need to use the `extends` keyword.\n* `SayHello` is an abstract method, which means the subclass must override it.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/AbstractMethods.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/AbstractMethods.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT create a subclass from an abstract class"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-4189147635",
+  "source": {
+   "name": "polymorphism formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nMark all of the ways in which polymorphism can be implemented. **Hint**, there is more than one correct answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "67fce068-b5a0-ab64-e18e-09028dcd2073",
+     "correct": true,
+     "answer": "Method overriding"
+    },
+    {
+     "_id": "ffea1301-b39a-804a-92f2-41e28fcd5a63",
+     "correct": true,
+     "answer": "Method overloading"
+    },
+    {
+     "_id": "fc625311-587f-2fd3-feda-4a329517906c",
+     "correct": true,
+     "answer": "Abstract methods"
+    },
+    {
+     "_id": "3310c9c9-1a04-7526-98fe-e32b02e5f886",
+     "correct": false,
+     "answer": "Inheritance"
+    },
+    {
+     "_id": "a81fba5b-0ad1-fbe5-c1cb-bf24d408687d",
+     "correct": false,
+     "answer": "Encapsulation"
+    }
+   ],
+   "guidance": "The correct answers are:\n\n```markdown\nAbstract methods\nMethod overloading\nMethod overriding\n```\n\nInheritance by itself is not a form of polymorphism. If inheritance uses method overriding, then that would be a form of polymorphism. However, you can have inheritance without method overriding, therefore inheritance is considered a form of polymorphism.\n\nEncapsulation is about hiding and sharing information in objects. This is not a form of polymorphism.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Examples of polymorphism"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify the different forms of polymorphism in Java"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1123100308",
+  "source": {
+   "name": "polymorphism formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following code:\n\n```java\nclass Rectangle {\n  private double length;\n  private double width;\n\n  public Rectangle(double l, double w) {\n    length = l;\n    width = w;\n  }\n\n  public double area() {\n    return length * width;\n  }\n}\n\npublic class Square extends Rectangle {\n  private double side;\n\n  public Square(double s) {\n    side = s;\n  }\n\n  public double area() {\n    return side * side;\n  }\n}\n```\n\nWhich example of polymorphism is present in the code above?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "26e0a7da-65b2-fa51-5b14-a3664f631aec",
+     "correct": true,
+     "answer": "Method Overriding - The subclass `Circle` creates the method `area` replaces the `area` method from the superclass."
+    },
+    {
+     "_id": "ade15562-68d4-4b76-366f-28c51261cd0d",
+     "correct": false,
+     "answer": "Method Overloading - There is more than one instance of the method `area` that have different definitions (number of parameters)."
+    },
+    {
+     "_id": "4cd87135-d69f-70d2-215d-6b3774bc4d50",
+     "correct": false,
+     "answer": "Abstract Method - `Circle` extends the abstract class `Rectangle` and must define the abstract method `area`."
+    }
+   ],
+   "guidance": "The correct answer is **method overriding**.\n\n* This is not method overloading because you would need the more than one method in the same class. There are two versions of `area`, but one is in the superclass and the other is in the subclass. In addition, these methods have the same definition (neither one takes a parameter).\n* This is not abstract methods because `Rectangle` is not an abstract class, and the method `area` is not an abstract method.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify method overriding"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-29167309",
+  "source": {
+   "name": "polymorphism lab question 1",
+   "showName": false,
+   "instructions": "## Lab Question\n\nUse the method definitions below to help you answer the question.\n\n```java\npublic myMethod(int a) {\n  // rest of the method goes here\n}\n\npublic myMethod(int a, int b) {\n  // rest of the method goes here\n}\n```\n\nThe code sample above is representative of which form of polymorphism?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "b985c185-a332-49c6-8482-54f663623ffd",
+     "correct": true,
+     "answer": "Method overloading"
+    },
+    {
+     "_id": "0a880a6a-bf3f-2355-4c7e-9abca523a73a",
+     "correct": false,
+     "answer": "Method overriding"
+    },
+    {
+     "_id": "2c3265b7-02ad-2cab-e20d-bfbb97b89929",
+     "correct": false,
+     "answer": "Abstract methods"
+    }
+   ],
+   "guidance": "The correct answer is `Method overloading`. Neither method uses the keyword `abstract` so these are not abstract methods. These methods do not appear in a superclass and a subclass so this is not method overriding. This is method overloading because we have methods with the same name but different parameters.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab1.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify method overloading"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3330823136",
+  "source": {
+   "name": "polymorphism lab question 2",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "abstract class ClassA {\n  <<<public abstract>>> void greeting();\n}\n\nclass ClassB extends <<<ClassA>>> {\n  <<<public void>>> greeting() {\n    System.out.println(\"Hello\");\n  }\n}",
+   "distractors": "ClassC\nabstract",
+   "guidance": "The correct answer is:\n\n```java\nabstract class ClassA {\n  public abstract void greeting();\n}\n\nclass ClassB extends ClassA {\n  public void greeting() {\n    System.out.println(\"Hello\");\n  }\n}\n```\n\n* Since the `greeting` method in `ClassA` is not defined, it must be an `abstract` method.\n* There is no `ClassC` defined so `ClassB` must extend `ClassA`.\n* Since `ClassB` extends `ClassA`, it must override the `greeting` method. However, this is not an abstract method; it is a concrete method. So the `abstract` keyword is not used.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Classes and Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab2.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create an abstract class with an abstract method and a subclass for the abstract class",
+   "tokens": {
+    "blank": [
+     "public abstract",
+     "ClassA",
+     "public void"
+    ],
+    "text": [
+     "abstract class ClassA {\n  ",
+     0,
+     " void greeting();\n}\n\nclass ClassB extends ",
+     0,
+     " {\n  ",
+     0,
+     " greeting() {\n    System.out.println(\"Hello\");\n  }\n}"
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-195896886",
+  "source": {
+   "name": "polymorphism lab question 3",
+   "showName": false,
+   "instructions": "## Lab Question\n\nFill in the blanks below with the appropriate definition for each term.",
+   "showValues": true,
+   "text": "When a subclass has a method with the same name as the superclass, but the subclass performs a different task. - <<<Method Overriding>>>\nWhen a method performs different tasks depending on its parameters - <<<Method Overloading>>>\nWhen a method **must** be overriden in the sublcass - <<<Abstract Method>>>",
+   "distractors": "",
+   "guidance": "**Method Overriding** - When a subclass has a method with the same name as the superclass, but the subclass performs a different task.\n**Method Overloading** - When a method performs different tasks depending on its parameters.\n**Abstract Method** - When a method must be overriden in the subclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Expressing Polymorphism"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab3.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT define different ways of incorporating polymorphism",
+   "tokens": {
+    "blank": [
+     "Method Overriding",
+     "Method Overloading",
+     "Abstract Method"
+    ],
+    "text": [
+     "When a subclass has a method with the same name as the superclass, but the subclass performs a different task. - ",
+     0,
+     "\nWhen a method performs different tasks depending on its parameters - ",
+     0,
+     "\nWhen a method **must** be overriden in the sublcass - ",
+     0
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2280652319",
+  "source": {
+   "name": "polymorphism lab question 4",
+   "showName": true,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass ExampleClass {\n  public void greeting(String s) {\n    System.out.println(\"Hello \" + s + \"!\");\n  }\n\n  public void greeting(String s1, String s2) {\n    System.out.println(\"Hello \" + s1 + \" and \" + s2 + !\");\n  }\n}\n```\n\nWhat does the code sample best represent?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "1c3e259d-1dd6-bcad-c09a-d9aa78a2cd87",
+     "correct": true,
+     "answer": "Method overloading"
+    },
+    {
+     "_id": "4a1133b5-fae6-3c98-9b0d-204f66ba91e7",
+     "correct": false,
+     "answer": "Method overriding"
+    },
+    {
+     "_id": "0dae7562-5d3f-e066-328c-afbe4c42b0f5",
+     "correct": false,
+     "answer": "Abstract method"
+    }
+   ],
+   "guidance": "The correct answer is method overloading because you have more than one method in the same class with the same name but different sets of parameters. In addition, there is no inheritance. A subclass needs to inherit from a superclass before it can override a method. Similarly, you must inherit from an abstract class before implementing an abstract method.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Method overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/Lab4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/Lab4.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify method overloading"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3816089180",
+  "source": {
+   "name": "polymorphism lab challenge",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/labChallenge\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass Chef {\n  private String name;\n  private String cuisine;\n  private int michelinStars;\n  \n  //add constructors below this line\n\n  public Chef(String n) {\n    name = n;\n    cuisine = null;\n    michelinStars = 0;\n  }\n  \n  public Chef(String n, String c) {\n    name = n;\n    cuisine = c;\n    michelinStars = 0;\n  }\n  \n  public Chef(String n, String c, int s) {\n    name = n;\n    cuisine = c;\n    michelinStars = s;\n  }\n\n  //add constructors above this line\n  \n  public String display() {\n    String msg = String.format(\"%s is known for %s cuisine and has %d Michelin stars.\", name, cuisine, michelinStars);\n    return msg;\n  }\n}\n\n//add class definitions above this line\n\npublic class LabChallenge {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Chef c1 = new Chef(\"Marco Pierre White\");\n    Chef c2 = new Chef(\"Rene Redzepi\", \"Nordic\");\n    Chef c3 = new Chef(\"Thomas Keller\", \"French\", 3);\n    \n    System.out.println(c1.display());\n    System.out.println(c2.display());\n    System.out.println(c3.display());\n    \n    //add code above this line\n  }\n}\n```\n\n* One constructor needs to take a single string argument that will be assigned to the `name` attribute. The attributes `cuisine` and `michelinStars` will be set to `null` and `0` respectively.\n* One constructor needs to take two string arguments. One will be assigned to the `name` attribute, and the other will be assigned to the `cuisine` attribute. Set the value of `michelinStars` to `0`.\n* One constructor takes three parameters. The first one is assigned to `name`, the second to `cuisine`, and the third is assigned to the `michelinStars` attribute.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/labChallenge/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/labChallenge/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT overload the constructor"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1690807397",
+  "source": {
+   "name": "polymorphism coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise1\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\nimport java.util.Random; \n\nclass Lottery {\n  public ArrayList<Integer> shuffle() {\n    Random r = new Random();\n    ArrayList<Integer> nums = new ArrayList<Integer>();\n    for (int i = 0; i < 5; i++) {\n      int num = r.nextInt(20);\n      nums.add(num);\n    }\n    return nums;\n  }\n}\n\n//add class definitions below this line\n\nclass PowerBall extends Lottery {\n  public ArrayList<Integer> shuffle() {\n    Random r = new Random();\n    ArrayList<Integer> nums = new ArrayList<Integer>();\n    for (int i = 0; i < 6; i++) {\n      int num = r.nextInt(100);\n      nums.add(num);\n    }\n    return nums;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    PowerBall p = new PowerBall();\n    System.out.println(p.shuffle());\n    \n    //add code above this line\n  }\n}\n```\n\n* Be sure that `PowerBall` extends the `Lottery` class.\n* Override the `shuffle` method.\n* In the for loop, change the `5` to a `6` so that it returns six random integers.\n* The `nextInt` method takes one argument. It will return a random integer up to but not including the argument. Since you want to return a random number up to 99, use `nextInt(100)`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise1/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise1/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override a method from a superclass"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2292953144",
+  "source": {
+   "name": "polymorphism coding exercise 4",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise4\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nimport java.util.Arrays;\n\n//add class definitions below this line\n\nclass Median {\n  public double calculateMedian(int n1, int n2) {\n    return (double) (n1 + n2) / 2;\n  }\n  \n  public double calculateMedian(int n1, int n2, int n3) {\n    int[] nums = {n1, n2, n3};\n    Arrays.sort(nums);\n    return (double) nums[1];\n  }\n  \n  public double calculateMedian(int n1, int n2, int n3, int n4) {\n    int[] nums = {n1, n2, n3, n4};\n    Arrays.sort(nums);\n    return (double) (nums[1] + nums[2]) / 2;\n  }\n  \n  public double calculateMedian(int n1, int n2, int n3, int n4, int n5) {\n    int[] nums = {n1, n2, n3, n4, n5};\n    Arrays.sort(nums);\n    return (double) nums[2];\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise4 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Median m = new Median();\n    System.out.println(m.calculateMedian(3, 5, 1, 4, 2));\n    System.out.println(m.calculateMedian(8, 6, 4, 2));\n    System.out.println(m.calculateMedian(9, 3, 7));\n    System.out.println(m.calculateMedian(5, 2));\n    \n    //add code above this line\n  }\n}\n```\n\nThere are two scenarios for calculating the median value: an odd number integers and an even number of integers.\n* Odd Number - When there are an odd number of arguments, take the arguments and load them into an array. Sort the array with `Arrays.sort`. Then return the element in the middle of the array. When there are 3 arguments that would be element `1`. When there are 5 arguments the middle element would be element `2`. Be sure to type cast the return values as a double.\n* Even Number - When there are two arguments return the average of these two values. When there are 4 arguments, load them into an array and sort it with `Arrays.sort`. Return the average of elements `1` and `2`. Be sure to type cast the return values as a double.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overloading"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise4/Exercise4.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise4/Exercise4.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT overload a method with four different type signatures"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1537667893",
+  "source": {
+   "name": "polymorphism coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise5\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\nimport java.io.*;\n\nclass Substitute {\n  private String sourceFile;\n  private String answerFile;\n  private ArrayList<String[]> wordsList;\n  private String wordsString;\n  \n  public Substitute(String source, String answer) {\n    sourceFile = source;\n    answerFile = answer;\n    wordsList = new ArrayList<String[]>();\n    wordsString = null;\n  }\n  \n  public ArrayList<String[]> getWordsList() {\n    return wordsList;\n  }\n  \n  public String getWordsString() {\n    return wordsString;\n  }\n  \n  public String getAnswerFile() {\n    return answerFile;\n  }\n  \n  /**\n   * Reads the text file stored in sourceFile and converts it to an\n   * ArrayList of arrays of strings. Each array represents a sentence,\n   * and element represents a word of the sentence. This ArrayList of\n   * arrays of strings is stored in the attribute wordsList.\n   */\n  public void stringToList() {\n    try {\n      ArrayList<String> lines = new ArrayList<String>();\n      BufferedReader reader = new BufferedReader(new FileReader(sourceFile));\n      String currentLine = reader.readLine();\n      while(currentLine != null) {\n        lines.add(currentLine);\n        currentLine = reader.readLine();\n      }\n      reader.close();\n      for (String line : lines) {\n        wordsList.add(line.split(\" \"));\n      }\n    } catch (IOException e) {\n      System.out.println(e);\n    }\n  }\n  \n  /**\n   * Takes the ArrayList of arrays of strings and coverts it back into\n   * a single string with newline characters. This string is stored\n   * in the wordsString attribute.\n   */\n  public void listToString() {\n    ArrayList lines = new ArrayList<String>();\n    for (String[] line : wordsList) {\n      lines.add(String.join(\" \", line));\n    }\n    wordsString = String.join(\"\\n\", lines);\n  }\n  \n  /**\n   * Calls stringToList. Then iterates through the ArrayList of arrays of\n   * strings. If it is the fifth word, the element is replaces with\n   * \"HELLO\". This method calls listToString and prints the results.\n   */\n  public void swapWords() {\n    stringToList();\n    for (String[] line : wordsList) {\n      for (int i = 0; i < line.length; i++) {\n        if ((i + 1) % 5 == 0) {\n          line[i] = \"HELLO\";\n        }\n      }\n    }\n    listToString();\n    System.out.println(wordsString);\n  }\n}\n\n//add class definitions below this line\n\nclass Stars extends Substitute {\n  public Stars(String source, String answer) {\n    super(source, answer);\n  }\n  \n  private String createStars(String s) {\n    String stars = \"\";\n    for (int i = 0; i < s.length(); i++) {\n      stars += \"*\";\n    }\n    return stars;\n  }\n  \n  public void swapWords() {\n    stringToList();\n    for (String[] line : getWordsList()) {\n      for (int i = 0; i < line.length; i++) {\n        if ((i + 1) % 3 == 0) {\n          line[i] = createStars(line[i]);\n        }\n      }\n    }\n    listToString();\n    try {\n      BufferedWriter writer = new BufferedWriter(new FileWriter(getAnswerFile()));\n      writer.write(getWordsString());\n      writer.close();\n    } catch (IOException e) {\n      System.out.println(e);\n    } \n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise5 {  \n  public static void main(String[] args) {\n    String source = \"/home/codio/workspace/code/polymorphism/exercise5/words.txt\";\n    String answer = \"/home/codio/workspace/code/polymorphism/exercise5/answer.txt\";\n    \n    //add code below this line\n\n    Stars s = new Stars(source, answer);\n    s.swapWords();\n    \n    //add code above this line\n  }\n}\n```\n\n* The `swapWords` method needs to call the constructor of the superclass. Use the `super` keyword and pass it the required parameters.\n```java\n  public Stars(String source, String answer) {\n    super(source, answer);\n  }\n```\n* The `swapWords` method is almost the same as in the `Substitute` class except that you are going to change every third word. Use `% 3` instead of `% 5`. In addition, you do not want to replace the word with `HELLO` but a number of `*`. This example calls a helper method that will return the correct number of `*`.\n```java\n        if ((i + 1) % 3 == 0) {\n          line[i] = createStars(line[i]);\n        }\n```\n* This helper method takes the word to be replaced as an argument. Create an empty string that will contain the asterisks. Iterate a for loop as many times as the length of the word to be replaced. Add an asterisk to the string variable every time the loop runs. Finally, return the string variable with the asterisks. \n```java\n  private String createStars(String s) {\n    String stars = \"\";\n    for (int i = 0; i < s.length(); i++) {\n      stars += \"*\";\n    }\n    return stars;\n  }\n```",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Method Overriding"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise5/Exercise5.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise5/Exercise5.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override a method that works with files."
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2016365405",
+  "source": {
+   "name": "polymorphism coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise2\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nabstract class Vehicle {\n  public abstract double travel(double time);\n}\n\n//add class definitions below this line\n\nclass Airplane extends Vehicle {\n  private double speed;\n  \n  public Airplane(double s) {\n    speed = s;\n  }\n  \n  public double travel(double time) {\n    return speed * time;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Airplane a = new Airplane(550.0);\n    System.out.println(a.travel(2));\n    System.out.println(a.travel(3.15));\n    System.out.println(a.travel(10.63));\n    \n    //add code above this line\n  }\n}\n```\n\n* Have `Airplane` extend the `Vehicle` class.\n* Since `distance` is an abstract method, the `Airplane` class must override this method.\n* The code sample that initiates an `Airplane` object shows that this class takes a value for the constructor.\n* Calculating distance is done by multiplying speed of the vehicle by time it is traveling. The `distance` method takes time as an argument, so the value representing speed is contained within the object (the value passed to the constructor).\n* The constructor for the `Airplane` class takes a double which represents speed.\n* The `distance` method returns `time` multiplied by the valued passed to the constructor.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Classes and Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise2/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise2/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT inherit from an abstract class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1241253698",
+  "source": {
+   "name": "polymorphism coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise3\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nabstract class Temperature {\n  public abstract double celsius(double temp);\n  public abstract double fahrenheit(double temp);\n}\n\n//add class definitions below this line\n\nclass Conversion extends Temperature {\n  public double celsius(double temp) {\n    return (temp - 32) / 1.8;\n  }\n  \n  public double fahrenheit(double temp) {\n    return temp * 1.8 + 32;\n  }\n  \n  public double convertTo(String unit, double temp) {\n    if (unit.toLowerCase().equals(\"celsius\")) {\n      return celsius(temp);\n    } else if (unit.toLowerCase().equals(\"fahrenheit\")) {\n      return fahrenheit(temp);\n    }\n    \n    return 0;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise3 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Conversion c = new Conversion();\n    System.out.println(c.convertTo(\"Celsius\", 212.0));\n    System.out.println(c.convertTo(\"CELSIUS\", 78.0));\n    System.out.println(c.convertTo(\"celsius\", 23.0));\n    System.out.println(c.convertTo(\"Fahrenheit\", 0.0));\n    System.out.println(c.convertTo(\"FAHRENHEIT\", 29.0));\n    System.out.println(c.convertTo(\"fahrenheit\", 112.0));\n    \n    //add code above this line\n  }\n}\n```\n* Make sure that `Conversion` extends the `Temperature` class.\n* Becuase `Temperature` is an abstract class, the `Conversion` class must override the `celsius` and `fahrenheit` methods.\n* The `celsius` method has the argument `temp` and returns `(temp - 32) / 1.8`.\n* The `fahrenheit` method has the argument `temp` and returns `temp * 1.8 + 32`.\n* The `convertTo` method takes a string (`unit`) and a double (`temp`) as arguments. Convert the `unit` to lowercase and ask if it equals `\"celsius\"`. If yes, return the output of `celsius(temp)`. If `unit` is equal to `\"fahrenheit\"`, return the output of `fahrenheit(temp)`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Abstract Methods"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Polymorphism"
+     }
+    ],
+    "files": [
+     "code/polymorphism/exercise3/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/polymorphism/exercise3/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override abstract methods inherited from an abstract class"
+  }
  }
 ]
