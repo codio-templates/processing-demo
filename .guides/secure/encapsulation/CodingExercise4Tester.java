@@ -5,12 +5,11 @@ import java.util.ArrayList;
 import java.io.*;
 
 public class CodingExercise4Tester {
-  Atm testAtm;
+  
   ArrayList<String> code = new ArrayList<String>();
   
   @Before
   public void setup() {
-    testAtm = new Atm(157.12);
     String path = "code/encapsulation/exercises/CodingExercise4.java";
     
     // read student file into ArrayList
@@ -29,7 +28,8 @@ public class CodingExercise4Tester {
   
   @Test
   public void checkMoneyGetter() {
-    assertEquals(152.12, testAtm.getMoney(), 0.01);
+    Atm testAtm = new Atm(157.12);
+    assertEquals(157.12, testAtm.getMoney(), 0.01);
   }
   
   @Test 
@@ -49,32 +49,37 @@ public class CodingExercise4Tester {
   
   @Test
   public void checkDeposit() {
+    Atm testAtm = new Atm(157.12);
     testAtm.deposit(18.38);
-    assertEquals(170.5, testAtm.getMoney(), 0.01);
+    assertEquals(175.5, testAtm.getMoney(), 0.01);
   }
   
   @Test
   public void checkDepositNegative() {
+    Atm testAtm = new Atm(157.12);
     testAtm.deposit(-25);
-    assertEquals(152.12, testAtm.getMoney(), 0.01);
+    assertEquals(157.12, testAtm.getMoney(), 0.01);
   }
   
   @Test
   public void checkWithdraw() {
-    testAtm.deposit(70.5);
-    assertEquals(100, testAtm.getMoney(), 0.01);
+    Atm testAtm = new Atm(157.12);
+    testAtm.withdraw(70.5);
+    assertEquals(86.62, testAtm.getMoney(), 0.01);
   }
   
   @Test
   public void checkWithdrawNegative() {
+    Atm testAtm = new Atm(157.12);
     testAtm.deposit(-70.5);
-    assertEquals(100, testAtm.getMoney(), 0.01);
+    assertEquals(157.12, testAtm.getMoney(), 0.01);
   }
   
   @Test
   public void checkWithdrawTooLarge() {
-    testAtm.deposit(170.5);
-    assertEquals(100, testAtm.getMoney(), 0.01);
+    Atm testAtm = new Atm(157.12);
+    testAtm.withdraw(170.5);
+    assertEquals(157.12, testAtm.getMoney(), 0.01);
   }
 
 }

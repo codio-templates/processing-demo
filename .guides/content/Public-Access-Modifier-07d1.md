@@ -115,6 +115,6 @@ Instantiate a `Phone` object and call the `describe` method.
 
 |||
 
-{Try it}(sh .guides/bg.sh javac code/encapsulation/PublicKeyword.java java -cp code/encapsulation/ PublicKeyword 2)
+{Try it}(sh .guides/bg.sh javac code/encapsulation/PublicKeyword.java java -cp code/encapsulation/ PublicKeyword 3)
 
 {Check It!|assessment}(multiple-choice-4197611854)

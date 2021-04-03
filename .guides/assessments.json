@@ -2485,7 +2485,7 @@
   "source": {
    "name": "public access modifier reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nSelect **all** the parts of your program that should use the `public` access modifier.",
+   "instructions": "## Reading Question\n\nUsing the ideas of encapsulation, select **all** the parts of your program that should use the `public` access modifier.",
    "multipleResponse": true,
    "isRandomized": true,
    "answers": [
@@ -2804,7 +2804,7 @@
   "source": {
    "name": "getters reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** getter method for the `language` attribute. **Hint**, not all of the blocks will be used.",
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** getter method for the `language` attribute. **Hint**, not all of the blocks will be used, and blocks must be properly indented.",
    "initial": "public String[] getLanguages() {\n  return languages;\n}\nprivate String[] getLanguages() { #distractor\npublic String[] returnLanguages() { #distractor\nSystem.out.println(languages); #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
@@ -2852,7 +2852,7 @@
   "source": {
    "name": "setters reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** setter method for the `language` attribute. **Hint**, not all of the blocks will be used.",
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Country {\n  private String name;\n  private String[] languages;\n\n  public Country(String n, String[] l) {\n    name = n;\n    languages = l;\n  }\n}\n```\n\nDrag the code blocks into the box below. Create the **best** setter method for the `languages` attribute. **Hint**, not all of the blocks will be used, and blocks must be properly indented.",
    "initial": "public void setLanguages(String[] newLanguages) {\n  languages = newLanguages;\n}\npublic String[] setLanguages(String[] newLanguages) { #distractor\npublic void setLanguages() { #distractor\nprivate String[] setLanguages(String[] newLanguages) { #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
@@ -3026,11 +3026,11 @@
   "source": {
    "name": "getters and setters formative assessment 2",
    "showName": false,
-   "instructions": "## Formative Assessment\n\nAssume the class `PrimaryColors` as defined below:\n\n```java\nclass PrimaryColor {\n  private String color = \"red\";\n\n  public String getColor() {\n    return color:\n  }\n}\n```\n\nDrag the code blocks into the box below to create a setter that validates if the new color is a primary color. **Hint**, not all of the code blocks will be used.",
-   "initial": "public setColor(String newColor) {\n  String[] primaryColors = {&quot;red&quot;, &quot;blue&quot;, &quot;yellow&quot;};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\nnewColor = color; #distractor\npublic getColor(String newColor) { #distractor\nif (newColor == color) { #distractor",
+   "instructions": "## Formative Assessment\n\nAssume the class `PrimaryColors` as defined below:\n\n```java\nclass PrimaryColor {\n  private String color = \"red\";\n\n  public String getColor() {\n    return color;\n  }\n}\n```\n\nDrag the code blocks into the box below to create a setter that validates if the new color is a primary color. **Hint**, not all of the code blocks will be used, and blocks must be properly indented.",
+   "initial": "public void setColor(String newColor) {\n  String[] primaryColors = {&quot;red&quot;, &quot;blue&quot;, &quot;yellow&quot;};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\nnewColor = color;  #distractor\npublic void getColor(String newColor) {  #distractor\nif (newColor == color) {  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
-   "guidance": "The correct answer is:\n\n```java\npublic setColor(String newColor) {\n  String[] primaryColors = {\"red\", \"blue\", \"yellow\"};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\n```\n\n* Setter methods should start with `set` which is why `public getColor(String newColor) {` is incorrect.\n* String comparison is done with the `equals` method, which is why `if (newColor == color) {` is incorrect.\n* This method should update the `color` attribute, which is why `newColor = color;` is incorrect.\n",
+   "guidance": "The correct answer is:\n\n```java\npublic void setColor(String newColor) {\n  String[] primaryColors = {\"red\", \"blue\", \"yellow\"};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\n```\n\n* Setter methods should start with `set` which is why `public void getColor(String newColor) {` is incorrect.\n* String comparison is done with the `equals` method, which is why `if (newColor == color) {` is incorrect.\n* This method should update the `color` attribute, which is why `newColor = color;` is incorrect.\n",
    "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
@@ -3268,7 +3268,7 @@
   "taskId": "multiple-choice-1447429733",
   "source": {
    "name": "encapsulation lab 4 question",
-   "showName": true,
+   "showName": false,
    "instructions": "## Lab Question\n\nWhat is the output of the following code?\n\n```java\nclass TestClass {\n  private String color;\n\n  public TestClass(String c) {\n    color = c;\n  }\n\n  public void returnColor() {\n    return color;\n  }\n\n  public String changeColor(String newColor) {\n    color = newColor();\n  }\n}\n\npublic class LabQuestion {\n  public static void main(String[] args) {\n    TestClass myObject = new TestClass(\"red\");\n    myObject.changeColor(\"blue\");\n    System.out.println(myObject.returnColor());\n  }\n}\n```",
    "multipleResponse": false,
    "isRandomized": true,
@@ -3591,7 +3591,7 @@
    "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/encapsulation/CodingExercise5Tester.java\",\"className\":\"CodingExercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/encapsulation/exercises\",\"libs\":\"\",\"testsources\":\"\"}",
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
-   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass SodaMachine {\n  private String[] sodas = {\"coke\", \"pepsi\", \"sprite\", \"dr. pepper\"};\n  private int cokeInventory;\n  private int pepsiInventory;\n  private int spriteInventory;\n  private int drPepperInventory;\n  private int money;\n    \n  public SodaMachine() {\n    cokeInventory = 20;\n    pepsiInventory = 20;\n    spriteInventory = 20;\n    drPepperInventory = 20;\n    money = 10;\n  }\n  \n  public String[] getSodas() {\n    return sodas;\n  }\n  \n  public void setSodas(int index, String newSoda) {\n    sodas[index] = newSoda;\n  }\n  \n  public int getCokeInventory() {\n    return cokeInventory;\n  }\n  \n  public void setCokeInventory(int newInventory){\n    cokeInventory = newInventory;\n  }\n  \n  public int getPepsiInventory() {\n    return pepsiInventory;\n  }\n  \n  public void setPepsiInventory(int newInventory){\n    pepsiInventory = newInventory;\n  }\n  \n  public int getSpriteInventory() {\n    return spriteInventory;\n  }\n  \n  public void setSpriteInventory(int newInventory){\n    spriteInventory = newInventory;\n  }\n  \n  public int getDrPepperInventory() {\n    return drPepperInventory;\n  }\n  \n  public void setDrPepperInventory(int newInventory){\n    drPepperInventory = newInventory;\n  }\n  \n  public int getMoney() {\n    return money;\n  }\n  \n  public void setMoney(int newMoney){\n    money = newMoney;\n  }\n  \n  public void buySoda(String soda, int amount) {\n    if (validSoda(soda) && enoughSoda(soda) && enoughMoney(amount)) {\n      updateInventory(soda);\n      updateMoney();\n    }\n  }\n  \n  private boolean validSoda(String soda) {\n    boolean correctSoda = false;\n    \n    for (String s : sodas) {\n      if (soda.equals(s)) {\n        correctSoda = true;\n      }\n    }\n    \n    if (correctSoda == false) {\n      System.out.println(\"That soda is not sold in this machine\");\n    }\n    return correctSoda;\n  }\n  \n  private boolean enoughMoney(int amount) {\n    if (amount >= 2) {\n      return true;\n    } else {\n      System.out.println(\"You did not insert enough money\");\n      return false;\n    }\n  }\n  \n  private boolean enoughSoda(String soda) {\n    if (soda.equals(\"coke\")) {\n      if (cokeInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Coke.\");\n        return false;\n      }\n    } else if (soda.equals(\"sprite\")) {\n      if (spriteInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Sprite.\");\n        return false;\n      }\n    } else if (soda.equals(\"pepsi\")) {\n      if (pepsiInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Pepsi.\");\n        return false;\n      }\n    } else if (soda.equals(\"dr. pepper\")) {\n      if (drPepperInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Dr. Pepper.\");\n        return false;\n      }\n    }\n    return false;\n  }\n  \n  private void updateInventory(String soda) {\n    if (soda.equals(\"coke\")) {\n      cokeInventory--;\n    } else if (soda.equals(\"sprite\")) {\n      spriteInventory--;\n    } else if (soda.equals(\"pepsi\")) {\n      pepsiInventory--;\n    } else if (soda.equals(\"dr. pepper\")) {\n      drPepperInventory--;\n    }\n  }\n  \n  private void updateMoney() {\n    money += 2;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    SodaMachine myMachine = new SodaMachine();\n    myMachine.buySoda(\"coke\", 4);\n    System.out.println(myMachine.getMoney());\n    System.out.println(myMachine.getCokeInventory());\n\n    //add code above this line\n  }\n}\n```\n\n* Make all attributes private.\n* The constructor does not have any parameters. The initial values were discussed in the list at the top of the page.\n* Create getters and setters for each attribute. These methods follow Java naming conventions. The setter for the `sodas` attribute requires an index and the name of a new soda. All other setters have one parameter.\n* The `buySoda` method is public. It takes the name of the soda to purchase (string) and the amount of money inserted into the machine (integer). In this example, there are five helper methods. Three are for data validation and two are used to update the `SodaMachine` object.\n* `validSoda` takes the name of a soda (string) and validates that this string is found in the `sodas` attribute.\n* `enoughSoda` takes the name of a soda (string) and validates that there is at least one said in the inventory.\n* `enoughMoney` takes the money inserted in the machine (integer) and validates that it is greater than or equal to the price of a soda ($2).\n* `updateInventory` takes the name of a soda (string) and reduces the inventory attribute for that soda by 1.\n* `updateMoney` has no parameters and increases the `money` attribute by 2 (the cost of a soda).",
+   "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass SodaMachine {\n  private String[] sodas = {\"coke\", \"pepsi\", \"sprite\", \"dr. pepper\"};\n  private int cokeInventory;\n  private int pepsiInventory;\n  private int spriteInventory;\n  private int drPepperInventory;\n  private int money;\n    \n  public SodaMachine() {\n    cokeInventory = 20;\n    pepsiInventory = 20;\n    spriteInventory = 20;\n    drPepperInventory = 20;\n    money = 10;\n  }\n  \n  public String[] getSodas() {\n    return sodas;\n  }\n  \n  public void setSodas(int index, String newSoda) {\n    sodas[index] = newSoda;\n  }\n  \n  public int getCokeInventory() {\n    return cokeInventory;\n  }\n  \n  public void setCokeInventory(int newInventory){\n    cokeInventory = newInventory;\n  }\n  \n  public int getPepsiInventory() {\n    return pepsiInventory;\n  }\n  \n  public void setPepsiInventory(int newInventory){\n    pepsiInventory = newInventory;\n  }\n  \n  public int getSpriteInventory() {\n    return spriteInventory;\n  }\n  \n  public void setSpriteInventory(int newInventory){\n    spriteInventory = newInventory;\n  }\n  \n  public int getDrPepperInventory() {\n    return drPepperInventory;\n  }\n  \n  public void setDrPepperInventory(int newInventory){\n    drPepperInventory = newInventory;\n  }\n  \n  public int getMoney() {\n    return money;\n  }\n  \n  public void setMoney(int newMoney){\n    money = newMoney;\n  }\n  \n  public void buySoda(String soda, int amount) {\n    if (validSoda(soda) && enoughSoda(soda) && enoughMoney(amount)) {\n      updateInventory(soda);\n      updateMoney();\n    }\n  }\n  \n  private boolean validSoda(String soda) {\n    boolean correctSoda = false;\n    \n    for (String s : sodas) {\n      if (soda.equals(s)) {\n        correctSoda = true;\n      }\n    }\n    \n    if (correctSoda == false) {\n      System.out.println(\"That soda is not sold in this machine.\");\n    }\n    return correctSoda;\n  }\n  \n  private boolean enoughMoney(int amount) {\n    if (amount >= 2) {\n      return true;\n    } else {\n      System.out.println(\"You did not insert enough money.\");\n      return false;\n    }\n  }\n  \n  private boolean enoughSoda(String soda) {\n    if (soda.equals(\"coke\")) {\n      if (cokeInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Coke.\");\n        return false;\n      }\n    } else if (soda.equals(\"sprite\")) {\n      if (spriteInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Sprite.\");\n        return false;\n      }\n    } else if (soda.equals(\"pepsi\")) {\n      if (pepsiInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Pepsi.\");\n        return false;\n      }\n    } else if (soda.equals(\"dr. pepper\")) {\n      if (drPepperInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Dr. Pepper.\");\n        return false;\n      }\n    }\n    return false;\n  }\n  \n  private void updateInventory(String soda) {\n    if (soda.equals(\"coke\")) {\n      cokeInventory--;\n    } else if (soda.equals(\"sprite\")) {\n      spriteInventory--;\n    } else if (soda.equals(\"pepsi\")) {\n      pepsiInventory--;\n    } else if (soda.equals(\"dr. pepper\")) {\n      drPepperInventory--;\n    }\n  }\n  \n  private void updateMoney() {\n    money += 2;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    SodaMachine myMachine = new SodaMachine();\n    myMachine.buySoda(\"coke\", 4);\n    System.out.println(myMachine.getMoney());\n    System.out.println(myMachine.getCokeInventory());\n\n    //add code above this line\n  }\n}\n```\n\n* Make all attributes private.\n* The constructor does not have any parameters. The initial values were discussed in the list at the top of the page.\n* Create getters and setters for each attribute. These methods follow Java naming conventions. The setter for the `sodas` attribute requires an index and the name of a new soda. All other setters have one parameter.\n* The `buySoda` method is public. It takes the name of the soda to purchase (string) and the amount of money inserted into the machine (integer). In this example, there are five helper methods. Three are for data validation and two are used to update the `SodaMachine` object.\n* `validSoda` takes the name of a soda (string) and validates that this string is found in the `sodas` attribute. This is a helper method and should be marked as `private`.\n* `enoughSoda` takes the name of a soda (string) and validates that there is at least one of them in the inventory. This is a helper method and should be marked as `private`.\n* `enoughMoney` takes the money inserted in the machine (integer) and validates that it is greater than or equal to the price of a soda ($2). This is a helper method and should be marked as `private`.\n* `updateInventory` takes the name of a soda (string) and reduces the inventory attribute for that soda by 1. This is a helper method and should be marked as `private`.\n* `updateMoney` has no parameters and increases the `money` attribute by 2 (the cost of a soda). This is a helper method and should be marked as `private`.",
    "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
@@ -3830,12 +3830,12 @@
     {
      "_id": "186ae633-3985-468b-540b-14e307a6449c",
      "correct": true,
-     "answer": "When the object is an instance of the subclass."
+     "answer": "When the object is a subclass of the comparison class."
     },
     {
      "_id": "29a49127-eb0f-811c-2a68-14a2460067c4",
      "correct": false,
-     "answer": "When the object is an instance of the superclass."
+     "answer": "When the object is a superclass of the comparison class."
     },
     {
      "_id": "e3b704f4-cad6-4fcd-247b-a1554c674170",
@@ -3896,22 +3896,22 @@
     {
      "_id": "69268177-491b-44cb-927f-0a97bb4c03f9",
      "correct": true,
-     "answer": "class Dog extends Pet {}"
+     "answer": "```java\nclass Dog extends Pet {}\n```"
     },
     {
      "_id": "077111a3-6b8a-b641-f1f8-4f303e215c4c",
      "correct": false,
-     "answer": "class Dog inherits Pet {}"
+     "answer": "```java\nclass Dog inherits Pet {}\n```"
     },
     {
      "_id": "fcdea550-a444-a47f-1cb5-55ecbe05caec",
      "correct": false,
-     "answer": "class Dog(Pet) {}"
+     "answer": "```java\nclass Dog(Pet) {}\n```"
     },
     {
      "_id": "3e8ac4a3-db8d-98f9-651e-b580dc21fcb6",
      "correct": false,
-     "answer": "class Dog extend Pet {}"
+     "answer": "```java\nclass Dog extend Pet {}\n```"
     }
    ],
    "guidance": "The correct answer is:\n\n```java\nclass Dog extends Pet {}\n```\n\nJava uses the `extends` keyword to indicate inheritance.",
@@ -3942,13 +3942,7 @@
     "files": [
      "code/inheritance/Hierarchy.java"
     ],
-    "opened": [
-     {
-      "type": "file",
-      "panelNumber": 0,
-      "content": "code/inheritance/Hierarchy.java"
-     }
-    ]
+    "opened": []
    },
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT create a subclass"
@@ -4060,7 +4054,7 @@
     {
      "_id": "a29a60c4-fa48-8862-ef5d-3dec648677ba",
      "correct": true,
-     "answer": "Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different."
+     "answer": "Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass's method does something different."
     },
     {
      "_id": "c544c606-b734-d987-7e1b-e116a16357b6",
@@ -4070,10 +4064,10 @@
     {
      "_id": "39a81076-3aa7-4158-5d20-637561804d44",
      "correct": false,
-     "answer": "Extending a class happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different."
+     "answer": "Extending a class happens when the subclass has a method with the same name as the superclass, but the subclass's method does something different."
     }
    ],
-   "guidance": "The correct answers are:\n\n* Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass' method does something different.\n* Extending a class happens when new attributes or methods are added to the subclass that do not exist in the superclass.\n\nThe other two choices are incorrect because they have confused \"method overriding\" with the definition for \"extending a class\" and vice versa.",
+   "guidance": "The correct answers are:\n\n* Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass's method does something different.\n* Extending a class happens when new attributes or methods are added to the subclass that do not exist in the superclass.\n\nThe other two choices are incorrect because they have confused \"method overriding\" with the definition for \"extending a class\" and vice versa.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -4119,11 +4113,11 @@
   "source": {
    "name": "Extending & Overriding Formative Assessment 1",
    "showName": false,
-   "instructions": "Assume the following code:\n\n```java\nclass Car{\n  private String make;\n  private String model;\n  private String color;\n\n  public Car(String ma, String mo, String c) {\n    make = ma;\n    model = mo;\n    color = c;\n  }\n\n  public void getMake() {\n    return make;\n  }\n\n  public void getModel() {\n    return make;\n  }\n\n  public void getColor() {\n    return make;\n  }\n}\n```\n\nCreate the subclass `Sedan`. Extend this class by adding the `describe` method. This method prints the string `I am a red Toyota Camry.` \"Toyota\" is the make and \"Camry\" is the model. \n\nDrag the appropriate code blocks into the box below. **Hint:** not all of the code blocks will be used, and the code blocks must be properly indented.",
-   "initial": "class Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(&quot;I am a &quot; + getColor() + &quot; &quot;);\n    System.out.println(getMake() + &quot; &quot; getModel() + &quot;.&quot;);\n  }\n}\nSystem.out.print(&quot;I am a &quot; + color + &quot; &quot;); #distractor\nSystem.out.println(make + &quot; &quot; model + &quot;.&quot;); #distractor\nclass Sedan { #distractor",
+   "instructions": "Assume the following code:\n\n```java\nclass Car{\n  private String make;\n  private String model;\n  private String color;\n\n  public Car(String ma, String mo, String c) {\n    make = ma;\n    model = mo;\n    color = c;\n  }\n\n  public String getMake() {\n    return make;\n  }\n\n  public String getModel() {\n    return model;\n  }\n\n  public String getColor() {\n    return color;\n  }\n}\n```\n\nCreate the subclass `Sedan`. Extend this class by adding the `describe` method. This method prints the string `I am a red Toyota Camry.` \"Toyota\" is the make and \"Camry\" is the model. \n\nDrag the appropriate code blocks into the box below. **Hint:** not all of the code blocks will be used, and the code blocks must be properly indented.",
+   "initial": "class Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(&quot;I am a &quot; + getColor() + &quot; &quot;);\n    System.out.println(getMake() + &quot; &quot; + getModel() + &quot;.&quot;);\n  }\n}\nSystem.out.print(&quot;I am a &quot; + color + &quot; &quot;);  #distractor\nSystem.out.println(make + &quot; &quot; + model + &quot;.&quot;);  #distractor\nclass Sedan {  #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
-   "guidance": "Here is the answer: \n\n```java\nclass Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(\"I am a \" + getColor() + \" \");\n    System.out.println(getMake() + \" \" getModel() + \".\");\n  }\n}\n```\n\n* The `Sedan` class should inherit from the `Car` class, so be sure to use the `extends` keyword.\n* The `Sedan` class needs to invoke a `Car` constructor to pass it three arguments. Use the `super` keyword for this.\n* The `make`, `model`, and `color` keywords are a part of the superclass, so you need to use the getter methods to access these values.\n\n",
+   "guidance": "Here is the answer: \n\n```java\nclass Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(\"I am a \" + getColor() + \" \");\n    System.out.println(getMake() + \" \" + getModel() + \".\");\n  }\n}\n```\n\n* The `Sedan` class should inherit from the `Car` class, so be sure to use the `extends` keyword.\n* The `Sedan` class needs to invoke a `Car` constructor to pass it three arguments. Use the `super` keyword for this.\n* The `make`, `model`, and `color` keywords are a part of the superclass, so you need to use the getter methods to access these values.\n\n",
    "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
@@ -4184,7 +4178,7 @@
      "answer": "The method declaration should be:\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + getAcceleration() + \" seconds!\");\n  }\n```"
     }
    ],
-   "guidance": "You do not need to use any special key words to tell Java that the current method is overriding a method from the suerclass. Method declarations and method overriding look the same from the declaration point of view.\n\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```",
+   "guidance": "You do not need to use any special key words to tell Java that the current method is overriding a method from the superclass. Method declarations and method overriding look the same from the declaration point of view.\n\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -4222,7 +4216,7 @@
   "source": {
    "name": "overriding annotation reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Train {\n  private int cars;\n\n  public Train() {\n    cars = 10;\n  }\n\n  public int getCars() {\n    return cars;\n  }\n\n  public void length() {\n    System.out.println(\"The train has \" + cars + \" cars.\");\n  }\n}\n```\n\nFill in the blanks to complete the `FreightTrain` method which extends the `Train` class and overrides the the `length` method.",
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass Train {\n  private int cars;\n\n  public Train() {\n    cars = 10;\n  }\n\n  public int getCars() {\n    return cars;\n  }\n\n  public void length() {\n    System.out.println(\"The train has \" + cars + \" cars.\");\n  }\n}\n```\n\nFill in the blanks to complete the `FreightTrain` method which extends the `Train` class and overrides the `length` method.",
    "showValues": true,
    "text": "```\nclass <<<FreightTrain>>> extends <<<Train>>> {\n  <<<@Override>>>\n  public void <<<length>>>() {\n    System.out.println(\"The train has \" + <<<getCars()>>> + \" freight cars.\");\n  }\n}\n```",
    "distractors": "cars\nOverride\n@Extends",
@@ -4494,7 +4488,7 @@
    "showValues": true,
    "text": "```python\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```",
    "distractors": "extends Bravo\nextends Delta",
-   "guidance": "Here is the solution:\n\n```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```\n\n* The `b` object runs the `display` method which prints `Bravo`. \n* The next line of output is `Alpha` which means `super` refers to class `Alpha`. Therefore, class `Bravo` extends class `Alpha`.\n* The `d` object runs the `display` method which prints `Delta`. However, there are two more lines of output. That means class `Delta` has multilevel inheritance.\n* The next line of output is `Charlie` which means `super` refers to class `Charlie`. Therefore, class `Delta` extends class `Charlie`.\n* Finally, calling `display` in class `Charlie` must also print `Alpha`. That means class `Charlie` extends class `Alpha`.",
+   "guidance": "Here is the solution:\n\n```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() extends Alpha {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() extends Alpha {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta extends Charlie () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```\n\n* The `b` object runs the `display` method which prints `Bravo`. \n* The next line of output is `Alpha` which means `super` refers to class `Alpha`. Therefore, class `Bravo` extends class `Alpha`.\n* The `d` object runs the `display` method which prints `Delta`. However, there are two more lines of output. That means class `Delta` has multilevel inheritance.\n* The next line of output is `Charlie` which means `super` refers to class `Charlie`. Therefore, class `Delta` extends class `Charlie`.\n* Finally, calling `display` in class `Charlie` must also print `Alpha`. That means class `Charlie` extends class `Alpha`.",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,

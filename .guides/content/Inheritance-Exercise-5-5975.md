@@ -16,7 +16,7 @@ You also need to create the `PlatinumClient` class that inherits from `CardHolde
 * `cashBack` - double representing the percentage of each sale the holder gets back as a reward.
 * `rewards` - double representing how much money the holder has earned as cash back.
 * Constructor - the constructor takes arguments for `name`, `address`, and `accountNumber`. It should set `cashBack` to `0.02` and set `rewards` to `0`.
-* `processSale` - override the method so that 2% of each sale is added to `rewards`.
+* `processSale` - override the method so that it adds the sale amount (double) to `balance` and 2% of each sale is added to `rewards`.
 
 ## Expected Output
 

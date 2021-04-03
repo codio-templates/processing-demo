@@ -126,7 +126,7 @@ Now call the `sayHello` and `sayAge` methods from the `Superhero` object.
 * Change the constructor of the `Person` class to look like the following code:
 
 ```java
-  public Person(String n, int a, Strig o) {
+  public Person(String n, int a, String o) {
     name = n;
     age = a;
     occupation = o;

@@ -4,17 +4,9 @@
 
 Extending a class means adding new attributes or methods to the subclass. Another way to add new functionality to a subclass is through method overriding. Overriding a method means to inherit a method from the superclass, keep its name, but change the contents of the method.
 
-Extend the `Superhero` class by overriding the `sayHello`. Remember, the `name` attribute is part of the superclass, so you need to use the `getName` method to access this attribute.
+Extend the `Superhero` class by overriding the `sayHello`. Add this method to the `Superhero` class. Remember, the `name` attribute is part of the superclass, so you need to use the `getName` method to access this attribute.
 
 ```java
-  public void revealSecretIdentity() {
-    System.out.println("My real name is " + secretIdentity + ".");
-  }
-  
-  public void sayNemesis() {
-    System.out.println("My nemesis is " + nemesis + ".");
-  }
-
   public void sayHello() {
     System.out.println("My name is " + getName() + ", and criminals fear me.");
   }

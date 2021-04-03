@@ -6,7 +6,7 @@
 
 |||info
 ## Open the File
-You have to tell Processing the file you want to open. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `mutability`, and double click on `InheritanceLab`. Finally, open the `InheritanceLab.pde` file. This file will be used for the animation.
+You have to tell Processing the file you want to open. In the Processing window, click `File` then `Open...`. On the left towards the bottom of the list, click `workspace`. Double click on `code`, double click on `inheritance`, and double click on `InheritanceLab`. Finally, open the `InheritanceLab.pde` file. This file will be used for the animation.
 
 |||
 

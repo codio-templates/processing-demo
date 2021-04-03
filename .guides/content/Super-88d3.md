@@ -68,6 +68,17 @@ Create a constructor for the `Superhero` class that will call this new construct
       super(n);
     }
   ```
+  
+  You can call this new constructor with the following object instantiation:
+  
+  ```java
+      //add code below this line
+
+      Superhero hero = new Superhero("Wonder Woman");
+      hero.sayHello();      
+
+      //add code above this line
+  ```
 </details>
 
 |||

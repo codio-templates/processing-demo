@@ -30,15 +30,29 @@ Now instantiate an object of type `ClassD`. Use the `instanceof` operator to det
 {Try it}(sh .guides/bg.sh javac code/inheritance/MultilevelHierarchy.java java -cp code/inheritance/ MultilevelHierarchy 1)
 
 |||challenge
-## Try this variation:
-* Change a print statement to:
+## Try these variations:
+* Change the print statement to:
 ```java
     System.out.println(d instanceof ClassC);
+```
+<details>
+  <summary><strong>Why is this an error?</strong></summary>
+  Object <code>d</code> is not an instance of <code>ClassC</code>, but Java does not return <code>false</code>, why? When there is no inheritance chain between the object and class being compared, Java returns an error.
+</details><br>
+
+* Change the program to be:
+```java
+    //add code below this line
+  
+    ClassA a = new ClassA();
+    System.out.println(a instanceof ClassB);
+  
+    //add code above this line 
 ```
 
 <details>
   <summary><strong>Why is this false?</strong></summary>
-  <code>ClassC</code> is not a part of the same inheritance chain as <code>ClassD</code>. That is, <code>ClassC</code> is not a superclass to object <code>d</code>.
+  Object <code>a</code> is above <code>ClassB</code> in the inheritance chain. That is, <code>ClassB</code> is not a superclass to object <code>a</code>.
 </details>
 
 |||

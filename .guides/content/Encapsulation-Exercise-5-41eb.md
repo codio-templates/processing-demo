@@ -50,7 +50,7 @@ This code should produce the following output. The `money` attribute is increase
     myMachine.buySoda("diet coke", 4);
     System.out.println(myMachine.getMoney());
     System.out.println(myMachine.getCokeInventory());
-    System.out.println(myMachine.getSprteInventory());
+    System.out.println(myMachine.getSpriteInventory());
     System.out.println(myMachine.getPepsiInventory());
     System.out.println(myMachine.getDrPepperInventory());
 
@@ -59,8 +59,8 @@ This code should produce the following output. The `money` attribute is increase
 
 This code should produce the following output. There should be a message about the soda not being sold. The `money` attribute should not change, and none of the inventory attributes should change either.
 
-```java
-That soda is not sold in this machine
+```markdown
+That soda is not sold in this machine.
 10
 20
 20
@@ -85,8 +85,8 @@ That soda is not sold in this machine
 
 This code should produce the following output. There should be a message about not inserting enough money. Because this is not a valid transaction, the `money` and `spriteInventory` attributes should not change.
 
-```java
-You did not insert enough money
+```markdown
+You did not insert enough money.
 10
 20
 ```
@@ -109,7 +109,7 @@ You did not insert enough money
 
 This code should produce the following output. There should be a message about not having any cans for a particular soda. The `money` attribute should not change, and the `drPepperInventory` attribute should remain at `0`.
 
-```java
+```markdown
 There are no cans of Dr. Pepper.
 10
 0
