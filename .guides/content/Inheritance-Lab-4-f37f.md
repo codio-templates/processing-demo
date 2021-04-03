@@ -10,59 +10,46 @@ You have to tell Processing the file you want to open. In the Processing window,
 
 |||
 
-Now that we have a superclass, it is time to extend it through inheritance. We want a more general `Polygon` class that can have a user-defined number of vertices. Start by creating the `Polygon` class as a subclass of the `Hexagon` class. Then override the constructor so `vertices` is user-defined. Use the `setVertices` method to update the value `vertices`. In addition, we need to recalculate the `angle` attribute, otherwise the `Polygon` class will draw a hexagon.
+Now that we have a superclass, it is time to extend it through inheritance. We an `AnimatedHexagon` class that grows and shrinks. Start by creating the `AnimatedHexagon` class as a subclass of the `Hexagon` class. Then create the constructor and pass the arguments to the constructor of the superclass.
 
 ```java
-class Polygon extends Hexagon {
+class AnimatedHexagon extends Hexagon {
   
-  public Polygon(int x, int y, float r, color c, float sw, int v) {
-    super(x, y, r, c, sw);
-    setVertices(v);
-    setAngle(TWO_PI / getVertices());
-  }
+    public AnimatedHexagon(int x, int y, float r, color c, float sw) {
+      super(x, y, r, c, sw);
+    }
 }
 ```
 
-Next, replace references to `Hexagon` with `Polygon`. Do not forget that you need to provide the number of vertices when instantiating a `Polygon` object. In the main loop, call the `show` method for the `Polygon` object. Run your code to make sure you see an octagon.
+Next, replace references to `Hexagon` with `AnimatedHexagon`. In the main loop, call the `show` method for the `AnimatedHexagon` object. Run your code to make sure you see a hexagon.
 
 ```java
-Polygon p;
+AnimatedHexagon h;
 
 void setup() {
   size(400, 400);
-  p = new Polygon(width/2, height/2, 175, color(39, 209, 220), 3, 8);
+  h = new AnimatedHexagon(width/2, height/2, 175, color(39, 209, 220), 3);
 }
 
 void draw() {
   background(0);
-  p.show();
+  h.show();
 }
 ```
 
-|||challenge
-## Try these variations:
-* Instantiate the `Polygon` object with 3 vertices
-* Instantiate the `Polygon` object with 2 vertices
-* Instantiate the `Polygon` object with 1 vertex
-* Instantiate the `Polygon` object with 0 vertices
+### Animating the Hexagon
 
-|||
+We are going to animate the hexagon by overriding the `show` method. Instead of having a fixed radius (the distance from the vertices from the center of the hexagon), we are going to create a radius that increases and decreases over time. This will give the appearance that the hexagon is growing and shrinking.
 
-### Animating the Polygon
-
-We are going to animate the polygon by overriding the `show` method. Instead of having a fixed radius (the distance from the vertices from the center of the polygon), we are going to create a radius that increases and decreases over time. This will give the appearance that the polygon is growing and shrinking.
-
-Start by adding the `time` attribute to the `Polygon` constructor. As this value changes, the shape will animate. This value needs to be a `float` since we want to increment this attribute by amounts less than 1.
+Start by adding the `time` attribute to the `AnimatedHexagon` constructor. As this value changes, the shape will animate. This value needs to be a `float` since we want to increment this attribute by amounts less than 1.
 
 ```java
-class Polygon extends Hexagon {
+class AnimatedHexagon extends Hexagon {
   private float time;
   
-  public Polygon(int x, int y, float r, color c, float sw, int v) {
+  public AnimatedHexagon(int x, int y, float r, color c, float sw) {
     super(x, y, r, c, sw);
     time = 0;
-    setVertices(v);
-    setAngle(TWO_PI / getVertices());
   }
 }
 ```
@@ -84,7 +71,7 @@ Override the `show` method. There are three small differences in this new method
     endShape(CLOSE);
 ```
 
-Now we need to define `calculateLength`, which will return a float. Increment the `time` attribute by `.0.01`. This amount represents the speed of the animation. Increase the amount to increase the speed, decrease it to slow down the animation. The variable `length` represents the new distance between the vertex and the center of the polygon. `sin` is used because this function will return a value between -1 and 1. When the result is positive, the polygon grows. When the result is negative, the polygon shrinks. This will create a never-ending animation. It is important to multiply `sin(time)` by `getRadius()`. If not, maximum size the polygon can have is 1 pixel. Return `length` so it can be used to calculate the coordinate pairs for each vertex.
+Now we need to define `calculateLength`, which will return a float. Increment the `time` attribute by `.0.01`. This amount represents the speed of the animation. Increase the amount to increase the speed, decrease it to slow down the animation. The variable `length` represents the new distance between the vertex and the center of the hexagon. `sin` is used because this function will return a value between -1 and 1. When the result is positive, the hexagon grows. When the result is negative, the hexagon shrinks. This will create a never-ending animation. It is important to multiply `sin(time)` by `getRadius()`. If not, maximum size the hexagon can have is 1 pixel. Return `length` so it can be used to calculate the coordinate pairs for each vertex.
 
 ```java
   public float calculateLength() {
@@ -96,7 +83,7 @@ Now we need to define `calculateLength`, which will return a float. Increment th
 
 ### Test Your Code
 
-Your octagon should now grow and shrink. Adjust the animation by changing attributes like `vertices`, `time`, `radius`, and `clr`.
+Your octagon should now grow and shrink. Adjust the animation by changing attributes like `time`, `radius`, and `clr`.
 
 |||important
 ## Save Your Work
@@ -192,14 +179,12 @@ If Processing runs your code without any errors, be sure to save your work. This
     }
   }
 
-  class Polygon extends Hexagon {
+  class AnimatedHexagon extends Hexagon {
     private float time;
 
-    public Polygon(int x, int y, float r, color c, float sw, int v) {
+    public AnimatedHexagon(int x, int y, float r, color c, float sw) {
       super(x, y, r, c, sw);
       time = 0;
-      setVertices(v);
-      setAngle(TWO_PI / getVertices());
     }
 
     public float calculateLength() {
@@ -223,16 +208,16 @@ If Processing runs your code without any errors, be sure to save your work. This
     }
   }
 
-  Polygon p;
+  AnimatedHexagon h;
 
   void setup() {
     size(400, 400);
-    p = new Polygon(width/2, height/2, 175, color(39, 209, 220), 3, 8);
+    h = new AnimatedHexagon(width/2, height/2, 175, color(39, 209, 220), 3);
   }
 
   void draw() {
     background(0);
-    p.show();
+    h.show();
   }
   ```
 </details>
@@ -244,7 +229,7 @@ If Processing runs your code without any errors, be sure to save your work. This
 
 |||challenge
 ## Try these variations:
-* Change the `show` method in the `Polygon` class to look like this:
+* Change the `show` method in the `AnimatedHexagon` class to look like this:
 ```java
   public void show() {
     beginShape();
@@ -265,7 +250,7 @@ If Processing runs your code without any errors, be sure to save your work. This
   <iframe src=".guides/img/inheritance/animations/hexagon_spin_y/index.html" width=400 height=400/>
 </details>
 
-* Change the `show` method in the `Polygon` class to look like this:
+* Change the `show` method in the `AnimatedHexagon` class to look like this:
 ```java
   public void show() {
     beginShape();
@@ -287,7 +272,7 @@ If Processing runs your code without any errors, be sure to save your work. This
 </details>
 <details>
   <summary><strong>Why is this happening?</strong></summary>
-  In the first variation, the x-coordinate is animated while the y-coordinate remains the same. This gives the appearance that the polygon is "spinning" around a the y-axis. The second variation animates the x-coordinate while the y-coordinate remains the same. This gives the appearance that the polygon is "spinning" around the x-axis.
+  In the first variation, the x-coordinate is animated while the y-coordinate remains the same. This gives the appearance that the hexagon is "spinning" around a the y-axis. The second variation animates the x-coordinate while the y-coordinate remains the same. This gives the appearance that the hexagon is "spinning" around the x-axis.
 </details>
 
 |||

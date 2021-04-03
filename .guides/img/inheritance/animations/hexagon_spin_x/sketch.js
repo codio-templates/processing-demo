@@ -10,7 +10,7 @@ function setup() {
 
 function draw() {
   background(55, 55, 55);
-  let vertices = 8
+  let vertices = 6
   let angle = 360/vertices
   let r = 125
   beginShape()
