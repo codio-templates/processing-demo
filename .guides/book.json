@@ -1007,7 +1007,14 @@
      "title": "Lab - Advanced Topics",
      "id": "b0891711-67af-6e77-78d0-3f6d39d28172",
      "type": "section",
-     "children": []
+     "children": [
+      {
+       "id": "cc9bbc84-a430-ee82-d98f-f3e79c79b0f5",
+       "title": "Advanced Topics Lab Challenge",
+       "pageId": "8c07235b-54f8-22b5-b419-296b880ed309",
+       "type": "page"
+      }
+     ]
     },
     {
      "title": "Coding Exercises - Advanced Topics",

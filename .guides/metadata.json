@@ -2622,7 +2622,18 @@
   {
    "id": "a8fe5fa2-87ad-0154-5cea-50f57b892c15",
    "title": "Represent an Object as a String",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/StringRepresentation.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Represent-an-Object-as-a-String-a8fe.md",
@@ -2662,6 +2673,18 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Formative-Assessment-2-f1ff.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "8c07235b-54f8-22b5-b419-296b880ed309",
+   "title": "Advanced Topics Lab Challenge",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Lab-Challenge-8c07.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

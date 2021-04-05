@@ -6351,5 +6351,76 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3537822719",
+  "source": {
+   "name": "string representation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass ExampleClass {\n  private String attribute;\n\n  public ExampleClass(String a) {\n    attribute = a;\n  }\n}\n```\n\nWhich method would be the **best** way to represent this class as a string?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "cb8db73f-d00a-aa4e-b049-cf8077ecfe9d",
+     "correct": true,
+     "answer": "```java\npublic String toString() {\n  return getClass().getName() + \"[attribute= \" + attribute + \"]\";\n}\n```"
+    },
+    {
+     "_id": "4823ccc6-17a1-6e1a-cada-1824f1755e24",
+     "correct": false,
+     "answer": "```java\npublic String string() {\n  return getClass().getName() + \"[attribute= \" + attribute + \"]\";\n}\n```"
+    },
+    {
+     "_id": "7c6713b5-432d-6cba-0710-7ce8de505a28",
+     "correct": false,
+     "answer": "```java\npublic String toString() {\n  return getName() + \"[attribute= \" + attribute + \"]\";\n}\n```"
+    },
+    {
+     "_id": "fc2a0991-dee0-0da6-a4a0-bd09db5e0fbd",
+     "correct": false,
+     "answer": "```java\npublic String toString() {\n  return getClass().getName();\n}\n```"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\npublic String toString() {\n  return getClass().getName() + \"[attribute= \" + attribute + \"]\";\n}\n```\n\n* The method to create a string representation is `toString`.\n* You must first get the class before getting the name — `getClass().getName()`.\n* A good string representation will tell you the class name as well as the values for each attribute.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "String Representation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/StringRepresentation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/StringRepresentation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT override the toString method to create a string representation of the object"
+  }
  }
 ]
