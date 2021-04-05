@@ -2516,6 +2516,183 @@
    "reset": [],
    "teacherOnly": false,
    "learningObjectives": ""
+  },
+  {
+   "id": "67281b26-2801-c1a5-a101-0a61862fc16f",
+   "title": "Learning Objectives - Advanced Topics",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Learning-Objectives---Advanced-Topics-6728.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "46c410bd-e653-e149-1ae0-8d781c4ab8d4",
+   "title": "Importing User-Defined Classes",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/ImportingClasses.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "code/advanced/ClassDefinition.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Importing-User-Defined-Classes-46c4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7ea0ea74-5465-00ba-4373-801cc94ab8a0",
+   "title": "List of Objects",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/List-of-Objects-7ea0.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9e097723-01d1-917c-096b-65da095d4776",
+   "title": "Composition",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Composition-9e09.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "a8fe5fa2-87ad-0154-5cea-50f57b892c15",
+   "title": "Represent an Object as a String",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Represent-an-Object-as-a-String-a8fe.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "24162312-ecc4-1a95-c75e-bd8f92d4ff12",
+   "title": "Interfaces",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Interfaces-2416.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "41b73979-d3af-2e7e-6d42-6820978ea1bb",
+   "title": "Advanced Topics Formative Assessment 1",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Formative-Assessment-1-41b7.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f1ff1c5d-fbe0-5e53-e505-501527a08027",
+   "title": "Advanced Topics Formative Assessment 2",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Formative-Assessment-2-f1ff.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ad8d4808-c41b-85b0-8bb5-57134c30f590",
+   "title": "Advanced Topics Exercise 1",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Exercise-1-ad8d.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "8bdd696d-5d16-ddd3-c667-d8396d322fd3",
+   "title": "Advanced Topics Exercise 2",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Exercise-2-8bdd.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d8a47907-cd88-0aba-8fcd-62c685481ef9",
+   "title": "Advanced Topics Exercise 3",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Exercise-3-d8a4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2614283a-d3b0-327b-4c3c-c77aabf64748",
+   "title": "Advanced Topics Exercise 4",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Exercise-4-2614.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "a05377ee-1ffe-4817-1ebf-cbc1458b5458",
+   "title": "Advanced Topics Exercise 5",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Exercise-5-a053.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
   }
  ],
  "theme": "light",
