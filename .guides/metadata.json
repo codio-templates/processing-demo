@@ -2599,7 +2599,18 @@
   {
    "id": "9e097723-01d1-917c-096b-65da095d4776",
    "title": "Composition",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/Composition.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Composition-9e09.md",

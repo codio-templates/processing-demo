@@ -6289,5 +6289,67 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT create an ArrayList of user-defined objects"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2967844050",
+  "source": {
+   "name": "composition reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below with the words from the dropdown menu.",
+   "showValues": true,
+   "text": "<<<Inheritance>>> should be used to add functionality if there is a \"is a\" relationship.\n<<<Composition>>> should be used to add functionality if there is a \"has a\" relationship.",
+   "distractors": "Polymorphism\nEncapsulation",
+   "guidance": "Use inheritance when you have a \"is a\" relationship; e.g. a car is a vehicle.\nUse composition when you have a \"has a\" relationship; e.g. a car has an engine.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Object Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "C++, Python, Java, JavaScript"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/Composition.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/Composition.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify when to use composition and when to use inheritance",
+   "tokens": {
+    "blank": [
+     "Inheritance",
+     "Composition"
+    ],
+    "text": [
+     0,
+     " should be used to add functionality if there is a \"is a\" relationship.\n",
+     0,
+     " should be used to add functionality if there is a \"has a\" relationship."
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
