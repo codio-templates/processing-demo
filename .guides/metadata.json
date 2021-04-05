@@ -2520,7 +2520,13 @@
   {
    "id": "67281b26-2801-c1a5-a101-0a61862fc16f",
    "title": "Learning Objectives - Advanced Topics",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Learning-Objectives---Advanced-Topics-6728.md",
@@ -2565,7 +2571,23 @@
   {
    "id": "7ea0ea74-5465-00ba-4373-801cc94ab8a0",
    "title": "List of Objects",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/ListOfObjects.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "code/advanced/App.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/List-of-Objects-7ea0.md",

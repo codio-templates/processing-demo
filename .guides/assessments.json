@@ -6235,5 +6235,59 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT explain how to use user-defined classes in a separate file"
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-3265767851",
+  "source": {
+   "name": "list of objects reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the existence of the class `MyClass`. Drag the appropriate blocks into the box below so you create an ArrayList of ten objects of type `MyClass`. **Hint**, not all of the blocks will be used.",
+   "initial": "ArrayList&lt;MyClass&gt; myArrayList = new ArrayList&lt;MyClass&gt;();\nfor (int i = 0; i &lt; 10; i++) {\n  myArrayList.add(new MyClass());\n}\nArrayList&lt;int&gt; myArrayList = new ArrayList&lt;int&gt;(); #distractor\nmyArrayList.add(MyClass); #distractor\nfor (int i = 0; i &lt; 11; i++) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the solution:\n\n```java\nArrayList<MyClass> myArrayList = new ArrayList<MyClass>();\nfor (int i = 0; i < 10; i++) {\n  myArrayList.add(new MyClass());\n}\n```\n\n* The objects need to be stored in an ArrayList, and ArrayLists need to have the same type as the elements. The ArrayList should have the type `MyClass`.\n* You need ten objects, so the loop must run ten times.\n* Add an element to the ArrayList that is a `MyClass` object. Be sure to use the `new` keyword to instantiate a new `MyClass` object.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "List of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/ListOfObjects.java",
+     "code/advanced/App.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/ListOfObjects.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/App.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create an ArrayList of user-defined objects"
+  }
  }
 ]
