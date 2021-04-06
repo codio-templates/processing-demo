@@ -2645,7 +2645,18 @@
   {
    "id": "24162312-ecc4-1a95-c75e-bd8f92d4ff12",
    "title": "Interfaces",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/Interfaces.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Interfaces-2416.md",
