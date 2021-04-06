@@ -6,7 +6,7 @@ Use the `Person` class to the left to help you solve this problem. First, create
 
 * `accountNumber` - integer representing the credit card account.
 * `balance` - double representing how much money the holder owes.
-* `creditLimit` - integer representing how the holder can spend.
+* `creditLimit` - integer representing how much the holder can spend.
 * Constructor - the constructor takes arguments for `name`, `address`, and `accountNumber`. The `balance` should be set to `0` and `creditLimit` should be set to `5000`.
 * `processSale` - method that takes the sale amount (double) and adds it to `balance`.
 * `makePayment` - method that takes an amount (double) and deducts it from `balance`.

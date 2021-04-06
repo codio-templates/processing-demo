@@ -3830,12 +3830,12 @@
     {
      "_id": "186ae633-3985-468b-540b-14e307a6449c",
      "correct": true,
-     "answer": "When the object is a subclass of the comparison class."
+     "answer": "When the object is an instance of the subclass."
     },
     {
      "_id": "29a49127-eb0f-811c-2a68-14a2460067c4",
      "correct": false,
-     "answer": "When the object is a superclass of the comparison class."
+     "answer": "When the object is an instance of the superclass."
     },
     {
      "_id": "e3b704f4-cad6-4fcd-247b-a1554c674170",
@@ -4153,7 +4153,7 @@
   "source": {
    "name": "extending & overriding formative assessment 2",
    "showName": false,
-   "instructions": "Assume the following code:\n\n```java\nclass SportsCar extends Car{\n  private double acceleration;\n\n  public SportsCar(String self, String ma, String mo, String c, Double a) {\n    super(ma, mo, c);\n    acceleration = a;\n  }\n\n  public void acceleration(super) {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n}\n```\n\nThe `SportsCar` class inherits from the `Car` class and the `acceleration` method overrides a method from the superclass. What is wrong with the `acceleration` method?",
+   "instructions": "Assume the following code:\n\n```java\nclass SportsCar extends Car{\n  private double acceleration;\n\n  public SportsCar(String self, String ma, String mo, String c, double a) {\n    super(ma, mo, c);\n    acceleration = a;\n  }\n\n  public void acceleration(super) {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n}\n```\n\nThe `SportsCar` class inherits from the `Car` class and the `acceleration` method overrides a method from the superclass. What is wrong with the `acceleration` method?",
    "multipleResponse": false,
    "isRandomized": true,
    "answers": [
@@ -4484,9 +4484,9 @@
   "source": {
    "name": "multiple inheritance hierarchy reading question",
    "showName": false,
-   "instructions": "Assume the following code:\n\n```java\nBravo b = new Bravo();\nDelta d = new Delta();\n\nb.display();\nd.display();\n```\n\nWhich produces the following output:\n\n```\nBravo\nAlpha\nDelta\nCharlie\nAlpha\n```\n\nUsing the above information, fill in the blanks for inheritance.",
+   "instructions": "Assume the following code:\n\n```java\nBravo b = new Bravo();\nDelta d = new Delta();\n\nb.display();\nd.display();\n```\n\nWhich produces the following output:\n\n```markdown\nBravo\nAlpha\nDelta\nCharlie\nAlpha\n```\n\nUsing the above information, fill in the blanks for inheritance.",
    "showValues": true,
-   "text": "```python\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```",
+   "text": "```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```",
    "distractors": "extends Bravo\nextends Delta",
    "guidance": "Here is the solution:\n\n```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() extends Alpha {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() extends Alpha {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta extends Charlie () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```\n\n* The `b` object runs the `display` method which prints `Bravo`. \n* The next line of output is `Alpha` which means `super` refers to class `Alpha`. Therefore, class `Bravo` extends class `Alpha`.\n* The `d` object runs the `display` method which prints `Delta`. However, there are two more lines of output. That means class `Delta` has multilevel inheritance.\n* The next line of output is `Charlie` which means `super` refers to class `Charlie`. Therefore, class `Delta` extends class `Charlie`.\n* Finally, calling `display` in class `Charlie` must also print `Alpha`. That means class `Charlie` extends class `Alpha`.",
    "showGuidanceAfterResponse": true,
@@ -4532,7 +4532,7 @@
      "extends Charlie"
     ],
     "text": [
-     "```python\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() ",
+     "```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() ",
      0,
      " {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() ",
      0,
