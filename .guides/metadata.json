@@ -2750,7 +2750,18 @@
   {
    "id": "ad8d4808-c41b-85b0-8bb5-57134c30f590",
    "title": "Advanced Topics Exercise 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/exercise1/Exercise1.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Exercise-1-ad8d.md",
@@ -2762,7 +2773,18 @@
   {
    "id": "8bdd696d-5d16-ddd3-c667-d8396d322fd3",
    "title": "Advanced Topics Exercise 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/exercise2/Exercise2.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Exercise-2-8bdd.md",
@@ -2774,7 +2796,18 @@
   {
    "id": "d8a47907-cd88-0aba-8fcd-62c685481ef9",
    "title": "Advanced Topics Exercise 3",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/exercise3/Exercise3.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Exercise-3-d8a4.md",
@@ -2786,7 +2819,18 @@
   {
    "id": "2614283a-d3b0-327b-4c3c-c77aabf64748",
    "title": "Advanced Topics Exercise 4",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/exercise4/Exercise4.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Exercise-4-2614.md",
@@ -2798,7 +2842,18 @@
   {
    "id": "a05377ee-1ffe-4817-1ebf-cbc1458b5458",
    "title": "Advanced Topics Exercise 5",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/exercise5/Exercise5.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Exercise-5-a053.md",
