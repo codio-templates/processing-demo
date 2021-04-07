@@ -2691,7 +2691,13 @@
   {
    "id": "41b73979-d3af-2e7e-6d42-6820978ea1bb",
    "title": "Advanced Topics Formative Assessment 1",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Formative-Assessment-1-41b7.md",
@@ -2703,7 +2709,13 @@
   {
    "id": "f1ff1c5d-fbe0-5e53-e505-501527a08027",
    "title": "Advanced Topics Formative Assessment 2",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Advanced-Topics-Formative-Assessment-2-f1ff.md",
