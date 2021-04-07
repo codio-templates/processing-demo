@@ -15,3 +15,5 @@ dead = Band('The Grateful Dead', 'rock\'n roll', ['Jerry', 'Bob', 'Mickey', 'Bil
 |-------------------|------------------------------------------------------------------------------------------|
 |`print(dead)`      |The Grateful Dead is a rock'n roll band.                                                  |
 |`print(repr(dead))`|Band(The Grateful Dead, rock'n roll, ['Jerry', 'Bob', 'Mickey', 'Bill', 'Phil', 'Pigpen'])|
+
+{Try it}(sh .guides/bg.sh javac code/advanced/exercise2/Exercise2.java java -cp code/advanced/exercise2/ Exercise2 1)

@@ -30,3 +30,5 @@ The following commands should produce the output on the right.
 |`print(library.search_author('Herman Melville'))`|[]|
 |`print(library.search_title('Educated'))`        |True|
 |`print(library.search_title('Moby Dick'))`       |False|
+
+{Try it}(sh .guides/bg.sh javac code/advanced/exercise4/Exercise4.java java -cp code/advanced/exercise4/ Exercise4 1)

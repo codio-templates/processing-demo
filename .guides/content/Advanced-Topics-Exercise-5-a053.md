@@ -68,8 +68,11 @@ print(cart.get_items())
 
 You should see the following output:
 
-```text
+```markdown
 9.75
 3
 The cart has 3 items for a total of $9.75
 [Item(milk, 1.5, 1, 1.5), Item(apple, 5, 0.75, 3.75), Item(bread, 2, 2.25, 4.5)]
+```
+
+{Try it}(sh .guides/bg.sh javac code/advanced/exercise5/Exercise5.java java -cp code/advanced/exercise5/ Exercise5 1)
