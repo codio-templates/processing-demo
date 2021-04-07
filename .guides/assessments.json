@@ -6422,5 +6422,137 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT override the toString method to create a string representation of the object"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2980100207",
+  "source": {
+   "name": "interfaces reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\n`MyInterface` is an interface and the `ExampleClass` uses this interface. Fill in the blanks accordingly.",
+   "showValues": true,
+   "text": "```\n<<<interface>>> MyInterface {\n  <<<String>>> greeting();\n}\n\nclass ExampleClass <<<implements>>> MyInterface {\n  <<<public String>>> greeting() {\n    return \"Hello\";\n  }\n}\n```",
+   "distractors": "interface class\nextends\nvoid\npublic void",
+   "guidance": "Here is the solution:\n\n```java\ninterface MyInterface {\n  String greeting();\n}\n\nclass ExampleClass implements MyInterface {\n  public String greeting() {\n    return \"Hello\";\n  }\n}\n```\n\n* The keyword for an interface is `interface`; the keyword `class` is not used.\n* Using an interface requires the keyword `implements`, not `extends`.\n* Methods in an interface are public by default so you do not need the `public` keyword.\n* In `ExampleClass` the `greeting` method returns a string. That means the method in the interface should use `String` and the method in the class should use `public String`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Interfaces"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/Interfaces.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/Interfaces.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create and implement an interface",
+   "tokens": {
+    "blank": [
+     "interface",
+     "String",
+     "implements",
+     "public String"
+    ],
+    "text": [
+     "```\n",
+     0,
+     " MyInterface {\n  ",
+     0,
+     " greeting();\n}\n\nclass ExampleClass ",
+     0,
+     " MyInterface {\n  ",
+     0,
+     " greeting() {\n    return \"Hello\";\n  }\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-1727359970",
+  "source": {
+   "name": "object equality reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "Use <<<equals>>> to compare attribute values between two objects.\nUse <<<==>>> to compare memory addresses between two objects.",
+   "distractors": "=\nequalTo",
+   "guidance": "Use **equals** to compare attribute values between two objects.\nUse **==** to compare memory addresses between two objects.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Object Equality"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/ObjectEquality.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/ObjectEquality.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between == and equals when comparing two objects",
+   "tokens": {
+    "blank": [
+     "equals",
+     "=="
+    ],
+    "text": [
+     "Use ",
+     0,
+     " to compare attribute values between two objects.\nUse ",
+     0,
+     " to compare memory addresses between two objects."
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]

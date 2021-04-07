@@ -2666,6 +2666,29 @@
    "learningObjectives": ""
   },
   {
+   "id": "a6d5671a-c307-3b41-4f13-28ae6278d9e7",
+   "title": "Object Equality",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "code/advanced/ObjectEquality.java",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Object-Equality-a6d5.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "41b73979-d3af-2e7e-6d42-6820978ea1bb",
    "title": "Advanced Topics Formative Assessment 1",
    "files": [],
