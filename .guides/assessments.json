@@ -6675,5 +6675,54 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT troubleshoot object composition"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2414713005",
+  "source": {
+   "name": "advanced topics lab challenge",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/labChallenge\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass BankAccount {\n  private double checking;\n  private double savings;\n  \n  public BankAccount(double c, double s) {\n    checking = c;\n    savings = s;\n  }\n  \n  //add toString definition below this line\n  \n  public String toString() {\n    return getClass().getName() + String.format(\"[checking=\" + checking + \", savings=\" + savings + \"]\", checking, savings);\n  }\n  \n  //add toString definition above this line\n  \n}\n\npublic class LabChallenge {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    BankAccount account1 = new BankAccount(2432, 89.52);\n    BankAccount account2 = new BankAccount(1998, 239.43);\n    System.out.println(account1);\n    System.out.println(account2);\n\n    //add code above this line\n    \n  }\n}\n```\n\n* Create the `toString` method, which should return a string.\n* Use `getClass().getName()` to get the object type.\n* Concatenate a string that contains the name and value for each attribute.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "String Representation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/labChallenge/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/labChallenge/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override the toString method to create a string representation of an object"
+  }
  }
 ]
