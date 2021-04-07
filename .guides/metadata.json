@@ -2570,7 +2570,7 @@
   },
   {
    "id": "7ea0ea74-5465-00ba-4373-801cc94ab8a0",
-   "title": "List of Objects",
+   "title": "ArrayList of Objects",
    "files": [
     {
      "path": "#tabs",
@@ -2590,7 +2590,7 @@
    "layout": "2-panels",
    "path": [],
    "type": "markdown",
-   "content-file": ".guides/content/List-of-Objects-7ea0.md",
+   "content-file": ".guides/content/ArrayList-of-Objects-7ea0.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

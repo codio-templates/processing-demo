@@ -1,6 +1,6 @@
 ----------
 
-## List of Objects
+## ArrayList of Objects
 
 You may find yourself needing several instances of a class. Keeping these objects in an ArrayList is a good way to organize your code. It also simplifies interacting with the objects because you can iterate through the ArrayList as opposed to manipulating each object separately.
 

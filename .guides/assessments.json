@@ -6554,5 +6554,126 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3877358862",
+  "source": {
+   "name": "advanced topics formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume that the ArrayList `myList` is of type `myObject`. Choose the code below that would call the `go` method on the fourth element in the ArrayList.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "9de00e3d-1ca0-1c78-54d7-ba7234fcf272",
+     "correct": true,
+     "answer": "`myList.get(3).go();`"
+    },
+    {
+     "_id": "5cd7d860-dc7a-c6f6-c509-e3e1537924e1",
+     "correct": false,
+     "answer": "`myList[3].go();`"
+    },
+    {
+     "_id": "12edd30f-6bbc-4115-9772-cfd636cdf51e",
+     "correct": false,
+     "answer": "`myList.go();`"
+    },
+    {
+     "_id": "c43ecf6a-1643-6491-614b-0ead3cd36717",
+     "correct": false,
+     "answer": "`myList.get(4).go();`"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\nmyList.get(3).go();\n```\n\nArrayLists use the `get` method as opposed to square brackets to reference an element. ArrayLists start counting elements with 0, so the fourth element would be `3`. Once you have referenced the correct element with `myList.get(3)` then add `.go()` to call the `go` method.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "ArrayList of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT call a method on an object in an ArrayList"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-806737169",
+  "source": {
+   "name": "advanced topics formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following class definitions:\n\n```java\nclass VideoGame {\n  private Player player;\n  private int level;\n  private int score;\n\n  public VideoGame(Player p) {\n    player = p;\n    level = 1;\n    score = 0;\n  }\n}\n\nclass Player {\n  private int health;\n  private String weapon;\n\n  public Player() {\n    health = 100;\n    weapon = \"small sword\";\n  }\n}\n```\n\nWhy does the following code generate an error message?\n\n```java\nVideoGame myGame = VideoGame(player);\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "87c16de0-f9d9-c907-8271-40ea1ea65d9c",
+     "correct": true,
+     "answer": "There needs to be an instance of the `Player` class defined as: \n```java\nPlayer player = new Player();\n```"
+    },
+    {
+     "_id": "83c2c8f3-8842-e8a8-6b22-4a543d1bc3d9",
+     "correct": false,
+     "answer": "You need to replace\n```java\nVideoGame myGame = new VideoGame(player);\n```\nwith \n```java\nPlayer player = new Player();\n```"
+    },
+    {
+     "_id": "3a945dd5-d3e6-d25b-554e-c9b7ef425918",
+     "correct": false,
+     "answer": "There needs to be an instance of the `Player` class defined as:\n```java\nPlayer myPlayer = new Player();\n```"
+    }
+   ],
+   "guidance": "This is an example of composition. The `VideoGame` class is the composite class and the `Player` class is the component class. That means an instance of the `Player` class is used to create an instance of the `VideoGame` class. The given code defines the `Player` class, but it does not instantiate an object. You would need to instantiate the object `player`. The object `myPlayer` is not correct because that is not the name use when instantiating `myGame`.\n\n```python\nPlayer player = new Player();\nVideoGame myGame = VideoGame(player);\n```",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Object Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT troubleshoot object composition"
+  }
  }
 ]
