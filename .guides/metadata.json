@@ -2861,6 +2861,16 @@
      "path": "code/advanced/exercise5/Exercise5.java",
      "panel": 0,
      "action": "open"
+    },
+    {
+     "path": "code/advanced/exercise5/Item.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "code/advanced/exercise5/ShoppingCart.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",

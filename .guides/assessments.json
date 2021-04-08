@@ -6846,7 +6846,7 @@
      },
      {
       "name": "Content",
-      "value": "Object Compsition, String Representation, List of Objects, Multiple Files"
+      "value": "Object Compsition,"
      },
      {
       "name": "Programming Language",
@@ -6881,7 +6881,68 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT use composition, string representation, lists of objects, and multiple files"
+   "learningObjectives": "SWBAT create a component class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1581249114",
+  "source": {
+   "name": "advanced topics coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise5\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n\n```",
+   "showGuidanceAfterResponse": false,
+   "points": 20,
+   "oneTimeTest": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise5/Exercise5.java",
+     "code/advanced/exercise5/Item.java",
+     "code/advanced/exercise5/ShoppingCart.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise5/Exercise5.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise5/Item.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise5/ShoppingCart.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create component and composite classes"
   }
  }
 ]
