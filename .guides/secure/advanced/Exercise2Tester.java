@@ -5,19 +5,21 @@ public class Exercise2Tester {
   
   @Test
   public void checkToString1() {
-    BankAccount ba = new BankAccount(1234.56, 7890.12);
-    String expected = "BankAccount[checking=1234.56, savings=7890.12]";
-    String actual = ba.toString();
-    String feedback = "Test did not pass.";
+    String[] members = {"Syd", "Nick", "Roger", "Richard", "David"};
+    Band band = new Band("Pink Floyd", "rock'n roll", members);
+    String expected = "Band[name=Pink Floyd, genre=rock'n roll, members=[Syd, Nick, Roger, Richard, David]]";
+    String actual = band.toString();
+    String feedback = "Output did not match.";
     assertEquals(feedback, expected, actual);
   }
   
   @Test
   public void checkToString2() {
-    BankAccount ba = new BankAccount(3325.45, 1618.89);
-    String expected = "BankAccount[checking=3325.45, savings=1618.89]";
-    String actual = ba.toString();
-    String feedback = "Test did not pass.";
+    String[] members = {"RZA", "GZA", "Ol'Dirty Bastard", "Method Man", "Ghostface Killah", "Inspectah Deck", "U-God", "Masta Killa", "Cappadonna"};
+    Band band = new Band("Wu-Tang Clan", "rap", members);
+    String expected = "Band[name=Wu-Tang Clan, genre=rap, members=[RZA, GZA, Ol'Dirty Bastard, Method Man, Ghostface Killah, Inspectah Deck, U-God, Masta Killa, Cappadonna]]";
+    String actual = band.toString();
+    String feedback = "Output did not match.";
     assertEquals(feedback, expected, actual);
   }
   

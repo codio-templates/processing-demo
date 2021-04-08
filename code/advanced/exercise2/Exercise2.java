@@ -1,4 +1,4 @@
-//add class definitions below this line
+import java.util.*;
 
 class Band {
   private String name;
@@ -11,28 +11,20 @@ class Band {
     members = m;
   }
   
-  public String getName() {
-    return name;
-  }
+  //add method definition below this line
   
-  public String getGenre() {
-    return genre;
-  }
   
-  public String[] getMembers() {
-    return members;
-  }
+  
+  //add method definition above this line
 }
  
-//add class definitions above this line
 
 public class Exercise2 {  
   public static void main(String[] args) {
     
     //add code below this line
     
-    String[] members = {"Jerry", "Bob", "Mickey", "Bill", "Phil", "Pigpen"};
-    Band dead = new Band("The Grateful Dead", "rock'n roll", members);
+    
 
     //add code above this line
     
