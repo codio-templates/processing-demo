@@ -15,6 +15,20 @@
  {
   "taskId": "test-326602571",
   "points": 0,
+  "results": [
+   {
+    "guidance": "Here is one possible solution:\n\n```java\n\n```\n\n* ",
+    "format": null,
+    "code": 1,
+    "output": "<b>2</b> tests, <b>2</b> failures, <b>0.215s</b> duration\n\n<strong>Exercise2Tester</strong>\ncheckToString1, 0.007s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">Output did not match. expected:<Band[[name=Pink Floyd, genre=rock'n roll, members=[Syd, Nick, Roger, Richard, David]]]> but was:<Band[@38082d64]></div>checkToString2, 0.001s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">Output did not match. expected:<Band[[name=Wu-Tang Clan, genre=rap, members=[RZA, GZA, Ol'Dirty Bastard, Method Man, Ghostface Killah, Inspectah Deck, U-God, Masta Killa, Cappadonna]]]> but was:<Band[@6537cf78]></div>",
+    "timestamp": "2021-04-08T16:55:50.201Z",
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-3997253090",
+  "points": 0,
   "results": []
  }
 ]

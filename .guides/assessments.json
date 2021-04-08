@@ -6773,5 +6773,54 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT represent an object as a string with the toString method"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3997253090",
+  "source": {
+   "name": "advanced topics coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise3\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n\n```\n\n* ",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "List of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise3/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise3/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a list of objects"
+  }
  }
 ]

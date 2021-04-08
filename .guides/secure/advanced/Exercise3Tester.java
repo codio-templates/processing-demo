@@ -1,23 +1,42 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
+import org.junit.Before;
+import java.util.*;
 
 public class Exercise3Tester {
   
+  ArrayList<Dog> dogs = new ArrayList<Dog>();
+  
+  @Before
+  public void setup() {
+    dogs = makeDogs();
+  }
+  
   @Test
-  public void checkToString1() {
-    BankAccount ba = new BankAccount(1234.56, 7890.12);
-    String expected = "BankAccount[checking=1234.56, savings=7890.12]";
-    String actual = ba.toString();
-    String feedback = "Test did not pass.";
+  public void checkNames() {
+    String[] names;
+    String[] expected = new String[0];
+    String[] actual = {"Marceline", "Cajun", "Daisy", "Rocky", "Bella"};
+    String feedback = "Names did not match.";
+    
+    for (Dog dog : dogs) {
+      expected += dog.getName();
+    }
+    
     assertEquals(feedback, expected, actual);
   }
   
   @Test
-  public void checkToString2() {
-    BankAccount ba = new BankAccount(3325.45, 1618.89);
-    String expected = "BankAccount[checking=3325.45, savings=1618.89]";
-    String actual = ba.toString();
-    String feedback = "Test did not pass.";
+  public void checkBreeds() {
+    String[] breeds;
+    String[] expected = new String[0];
+    String[] actual = {"German Shepherd", "Belgian Malinois", "Border Collie", "Golden Retreiver", "Irish Setter"};
+    String feedback = "Breeds did not match.";
+    
+    for (Dog dog : dogs) {
+      expected += dog.getBreed();
+    }
+    
     assertEquals(feedback, expected, actual);
   }
   
