@@ -1,9 +1,3 @@
-//add class definitions below this line
-
-
- 
-//add class definitions above this line
-
 public class Exercise4 {  
   public static void main(String[] args) {
     

@@ -2828,6 +2828,16 @@
      "path": "code/advanced/exercise4/Exercise4.java",
      "panel": 0,
      "action": "open"
+    },
+    {
+     "path": "code/advanced/exercise4/Library.java",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "code/advanced/exercise4/Book.java",
+     "panel": 0,
+     "action": "open"
     }
    ],
    "layout": "2-panels",

@@ -6822,5 +6822,66 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create a list of objects"
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1539171007",
+  "source": {
+   "name": "advanced topics coding exercise 4",
+   "showName": true,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise4\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass Book {\n  private String title;\n  private String author;\n  private String genre;\n  \n  public Book(String t, String a, String g) {\n    title = t;\n    author = a;\n    genre = g;\n  }\n  \n  public String getTitle() {\n    return title;\n  }\n  \n  public String getAuthor() {\n    return author;\n  }\n  \n  public String getGenre() {\n    return genre;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[title=\" + title + \", author=\" + author + \", genre=\" + genre + \"]\";\n  }\n}\n```\n\nIn the `Library.java` file, you can see references to the getter methods for three string attributes needed for the `Book` class. The method `getTitle()` is referenced on line 51, the method `getAuthor()` is referenced on line 64, and the method `getGenre` is referenced on lines 85 and 98. You should create `private` attributes for `name`, `author`, and `genre`. Getters also need to be created for each attribute.\n\nWhen you print a ArrayList of `Book` objects and you want to a string representation, you need to override the `toString` method.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Compsition, String Representation, List of Objects, Multiple Files"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise4/Exercise4.java",
+     "code/advanced/exercise4/Library.java",
+     "code/advanced/exercise4/Book.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise4/Exercise4.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise4/Library.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise4/Book.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT use composition, string representation, lists of objects, and multiple files"
+  }
  }
 ]
