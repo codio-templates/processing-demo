@@ -105,5 +105,10 @@
     "state": "fail"
    }
   ]
+ },
+ {
+  "taskId": "test-485920902",
+  "points": 0,
+  "results": []
  }
 ]

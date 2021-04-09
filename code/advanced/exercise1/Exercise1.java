@@ -1,3 +1,7 @@
+interface Vehicle {
+  String travel();
+}
+
 //add class definitions below this line
 
 
