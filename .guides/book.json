@@ -947,46 +947,46 @@
      "type": "section",
      "children": [
       {
-       "id": "804d6839-61fb-2e7b-14b9-1ab09be630a2",
        "title": "Learning Objectives - Advanced Topics",
-       "pageId": "67281b26-2801-c1a5-a101-0a61862fc16f",
-       "type": "page"
+       "id": "804d6839-61fb-2e7b-14b9-1ab09be630a2",
+       "type": "page",
+       "pageId": "67281b26-2801-c1a5-a101-0a61862fc16f"
       },
       {
-       "id": "7fd37496-21db-9257-f317-8e83451ab14f",
        "title": "Importing User-Defined Classes",
-       "pageId": "46c410bd-e653-e149-1ae0-8d781c4ab8d4",
-       "type": "page"
+       "id": "7fd37496-21db-9257-f317-8e83451ab14f",
+       "type": "page",
+       "pageId": "46c410bd-e653-e149-1ae0-8d781c4ab8d4"
       },
       {
-       "id": "e1bbd0ca-9f7f-d0f8-228b-8fc3946a2e35",
        "title": "ArrayList of Objects",
-       "pageId": "7ea0ea74-5465-00ba-4373-801cc94ab8a0",
-       "type": "page"
+       "id": "e1bbd0ca-9f7f-d0f8-228b-8fc3946a2e35",
+       "type": "page",
+       "pageId": "7ea0ea74-5465-00ba-4373-801cc94ab8a0"
       },
       {
-       "id": "9a61c20b-dea2-2341-e888-563d258b5a44",
        "title": "Composition",
-       "pageId": "9e097723-01d1-917c-096b-65da095d4776",
-       "type": "page"
+       "id": "9a61c20b-dea2-2341-e888-563d258b5a44",
+       "type": "page",
+       "pageId": "9e097723-01d1-917c-096b-65da095d4776"
       },
       {
-       "id": "b72fc416-5e69-4c3f-1982-87fe24d1f347",
        "title": "Represent an Object as a String",
-       "pageId": "a8fe5fa2-87ad-0154-5cea-50f57b892c15",
-       "type": "page"
+       "id": "b72fc416-5e69-4c3f-1982-87fe24d1f347",
+       "type": "page",
+       "pageId": "a8fe5fa2-87ad-0154-5cea-50f57b892c15"
       },
       {
-       "id": "eeb9490c-7a1d-5a19-a66d-b310a92966f5",
        "title": "Interfaces",
-       "pageId": "24162312-ecc4-1a95-c75e-bd8f92d4ff12",
-       "type": "page"
+       "id": "eeb9490c-7a1d-5a19-a66d-b310a92966f5",
+       "type": "page",
+       "pageId": "24162312-ecc4-1a95-c75e-bd8f92d4ff12"
       },
       {
-       "id": "b1485278-ddc1-50d0-d60e-d89d1ac9f015",
        "title": "Object Equality",
-       "pageId": "a6d5671a-c307-3b41-4f13-28ae6278d9e7",
-       "type": "page"
+       "id": "b1485278-ddc1-50d0-d60e-d89d1ac9f015",
+       "type": "page",
+       "pageId": "a6d5671a-c307-3b41-4f13-28ae6278d9e7"
       }
      ]
     },
@@ -996,16 +996,16 @@
      "type": "section",
      "children": [
       {
-       "id": "c9782cb4-a52d-6a0b-2680-858134a4620d",
        "title": "Advanced Topics Formative Assessment 1",
-       "pageId": "41b73979-d3af-2e7e-6d42-6820978ea1bb",
-       "type": "page"
+       "id": "c9782cb4-a52d-6a0b-2680-858134a4620d",
+       "type": "page",
+       "pageId": "41b73979-d3af-2e7e-6d42-6820978ea1bb"
       },
       {
-       "id": "6838e790-47d3-73ca-5968-9f425ee014db",
        "title": "Advanced Topics Formative Assessment 2",
-       "pageId": "f1ff1c5d-fbe0-5e53-e505-501527a08027",
-       "type": "page"
+       "id": "6838e790-47d3-73ca-5968-9f425ee014db",
+       "type": "page",
+       "pageId": "f1ff1c5d-fbe0-5e53-e505-501527a08027"
       }
      ]
     },
@@ -1015,10 +1015,16 @@
      "type": "section",
      "children": [
       {
-       "id": "cc9bbc84-a430-ee82-d98f-f3e79c79b0f5",
+       "title": "Advanced Topics Lab 1",
+       "id": "edbddc56-29c9-9fdf-466a-414aa39f1d9a",
+       "type": "page",
+       "pageId": "81f832aa-92f6-5de9-f9f3-5a8a39346cc7"
+      },
+      {
        "title": "Advanced Topics Lab Challenge",
-       "pageId": "8c07235b-54f8-22b5-b419-296b880ed309",
-       "type": "page"
+       "id": "cc9bbc84-a430-ee82-d98f-f3e79c79b0f5",
+       "type": "page",
+       "pageId": "8c07235b-54f8-22b5-b419-296b880ed309"
       }
      ]
     },
@@ -1028,34 +1034,34 @@
      "type": "section",
      "children": [
       {
-       "id": "af7818ac-967b-4814-f44d-00fa8847814d",
        "title": "Advanced Topics Exercise 1",
-       "pageId": "ad8d4808-c41b-85b0-8bb5-57134c30f590",
-       "type": "page"
+       "id": "af7818ac-967b-4814-f44d-00fa8847814d",
+       "type": "page",
+       "pageId": "ad8d4808-c41b-85b0-8bb5-57134c30f590"
       },
       {
-       "id": "7bb1b227-32d9-c9bb-bfd6-7d05cce7f948",
        "title": "Advanced Topics Exercise 2",
-       "pageId": "8bdd696d-5d16-ddd3-c667-d8396d322fd3",
-       "type": "page"
+       "id": "7bb1b227-32d9-c9bb-bfd6-7d05cce7f948",
+       "type": "page",
+       "pageId": "8bdd696d-5d16-ddd3-c667-d8396d322fd3"
       },
       {
-       "id": "5b78fdc3-5462-58d1-8a0a-303b92c56f3e",
        "title": "Advanced Topics Exercise 3",
-       "pageId": "d8a47907-cd88-0aba-8fcd-62c685481ef9",
-       "type": "page"
+       "id": "5b78fdc3-5462-58d1-8a0a-303b92c56f3e",
+       "type": "page",
+       "pageId": "d8a47907-cd88-0aba-8fcd-62c685481ef9"
       },
       {
-       "id": "b604d7c9-5c60-ff80-9257-528db076d83a",
        "title": "Advanced Topics Exercise 4",
-       "pageId": "2614283a-d3b0-327b-4c3c-c77aabf64748",
-       "type": "page"
+       "id": "b604d7c9-5c60-ff80-9257-528db076d83a",
+       "type": "page",
+       "pageId": "2614283a-d3b0-327b-4c3c-c77aabf64748"
       },
       {
-       "id": "d75520d2-1a8b-2df4-6530-1e1304accd35",
        "title": "Advanced Topics Exercise 5",
-       "pageId": "a05377ee-1ffe-4817-1ebf-cbc1458b5458",
-       "type": "page"
+       "id": "d75520d2-1a8b-2df4-6530-1e1304accd35",
+       "type": "page",
+       "pageId": "a05377ee-1ffe-4817-1ebf-cbc1458b5458"
       }
      ]
     }
