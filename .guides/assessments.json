@@ -6162,7 +6162,7 @@
    "showName": false,
    "instructions": "## Reading Question\n\nHow do you use a user-defined class that is in a separate file in your Java program?",
    "multipleResponse": false,
-   "isRandomized": false,
+   "isRandomized": true,
    "answers": [
     {
      "_id": "423a2abc-57f3-dc52-c35f-07f9ec77f2bc",
@@ -6992,6 +6992,75 @@
    },
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT create several classes that all inherit from the same interface"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2800255607",
+  "source": {
+   "name": "advanced topic lab question 1",
+   "showName": false,
+   "instructions": "## Lab Question\n\nSelect all of the things that must be true in order to use a user-defined class in another file. **Hint**, there is more than one correct answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "9d5a52a5-b6df-262a-2c77-f716bd1fae05",
+     "correct": false,
+     "answer": "The two files have the same name."
+    },
+    {
+     "_id": "b841ce56-9052-4fb1-972c-dc6f344bdaaa",
+     "correct": true,
+     "answer": "The two files are in the same folder."
+    },
+    {
+     "_id": "bf7604fb-4123-3b87-898a-ea49b306809a",
+     "correct": false,
+     "answer": "Use the `import` statement."
+    },
+    {
+     "_id": "5b3dcb8b-7b69-9956-d001-48a383aa43dc",
+     "correct": true,
+     "answer": "The two files are compiled."
+    }
+   ],
+   "guidance": "Both files must be in the same folder and they must both be compiled. Once this happens, Java can use a user-defined class in another file.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     },
+     {
+      "name": "Content",
+      "value": "Importing User-Defined Classes"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT describe how Java is able to use code written in a separate file"
   }
  }
 ]
