@@ -17,10 +17,6 @@ class Bird {
     return x;
   }
   
-  public void setX(float newX) {
-    x = newX;
-  }
-  
   public float getY() {
     return y;
   }

@@ -7126,5 +7126,66 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT to reference an object in an array of objects"
   }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3612340120",
+  "source": {
+   "name": "advanced topic lab question 3",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass Shape {\n  private String name;\n  private int sides;\n  private int length;\n  \n  public Shape(String n, int s, int l) {\n    name = n;\n    sides = s;\n    length = l;\n  }\n}\n\nclass Animation {\n  private int xPosition;\n  private int yPosition;\n  pivate Shape image;\n\n  public Animation(int x, int y, int img) {\n    xPosition = x;\n    yPosition = y;\n    image = img;\n  }\n}\n\nShape myShape = new Shape(\"square\", 4, 50);\nAnimation myAnimation = new Animation(0, 0, myShape);\n```\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "The <<<Animation>>> class is the composite class.\nThe <<<Shape>>> class is the component class.",
+   "distractors": "",
+   "guidance": "A composite class is a class that has another class as an attribute. A component class is a class that is used as an attribute of another class. In the code sample above, the `Animation` class is the composite class, while the `Shape` class is the component class.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify composite and component classes",
+   "tokens": {
+    "blank": [
+     "Animation",
+     "Shape"
+    ],
+    "text": [
+     "The ",
+     0,
+     " class is the composite class.\nThe ",
+     0,
+     " class is the component class."
+    ],
+    "regexPositions": []
+   }
+  }
  }
 ]
