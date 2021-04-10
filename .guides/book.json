@@ -1021,6 +1021,18 @@
        "pageId": "81f832aa-92f6-5de9-f9f3-5a8a39346cc7"
       },
       {
+       "id": "7ede3d4d-b6f8-ae62-daed-c03a7f832270",
+       "title": "Advanced Topics Lab 2",
+       "pageId": "e155a93f-7c11-6a1e-a046-886c4506990d",
+       "type": "page"
+      },
+      {
+       "id": "e2cd1b7d-7ee2-e053-4403-118d8ee8af17",
+       "title": "Advanced Topics Lab 3",
+       "pageId": "0df039ae-b61f-df7d-e016-d5fd64b748a4",
+       "type": "page"
+      },
+      {
        "title": "Advanced Topics Lab Challenge",
        "id": "cc9bbc84-a430-ee82-d98f-f3e79c79b0f5",
        "type": "page",

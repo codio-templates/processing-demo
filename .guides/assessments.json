@@ -7062,5 +7062,69 @@
    "bloomsObjectiveLevel": "1",
    "learningObjectives": "SWBAT describe how Java is able to use code written in a separate file"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1248934826",
+  "source": {
+   "name": "advanced topic lab question 2",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume you have the array `cats` which is populated with instances of the `Cat` class. You want to invoke the `meow` method on the first element in the array. Select the Java code that would do this.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "e0ca17c7-1ded-691a-feb8-2a14af1c86ea",
+     "correct": true,
+     "answer": "cats[0].meow();"
+    },
+    {
+     "_id": "60dfa9fd-98a5-7b92-fced-9c92d45c9b72",
+     "correct": false,
+     "answer": "cats.meow();"
+    },
+    {
+     "_id": "715d7e42-ea70-a2bc-6f43-e05499988baa",
+     "correct": false,
+     "answer": "cat.meow()"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n`cats[0].meow();`\n\nRemember, `cats` is an array of objects. You cannot call the `meow` method on an array of `Cat` objects. You need to call the method on a `Cat` object itself. `cats[0]` is a `Cat` object, the other choices are not.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Array of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT to reference an object in an array of objects"
+  }
  }
 ]

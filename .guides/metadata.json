@@ -2748,6 +2748,30 @@
    "learningObjectives": ""
   },
   {
+   "id": "e155a93f-7c11-6a1e-a046-886c4506990d",
+   "title": "Advanced Topics Lab 2",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Lab-2-e155.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "0df039ae-b61f-df7d-e016-d5fd64b748a4",
+   "title": "Advanced Topics Lab 3",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Advanced-Topics-Lab-3-0df0.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "8c07235b-54f8-22b5-b419-296b880ed309",
    "title": "Advanced Topics Lab Challenge",
    "files": [
