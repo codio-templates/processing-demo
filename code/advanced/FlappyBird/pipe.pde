@@ -16,7 +16,6 @@ class Pipe {
   }
 
   public void show() {
-    imageMode(CORNER);
     image(top, x, y - 635);
     image(bottom, x, y);
   }

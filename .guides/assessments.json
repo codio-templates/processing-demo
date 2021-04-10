@@ -7187,5 +7187,51 @@
     "regexPositions": []
    }
   }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1661160302",
+  "source": {
+   "name": "advanced topic lab question 4",
+   "showName": false,
+   "instructions": "## Lab Question\n\nDrag the code blocks into the box below. Create the interface `Cat`, which has the methods `meow` and `sleep`. **Hint**, not all of the blocks will be used, and the blocks must be properly indented.",
+   "initial": "interface Cat {\n  String meow();\n  String sleep();\n}\npublic String meow(); #distractor\npublic String sleep(); #distractor\nString meow() { #distractor\nString sleep() { #distractor\nabstract interface Cat { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\ninterface Cat {\n  String meow();\n  String sleep();\n}\n```\n\n* Interfaces do not use the keyword `abstract`.\n* Interface methods are designed to be used by subclasses. They are `public` by default and to not need an access modifier.\n* Interface methods are empty. They do not need curly brackets `{` when defining a method without code.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Interfaces"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT define an interface"
+  }
  }
 ]
