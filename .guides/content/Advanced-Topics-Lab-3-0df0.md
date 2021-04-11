@@ -106,6 +106,14 @@ class Bird {
   }
 ```
 
+Add the setter method `seVelocity` to the `Bird` class. This will be used later in the program.
+
+```java
+  public void setVelocity(float newVelocity) {
+    velocity = newVelocity;
+  }
+```
+
 Create the `update` method for the `Bird` class. The `velocity` should increase by the amount of `gravity` for every frame of the game. Then add `velocity` to the y-position of the bird. Finally, the bird should not be allowed to fly through the top of the window or fall through the bottom of the window. Use the `constrain` method for the `y` attribute. The `0` represents the top of the window; `612` represents when the bottom of the bird image touches the top of the ground image.
 
 ```java
@@ -278,6 +286,10 @@ Click the triangle button to run you program. You should see the bird rise when 
 
     public void setY(float newY) {
       y = newY;
+    }
+                   
+    public void setVelocity(float newVelocity) {
+      velocity = newVelocity;
     }
 
     public void show() {

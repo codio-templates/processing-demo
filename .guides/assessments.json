@@ -7302,5 +7302,69 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT override the equals method to compare two attributes between objects"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3905612445",
+  "source": {
+   "name": "advanced topic lab question 6",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhen creating the `toString` method, why is it a good idea to use `getClass().getName()`?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "fe21db62-0689-20f0-e0d8-a2d2e68bb09d",
+     "correct": true,
+     "answer": "Because the `toString` method will print the proper class name when used by a subclass."
+    },
+    {
+     "_id": "bfd1eca0-ac26-7877-30df-ff590ad90591",
+     "correct": false,
+     "answer": "Java will throw an error message if you do not."
+    },
+    {
+     "_id": "a269f5d6-6c59-434f-8a69-759d21c2e916",
+     "correct": false,
+     "answer": "That is the only way to print the name of a class."
+    }
+   ],
+   "guidance": "Using `getClass().getName()` allows a subclass to print the proper class name. This means you do not have to override the `toString` method for the subclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Represent an Object as a String"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain the benefit of using getClass().getName()"
+  }
  }
 ]

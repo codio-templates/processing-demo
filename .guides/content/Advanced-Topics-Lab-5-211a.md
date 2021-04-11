@@ -216,6 +216,10 @@ Click the triangle button to run you program. When the bird hits a pipe, the gam
     public void setY(float newY) {
       y = newY;
     }
+  
+    public void setVelocity(float newVelocity) {
+      velocity = newVelocity;
+    }
 
     public void show() {
       image(bird, x, y);

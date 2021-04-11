@@ -225,6 +225,10 @@ Click the triangle button to run you program. You should see four sets of pipes 
     public void setY(float newY) {
       y = newY;
     }
+  
+    public void setVelocity(float newVelocity) {
+      velocity = newVelocity;
+    }
 
     public void show() {
       image(bird, x, y);
