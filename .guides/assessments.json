@@ -7233,5 +7233,74 @@
    "bloomsObjectiveLevel": "2",
    "learningObjectives": "SWBAT define an interface"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-558474011",
+  "source": {
+   "name": "advanced topic lab question 5",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass Alpha {\n  private int number;\n\n  public Alpha(int n) {\n    number = n;\n  }\n}\n```\n\nWhich code snippet below allows you to check if the `number` attribute between two `Alpha` objects are equal?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "38a20a4f-8ce6-4541-5d82-48e01039b13c",
+     "correct": true,
+     "answer": "```java\npublic boolean equals(Alpha other) {\n  return number == other.number;\n}\n```"
+    },
+    {
+     "_id": "ebfa30ff-0039-b560-db8b-4b2e21062555",
+     "correct": false,
+     "answer": "```java\npublic void equals(Alpha other) {\n  return number == other.number;\n}\n```"
+    },
+    {
+     "_id": "405769e5-901f-1bfd-26c2-148ca1e2d0e5",
+     "correct": false,
+     "answer": "```java\npublic boolean equals() {\n  return number == number;\n}\n```"
+    },
+    {
+     "_id": "74b83bff-f5ed-9699-aa04-b424a48515bf",
+     "correct": false,
+     "answer": "```java\npublic boolean equals(Alpha other) {\n  return number == Alpha.number;\n}\n```"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\npublic boolean equals(Alpha other) {\n  return number == other.number;\n}\n```\n\n* The `equals` method requires an argument of another `Alpha` object.\n* The `equals` method should return a boolean value.\n* Use `other.number` to represent the `number` attribute from the other `Alpha` object.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Object Equality"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT override the equals method to compare two attributes between objects"
+  }
  }
 ]
