@@ -834,10 +834,10 @@
        "pageId": "f16843ef-157b-7907-c282-1ef2edb85fde"
       },
       {
-       "id": "ba941bfc-0660-19ed-48da-273e8bba6a8c",
        "title": "Abstract Methods",
-       "pageId": "540014fc-0b67-e0ba-60ac-8cb7ba840f48",
-       "type": "page"
+       "id": "ba941bfc-0660-19ed-48da-273e8bba6a8c",
+       "type": "page",
+       "pageId": "540014fc-0b67-e0ba-60ac-8cb7ba840f48"
       }
      ]
     },
@@ -847,16 +847,16 @@
      "type": "section",
      "children": [
       {
-       "id": "efe01db0-6af6-279f-5bbd-a665df626a0a",
        "title": "Polymorphism Formative Assessment 1",
-       "pageId": "fa752f44-da18-fb61-cc7e-420346ba5d19",
-       "type": "page"
+       "id": "efe01db0-6af6-279f-5bbd-a665df626a0a",
+       "type": "page",
+       "pageId": "fa752f44-da18-fb61-cc7e-420346ba5d19"
       },
       {
-       "id": "43e0d516-a71c-6a4e-680f-a4f550fba398",
        "title": "Polymorphism Formative Assessment 2",
-       "pageId": "7b953b14-a4c6-5a85-66d9-8ec23d6f939c",
-       "type": "page"
+       "id": "43e0d516-a71c-6a4e-680f-a4f550fba398",
+       "type": "page",
+       "pageId": "7b953b14-a4c6-5a85-66d9-8ec23d6f939c"
       }
      ]
     },
@@ -866,34 +866,34 @@
      "type": "section",
      "children": [
       {
-       "id": "35d0a490-3c7f-e1aa-8d22-3762f21fab1e",
        "title": "Polymorphism Lab 1",
-       "pageId": "44980a36-6c54-bcc7-dfdd-735aa25519f7",
-       "type": "page"
+       "id": "35d0a490-3c7f-e1aa-8d22-3762f21fab1e",
+       "type": "page",
+       "pageId": "44980a36-6c54-bcc7-dfdd-735aa25519f7"
       },
       {
-       "id": "cbdd2884-3278-55b0-ff30-d6738e7351d1",
        "title": "Polymorphism Lab 2",
-       "pageId": "06041870-4c4c-e405-d06c-12b3c0ff6679",
-       "type": "page"
+       "id": "cbdd2884-3278-55b0-ff30-d6738e7351d1",
+       "type": "page",
+       "pageId": "06041870-4c4c-e405-d06c-12b3c0ff6679"
       },
       {
-       "id": "c4d8e8f0-48f0-694b-e2e7-d6f2b8f36568",
        "title": "Polymorphism Lab 3",
-       "pageId": "006da0dc-d65a-16fc-c729-6b51e656e829",
-       "type": "page"
+       "id": "c4d8e8f0-48f0-694b-e2e7-d6f2b8f36568",
+       "type": "page",
+       "pageId": "006da0dc-d65a-16fc-c729-6b51e656e829"
       },
       {
-       "id": "626d3917-6d90-5974-b897-16149df3bd9a",
        "title": "Polymorphism Lab 4",
-       "pageId": "c4d94e82-9760-1061-ef9c-abb204f472c6",
-       "type": "page"
+       "id": "626d3917-6d90-5974-b897-16149df3bd9a",
+       "type": "page",
+       "pageId": "c4d94e82-9760-1061-ef9c-abb204f472c6"
       },
       {
-       "id": "1ca1e362-f601-5056-1c14-e673aab52173",
        "title": "Polymorphism Lab Challenge",
-       "pageId": "73493388-23e2-b356-31a0-96ad80287916",
-       "type": "page"
+       "id": "1ca1e362-f601-5056-1c14-e673aab52173",
+       "type": "page",
+       "pageId": "73493388-23e2-b356-31a0-96ad80287916"
       }
      ]
     },
@@ -903,34 +903,195 @@
      "type": "section",
      "children": [
       {
-       "id": "ab5ac428-c67d-8dd2-7115-d9062f03d3a1",
        "title": "Polymorphism Exercise 1",
-       "pageId": "b49394a6-2f7d-e672-6680-fdec333815d6",
-       "type": "page"
+       "id": "ab5ac428-c67d-8dd2-7115-d9062f03d3a1",
+       "type": "page",
+       "pageId": "b49394a6-2f7d-e672-6680-fdec333815d6"
       },
       {
-       "id": "6daade54-30e5-912b-c6e7-2016769d7dc5",
        "title": "Polymorphism Exercise 2",
-       "pageId": "fd6d665f-8e9d-f04b-48f6-9fa840d4ecd4",
-       "type": "page"
+       "id": "6daade54-30e5-912b-c6e7-2016769d7dc5",
+       "type": "page",
+       "pageId": "fd6d665f-8e9d-f04b-48f6-9fa840d4ecd4"
       },
       {
-       "id": "f2f34129-304f-73c0-370c-f0ba1c0d661c",
        "title": "Polymorphism Exercise 3",
-       "pageId": "a621c162-d2e1-8fcf-c9e4-a4f39848fbce",
-       "type": "page"
+       "id": "f2f34129-304f-73c0-370c-f0ba1c0d661c",
+       "type": "page",
+       "pageId": "a621c162-d2e1-8fcf-c9e4-a4f39848fbce"
       },
       {
-       "id": "df789f51-c87d-2c58-eaa4-acc51ceb6ece",
        "title": "Polymorphism Exercise 4",
-       "pageId": "2c836066-88f7-7020-0bea-70b6202e2fe0",
+       "id": "df789f51-c87d-2c58-eaa4-acc51ceb6ece",
+       "type": "page",
+       "pageId": "2c836066-88f7-7020-0bea-70b6202e2fe0"
+      },
+      {
+       "title": "Polymorphism Exercise 5",
+       "id": "b00960ff-a19b-8994-5f51-d8003c600559",
+       "type": "page",
+       "pageId": "99bcd4d9-4ce9-9a5a-9ea3-a64e111a78c1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Advanced Topics",
+   "id": "74f7caa7-52c8-1bc4-2e50-98c1ff0493ac",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Advanced Topics",
+     "id": "afa8aa2d-19de-7032-600b-9e606bc883e1",
+     "type": "section",
+     "children": [
+      {
+       "title": "Learning Objectives - Advanced Topics",
+       "id": "804d6839-61fb-2e7b-14b9-1ab09be630a2",
+       "type": "page",
+       "pageId": "67281b26-2801-c1a5-a101-0a61862fc16f"
+      },
+      {
+       "title": "Importing User-Defined Classes",
+       "id": "7fd37496-21db-9257-f317-8e83451ab14f",
+       "type": "page",
+       "pageId": "46c410bd-e653-e149-1ae0-8d781c4ab8d4"
+      },
+      {
+       "title": "ArrayList of Objects",
+       "id": "e1bbd0ca-9f7f-d0f8-228b-8fc3946a2e35",
+       "type": "page",
+       "pageId": "7ea0ea74-5465-00ba-4373-801cc94ab8a0"
+      },
+      {
+       "title": "Composition",
+       "id": "9a61c20b-dea2-2341-e888-563d258b5a44",
+       "type": "page",
+       "pageId": "9e097723-01d1-917c-096b-65da095d4776"
+      },
+      {
+       "title": "Represent an Object as a String",
+       "id": "b72fc416-5e69-4c3f-1982-87fe24d1f347",
+       "type": "page",
+       "pageId": "a8fe5fa2-87ad-0154-5cea-50f57b892c15"
+      },
+      {
+       "title": "Interfaces",
+       "id": "eeb9490c-7a1d-5a19-a66d-b310a92966f5",
+       "type": "page",
+       "pageId": "24162312-ecc4-1a95-c75e-bd8f92d4ff12"
+      },
+      {
+       "title": "Object Equality",
+       "id": "b1485278-ddc1-50d0-d60e-d89d1ac9f015",
+       "type": "page",
+       "pageId": "a6d5671a-c307-3b41-4f13-28ae6278d9e7"
+      }
+     ]
+    },
+    {
+     "title": "Formative Assessment Advanced Topics",
+     "id": "edb3b637-f972-7599-84e5-167deef0413a",
+     "type": "section",
+     "children": [
+      {
+       "title": "Advanced Topics Formative Assessment 1",
+       "id": "c9782cb4-a52d-6a0b-2680-858134a4620d",
+       "type": "page",
+       "pageId": "41b73979-d3af-2e7e-6d42-6820978ea1bb"
+      },
+      {
+       "title": "Advanced Topics Formative Assessment 2",
+       "id": "6838e790-47d3-73ca-5968-9f425ee014db",
+       "type": "page",
+       "pageId": "f1ff1c5d-fbe0-5e53-e505-501527a08027"
+      }
+     ]
+    },
+    {
+     "title": "Lab - Advanced Topics",
+     "id": "b0891711-67af-6e77-78d0-3f6d39d28172",
+     "type": "section",
+     "children": [
+      {
+       "title": "Advanced Topics Lab 1",
+       "id": "edbddc56-29c9-9fdf-466a-414aa39f1d9a",
+       "type": "page",
+       "pageId": "81f832aa-92f6-5de9-f9f3-5a8a39346cc7"
+      },
+      {
+       "id": "7ede3d4d-b6f8-ae62-daed-c03a7f832270",
+       "title": "Advanced Topics Lab 2",
+       "pageId": "e155a93f-7c11-6a1e-a046-886c4506990d",
        "type": "page"
       },
       {
-       "id": "b00960ff-a19b-8994-5f51-d8003c600559",
-       "title": "Polymorphism Exercise 5",
-       "pageId": "99bcd4d9-4ce9-9a5a-9ea3-a64e111a78c1",
+       "id": "e2cd1b7d-7ee2-e053-4403-118d8ee8af17",
+       "title": "Advanced Topics Lab 3",
+       "pageId": "0df039ae-b61f-df7d-e016-d5fd64b748a4",
        "type": "page"
+      },
+      {
+       "id": "d75eef19-fb0b-9238-556f-4689d05026c7",
+       "title": "Advanced Topics Lab 4",
+       "pageId": "b0e3c44d-2a56-1201-72d5-210d0b5beb9e",
+       "type": "page"
+      },
+      {
+       "id": "0c4bdbb4-d9ed-a6a9-9d83-fe7d79d012bd",
+       "title": "Advanced Topics Lab 5",
+       "pageId": "211a2054-9a02-7bbe-738b-6e0d8d861770",
+       "type": "page"
+      },
+      {
+       "id": "4e985ecd-a4a0-2357-8f66-efd5d69a0a31",
+       "title": "Advanced Topics Lab 6",
+       "pageId": "06570395-da19-a172-7d81-e02a92564a32",
+       "type": "page"
+      },
+      {
+       "title": "Advanced Topics Lab Challenge",
+       "id": "cc9bbc84-a430-ee82-d98f-f3e79c79b0f5",
+       "type": "page",
+       "pageId": "8c07235b-54f8-22b5-b419-296b880ed309"
+      }
+     ]
+    },
+    {
+     "title": "Coding Exercises - Advanced Topics",
+     "id": "1ef36444-092c-d307-ac56-c64aff2b5661",
+     "type": "section",
+     "children": [
+      {
+       "title": "Advanced Topics Exercise 1",
+       "id": "af7818ac-967b-4814-f44d-00fa8847814d",
+       "type": "page",
+       "pageId": "ad8d4808-c41b-85b0-8bb5-57134c30f590"
+      },
+      {
+       "title": "Advanced Topics Exercise 2",
+       "id": "7bb1b227-32d9-c9bb-bfd6-7d05cce7f948",
+       "type": "page",
+       "pageId": "8bdd696d-5d16-ddd3-c667-d8396d322fd3"
+      },
+      {
+       "title": "Advanced Topics Exercise 3",
+       "id": "5b78fdc3-5462-58d1-8a0a-303b92c56f3e",
+       "type": "page",
+       "pageId": "d8a47907-cd88-0aba-8fcd-62c685481ef9"
+      },
+      {
+       "title": "Advanced Topics Exercise 4",
+       "id": "b604d7c9-5c60-ff80-9257-528db076d83a",
+       "type": "page",
+       "pageId": "2614283a-d3b0-327b-4c3c-c77aabf64748"
+      },
+      {
+       "title": "Advanced Topics Exercise 5",
+       "id": "d75520d2-1a8b-2df4-6530-1e1304accd35",
+       "type": "page",
+       "pageId": "a05377ee-1ffe-4817-1ebf-cbc1458b5458"
       }
      ]
     }

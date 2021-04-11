@@ -6153,5 +6153,1218 @@
    "bloomsObjectiveLevel": "6",
    "learningObjectives": "SWBAT override abstract methods inherited from an abstract class"
   }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1696965695",
+  "source": {
+   "name": "importing user-defined classes reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nHow do you use a user-defined class that is in a separate file in your Java program?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "423a2abc-57f3-dc52-c35f-07f9ec77f2bc",
+     "correct": true,
+     "answer": "Compile both of the Java files. These files must be in the same folder."
+    },
+    {
+     "_id": "17956297-89c1-1c3a-1b6f-9f8e75f0c66f",
+     "correct": false,
+     "answer": "Use the `import` keyword."
+    },
+    {
+     "_id": "c73278e5-616e-1a8a-a568-02cd6399e25f",
+     "correct": false,
+     "answer": "Use `from fileName import ClassName`."
+    },
+    {
+     "_id": "081c810f-b3a9-0751-1127-8bd4ed540f74",
+     "correct": false,
+     "answer": "Compile both of the Java files. These files can be in separate folders."
+    }
+   ],
+   "guidance": "In order to use a user-defined class in a separate file, you need to compile both the user-defined class and the main Java program. These files **must** be in the same folder.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Importing User-Defined Classes"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/ImportingClasses.java",
+     "code/advanced/ClassDefinition.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/ImportingClasses.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/ClassDefinition.java"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT explain how to use user-defined classes in a separate file"
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-3265767851",
+  "source": {
+   "name": "list of objects reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the existence of the class `MyClass`. Drag the appropriate blocks into the box below so you create an ArrayList of ten objects of type `MyClass`. **Hint**, not all of the blocks will be used.",
+   "initial": "ArrayList&lt;MyClass&gt; myArrayList = new ArrayList&lt;MyClass&gt;();\nfor (int i = 0; i &lt; 10; i++) {\n  myArrayList.add(new MyClass());\n}\nArrayList&lt;int&gt; myArrayList = new ArrayList&lt;int&gt;(); #distractor\nmyArrayList.add(MyClass); #distractor\nfor (int i = 0; i &lt; 11; i++) { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "Here is the solution:\n\n```java\nArrayList<MyClass> myArrayList = new ArrayList<MyClass>();\nfor (int i = 0; i < 10; i++) {\n  myArrayList.add(new MyClass());\n}\n```\n\n* The objects need to be stored in an ArrayList, and ArrayLists need to have the same type as the elements. The ArrayList should have the type `MyClass`.\n* You need ten objects, so the loop must run ten times.\n* Add an element to the ArrayList that is a `MyClass` object. Be sure to use the `new` keyword to instantiate a new `MyClass` object.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "List of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/ListOfObjects.java",
+     "code/advanced/App.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/ListOfObjects.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/App.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create an ArrayList of user-defined objects"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2967844050",
+  "source": {
+   "name": "composition reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below with the words from the dropdown menu.",
+   "showValues": true,
+   "text": "<<<Inheritance>>> should be used to add functionality if there is a \"is a\" relationship.\n<<<Composition>>> should be used to add functionality if there is a \"has a\" relationship.",
+   "distractors": "Polymorphism\nEncapsulation",
+   "guidance": "Use inheritance when you have a \"is a\" relationship; e.g. a car is a vehicle.\nUse composition when you have a \"has a\" relationship; e.g. a car has an engine.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Object Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "C++, Python, Java, JavaScript"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/Composition.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/Composition.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT identify when to use composition and when to use inheritance",
+   "tokens": {
+    "blank": [
+     "Inheritance",
+     "Composition"
+    ],
+    "text": [
+     0,
+     " should be used to add functionality if there is a \"is a\" relationship.\n",
+     0,
+     " should be used to add functionality if there is a \"has a\" relationship."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3537822719",
+  "source": {
+   "name": "string representation reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```java\nclass ExampleClass {\n  private String attribute;\n\n  public ExampleClass(String a) {\n    attribute = a;\n  }\n}\n```\n\nWhich method would be the **best** way to represent this class as a string?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "cb8db73f-d00a-aa4e-b049-cf8077ecfe9d",
+     "correct": true,
+     "answer": "```java\npublic String toString() {\n  return getClass().getName() + \"[attribute= \" + attribute + \"]\";\n}\n```"
+    },
+    {
+     "_id": "4823ccc6-17a1-6e1a-cada-1824f1755e24",
+     "correct": false,
+     "answer": "```java\npublic String string() {\n  return getClass().getName() + \"[attribute= \" + attribute + \"]\";\n}\n```"
+    },
+    {
+     "_id": "7c6713b5-432d-6cba-0710-7ce8de505a28",
+     "correct": false,
+     "answer": "```java\npublic String toString() {\n  return getName() + \"[attribute= \" + attribute + \"]\";\n}\n```"
+    },
+    {
+     "_id": "fc2a0991-dee0-0da6-a4a0-bd09db5e0fbd",
+     "correct": false,
+     "answer": "```java\npublic String toString() {\n  return getClass().getName();\n}\n```"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\npublic String toString() {\n  return getClass().getName() + \"[attribute= \" + attribute + \"]\";\n}\n```\n\n* The method to create a string representation is `toString`.\n* You must first get the class before getting the name — `getClass().getName()`.\n* A good string representation will tell you the class name as well as the values for each attribute.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "String Representation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/StringRepresentation.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/StringRepresentation.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT override the toString method to create a string representation of the object"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-2980100207",
+  "source": {
+   "name": "interfaces reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\n`MyInterface` is an interface and the `ExampleClass` uses this interface. Fill in the blanks accordingly.",
+   "showValues": true,
+   "text": "```\n<<<interface>>> MyInterface {\n  <<<String>>> greeting();\n}\n\nclass ExampleClass <<<implements>>> MyInterface {\n  <<<public String>>> greeting() {\n    return \"Hello\";\n  }\n}\n```",
+   "distractors": "interface class\nextends\nvoid\npublic void",
+   "guidance": "Here is the solution:\n\n```java\ninterface MyInterface {\n  String greeting();\n}\n\nclass ExampleClass implements MyInterface {\n  public String greeting() {\n    return \"Hello\";\n  }\n}\n```\n\n* The keyword for an interface is `interface`; the keyword `class` is not used.\n* Using an interface requires the keyword `implements`, not `extends`.\n* Methods in an interface are public by default so you do not need the `public` keyword.\n* In `ExampleClass` the `greeting` method returns a string. That means the method in the interface should use `String` and the method in the class should use `public String`.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Interfaces"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/Interfaces.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/Interfaces.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT create and implement an interface",
+   "tokens": {
+    "blank": [
+     "interface",
+     "String",
+     "implements",
+     "public String"
+    ],
+    "text": [
+     "```\n",
+     0,
+     " MyInterface {\n  ",
+     0,
+     " greeting();\n}\n\nclass ExampleClass ",
+     0,
+     " MyInterface {\n  ",
+     0,
+     " greeting() {\n    return \"Hello\";\n  }\n}\n```"
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-1727359970",
+  "source": {
+   "name": "object equality reading question",
+   "showName": false,
+   "instructions": "## Reading Question\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "Use <<<equals>>> to compare attribute values between two objects.\nUse <<<==>>> to compare memory addresses between two objects.",
+   "distractors": "=\nequalTo",
+   "guidance": "Use **equals** to compare attribute values between two objects.\nUse **==** to compare memory addresses between two objects.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Object Equality"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/ObjectEquality.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/ObjectEquality.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT differentiate between == and equals when comparing two objects",
+   "tokens": {
+    "blank": [
+     "equals",
+     "=="
+    ],
+    "text": [
+     "Use ",
+     0,
+     " to compare attribute values between two objects.\nUse ",
+     0,
+     " to compare memory addresses between two objects."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3877358862",
+  "source": {
+   "name": "advanced topics formative assessment 1",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume that the ArrayList `myList` is of type `myObject`. Choose the code below that would call the `go` method on the fourth element in the ArrayList.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "9de00e3d-1ca0-1c78-54d7-ba7234fcf272",
+     "correct": true,
+     "answer": "`myList.get(3).go();`"
+    },
+    {
+     "_id": "5cd7d860-dc7a-c6f6-c509-e3e1537924e1",
+     "correct": false,
+     "answer": "`myList[3].go();`"
+    },
+    {
+     "_id": "12edd30f-6bbc-4115-9772-cfd636cdf51e",
+     "correct": false,
+     "answer": "`myList.go();`"
+    },
+    {
+     "_id": "c43ecf6a-1643-6491-614b-0ead3cd36717",
+     "correct": false,
+     "answer": "`myList.get(4).go();`"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\nmyList.get(3).go();\n```\n\nArrayLists use the `get` method as opposed to square brackets to reference an element. ArrayLists start counting elements with 0, so the fourth element would be `3`. Once you have referenced the correct element with `myList.get(3)` then add `.go()` to call the `go` method.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "ArrayList of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT call a method on an object in an ArrayList"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-806737169",
+  "source": {
+   "name": "advanced topics formative assessment 2",
+   "showName": false,
+   "instructions": "## Formative Assessment\n\nAssume the following class definitions:\n\n```java\nclass VideoGame {\n  private Player player;\n  private int level;\n  private int score;\n\n  public VideoGame(Player p) {\n    player = p;\n    level = 1;\n    score = 0;\n  }\n}\n\nclass Player {\n  private int health;\n  private String weapon;\n\n  public Player() {\n    health = 100;\n    weapon = \"small sword\";\n  }\n}\n```\n\nWhy does the following code generate an error message?\n\n```java\nVideoGame myGame = VideoGame(player);\n```",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "87c16de0-f9d9-c907-8271-40ea1ea65d9c",
+     "correct": true,
+     "answer": "There needs to be an instance of the `Player` class defined as: \n```java\nPlayer player = new Player();\n```"
+    },
+    {
+     "_id": "83c2c8f3-8842-e8a8-6b22-4a543d1bc3d9",
+     "correct": false,
+     "answer": "You need to replace\n```java\nVideoGame myGame = new VideoGame(player);\n```\nwith \n```java\nPlayer player = new Player();\n```"
+    },
+    {
+     "_id": "3a945dd5-d3e6-d25b-554e-c9b7ef425918",
+     "correct": false,
+     "answer": "There needs to be an instance of the `Player` class defined as:\n```java\nPlayer myPlayer = new Player();\n```"
+    }
+   ],
+   "guidance": "This is an example of composition. The `VideoGame` class is the composite class and the `Player` class is the component class. That means an instance of the `Player` class is used to create an instance of the `VideoGame` class. The given code defines the `Player` class, but it does not instantiate an object. You would need to instantiate the object `player`. The object `myPlayer` is not correct because that is not the name use when instantiating `myGame`.\n\n```python\nPlayer player = new Player();\nVideoGame myGame = VideoGame(player);\n```",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Object Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT troubleshoot object composition"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2414713005",
+  "source": {
+   "name": "advanced topics lab challenge",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/LabChallengeTester.java\",\"className\":\"LabChallengeTester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/labChallenge\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass BankAccount {\n  private double checking;\n  private double savings;\n  \n  public BankAccount(double c, double s) {\n    checking = c;\n    savings = s;\n  }\n  \n  //add toString definition below this line\n  \n  public String toString() {\n    return getClass().getName() + String.format(\"[checking=\" + checking + \", savings=\" + savings + \"]\", checking, savings);\n  }\n  \n  //add toString definition above this line\n  \n}\n\npublic class LabChallenge {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    BankAccount account1 = new BankAccount(2432, 89.52);\n    BankAccount account2 = new BankAccount(1998, 239.43);\n    System.out.println(account1);\n    System.out.println(account2);\n\n    //add code above this line\n    \n  }\n}\n```\n\n* Create the `toString` method, which should return a string.\n* Use `getClass().getName()` to get the object type.\n* Concatenate a string that contains the name and value for each attribute.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "String Representation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/labChallenge/LabChallenge.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/labChallenge/LabChallenge.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT override the toString method to create a string representation of an object"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-326602571",
+  "source": {
+   "name": "advanced topics coding exercise 2",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise2\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nimport java.util.*;\n\nclass Band {\n  private String name;\n  private String genre;\n  private String[] members;\n  \n  public Band(String n, String g, String[]m) {\n    name = n;\n    genre = g;\n    members = m;\n  }\n  \n  //add class definitions below this line\n  \n  public String toString() {\n    String nameAttribute = \"name=\" + name + \", \";\n    String genreAttribute = \"genre=\" + genre + \", \";\n    String membersAttribute = \"members=\" + Arrays.toString(members);\n    return getClass().getName() + \"[\" + nameAttribute + genreAttribute + membersAttribute + \"]\";\n  }\n\n  //add method definition above this line\n}\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    String[] members = {\"Jerry\", \"Bob\", \"Mickey\", \"Bill\", \"Phil\", \"Pigpen\"};\n    Band dead = new Band(\"The Grateful Dead\", \"rock'n roll\", members);\n    System.out.println(dead);\n\n    //add code above this line\n    \n  }\n}\n```\n\n* Previous examples of the `toString` method have a single line of code as the return statement. For legibility purposes, the string is broken up across several variables.\n* Set `nameAttribute` to `\"name=\"` followed by the attribute `name`. Don't forget the comma.\n* Set `genreAttribute` to `\"genre=\"` followed by the attribute `genre`. Don't forget the comma.\n* Set `membersAttribute` to `\"members=\"`. If you add the `members` attribute, Java will not print the elements of the array. Instead, use `Array.toString(members)`. You do not need a comma since this is the last attribute.\n* Use `getClass().getName()` to get the object type followed by a `\"[\"`, `nameAttribute`, `genreAttribute`, `membersAttribute`, and finally a `\"]\"`.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "String Representation"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise2/Exercise2.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise2/Exercise2.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT represent an object as a string with the toString method"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-3997253090",
+  "source": {
+   "name": "advanced topics coding exercise 3",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise3Tester.java\",\"className\":\"Exercise3Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise3\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\n\n```\n\n* ",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "List of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise3/Exercise3.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise3/Exercise3.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a list of objects"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1539171007",
+  "source": {
+   "name": "advanced topics coding exercise 4",
+   "showName": true,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise4\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\nclass Book {\n  private String title;\n  private String author;\n  private String genre;\n  \n  public Book(String t, String a, String g) {\n    title = t;\n    author = a;\n    genre = g;\n  }\n  \n  public String getTitle() {\n    return title;\n  }\n  \n  public String getAuthor() {\n    return author;\n  }\n  \n  public String getGenre() {\n    return genre;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[title=\" + title + \", author=\" + author + \", genre=\" + genre + \"]\";\n  }\n}\n```\n\nIn the `Library.java` file, you can see references to the getter methods for three string attributes needed for the `Book` class. The method `getTitle()` is referenced on line 51, the method `getAuthor()` is referenced on line 64, and the method `getGenre` is referenced on lines 85 and 98. You should create `private` attributes for `name`, `author`, and `genre`. Getters also need to be created for each attribute.\n\nWhen you print a ArrayList of `Book` objects and you want to a string representation, you need to override the `toString` method.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Compsition,"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise4/Exercise4.java",
+     "code/advanced/exercise4/Library.java",
+     "code/advanced/exercise4/Book.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise4/Exercise4.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise4/Library.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise4/Book.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create a component class"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-1581249114",
+  "source": {
+   "name": "advanced topics coding exercise 5",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise5Tester.java\",\"className\":\"Exercise5Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise5\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "### ShoppingCart Class\nHere is one possible solution for the `ShoppingCart` class:\n\n```java\nimport java.util.*;\n\nclass ShoppingCart {\n  private ArrayList<Item> items;\n  private double total;\n  \n  public ShoppingCart() {\n    items = new ArrayList<Item>();\n    total = 0;\n  }\n  \n  public void addItem(Item item) {\n    items.add(item);\n    calculateTotal();\n  }\n  \n  private void calculateTotal() {\n    total = 0;\n    for (Item i : items) {\n      i.calculateSubtotal();\n      total += i.getSubtotal();\n    }\n  }\n  \n  public double getTotal() {\n    return total;\n  }\n  \n  public int getNumItems() {\n    int numItems = 0;\n    for (Item i : items) {\n      numItems += i.getQuantity();\n    }\n    return numItems;\n  }\n  \n  public ArrayList<Item> getItems() {\n    return items;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[items=\" + items + \", total=\" + total + \"]\";\n  }\n}\n```\n\n* Don't forget to call `calculateTotal` every time an item is added to the cart.\n* In `calculateTotal` the total for the shopping cart should be updated. So set `total` to 0. Then add up the `subtotal` for each item item in the cart and set this value to `total`.\n* The number of items in the cart is not the length of the ArrayList; that would be how many different kinds of objects are in the shopping cart. We want to know to total number of items in the cart. Sum of the `quantity` attributes for all of the items.\n\n### Item Class\nHere is one possible solution for the `Item` class:\n\n```java\nclass Item {\n  private String name;\n  private double price;\n  private int quantity;\n  private double subtotal;\n  \n  public Item(String n, double p, int q) {\n    name = n;\n    price = p;\n    quantity = q;\n    subtotal = 0;\n  }\n  \n  public int getQuantity() {\n    return quantity;\n  }\n  \n  public void calculateSubtotal() {\n    subtotal = price * quantity;\n  }\n  \n  public double getSubtotal() {\n    return subtotal;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[name=\" + name + \", price=\" + price + \", quantity=\" + quantity + \", subtotal=\" + subtotal + \"]\";\n  }\n}\n```\n\n* Since we need to see a string representation of `Item` objects, the `toString` method should be overriden.\n* There also needs to be getter methods for the `subtotal` and `quantity` attributes.",
+   "showGuidanceAfterResponse": false,
+   "points": 20,
+   "oneTimeTest": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Object Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise5/Exercise5.java",
+     "code/advanced/exercise5/Item.java",
+     "code/advanced/exercise5/ShoppingCart.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise5/Exercise5.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise5/Item.java"
+     },
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise5/ShoppingCart.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create component and composite classes"
+  }
+ },
+ {
+  "type": "test",
+  "taskId": "test-485920902",
+  "source": {
+   "name": "advanced topics coding exercise 1",
+   "showName": false,
+   "instructions": "Submit your code for evaluation.",
+   "command": "python /usr/share/codio/assessments/assessments.py",
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise1Tester.java\",\"className\":\"Exercise1Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise1\",\"libs\":\"\",\"testsources\":\"\"}",
+   "arePartialPointsAllowed": true,
+   "timeoutSeconds": 300,
+   "guidance": "Here is one possible solution:\n\n```java\ninterface Vehicle {\n  String travel();\n}\n\n//add class definitions below this line\n\nclass Car implements Vehicle {\n  private double miles;\n  \n  public Car(double m) {\n    miles = m;\n  }\n  \n  public String travel() {\n    return String.format(\"There is no extra feel to travel %.2f miles.\", miles);\n  }\n}\n\nclass RideShare implements Vehicle {\n  private double miles;\n  private double fee;\n  \n  public RideShare(double m, double f) {\n    miles = m;\n    fee = f;\n  }\n  \n  public String travel() {\n    return String.format(\"It costs $%.2f to travel %.2f miles.\", (fee * miles), miles);\n  }\n}\n\nclass Subway implements Vehicle {\n  private double fare;\n  \n  public Subway(double f) {\n    fare = f;\n  }\n  \n  public String travel() {\n    return String.format(\"$%.2f will get you unlimited use for one day.\", fare);\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Car c = new Car(10);\n    RideShare rc = new RideShare(20, 0.5);\n    Subway s = new Subway(7.25);\n    \n    System.out.println(c.travel());\n    System.out.println(rc.travel());\n    System.out.println(s.travel());\n\n    //add code above this line\n    \n  }\n}\n```\n\n### Car Class\n* Implement the `Vehicle` interface.\n* Create the `miles` attribute that is of type `double`.\n* Override the `travel` method so that it prints the message with the `miles` attribute.\n* Use `%.2f` to ensure `miles` prints with two decimal places.\n\n### RideShare Class\n* Implement the `Vehicle` interface.\n* Create attributes for `miles` and `fee`. Both are doubles.\n* Override the `travel` method so that it prints a message along with `miles * fee` and `miles`.\n* Use `%.2f` to ensure `miles` prints with two decimal places.\n\n### Subway Class\n* Implement the `Vehicle` interface.\n* Create the `fare` attribute of type `double`.\n* Override the `travel` method so that it prints a message along with `fare`.\n* Use `%.2f` to ensure `miles` prints with two decimal places.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "Interfaces"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [
+     "code/advanced/exercise1/Exercise1.java"
+    ],
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "code/advanced/exercise1/Exercise1.java"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "6",
+   "learningObjectives": "SWBAT create several classes that all inherit from the same interface"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-2800255607",
+  "source": {
+   "name": "advanced topic lab question 1",
+   "showName": false,
+   "instructions": "## Lab Question\n\nSelect all of the things that must be true in order to use a user-defined class in another file. **Hint**, there is more than one correct answer.",
+   "multipleResponse": true,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "9d5a52a5-b6df-262a-2c77-f716bd1fae05",
+     "correct": false,
+     "answer": "The two files have the same name."
+    },
+    {
+     "_id": "b841ce56-9052-4fb1-972c-dc6f344bdaaa",
+     "correct": true,
+     "answer": "The two files are in the same folder."
+    },
+    {
+     "_id": "bf7604fb-4123-3b87-898a-ea49b306809a",
+     "correct": false,
+     "answer": "Use the `import` statement."
+    },
+    {
+     "_id": "5b3dcb8b-7b69-9956-d001-48a383aa43dc",
+     "correct": true,
+     "answer": "The two files are compiled."
+    }
+   ],
+   "guidance": "Both files must be in the same folder and they must both be compiled. Once this happens, Java can use a user-defined class in another file.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     },
+     {
+      "name": "Content",
+      "value": "Importing User-Defined Classes"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT describe how Java is able to use code written in a separate file"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-1248934826",
+  "source": {
+   "name": "advanced topic lab question 2",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume you have the array `cats` which is populated with instances of the `Cat` class. You want to invoke the `meow` method on the first element in the array. Select the Java code that would do this.",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "e0ca17c7-1ded-691a-feb8-2a14af1c86ea",
+     "correct": true,
+     "answer": "cats[0].meow();"
+    },
+    {
+     "_id": "60dfa9fd-98a5-7b92-fced-9c92d45c9b72",
+     "correct": false,
+     "answer": "cats.meow();"
+    },
+    {
+     "_id": "715d7e42-ea70-a2bc-6f43-e05499988baa",
+     "correct": false,
+     "answer": "cat.meow()"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n`cats[0].meow();`\n\nRemember, `cats` is an array of objects. You cannot call the `meow` method on an array of `Cat` objects. You need to call the method on a `Cat` object itself. `cats[0]` is a `Cat` object, the other choices are not.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Array of Objects"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT to reference an object in an array of objects"
+  }
+ },
+ {
+  "type": "fill-in-the-blanks",
+  "taskId": "fill-in-the-blanks-3612340120",
+  "source": {
+   "name": "advanced topic lab question 3",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass Shape {\n  private String name;\n  private int sides;\n  private int length;\n  \n  public Shape(String n, int s, int l) {\n    name = n;\n    sides = s;\n    length = l;\n  }\n}\n\nclass Animation {\n  private int xPosition;\n  private int yPosition;\n  pivate Shape image;\n\n  public Animation(int x, int y, int img) {\n    xPosition = x;\n    yPosition = y;\n    image = img;\n  }\n}\n\nShape myShape = new Shape(\"square\", 4, 50);\nAnimation myAnimation = new Animation(0, 0, myShape);\n```\n\nFill in the blanks below.",
+   "showValues": true,
+   "text": "The <<<Animation>>> class is the composite class.\nThe <<<Shape>>> class is the component class.",
+   "distractors": "",
+   "guidance": "A composite class is a class that has another class as an attribute. A component class is a class that is used as an attribute of another class. In the code sample above, the `Animation` class is the composite class, while the `Shape` class is the component class.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "arePartialPointsAllowed": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Fill in the Blanks"
+     },
+     {
+      "name": "Content",
+      "value": "Composition"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT identify composite and component classes",
+   "tokens": {
+    "blank": [
+     "Animation",
+     "Shape"
+    ],
+    "text": [
+     "The ",
+     0,
+     " class is the composite class.\nThe ",
+     0,
+     " class is the component class."
+    ],
+    "regexPositions": []
+   }
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-1661160302",
+  "source": {
+   "name": "advanced topic lab question 4",
+   "showName": false,
+   "instructions": "## Lab Question\n\nDrag the code blocks into the box below. Create the interface `Cat`, which has the methods `meow` and `sleep`. **Hint**, not all of the blocks will be used, and the blocks must be properly indented.",
+   "initial": "interface Cat {\n  String meow();\n  String sleep();\n}\npublic String meow(); #distractor\npublic String sleep(); #distractor\nString meow() { #distractor\nString sleep() { #distractor\nabstract interface Cat { #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The correct answer is:\n\n```java\ninterface Cat {\n  String meow();\n  String sleep();\n}\n```\n\n* Interfaces do not use the keyword `abstract`.\n* Interface methods are designed to be used by subclasses. They are `public` by default and to not need an access modifier.\n* Interface methods are empty. They do not need curly brackets `{` when defining a method without code.",
+   "showGuidanceAfterResponse": true,
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     },
+     {
+      "name": "Content",
+      "value": "Interfaces"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT define an interface"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-558474011",
+  "source": {
+   "name": "advanced topic lab question 5",
+   "showName": false,
+   "instructions": "## Lab Question\n\nAssume the following code:\n\n```java\nclass Alpha {\n  private int number;\n\n  public Alpha(int n) {\n    number = n;\n  }\n}\n```\n\nWhich code snippet below allows you to check if the `number` attribute between two `Alpha` objects are equal?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "38a20a4f-8ce6-4541-5d82-48e01039b13c",
+     "correct": true,
+     "answer": "```java\npublic boolean equals(Alpha other) {\n  return number == other.number;\n}\n```"
+    },
+    {
+     "_id": "ebfa30ff-0039-b560-db8b-4b2e21062555",
+     "correct": false,
+     "answer": "```java\npublic void equals(Alpha other) {\n  return number == other.number;\n}\n```"
+    },
+    {
+     "_id": "405769e5-901f-1bfd-26c2-148ca1e2d0e5",
+     "correct": false,
+     "answer": "```java\npublic boolean equals() {\n  return number == number;\n}\n```"
+    },
+    {
+     "_id": "74b83bff-f5ed-9699-aa04-b424a48515bf",
+     "correct": false,
+     "answer": "```java\npublic boolean equals(Alpha other) {\n  return number == Alpha.number;\n}\n```"
+    }
+   ],
+   "guidance": "The correct answer is:\n\n```java\npublic boolean equals(Alpha other) {\n  return number == other.number;\n}\n```\n\n* The `equals` method requires an argument of another `Alpha` object.\n* The `equals` method should return a boolean value.\n* Use `other.number` to represent the `number` attribute from the other `Alpha` object.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Object Equality"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "2",
+   "learningObjectives": "SWBAT override the equals method to compare two attributes between objects"
+  }
+ },
+ {
+  "type": "multiple-choice",
+  "taskId": "multiple-choice-3905612445",
+  "source": {
+   "name": "advanced topic lab question 6",
+   "showName": false,
+   "instructions": "## Lab Question\n\nWhen creating the `toString` method, why is it a good idea to use `getClass().getName()`?",
+   "multipleResponse": false,
+   "isRandomized": true,
+   "answers": [
+    {
+     "_id": "fe21db62-0689-20f0-e0d8-a2d2e68bb09d",
+     "correct": true,
+     "answer": "Because the `toString` method will print the proper class name when used by a subclass."
+    },
+    {
+     "_id": "bfd1eca0-ac26-7877-30df-ff590ad90591",
+     "correct": false,
+     "answer": "Java will throw an error message if you do not."
+    },
+    {
+     "_id": "a269f5d6-6c59-434f-8a69-759d21c2e916",
+     "correct": false,
+     "answer": "That is the only way to print the name of a class."
+    }
+   ],
+   "guidance": "Using `getClass().getName()` allows a subclass to print the proper class name. This means you do not have to override the `toString` method for the subclass.",
+   "showGuidanceAfterResponse": true,
+   "showExpectedAnswer": true,
+   "points": 20,
+   "incorrectPoints": 0,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Multiple Choice"
+     },
+     {
+      "name": "Content",
+      "value": "Represent an Object as a String"
+     },
+     {
+      "name": "Programming Language",
+      "value": "Java"
+     },
+     {
+      "name": "Category",
+      "value": "Advanced Topics"
+     }
+    ],
+    "files": [],
+    "opened": [
+     {
+      "type": "preview",
+      "panelNumber": 0,
+      "content": "https://{{domain3000}}/"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "1",
+   "learningObjectives": "SWBAT explain the benefit of using getClass().getName()"
+  }
  }
 ]

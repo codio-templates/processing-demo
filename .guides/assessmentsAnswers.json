@@ -1,56 +1,6 @@
 [
  {
-  "taskId": "test-791041872",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-3447362335",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-3393708180",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-1440786407",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-336914172",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-83966248",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-643654737",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-3842605",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-3144038960",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-2519445590",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "fill-in-the-blanks-3981125571",
+  "taskId": "fill-in-the-blanks-1727359970",
   "points": 0,
   "state": {
    "active": []
@@ -58,75 +8,107 @@
   "results": []
  },
  {
-  "taskId": "fill-in-the-blanks-1778577812",
-  "points": 0,
-  "state": {
-   "active": []
-  },
-  "results": []
- },
- {
-  "taskId": "test-847910647",
+  "taskId": "test-2414713005",
   "points": 0,
   "results": []
  },
  {
-  "taskId": "test-51862033",
+  "taskId": "test-326602571",
+  "points": 0,
+  "results": [
+   {
+    "guidance": "Here is one possible solution:\n\n```java\n\n```\n\n* ",
+    "format": null,
+    "code": 1,
+    "output": "<b>2</b> tests, <b>2</b> failures, <b>0.215s</b> duration\n\n<strong>Exercise2Tester</strong>\ncheckToString1, 0.007s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">Output did not match. expected:<Band[[name=Pink Floyd, genre=rock'n roll, members=[Syd, Nick, Roger, Richard, David]]]> but was:<Band[@38082d64]></div>checkToString2, 0.001s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">Output did not match. expected:<Band[[name=Wu-Tang Clan, genre=rap, members=[RZA, GZA, Ol'Dirty Bastard, Method Man, Ghostface Killah, Inspectah Deck, U-God, Masta Killa, Cappadonna]]]> but was:<Band[@6537cf78]></div>",
+    "timestamp": "2021-04-08T16:55:50.201Z",
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-3997253090",
   "points": 0,
   "results": []
  },
  {
-  "taskId": "test-3351852341",
+  "taskId": "test-1539171007",
   "points": 0,
   "results": []
  },
  {
-  "taskId": "test-665191771",
-  "points": 0,
-  "results": []
+  "taskId": "test-1581249114",
+  "points": 20,
+  "results": [
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<b>3</b> tests, <b>0</b> failures, <b>0.161s</b> duration\n\n<strong>Exercise5Tester</strong>\ncheckTotal, 0.001s, <span style=\"color: green\">passed</span>\ncheckNumItems, 0.0s, <span style=\"color: green\">passed</span>\ncheckToString, 0.047s, <span style=\"color: green\">passed</span>",
+    "timestamp": "2021-04-08T23:00:16.382Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<b>3</b> tests, <b>1</b> failures, <b>0.173s</b> duration\n\n<strong>Exercise5Tester</strong>\ncheckTotal, 0.001s, <span style=\"color: green\">passed</span>\ncheckNumItems, 0.0s, <span style=\"color: green\">passed</span>\ncheckToString, 0.054s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">ShoppingCart[items=[Item[name=laptop, price=1200.0, quantity=1, subtotal=1200.0], Item[name=monitor, price=250.0, quantity=2, subtotal=500.0], Item[name=keyboard, price=50.0, quantity=1, subtotal=50.0], Item[name=mouse, price=15.0, quantity=1, subtotal=15.0]], total=1765.0] expected:<ShoppingCart[items=[Item[name=laptop, price=1200.0, quantity=1], Item[name=monitor, price=250.0, quantity=2], Item[name=keyboard, price=50.0, quantity=1], Item[name=mouse, price=15.0, quantity=1]], total=1765.0]> but was:<ShoppingCart[items=[[Item[name=laptop, price=1200.0, quantity=1, subtotal=1200.0], Item[name=monitor, price=250.0, quantity=2, subtotal=500.0], Item[name=keyboard, price=50.0, quantity=1, subtotal=50.0], Item[name=mouse, price=15.0, quantity=1, subtotal=15.0]]], total=1765.0]></div>",
+    "timestamp": "2021-04-08T22:57:02.403Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<b>3</b> tests, <b>1</b> failures, <b>0.172s</b> duration\n\n<strong>Exercise5Tester</strong>\ncheckTotal, 0.001s, <span style=\"color: green\">passed</span>\ncheckNumItems, 0.0s, <span style=\"color: green\">passed</span>\ncheckToString, 0.055s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">String representation did not match. expected:<ShoppingCart[items=[Item[name=laptop, price=1200.0, quantity=1], Item[name=monitor, price=250.0, quantity=2], Item[name=keyboard, price=50.0, quantity=1], Item[name=mouse, price=15.0, quantity=1]], total=1765.0]> but was:<ShoppingCart[items=[[Item[name=laptop, price=1200.0, quantity=1, subtotal=1200.0], Item[name=monitor, price=250.0, quantity=2, subtotal=500.0], Item[name=keyboard, price=50.0, quantity=1, subtotal=50.0], Item[name=mouse, price=15.0, quantity=1, subtotal=15.0]]], total=1765.0]></div>",
+    "timestamp": "2021-04-08T22:56:27.331Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<b>3</b> tests, <b>1</b> failures, <b>0.209s</b> duration\n\n<strong>Exercise5Tester</strong>\ncheckTotal, 0.001s, <span style=\"color: green\">passed</span>\ncheckNumItems, 0.0s, <span style=\"color: green\">passed</span>\ncheckToString, 0.059s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">ShoppingCart[items=[Item[name=laptop, price=1200.0, quantity=1, subtotal=1200.0], Item[name=monitor, price=250.0, quantity=2, subtotal=500.0], Item[name=keyboard, price=50.0, quantity=1, subtotal=50.0], Item[name=mouse, price=15.0, quantity=1, subtotal=15.0]], total=1765.0] expected:<ShoppingCart[items=[Item[name=laptop, price=1200, quantity=1], Item[name=monitor, price=250, quantity=2], Item[name=keyboard, price=50, quantity=1], Item[name=mouse, price=15, quantity=1], total=1765]]> but was:<ShoppingCart[items=[[Item[name=laptop, price=1200.0, quantity=1, subtotal=1200.0], Item[name=monitor, price=250.0, quantity=2, subtotal=500.0], Item[name=keyboard, price=50.0, quantity=1, subtotal=50.0], Item[name=mouse, price=15.0, quantity=1, subtotal=15.0]], total=1765.0]]></div>",
+    "timestamp": "2021-04-08T22:55:32.759Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<b>3</b> tests, <b>1</b> failures, <b>0.16s</b> duration\n\n<strong>Exercise5Tester</strong>\ncheckTotal, 0.001s, <span style=\"color: green\">passed</span>\ncheckNumItems, 0.0s, <span style=\"color: green\">passed</span>\ncheckToString, 0.053s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">String representation did not match. expected:<ShoppingCart[items=[Item[name=laptop, price=1200, quantity=1], Item[name=monitor, price=250, quantity=2], Item[name=keyboard, price=50, quantity=1], Item[name=mouse, price=15, quantity=1], total=1765]]> but was:<ShoppingCart[items=[[Item[name=laptop, price=1200.0, quantity=1, subtotal=1200.0], Item[name=monitor, price=250.0, quantity=2, subtotal=500.0], Item[name=keyboard, price=50.0, quantity=1, subtotal=50.0], Item[name=mouse, price=15.0, quantity=1, subtotal=15.0]], total=1765.0]]></div>",
+    "timestamp": "2021-04-08T22:51:19.252Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<b>3</b> tests, <b>2</b> failures, <b>0.26s</b> duration\n\n<strong>Exercise5Tester</strong>\ncheckTotal, 0.001s, <span style=\"color: green\">passed</span>\ncheckNumItems, 0.006s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">Number of items did not match. expected:<5> but was:<1515></div>checkToString, 0.093s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">String representation did not match. expected:<ShoppingCart[items=[Item[name=laptop, price=1200, quantity=1], Item[name=monitor, price=250, quantity=2], Item[name=keyboard, price=50, quantity=1], Item[name=mouse, price=15, quantity=1], total=1765]]> but was:<ShoppingCart[items=[[Item[name=laptop, price=1.0, quantity=1200, subtotal=1200.0], Item[name=monitor, price=2.0, quantity=250, subtotal=500.0], Item[name=keyboard, price=1.0, quantity=50, subtotal=50.0], Item[name=mouse, price=1.0, quantity=15, subtotal=15.0]], total=1765.0]]></div>",
+    "timestamp": "2021-04-08T22:50:06.181Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 0,
+    "output": "<b>3</b> tests, <b>2</b> failures, <b>0.332s</b> duration\n\n<strong>Exercise5Tester</strong>\ncheckTotal, 0.001s, <span style=\"color: green\">passed</span>\ncheckNumItems, 0.003s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">Number of items did not match. expected:<5> but was:<4></div>checkToString, 0.033s, <span style=\"color: red\">failed</span>\n<div style=\"padding-left: 20px;\">String representation did not match. expected:<ShoppingCart[items=[Item[name=laptop, price=1200, quantity=1], Item[name=monitor, price=250, quantity=2], Item[name=keyboard, price=50, quantity=1], Item[name=mouse, price=15, quantity=1], total=1765]]> but was:<ShoppingCart[items=[[Item[name=laptop, price=1.0, quantity=1200, subtotal=1200.0], Item[name=monitor, price=2.0, quantity=250, subtotal=500.0], Item[name=keyboard, price=1.0, quantity=50, subtotal=50.0], Item[name=mouse, price=1.0, quantity=15, subtotal=15.0]], total=1765.0]]></div>",
+    "timestamp": "2021-04-08T22:47:05.187Z",
+    "state": "pass"
+   },
+   {
+    "guidance": null,
+    "format": null,
+    "code": 121,
+    "output": "\n.guides/secure/advanced/Exercise5Tester.java:35: error: variable expected is already defined in method checkTotal()\n    double expected = cart.getTotal();\n           ^\n.guides/secure/advanced/Exercise5Tester.java:37: error: cannot find symbol\n    assertEquals(feedback, expected, actual, 0.01);\n                                     ^\n  symbol:   variable actual\n  location: class Exercise5Tester\n.guides/secure/advanced/Exercise5Tester.java:43: error: variable expected is already defined in method checkNumItems()\n    int expected = cart.getNumItems();\n        ^\n.guides/secure/advanced/Exercise5Tester.java:45: error: cannot find symbol\n    assertEquals(feedback, expected, actual);\n                                     ^\n  symbol:   variable actual\n  location: class Exercise5Tester\n4 errors\n\nCompile sources problems",
+    "timestamp": "2021-04-08T22:46:15.872Z",
+    "state": "fail"
+   }
+  ]
  },
  {
-  "taskId": "test-3218412596",
+  "taskId": "test-485920902",
   "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-3432435518",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-2521092329",
-  "points": 0,
-  "results": []
- },
-  "taskId": "test-3816089180",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-1690807397",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-2292953144",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-1537667893",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-2016365405",
-  "points": 0,
-  "results": []
- },
- {
-  "taskId": "test-1241253698",
-   "points": 0,
   "results": []
  }
 ]
