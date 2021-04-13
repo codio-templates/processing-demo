@@ -1,10 +1,11 @@
 abstract class Vehicle {
-  public abstract double distance(double time);
+  public abstract double travel(double time);
 }
 
 //add class definitions below this line
 
 
+}
 
 //add class definitions above this line
 

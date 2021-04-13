@@ -66,7 +66,7 @@ So when the user enters `n` the index will increase by 1 as long as the index pl
 
 ## Testing Your Code
 
-This program should be complete now. To test it, add at least two contacts. Pull up their information and use `n` and `p` to cycle through the contact information. Enter `c` to return to the list view of all the contacts.
+This program should be complete now. To test it, add at least two contacts. Select one of the contacts. Use `n` and `p` to cycle through the contact information. Enter `c` to return to the list view of all the contacts.
 
 {Try it | terminal}(sh .guides/bg.sh javac code/polymorphism/Lab4.java java -cp code/polymorphism/ Lab4 1)
 
