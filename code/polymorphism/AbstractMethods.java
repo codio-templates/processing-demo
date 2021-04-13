@@ -1,4 +1,4 @@
-class Person {
+abstract class Person {
   private String name;
   
   public String getName() {
@@ -9,7 +9,7 @@ class Person {
     name = newName;
   }
   
-  public String greeting();
+  public abstract String greeting();
 }
 
 //add class definitions below this line

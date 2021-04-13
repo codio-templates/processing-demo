@@ -34,7 +34,7 @@ Change your code to look like this:
     //add code below this line
 
     int a = 5;
-    String b = "10";
+    String b = true;
     System.out.println(a + b);
     
     //add code above this line
@@ -103,7 +103,7 @@ Now the script prints `I am from class Bravo`. The method call did not change, b
     }
 
     public void hello() {
-      System.out.println("Hello from Alpha")
+      System.out.println("Hello from Alpha");
     }
   }
 
@@ -113,7 +113,7 @@ Now the script prints `I am from class Bravo`. The method call did not change, b
     }
 
     public void hello() {
-      System.out.println("Hello from Bravo")
+      System.out.println("Hello from Bravo");
     }
   }
   ```

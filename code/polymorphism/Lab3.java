@@ -150,7 +150,8 @@ public class Lab3 {
 
     Contacts contacts = new Contacts();
     contacts.display();
-
+    System.out.println(contacts.getLength());
+    
     //add code above this line
   }
 }
