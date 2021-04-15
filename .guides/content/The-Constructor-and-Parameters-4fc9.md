@@ -97,7 +97,7 @@ When you instantiate the two `Actor` objects, you can pass the constructor the r
   ```java
       //add code below this line
 
-      Actor denzel = new Actor("Denzel", "Washington", "December 28", 47, 8, 2);
+      
       System.out.println(denzel.birthday);
       System.out.println(denzel.totalFilms);
 

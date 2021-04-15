@@ -34,7 +34,7 @@ Change your code to look like this:
     //add code below this line
 
     int a = 5;
-    String b = true;
+    boolean b = true;
     System.out.println(a + b);
     
     //add code above this line
@@ -42,7 +42,7 @@ Change your code to look like this:
 
 <details>
   <summary><strong>Why is there an error?</strong></summary>
-Polymorphism allows Java to use the plus operator with different data types, but that does not mean that the plus operator can be used with all data types. The example above causes an error message because the plus operator cannot be used with an integer and a string. There are limits to polymorphism.
+Polymorphism allows Java to use the plus operator with different data types, but that does not mean that the plus operator can be used with all data types. The example above causes an error message because the plus operator cannot be used with an integer and a boolean. There are limits to polymorphism.
 </details>
 
 |||

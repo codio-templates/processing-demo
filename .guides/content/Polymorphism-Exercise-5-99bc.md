@@ -6,7 +6,7 @@ The `Substitute` class reads a text file and replaces every fifth word with the 
 
 <details>
   <summary><strong>Substitute Class Output</strong></summary>
-  To see the output from the superclass, add the following code to your program and run it. The source file is four sentences. Each sentence is on its own line in the text file. The word `HELLO` will appear as the fifth word for each sentence.
+  To see the output from the superclass, add the following code to your program and run it. The source file is four sentences. Each sentence is on its own line in the text file. The word <code>HELLO</code> will appear as the fifth word for each sentence.
   
   ```java
       //add code below this line
