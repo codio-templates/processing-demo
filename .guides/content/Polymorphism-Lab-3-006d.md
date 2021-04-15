@@ -199,7 +199,7 @@ Your program should now show the following output:
       handleChoice();
     }
 
-      private boolean isNumeric(String s) {
+    private boolean isNumeric(String s) {
       int value;
 
       if (s == null || s.equals("")) {

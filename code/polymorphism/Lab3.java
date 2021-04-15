@@ -75,48 +75,21 @@ class Contacts extends Information {
       System.out.print("(A)dd a new contact \n(Q)uit \n> ");
       choice = sc.nextLine().toLowerCase();
     } else {
-      for (int i = 0; i < length; i++) {
-        System.out.println(i + 1 + ") " + names.get(i));
-      }
-      System.out.print("\n(#) Select a name \n(A)dd a new contact\n(Q)uit \n> ");
-      String input = sc.nextLine().toLowerCase();
-      choice = input;
+      view = "quit";
     }
     handleChoice();
   }
-  
-    private boolean isNumeric(String s) {
-    int value;
-    
-    if (s == null || s.equals("")) {
-      return false;
-    }
-    
-    try {
-      value = Integer.parseInt(s);
-      return true;
-    } catch (NumberFormatException e) {
-      return false;
-    }
-  }
 
   public void handleChoice() {
-    if (choice.equals("q")) {
-      view = "quit";
-    } else if (choice.equals("a") && view.equals("list")) {
-      view = "add";
-    } else if (isNumeric(choice) && view.equals("list")) {
-      int num = Integer.parseInt(choice) - 1;
-      if (num >= 0 && num < length) {
-        index = num;
-        view = "info";
-      }
-    } else if (choice.equals("c") && view.equals("info")) {
-      view = "list";
-    } else if (choice.equals("n") && view.equals("info")) {
-      index = (index + 1 < length) ? index + 1 : 0;
-    } else if (choice.equals("p") && view.equals("info")) {
-      index = (index - 1 >= 0) ? index - 1 : length - 1;
+    switch(choice) {
+      case "q":
+        view = "quit";
+        break;
+      case "a":
+        if (view.equals("list")) {
+          view = "add";
+          break;
+        }
     }
   }
 
@@ -143,7 +116,7 @@ class Contacts extends Information {
 
 //add class definitions above this line
 
-public class Lab3 {  
+public class Lab2 {  
   public static void main(String[] args) {
 
     //add code below this line
@@ -151,7 +124,7 @@ public class Lab3 {
     Contacts contacts = new Contacts();
     contacts.display();
     System.out.println(contacts.getLength());
-    
+
     //add code above this line
   }
 }
