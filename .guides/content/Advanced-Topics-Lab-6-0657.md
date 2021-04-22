@@ -1,6 +1,6 @@
 ## Lab 6 - Showing the Score
 
-{Launch Processing}(bash .guides/processing.sh)
+{Launch Processing}(bash .guides/processing.sh 6)
 
 |||info
 ## Open the File

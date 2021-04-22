@@ -20,7 +20,7 @@ class App {
     category = c;
   }
   
-  public display() {
+  public void display() {
     System.out.println(String.format("%s is a(n) %s app that is %s.", name, category, description));
   }
 }
@@ -156,6 +156,14 @@ Now that there is a list of objects, we can manipulate each object by iterating 
   
   <details>
     <summary><strong>Solution</strong></summary>
+    Add the <code>getCAtegory</code> accessor method to the <code>App</code> class.
+    
+    ```java
+      public String getCategory() {
+        return category;
+      }
+    ```
+    
     Iterate over the list and use a conditional to determine if the <code>category</code> attribute is "social media". If true, call the <code>display</code> method.
     
     ```java

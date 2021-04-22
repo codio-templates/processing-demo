@@ -11,7 +11,7 @@ To use an interface, create a class with the `implements` keyword. The `Chihuahu
 
 class Chihuahua implements Dog {
   public String bark() {
-    return "woof woof"
+    return "woof woof";
   }
 }
  

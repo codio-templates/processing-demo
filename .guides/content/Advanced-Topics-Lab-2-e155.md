@@ -2,7 +2,7 @@
 
 ## Lab 2 - The Ground
 
-{Launch Processing}(bash .guides/processing.sh)
+{Launch Processing}(bash .guides/processing.sh 2)
 
 |||info
 ## Open the File
@@ -44,7 +44,7 @@ Next, we need the ground image appear in the game. Start by adding a `show` meth
 ```java
 class Ground {
   private PImage ground;
-  private int xPos;
+  private int x;
   
   public Ground() {
     ground = loadImage("ground.png");

@@ -31,7 +31,7 @@ Instantiate an `Animal` object and print it.
 
 {Try it}(sh .guides/bg.sh javac code/advanced/StringRepresentation.java java -cp code/advanced/ StringRepresentation 1)
 
-This is not very helpful. That is why we have seen code examples where classes have a method called `describe` or `display` that print out a better description of the object. However, a better way of representing an object as a string is to override the `toString` method. **Note**, it is not necessary to explicitly call the `toString` method. This is automatically done with `System.out.println`.
+This is not very helpful. That is why we have seen code examples where classes have a method called `describe` or `display` that print out a description of the object. However, a better way of representing an object as a string is to override the `toString` method. **Note**, it is not necessary to explicitly call the `toString` method. This is automatically done with `System.out.println`.
 
 ```java
 //add class definitions below this line
@@ -80,10 +80,6 @@ class Dog extends Animal {
     super(a);
     name = n;
     breed = b;
-  }
-  
-  public String toString() {
-    return super.toString() + "[name= " + name + ", breed=" + breed + "]";
   }
 }
  
