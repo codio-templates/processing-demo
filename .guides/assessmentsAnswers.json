@@ -15,7 +15,16 @@
  {
   "taskId": "test-326602571",
   "points": 0,
-  "results": []
+  "results": [
+   {
+    "guidance": "Here is one possible solution:\n\n```java\nimport java.util.*;\n\nclass Band {\n  private String name;\n  private String genre;\n  private String[] members;\n  \n  public Band(String n, String g, String[]m) {\n    name = n;\n    genre = g;\n    members = m;\n  }\n  \n  //add class definitions below this line\n  \n  public String toString() {\n    String nameAttribute = \"name=\" + name + \", \";\n    String genreAttribute = \"genre=\" + genre + \", \";\n    String membersAttribute = \"members=\" + Arrays.toString(members);\n    return getClass().getName() + \"[\" + nameAttribute + genreAttribute + membersAttribute + \"]\";\n  }\n\n  //add method definition above this line\n}\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    String[] members = {\"Jerry\", \"Bob\", \"Mickey\", \"Bill\", \"Phil\", \"Pigpen\"};\n    Band dead = new Band(\"The Grateful Dead\", \"rock'n roll\", members);\n    System.out.println(dead);\n\n    //add code above this line\n    \n  }\n}\n```\n\n* Previous examples of the `toString` method have a single line of code as the return statement. For legibility purposes, the string is broken up across several variables.\n* Set `nameAttribute` to `\"name=\"` followed by the attribute `name`. Don't forget the comma.\n* Set `genreAttribute` to `\"genre=\"` followed by the attribute `genre`. Don't forget the comma.\n* Set `membersAttribute` to `\"members=\"`. If you add the `members` attribute, Java will not print the elements of the array. Instead, use `Array.toString(members)`. You do not need a comma since this is the last attribute.\n* Use `getClass().getName()` to get the object type followed by a `\"[\"`, `nameAttribute`, `genreAttribute`, `membersAttribute`, and finally a `\"]\"`.",
+    "format": null,
+    "code": 121,
+    "output": "\n/home/codio/workspace/code/advanced/exercise2/Exercise2.java:47: error: class Exercise1 is public, should be declared in a file named Exercise1.java\npublic class Exercise1 {  \n       ^\n.guides/secure/advanced/Exercise2Tester.java:9: error: cannot find symbol\n    Band band = new Band(\"Pink Floyd\", \"rock'n roll\", members);\n    ^\n  symbol:   class Band\n  location: class Exercise2Tester\n.guides/secure/advanced/Exercise2Tester.java:9: error: cannot find symbol\n    Band band = new Band(\"Pink Floyd\", \"rock'n roll\", members);\n                    ^\n  symbol:   class Band\n  location: class Exercise2Tester\n.guides/secure/advanced/Exercise2Tester.java:19: error: cannot find symbol\n    Band band = new Band(\"Wu-Tang Clan\", \"rap\", members);\n    ^\n  symbol:   class Band\n  location: class Exercise2Tester\n.guides/secure/advanced/Exercise2Tester.java:19: error: cannot find symbol\n    Band band = new Band(\"Wu-Tang Clan\", \"rap\", members);\n                    ^\n  symbol:   class Band\n  location: class Exercise2Tester\n5 errors\n\nCompile sources problems",
+    "timestamp": "2021-04-22T19:37:19.599Z",
+    "state": "fail"
+   }
+  ]
  },
  {
   "taskId": "test-3997253090",

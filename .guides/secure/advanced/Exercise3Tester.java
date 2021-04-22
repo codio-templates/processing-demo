@@ -9,33 +9,39 @@ public class Exercise3Tester {
   
   @Before
   public void setup() {
-    dogs = makeDogs();
+    dogs.add(new Dog("Marceline", "German Shepherd"));
+    dogs.add(new Dog("Cajun", "Belgian Malinois"));
+    dogs.add(new Dog("Daisy", "Border Collie"));
+    dogs.add(new Dog("Rocky", "Golden Retriever"));
+    dogs.add(new Dog("Bella", "Irish Setter"));
   }
   
   @Test
   public void checkNames() {
-    String[] names;
-    String[] expected = new String[0];
-    String[] actual = {"Marceline", "Cajun", "Daisy", "Rocky", "Bella"};
+    ArrayList<String> names = new ArrayList<String>();
+    String[] expected = {"Marceline", "Cajun", "Daisy", "Rocky", "Bella"};
     String feedback = "Names did not match.";
     
     for (Dog dog : dogs) {
-      expected += dog.getName();
+      names.add(dog.getName());
     }
+    
+    String[] actual = names.toArray(new String[names.size()]);
     
     assertEquals(feedback, expected, actual);
   }
   
   @Test
   public void checkBreeds() {
-    String[] breeds;
-    String[] expected = new String[0];
-    String[] actual = {"German Shepherd", "Belgian Malinois", "Border Collie", "Golden Retreiver", "Irish Setter"};
+    ArrayList<String> breeds = new ArrayList<String>();
+    String[] expected = {"German Shepherd", "Belgian Malinois", "Border Collie", "Golden Retriever", "Irish Setter"};
     String feedback = "Breeds did not match.";
     
     for (Dog dog : dogs) {
-      expected += dog.getBreed();
+      breeds.add(dog.getBreed());
     }
+    
+    String[] actual = breeds.toArray(new String[breeds.size()]);
     
     assertEquals(feedback, expected, actual);
   }
