@@ -2,7 +2,7 @@
 
 ## Lab 1 - Setup
 
-{Launch Processing}(bash .guides/processing.sh)
+{Launch Processing}(bash .guides/processing.sh 1)
 
 |||info
 ## Open the File

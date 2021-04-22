@@ -2,7 +2,7 @@
 
 ## Lab 4 - Pipes
 
-{Launch Processing}(bash .guides/processing.sh)
+{Launch Processing}(bash .guides/processing.sh 4)
 
 |||info
 ## Open the File

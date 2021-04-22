@@ -2,7 +2,7 @@
 
 ## Lab 3 - The Bird
 
-{Launch Processing}(bash .guides/processing.sh)
+{Launch Processing}(bash .guides/processing.sh 3)
 
 |||info
 ## Open the File

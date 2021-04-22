@@ -6,7 +6,7 @@ public class Exercise1Tester {
   @Test
   public void checkCarTravel() {
     Car c = new Car(1234.5);
-    String expected = "There is no extra feel to travel 1234.50 miles.";
+    String expected = "There is no extra fee to travel 1234.50 miles.";
     String actual = c.travel();
     String feedback = "Car travel output did not match.";
     assertEquals(feedback, expected, actual);

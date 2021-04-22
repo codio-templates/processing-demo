@@ -1,6 +1,6 @@
 ## Lab 5 - Repeating the Pipes
 
-{Launch Processing}(bash .guides/processing.sh)
+{Launch Processing}(bash .guides/processing.sh 5)
 
 |||info
 ## Open the File
@@ -10,10 +10,10 @@ You have to tell Processing the file you want to open. In the Processing window,
 
 |||
 
-**Go to the `Pipe` file.** Each time a pipe leaves the game window to the left, it needs to reappear. This pipe should also choose a different height to add a bit of randomness to the game. When the `x` attribute is less than -80, then the pipe has passed the left side of the game window. Modify the `move` method to check for this condition. If true, call the `startOver` method.
+**Go to the `Pipe` file.** Each time a pipe leaves the game window to the left, it needs to reappear. This pipe should also choose a different height to add a bit of randomness to the game. When the `x` attribute is less than -80, then the pipe has passed the left side of the game window. Modify the `update` method to check for this condition. If true, call the `startOver` method.
 
 ```java
-  public void move() {
+  public void update() {
     x -= speed;
     if (x < -80) {
       startOver();
@@ -65,9 +65,9 @@ The next step in solving this problem is to ask if the bird is **not** flying th
 **Go to the `Game` file.** Once we have determined that the bird is touching a pipe, we are going to stop the game. In the `update` method, find the for loop that moves each pipe. Use a conditional that asks if that pipe is touching the bird. If this is true, call the `gameOver` method.
 
 ```java
-    for (Pipe pipe : pipes) {
-      pipe.update();
-      if (pipe.touching(bird)) {
+    for (Pipe p : pipes) {
+      p.update();
+      if (p.touching(bird)) {
         gameOver();
       }
     }
@@ -147,9 +147,9 @@ Click the triangle button to run you program. When the bird hits a pipe, the gam
       ground.update();
       bird.update();
 
-      for (Pipe pipe : pipes) {
-        pipe.update();
-        if (pipe.touching(bird)) {
+      for (Pipe p : pipes) {
+        p.update();
+        if (p.touching(bird)) {
           gameOver();
         }
       }

@@ -15,9 +15,9 @@ public class Exercise2Tester {
   
   @Test
   public void checkToString2() {
-    String[] members = {"RZA", "GZA", "Ol'Dirty Bastard", "Method Man", "Ghostface Killah", "Inspectah Deck", "U-God", "Masta Killa", "Cappadonna"};
+    String[] members = {"RZA", "GZA", "ODB", "Method Man", "Ghostface Killah", "Inspectah Deck", "U-God", "Masta Killa", "Cappadonna"};
     Band band = new Band("Wu-Tang Clan", "rap", members);
-    String expected = "Band[name=Wu-Tang Clan, genre=rap, members=[RZA, GZA, Ol'Dirty Bastard, Method Man, Ghostface Killah, Inspectah Deck, U-God, Masta Killa, Cappadonna]]";
+    String expected = "Band[name=Wu-Tang Clan, genre=rap, members=[RZA, GZA, ODB, Method Man, Ghostface Killah, Inspectah Deck, U-God, Masta Killa, Cappadonna]]";
     String actual = band.toString();
     String feedback = "Output did not match.";
     assertEquals(feedback, expected, actual);
