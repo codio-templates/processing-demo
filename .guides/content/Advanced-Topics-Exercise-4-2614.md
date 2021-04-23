@@ -5,23 +5,7 @@
 You are given code for the `Library` class (in its own file). This is a composite class. You are going to create the `Book` class (the component class) in `Book.java` file. Look over the `Library` class carefully to determine what attributes are needed for the `Book` class. In addition, the table of output contains a hint as to what method the `Book` class needs.
 
 ### Expected Output
-To check your work, open the `Exercise4.java` file and enter the following code.
-
-```java
-    //add code below this line
-
-    Library library = new Library();
-    Book book1 = new Book("Three Musketeers", "Alexandre Dumas", "fiction");
-    Book book2 = new Book("The Count of Monte Cristo", "Alexandre Dumas", "fiction");
-    Book book3 = new Book("Educated", "Tara Westover", "nonfiction");
-
-    library.addBook(book1);
-    library.addBook(book2);
-    library.addBook(book3);
-    library.sortBooks();
-
-    //add code above this line
-```
+To check your work, open the `Exercise4.java` file and enter the following code samples. Be sure your output matches the given output for each scenario.
 
 ### Check 1
 Return all of the books in the library. Change the code in `Exercise4.java` to look like this:

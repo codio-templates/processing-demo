@@ -12,7 +12,7 @@ You have to tell Processing the file you want to open. In the Processing window,
 
 |||
 
-In this game, the bird only moves up and down. To give the impression that the bird is flying to the right, the ground is going to be animates. **In the `FlappyBird` file**, add the `ground` attribute. This is going to be another component class. Instantiate the `ground` object in the constructor. **Note**, Processing will underline these lines of code as the `Ground` class does not yet exist.
+In this game, the bird only moves up and down. To give the impression that the bird is flying to the right, the ground is going to be animates. **In the `Game` file**, add the `ground` attribute. This is going to be another component class. Instantiate the `ground` object in the constructor. **Note**, Processing will underline these lines of code as the `Ground` class does not yet exist.
 
 ```java
 class Game {
@@ -48,11 +48,11 @@ class Ground {
   
   public Ground() {
     ground = loadImage("ground.png");
-    xPos = 0;
+    x = 0;
   }
   
   public void show() {
-    image(ground, xPos, 650);
+    image(ground, x, 650);
   }
 }
 ```

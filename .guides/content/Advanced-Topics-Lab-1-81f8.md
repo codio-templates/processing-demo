@@ -12,7 +12,12 @@ You have to tell Processing the file you want to open. In the Processing window,
 
 |||
 
-We are going to create a clone of the game Flappy Bird that makes use of the topics covered in this module. The tutorial above uses a collection of Processing objects to make the game. We are going to create a composite class, an array of objects, and the lab will use five Processing files.
+We are going to create a clone of the game Flappy Bird that makes use of the topics covered in this module. We will be using the Processing (a programming language based on Java) because creating an animation is much easier in Processing than in Java. The tutorial above uses a collection of Processing objects to make the game. We are going to create a composite class, an array of objects, and the lab will use five Processing files.
+
+<details>
+<summary><strong>Copying & Pasting</strong></summary>
+  Unfortunately you will not be able to copy code from these pages and paste it into the Processing IDE. Processing is not running in your browser. Instead, it is running on a server somewhere across the internet. We use a virtual network computer (VNC) to show the Processing IDE in your browser. Because of this, you cannot copy/paste code. Using a VNC can also affect performance of the game.
+</details><br>
 
 The first thing to do is set up a generic game. **In the `FlappyBird` file**, Declare the `game` variable. In the `setup` method, set the size of the game and instantiate a `Game` object. In the `draw` method, set the background to the `background` attribute of `game`. Then call the `show` and `update` methods.
 

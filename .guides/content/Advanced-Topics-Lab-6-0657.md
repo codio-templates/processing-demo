@@ -197,7 +197,7 @@ Click the triangle button to run you program. After hitting a pipe, you should b
     game.update();
   }
 
-  void mouseClicked() {
+  void mouseReleased() {
     game.bird.flap();
   }
   ```
@@ -257,9 +257,9 @@ Click the triangle button to run you program. After hitting a pipe, you should b
         }
       }
 
-      for (Pipe pipe : pipes) {
-        pipe.update();
-        if (pipe.touching(bird)) {
+      for (Pipe p : pipes) {
+        p.update();
+        if (p.touching(bird)) {
           gameOver();
         }
       }

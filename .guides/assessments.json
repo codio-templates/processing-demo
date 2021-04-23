@@ -6242,7 +6242,7 @@
   "source": {
    "name": "list of objects reading question",
    "showName": false,
-   "instructions": "## Reading Question\n\nAssume the existence of the class `MyClass`. Drag the appropriate blocks into the box below so you create an ArrayList of ten objects of type `MyClass`. **Hint**, not all of the blocks will be used.",
+   "instructions": "## Reading Question\n\nAssume the existence of the class `MyClass`. Drag the appropriate blocks into the box below so you create an ArrayList of ten objects of type `MyClass`. **Hint**, not all of the blocks will be used, and the blocks must be properly indented.",
    "initial": "ArrayList&lt;MyClass&gt; myArrayList = new ArrayList&lt;MyClass&gt;();\nfor (int i = 0; i &lt; 10; i++) {\n  myArrayList.add(new MyClass());\n}\nArrayList&lt;int&gt; myArrayList = new ArrayList&lt;int&gt;(); #distractor\nmyArrayList.add(MyClass); #distractor\nfor (int i = 0; i &lt; 11; i++) { #distractor",
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
@@ -6624,7 +6624,7 @@
   "source": {
    "name": "advanced topics formative assessment 2",
    "showName": false,
-   "instructions": "## Formative Assessment\n\nAssume the following class definitions:\n\n```java\nclass VideoGame {\n  private Player player;\n  private int level;\n  private int score;\n\n  public VideoGame(Player p) {\n    player = p;\n    level = 1;\n    score = 0;\n  }\n}\n\nclass Player {\n  private int health;\n  private String weapon;\n\n  public Player() {\n    health = 100;\n    weapon = \"small sword\";\n  }\n}\n```\n\nWhy does the following code generate an error message?\n\n```java\nVideoGame myGame = VideoGame(player);\n```",
+   "instructions": "## Formative Assessment\n\nAssume the following class definitions:\n\n```java\nclass VideoGame {\n  private Player player;\n  private int level;\n  private int score;\n\n  public VideoGame(Player p) {\n    player = p;\n    level = 1;\n    score = 0;\n  }\n}\n\nclass Player {\n  private int health;\n  private String weapon;\n\n  public Player() {\n    health = 100;\n    weapon = \"small sword\";\n  }\n}\n```\n\nWhy does the following code generate an error message?\n\n```java\nVideoGame myGame = new VideoGame(player);\n```",
    "multipleResponse": false,
    "isRandomized": true,
    "answers": [
@@ -6644,7 +6644,7 @@
      "answer": "There needs to be an instance of the `Player` class defined as:\n```java\nPlayer myPlayer = new Player();\n```"
     }
    ],
-   "guidance": "This is an example of composition. The `VideoGame` class is the composite class and the `Player` class is the component class. That means an instance of the `Player` class is used to create an instance of the `VideoGame` class. The given code defines the `Player` class, but it does not instantiate an object. You would need to instantiate the object `player`. The object `myPlayer` is not correct because that is not the name use when instantiating `myGame`.\n\n```python\nPlayer player = new Player();\nVideoGame myGame = VideoGame(player);\n```",
+   "guidance": "This is an example of composition. The `VideoGame` class is the composite class and the `Player` class is the component class. That means an instance of the `Player` class is used to create an instance of the `VideoGame` class. The given code defines the `Player` class, but it does not instantiate an object. You would need to instantiate the object `player`. The object `myPlayer` is not correct because that is not the name use when instantiating `myGame`.\n\n```python\nPlayer player = new Player();\nVideoGame myGame = new VideoGame(player);\n```",
    "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
@@ -6828,7 +6828,7 @@
   "taskId": "test-1539171007",
   "source": {
    "name": "advanced topics coding exercise 4",
-   "showName": true,
+   "showName": false,
    "instructions": "Submit your code for evaluation.",
    "command": "python /usr/share/codio/assessments/assessments.py",
    "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/advanced/Exercise4Tester.java\",\"className\":\"Exercise4Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/advanced/exercise4\",\"libs\":\"\",\"testsources\":\"\"}",
@@ -6896,7 +6896,7 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "### ShoppingCart Class\nHere is one possible solution for the `ShoppingCart` class:\n\n```java\nimport java.util.*;\n\nclass ShoppingCart {\n  private ArrayList<Item> items;\n  private double total;\n  \n  public ShoppingCart() {\n    items = new ArrayList<Item>();\n    total = 0;\n  }\n  \n  public void addItem(Item item) {\n    items.add(item);\n    calculateTotal();\n  }\n  \n  private void calculateTotal() {\n    total = 0;\n    for (Item i : items) {\n      i.calculateSubtotal();\n      total += i.getSubtotal();\n    }\n  }\n  \n  public double getTotal() {\n    return total;\n  }\n  \n  public int getNumItems() {\n    int numItems = 0;\n    for (Item i : items) {\n      numItems += i.getQuantity();\n    }\n    return numItems;\n  }\n  \n  public ArrayList<Item> getItems() {\n    return items;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[items=\" + items + \", total=\" + total + \"]\";\n  }\n}\n```\n\n* Don't forget to call `calculateTotal` every time an item is added to the cart.\n* In `calculateTotal` the total for the shopping cart should be updated. So set `total` to 0. Then add up the `subtotal` for each item item in the cart and set this value to `total`.\n* The number of items in the cart is not the length of the ArrayList; that would be how many different kinds of objects are in the shopping cart. We want to know to total number of items in the cart. Sum of the `quantity` attributes for all of the items.\n\n### Item Class\nHere is one possible solution for the `Item` class:\n\n```java\nclass Item {\n  private String name;\n  private double price;\n  private int quantity;\n  private double subtotal;\n  \n  public Item(String n, double p, int q) {\n    name = n;\n    price = p;\n    quantity = q;\n    subtotal = 0;\n  }\n  \n  public int getQuantity() {\n    return quantity;\n  }\n  \n  public void calculateSubtotal() {\n    subtotal = price * quantity;\n  }\n  \n  public double getSubtotal() {\n    return subtotal;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[name=\" + name + \", price=\" + price + \", quantity=\" + quantity + \", subtotal=\" + subtotal + \"]\";\n  }\n}\n```\n\n* Since we need to see a string representation of `Item` objects, the `toString` method should be overriden.\n* There also needs to be getter methods for the `subtotal` and `quantity` attributes.",
-   "showGuidanceAfterResponse": false,
+   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": false,
    "metadata": {

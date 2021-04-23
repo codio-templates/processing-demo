@@ -29,7 +29,7 @@ Create an instance for each class and call the `travel` method.
 Your code should produce the following output:
 
 ```markdown
-There is no extra feel to travel 10.00 miles.
+There is no extra fee to travel 10.00 miles.
 It costs $10.00 to travel 20.00 miles.
 $7.25 will get you unlimited use for one day.
 ```
