@@ -104,7 +104,7 @@ class Chihuahua extends FamilyMember implements Dog {
 
 |||challenge
 ## Try This Variation:
-* Create the `movieStar` interface with the `movieDetails` method. Modify the `Chihuahua` class so that it extends the `FamilyMember` class and implements the `Dog` and `MovieStar` interfaces. Add the `filme` and `revenue` attributes to help with overriding the `movieDetails` method.
+* Create the `movieStar` interface with the `movieDetails` method. Modify the `Chihuahua` class so that it extends the `FamilyMember` class and implements the `Dog` and `MovieStar` interfaces. Add the `film` and `revenue` attributes to help with overriding the `movieDetails` method.
 ```java
 //add class definitions below this line
 
