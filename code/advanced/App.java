@@ -1,2 +1,0 @@
-// Define the App class
-
